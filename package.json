@@ -1,0 +1,41 @@
+{
+  "name": "@daimler/productkit-vue",
+  "version": "1.0.0",
+  "description": "Product Kit Vue provides Vuetify presets that bring design tokens from Product Kit Core to Vuetify",
+  "license": "MIT",
+  "repository": "https://github.com/mercedes-benz/product-kit_vue",
+  "bugs": "https://github.com/mercedes-benz/product-kit_vue/issues",
+  "scripts": {
+    "test-serve": "(cd test && vue-cli-service serve)",
+    "test-build": "(cd test && vue-cli-service build)"
+  },
+  "dependencies": {
+    "@daimler/productkit-core": "^1.2.0"
+  },
+  "devDependencies": {
+    "@mdi/js": "^6.5.95",
+    "@vue/cli-plugin-babel": "~4.5.15",
+    "@vue/cli-plugin-eslint": "~4.5.15",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "date-fns": "^2.28.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "moment": "^2.29.1",
+    "node-sass": "^7.0.1",
+    "sass": "~1.32.0",
+    "sass-loader": "^10.2.1",
+    "vue-cli-plugin-vuetify": "~2.4.7",
+    "vue-router": "^3.5.3",
+    "vue-template-compiler": "^2.6.11",
+    "vue-the-mask": "^0.11.1",
+    "vuelidate": "^0.7.7",
+    "vuetify-loader": "^1.7.0",
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11",
+    "vuetify": "^2.6.4"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}
