@@ -1,10 +1,10 @@
 <template>
   <div class="text-center">
-    <v-btn class="mx-2" fab dark small color="primary">
+    <v-btn class="mx-2" fab small color="quaternary">
       <v-icon dark>mdi-minus</v-icon>
     </v-btn>
 
-    <v-btn class="mx-2" fab dark small color="pink">
+    <v-btn class="mx-2" fab dark small color="blue darken-4">
       <v-icon dark>mdi-heart</v-icon>
     </v-btn>
 

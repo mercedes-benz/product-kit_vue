@@ -1,3 +1,45 @@
-.v-btn:not(.v-btn--outlined).primary, .v-btn:not(.v-btn--outlined).secondary, .v-btn:not(.v-btn--outlined).accent, .v-btn:not(.v-btn--outlined).success, .v-btn:not(.v-btn--outlined).error, .v-btn:not(.v-btn--outlined).warning, .v-btn:not(.v-btn--outlined).info {
-    color: blue;
+.v-btn:not(.v-btn--outlined).primary {
+  color: tokens.$color-application-contrast-primary;
+}
+.v-btn:not(.v-btn--outlined).secondary {
+  color: tokens.$color-application-contrast-secondary;
+}
+.v-btn:not(.v-btn--outlined).tertiary {
+  color: tokens.$color-application-contrast-tertiary;
+}
+.v-btn:not(.v-btn--outlined).quaternary {
+  color: tokens.$color-application-contrast-quaternary;
+}
+.v-btn:not(.v-btn--outlined).error {
+  color: tokens.$color-application-contrast-error;
+}
+
+.theme--dark.v-btn:not(.v-btn--outlined).primary {
+  color: tokensDark.$color-application-contrast-primary;
+}
+.theme--dark.v-btn:not(.v-btn--outlined).secondary {
+  color: tokensDark.$color-application-contrast-secondary;
+}
+.theme--dark.v-btn:not(.v-btn--outlined).tertiary {
+  color: tokensDark.$color-application-contrast-tertiary;
+}
+.theme--dark.v-btn:not(.v-btn--outlined).quaternary {
+  color: tokensDark.$color-application-contrast-quaternary;
+}
+.theme--dark.v-btn:not(.v-btn--outlined).error {
+  color: tokensDark.$color-application-contrast-error;
+}
+
+:export {
+  primaryL: tokens.$color-application-primary;
+  secondaryL: tokens.$color-application-secondary;
+  tertiaryL: tokens.$color-application-tertiary;
+  quaternaryL: tokens.$color-application-quaternary;
+  errorL: tokens.$color-application-error;
+
+  primaryD: tokensDark.$color-application-primary;
+  secondaryD: tokensDark.$color-application-secondary;
+  tertiaryD: tokensDark.$color-application-tertiary;
+  quaternaryD: tokensDark.$color-application-quaternary;
+  errorD: tokensDark.$color-application-error;
 }
