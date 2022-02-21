@@ -38,7 +38,7 @@ $grey: (
   "darken-3": #424242,
   "darken-4": #212121,
 );
-$indigo: (
+/*$indigo: (
   "base": tokens.$color-brand-deepblue-500,
   "lighten-5": tokens.$color-brand-deepblue-50,
   "lighten-4": tokens.$color-brand-deepblue-100,
@@ -49,7 +49,7 @@ $indigo: (
   "darken-2": tokens.$color-brand-deepblue-700,
   "darken-3": tokens.$color-brand-deepblue-800,
   "darken-4": tokens.$color-brand-deepblue-900,
-);
+);*/
 $blue-grey: (
   "base": tokens.$color-brand-grayblue-500,
   "lighten-5": tokens.$color-brand-grayblue-50,
@@ -231,8 +231,8 @@ $body-font-family: tokens.$font-family-brand;
   "xs": tokens.$layout-application-xs-screen-min-width,
   "sm": tokens.$layout-application-s-screen-min-width,
   "md": tokens.$layout-application-m-screen-min-width,
-  "lg": tokens.$layout-application-l-screen-min-width,
-  "xl": tokens.$layout-application-xl-screen-min-width,
+  "lg": tokens.$layout-application-l-screen-min-width - 16px,
+  "xl": tokens.$layout-application-xl-screen-min-width - 16px,
 );*/
 
 ///--- THEME SPECIFIC ---///

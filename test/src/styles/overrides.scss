@@ -1,33 +1,279 @@
-.v-btn:not(.v-btn--outlined).primary {
-  color: tokens.$color-application-contrast-primary;
-}
-.v-btn:not(.v-btn--outlined).secondary {
-  color: tokens.$color-application-contrast-secondary;
-}
-.v-btn:not(.v-btn--outlined).tertiary {
-  color: tokens.$color-application-contrast-tertiary;
-}
-.v-btn:not(.v-btn--outlined).quaternary {
-  color: tokens.$color-application-contrast-quaternary;
-}
-.v-btn:not(.v-btn--outlined).error {
-  color: tokens.$color-application-contrast-error;
+.theme--dark {
+  &.v-btn:not(.v-btn--outlined) {
+    &.primary {
+      color: tokensDark.$color-application-contrast-primary;
+    }
+    &.secondary {
+      color: tokensDark.$color-application-contrast-secondary;
+    }
+    &.tertiary {
+      color: tokensDark.$color-application-contrast-tertiary;
+    }
+    &.quaternary {
+      color: tokensDark.$color-application-contrast-quaternary;
+    }
+    &.error {
+      color: tokensDark.$color-application-contrast-error;
+    }
+  }
 }
 
-.theme--dark.v-btn:not(.v-btn--outlined).primary {
-  color: tokensDark.$color-application-contrast-primary;
-}
-.theme--dark.v-btn:not(.v-btn--outlined).secondary {
-  color: tokensDark.$color-application-contrast-secondary;
-}
-.theme--dark.v-btn:not(.v-btn--outlined).tertiary {
-  color: tokensDark.$color-application-contrast-tertiary;
-}
-.theme--dark.v-btn:not(.v-btn--outlined).quaternary {
-  color: tokensDark.$color-application-contrast-quaternary;
-}
-.theme--dark.v-btn:not(.v-btn--outlined).error {
-  color: tokensDark.$color-application-contrast-error;
+.v-btn:not(.v-btn--outlined) {
+  &.primary {
+    color: tokens.$color-application-contrast-primary;
+  }
+  &.secondary {
+    color: tokens.$color-application-contrast-secondary;
+  }
+  &.tertiary {
+    color: tokens.$color-application-contrast-tertiary;
+  }
+  &.quaternary {
+    color: tokens.$color-application-contrast-quaternary;
+  }
+  &.error {
+    color: tokens.$color-application-contrast-error;
+  }
+  &.blue {
+    color: tokens.$color-brand-blue-contrast-500;
+    &.lighten-1 {
+      color: tokens.$color-brand-blue-contrast-400;
+    }
+    &.lighten-2 {
+      color: tokens.$color-brand-blue-contrast-300;
+    }
+    &.lighten-3 {
+      color: tokens.$color-brand-blue-contrast-200;
+    }
+    &.lighten-4 {
+      color: tokens.$color-brand-blue-contrast-100;
+    }
+    &.lighten-5 {
+      color: tokens.$color-brand-blue-contrast-50;
+    }
+    &.darken-1 {
+      color: tokens.$color-brand-blue-contrast-600;
+    }
+    &.darken-2 {
+      color: tokens.$color-brand-blue-contrast-700;
+    }
+    &.darken-3 {
+      color: tokens.$color-brand-blue-contrast-800;
+    }
+    &.darken-4 {
+      color: tokens.$color-brand-blue-contrast-900;
+    }
+  }
+  &.neutral {
+    color: tokens.$color-brand-neutral-contrast-500;
+    &.lighten-1 {
+      color: tokens.$color-brand-neutral-contrast-400;
+    }
+    &.lighten-2 {
+      color: tokens.$color-brand-neutral-contrast-300;
+    }
+    &.lighten-3 {
+      color: tokens.$color-brand-neutral-contrast-200;
+    }
+    &.lighten-4 {
+      color: tokens.$color-brand-neutral-contrast-100;
+    }
+    &.lighten-5 {
+      color: tokens.$color-brand-neutral-contrast-50;
+    }
+    &.darken-1 {
+      color: tokens.$color-brand-neutral-contrast-600;
+    }
+    &.darken-2 {
+      color: tokens.$color-brand-neutral-contrast-700;
+    }
+    &.darken-3 {
+      color: tokens.$color-brand-neutral-contrast-800;
+    }
+    &.darken-4 {
+      color: tokens.$color-brand-neutral-contrast-900;
+    }
+  }
+  &.deepblue {
+    color: tokens.$color-brand-deepblue-contrast-500;
+    &.lighten-1 {
+      color: tokens.$color-brand-deepblue-contrast-400;
+    }
+    &.lighten-2 {
+      color: tokens.$color-brand-deepblue-contrast-300;
+    }
+    &.lighten-3 {
+      color: tokens.$color-brand-deepblue-contrast-200;
+    }
+    &.lighten-4 {
+      color: tokens.$color-brand-deepblue-contrast-100;
+    }
+    &.lighten-5 {
+      color: tokens.$color-brand-deepblue-contrast-50;
+    }
+    &.darken-1 {
+      color: tokens.$color-brand-deepblue-contrast-600;
+    }
+    &.darken-2 {
+      color: tokens.$color-brand-deepblue-contrast-700;
+    }
+    &.darken-3 {
+      color: tokens.$color-brand-deepblue-contrast-800;
+    }
+    &.darken-4 {
+      color: tokens.$color-brand-deepblue-contrast-900;
+    }
+  }
+  &.grayblue {
+    color: tokens.$color-brand-grayblue-contrast-500;
+    &.lighten-1 {
+      color: tokens.$color-brand-grayblue-contrast-400;
+    }
+    &.lighten-2 {
+      color: tokens.$color-brand-grayblue-contrast-300;
+    }
+    &.lighten-3 {
+      color: tokens.$color-brand-grayblue-contrast-200;
+    }
+    &.lighten-4 {
+      color: tokens.$color-brand-grayblue-contrast-100;
+    }
+    &.lighten-5 {
+      color: tokens.$color-brand-grayblue-contrast-50;
+    }
+    &.darken-1 {
+      color: tokens.$color-brand-grayblue-contrast-600;
+    }
+    &.darken-2 {
+      color: tokens.$color-brand-grayblue-contrast-700;
+    }
+    &.darken-3 {
+      color: tokens.$color-brand-grayblue-contrast-800;
+    }
+    &.darken-4 {
+      color: tokens.$color-brand-grayblue-contrast-900;
+    }
+  }
+  &.pink {
+    color: tokens.$color-brand-pink-contrast-500;
+    &.lighten-1 {
+      color: tokens.$color-brand-pink-contrast-400;
+    }
+    &.lighten-2 {
+      color: tokens.$color-brand-pink-contrast-300;
+    }
+    &.lighten-3 {
+      color: tokens.$color-brand-pink-contrast-200;
+    }
+    &.lighten-4 {
+      color: tokens.$color-brand-pink-contrast-100;
+    }
+    &.lighten-5 {
+      color: tokens.$color-brand-pink-contrast-50;
+    }
+    &.darken-1 {
+      color: tokens.$color-brand-pink-contrast-600;
+    }
+    &.darken-2 {
+      color: tokens.$color-brand-pink-contrast-700;
+    }
+    &.darken-3 {
+      color: tokens.$color-brand-pink-contrast-800;
+    }
+    &.darken-4 {
+      color: tokens.$color-brand-pink-contrast-900;
+    }
+  }
+  &.purple {
+    color: tokens.$color-brand-purple-contrast-500;
+    &.lighten-1 {
+      color: tokens.$color-brand-purple-contrast-400;
+    }
+    &.lighten-2 {
+      color: tokens.$color-brand-purple-contrast-300;
+    }
+    &.lighten-3 {
+      color: tokens.$color-brand-purple-contrast-200;
+    }
+    &.lighten-4 {
+      color: tokens.$color-brand-purple-contrast-100;
+    }
+    &.lighten-5 {
+      color: tokens.$color-brand-purple-contrast-50;
+    }
+    &.darken-1 {
+      color: tokens.$color-brand-purple-contrast-600;
+    }
+    &.darken-2 {
+      color: tokens.$color-brand-purple-contrast-700;
+    }
+    &.darken-3 {
+      color: tokens.$color-brand-purple-contrast-800;
+    }
+    &.darken-4 {
+      color: tokens.$color-brand-purple-contrast-900;
+    }
+  }
+  &.red {
+    color: tokens.$color-brand-red-contrast-500;
+    &.lighten-1 {
+      color: tokens.$color-brand-red-contrast-400;
+    }
+    &.lighten-2 {
+      color: tokens.$color-brand-red-contrast-300;
+    }
+    &.lighten-3 {
+      color: tokens.$color-brand-red-contrast-200;
+    }
+    &.lighten-4 {
+      color: tokens.$color-brand-red-contrast-100;
+    }
+    &.lighten-5 {
+      color: tokens.$color-brand-red-contrast-50;
+    }
+    &.darken-1 {
+      color: tokens.$color-brand-red-contrast-600;
+    }
+    &.darken-2 {
+      color: tokens.$color-brand-red-contrast-700;
+    }
+    &.darken-3 {
+      color: tokens.$color-brand-red-contrast-800;
+    }
+    &.darken-4 {
+      color: tokens.$color-brand-red-contrast-900;
+    }
+  }
+  &.green {
+    color: tokens.$color-brand-green-contrast-500;
+    &.lighten-1 {
+      color: tokens.$color-brand-green-contrast-400;
+    }
+    &.lighten-2 {
+      color: tokens.$color-brand-green-contrast-300;
+    }
+    &.lighten-3 {
+      color: tokens.$color-brand-green-contrast-200;
+    }
+    &.lighten-4 {
+      color: tokens.$color-brand-green-contrast-100;
+    }
+    &.lighten-5 {
+      color: tokens.$color-brand-green-contrast-50;
+    }
+    &.darken-1 {
+      color: tokens.$color-brand-green-contrast-600;
+    }
+    &.darken-2 {
+      color: tokens.$color-brand-green-contrast-700;
+    }
+    &.darken-3 {
+      color: tokens.$color-brand-green-contrast-800;
+    }
+    &.darken-4 {
+      color: tokens.$color-brand-green-contrast-900;
+    }
+  }
 }
 
 :export {
@@ -42,4 +288,26 @@
   tertiaryD: tokensDark.$color-application-tertiary;
   quaternaryD: tokensDark.$color-application-quaternary;
   errorD: tokensDark.$color-application-error;
+
+  db: tokens.$color-brand-deepblue-500;
+  dbL5: tokens.$color-brand-deepblue-50;
+  dbL4: tokens.$color-brand-deepblue-100;
+  dbL3: tokens.$color-brand-deepblue-200;
+  dbL2: tokens.$color-brand-deepblue-300;
+  dbL1: tokens.$color-brand-deepblue-400;
+  dbD1: tokens.$color-brand-deepblue-600;
+  dbD2: tokens.$color-brand-deepblue-700;
+  dbD3: tokens.$color-brand-deepblue-800;
+  dbD4: tokens.$color-brand-deepblue-900;
+
+  gb: tokens.$color-brand-grayblue-500;
+  gbL5: tokens.$color-brand-grayblue-50;
+  gbL4: tokens.$color-brand-grayblue-100;
+  gbL3: tokens.$color-brand-grayblue-200;
+  gbL2: tokens.$color-brand-grayblue-300;
+  gbL1: tokens.$color-brand-grayblue-400;
+  gbD1: tokens.$color-brand-grayblue-600;
+  gbD2: tokens.$color-brand-grayblue-700;
+  gbD3: tokens.$color-brand-grayblue-800;
+  gbD4: tokens.$color-brand-grayblue-900;
 }

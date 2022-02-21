@@ -5,12 +5,32 @@ import Vuetify from 'vuetify/lib/framework';
 const variables = require('../styles/overrides.scss')
 console.log(variables)
 
-/*const colors = {
-    blue: {
-        base: variables.blue,
-        darken1: variables.blueD1
+const colors = {
+    deepblue: {
+        base: variables.db,
+        lighten1: variables.dbL1,
+        lighten2: variables.dbL2,
+        lighten3: variables.dbL3,
+        lighten4: variables.dbL4,
+        lighten5: variables.dbL5,
+        darken1: variables.dbD1,
+        darken2: variables.dbD2,
+        darken3: variables.dbD3,
+        darken4: variables.dbD4
+    },
+    grayblue: {
+        base: variables.gb,
+        lighten1: variables.gbL1,
+        lighten2: variables.gbL2,
+        lighten3: variables.gbL3,
+        lighten4: variables.gbL4,
+        lighten5: variables.gbL5,
+        darken1: variables.gbD1,
+        darken2: variables.gbD2,
+        darken3: variables.gbD3,
+        darken4: variables.gbD4
     }
-}*/
+}
 
 const preset = {
     theme: {
@@ -22,7 +42,6 @@ const preset = {
                 quaternary: variables.quaternaryL,
                 error: variables.errorL,
                 //anchor: '#8c9eff',
-
             },
             dark: {
                 primary: variables.primaryD,
@@ -30,14 +49,13 @@ const preset = {
                 tertiary: variables.tertiaryD,
                 quaternary: variables.quaternaryD,
                 error: variables.errorD,
-                //tertiary: color-application-tertiary,
             }
         },
     },
 }
 
-//Object.assign(preset.theme.themes.light, colors)
-//Object.assign(preset.theme.themes.dark, colors)
+Object.assign(preset.theme.themes.light, colors)
+Object.assign(preset.theme.themes.dark, colors)
 
 Vue.use(Vuetify);
 
