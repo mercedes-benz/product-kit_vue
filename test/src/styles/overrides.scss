@@ -1,280 +1,280 @@
 .theme--dark {
-  &.v-btn:not(.v-btn--outlined) {
-    &.primary {
-      color: tokensDark.$color-application-contrast-primary;
-    }
-    &.secondary {
-      color: tokensDark.$color-application-contrast-secondary;
-    }
-    &.tertiary {
-      color: tokensDark.$color-application-contrast-tertiary;
-    }
-    &.quaternary {
-      color: tokensDark.$color-application-contrast-quaternary;
-    }
-    &.error {
-      color: tokensDark.$color-application-contrast-error;
-    }
+  &.primary {
+    color: tokensDark.$color-application-contrast-primary !important;
+  }
+  &.secondary {
+    color: tokensDark.$color-application-contrast-secondary !important;
+  }
+  &.tertiary {
+    color: tokensDark.$color-application-contrast-tertiary !important;
+  }
+  &.quaternary {
+    color: tokensDark.$color-application-contrast-quaternary !important;
+  }
+  &.error {
+    color: tokensDark.$color-application-contrast-error !important;
   }
 }
 
-.v-btn:not(.v-btn--outlined) {
-  &.primary {
-    color: tokens.$color-application-contrast-primary;
+.primary {
+  color: tokens.$color-application-contrast-primary !important;
+}
+.secondary {
+  color: tokens.$color-application-contrast-secondary !important;
+}
+.tertiary {
+  color: tokens.$color-application-contrast-tertiary !important;
+}
+.quaternary {
+  color: tokens.$color-application-contrast-quaternary !important;
+}
+.error {
+  color: tokens.$color-application-contrast-error !important;
+}
+.blue {
+  color: tokens.$color-brand-blue-contrast-500 !important;
+  &.lighten-1 {
+    color: tokens.$color-brand-blue-contrast-400 !important;
   }
-  &.secondary {
-    color: tokens.$color-application-contrast-secondary;
+  &.lighten-2 {
+    color: tokens.$color-brand-blue-contrast-300 !important;
   }
-  &.tertiary {
-    color: tokens.$color-application-contrast-tertiary;
+  &.lighten-3 {
+    color: tokens.$color-brand-blue-contrast-200 !important;
   }
-  &.quaternary {
-    color: tokens.$color-application-contrast-quaternary;
+  &.lighten-4 {
+    color: tokens.$color-brand-blue-contrast-100 !important;
   }
-  &.error {
-    color: tokens.$color-application-contrast-error;
+  &.lighten-5 {
+    color: tokens.$color-brand-blue-contrast-50 !important;
   }
-  &.blue {
-    color: tokens.$color-brand-blue-contrast-500;
-    &.lighten-1 {
-      color: tokens.$color-brand-blue-contrast-400;
-    }
-    &.lighten-2 {
-      color: tokens.$color-brand-blue-contrast-300;
-    }
-    &.lighten-3 {
-      color: tokens.$color-brand-blue-contrast-200;
-    }
-    &.lighten-4 {
-      color: tokens.$color-brand-blue-contrast-100;
-    }
-    &.lighten-5 {
-      color: tokens.$color-brand-blue-contrast-50;
-    }
-    &.darken-1 {
-      color: tokens.$color-brand-blue-contrast-600;
-    }
-    &.darken-2 {
-      color: tokens.$color-brand-blue-contrast-700;
-    }
-    &.darken-3 {
-      color: tokens.$color-brand-blue-contrast-800;
-    }
-    &.darken-4 {
-      color: tokens.$color-brand-blue-contrast-900;
-    }
+  &.darken-1 {
+    color: tokens.$color-brand-blue-contrast-600 !important;
   }
-  &.neutral {
-    color: tokens.$color-brand-neutral-contrast-500;
-    &.lighten-1 {
-      color: tokens.$color-brand-neutral-contrast-400;
-    }
-    &.lighten-2 {
-      color: tokens.$color-brand-neutral-contrast-300;
-    }
-    &.lighten-3 {
-      color: tokens.$color-brand-neutral-contrast-200;
-    }
-    &.lighten-4 {
-      color: tokens.$color-brand-neutral-contrast-100;
-    }
-    &.lighten-5 {
-      color: tokens.$color-brand-neutral-contrast-50;
-    }
-    &.darken-1 {
-      color: tokens.$color-brand-neutral-contrast-600;
-    }
-    &.darken-2 {
-      color: tokens.$color-brand-neutral-contrast-700;
-    }
-    &.darken-3 {
-      color: tokens.$color-brand-neutral-contrast-800;
-    }
-    &.darken-4 {
-      color: tokens.$color-brand-neutral-contrast-900;
-    }
+  &.darken-2 {
+    color: tokens.$color-brand-blue-contrast-700 !important;
   }
-  &.deepblue {
-    color: tokens.$color-brand-deepblue-contrast-500;
-    &.lighten-1 {
-      color: tokens.$color-brand-deepblue-contrast-400;
-    }
-    &.lighten-2 {
-      color: tokens.$color-brand-deepblue-contrast-300;
-    }
-    &.lighten-3 {
-      color: tokens.$color-brand-deepblue-contrast-200;
-    }
-    &.lighten-4 {
-      color: tokens.$color-brand-deepblue-contrast-100;
-    }
-    &.lighten-5 {
-      color: tokens.$color-brand-deepblue-contrast-50;
-    }
-    &.darken-1 {
-      color: tokens.$color-brand-deepblue-contrast-600;
-    }
-    &.darken-2 {
-      color: tokens.$color-brand-deepblue-contrast-700;
-    }
-    &.darken-3 {
-      color: tokens.$color-brand-deepblue-contrast-800;
-    }
-    &.darken-4 {
-      color: tokens.$color-brand-deepblue-contrast-900;
-    }
+  &.darken-3 {
+    color: tokens.$color-brand-blue-contrast-800 !important;
   }
-  &.grayblue {
-    color: tokens.$color-brand-grayblue-contrast-500;
-    &.lighten-1 {
-      color: tokens.$color-brand-grayblue-contrast-400;
-    }
-    &.lighten-2 {
-      color: tokens.$color-brand-grayblue-contrast-300;
-    }
-    &.lighten-3 {
-      color: tokens.$color-brand-grayblue-contrast-200;
-    }
-    &.lighten-4 {
-      color: tokens.$color-brand-grayblue-contrast-100;
-    }
-    &.lighten-5 {
-      color: tokens.$color-brand-grayblue-contrast-50;
-    }
-    &.darken-1 {
-      color: tokens.$color-brand-grayblue-contrast-600;
-    }
-    &.darken-2 {
-      color: tokens.$color-brand-grayblue-contrast-700;
-    }
-    &.darken-3 {
-      color: tokens.$color-brand-grayblue-contrast-800;
-    }
-    &.darken-4 {
-      color: tokens.$color-brand-grayblue-contrast-900;
-    }
-  }
-  &.pink {
-    color: tokens.$color-brand-pink-contrast-500;
-    &.lighten-1 {
-      color: tokens.$color-brand-pink-contrast-400;
-    }
-    &.lighten-2 {
-      color: tokens.$color-brand-pink-contrast-300;
-    }
-    &.lighten-3 {
-      color: tokens.$color-brand-pink-contrast-200;
-    }
-    &.lighten-4 {
-      color: tokens.$color-brand-pink-contrast-100;
-    }
-    &.lighten-5 {
-      color: tokens.$color-brand-pink-contrast-50;
-    }
-    &.darken-1 {
-      color: tokens.$color-brand-pink-contrast-600;
-    }
-    &.darken-2 {
-      color: tokens.$color-brand-pink-contrast-700;
-    }
-    &.darken-3 {
-      color: tokens.$color-brand-pink-contrast-800;
-    }
-    &.darken-4 {
-      color: tokens.$color-brand-pink-contrast-900;
-    }
-  }
-  &.purple {
-    color: tokens.$color-brand-purple-contrast-500;
-    &.lighten-1 {
-      color: tokens.$color-brand-purple-contrast-400;
-    }
-    &.lighten-2 {
-      color: tokens.$color-brand-purple-contrast-300;
-    }
-    &.lighten-3 {
-      color: tokens.$color-brand-purple-contrast-200;
-    }
-    &.lighten-4 {
-      color: tokens.$color-brand-purple-contrast-100;
-    }
-    &.lighten-5 {
-      color: tokens.$color-brand-purple-contrast-50;
-    }
-    &.darken-1 {
-      color: tokens.$color-brand-purple-contrast-600;
-    }
-    &.darken-2 {
-      color: tokens.$color-brand-purple-contrast-700;
-    }
-    &.darken-3 {
-      color: tokens.$color-brand-purple-contrast-800;
-    }
-    &.darken-4 {
-      color: tokens.$color-brand-purple-contrast-900;
-    }
-  }
-  &.red {
-    color: tokens.$color-brand-red-contrast-500;
-    &.lighten-1 {
-      color: tokens.$color-brand-red-contrast-400;
-    }
-    &.lighten-2 {
-      color: tokens.$color-brand-red-contrast-300;
-    }
-    &.lighten-3 {
-      color: tokens.$color-brand-red-contrast-200;
-    }
-    &.lighten-4 {
-      color: tokens.$color-brand-red-contrast-100;
-    }
-    &.lighten-5 {
-      color: tokens.$color-brand-red-contrast-50;
-    }
-    &.darken-1 {
-      color: tokens.$color-brand-red-contrast-600;
-    }
-    &.darken-2 {
-      color: tokens.$color-brand-red-contrast-700;
-    }
-    &.darken-3 {
-      color: tokens.$color-brand-red-contrast-800;
-    }
-    &.darken-4 {
-      color: tokens.$color-brand-red-contrast-900;
-    }
-  }
-  &.green {
-    color: tokens.$color-brand-green-contrast-500;
-    &.lighten-1 {
-      color: tokens.$color-brand-green-contrast-400;
-    }
-    &.lighten-2 {
-      color: tokens.$color-brand-green-contrast-300;
-    }
-    &.lighten-3 {
-      color: tokens.$color-brand-green-contrast-200;
-    }
-    &.lighten-4 {
-      color: tokens.$color-brand-green-contrast-100;
-    }
-    &.lighten-5 {
-      color: tokens.$color-brand-green-contrast-50;
-    }
-    &.darken-1 {
-      color: tokens.$color-brand-green-contrast-600;
-    }
-    &.darken-2 {
-      color: tokens.$color-brand-green-contrast-700;
-    }
-    &.darken-3 {
-      color: tokens.$color-brand-green-contrast-800;
-    }
-    &.darken-4 {
-      color: tokens.$color-brand-green-contrast-900;
-    }
+  &.darken-4 {
+    color: tokens.$color-brand-blue-contrast-900 !important;
   }
 }
+.neutral {
+  color: tokens.$color-brand-neutral-contrast-500;
+  &.lighten-1 {
+    color: tokens.$color-brand-neutral-contrast-400;
+  }
+  &.lighten-2 {
+    color: tokens.$color-brand-neutral-contrast-300;
+  }
+  &.lighten-3 {
+    color: tokens.$color-brand-neutral-contrast-200;
+  }
+  &.lighten-4 {
+    color: tokens.$color-brand-neutral-contrast-100;
+  }
+  &.lighten-5 {
+    color: tokens.$color-brand-neutral-contrast-50;
+  }
+  &.darken-1 {
+    color: tokens.$color-brand-neutral-contrast-600;
+  }
+  &.darken-2 {
+    color: tokens.$color-brand-neutral-contrast-700;
+  }
+  &.darken-3 {
+    color: tokens.$color-brand-neutral-contrast-800;
+  }
+  &.darken-4 {
+    color: tokens.$color-brand-neutral-contrast-900;
+  }
+}
+.deepblue {
+  color: tokens.$color-brand-deepblue-contrast-500 !important;
+  &.lighten-1 {
+    color: tokens.$color-brand-deepblue-contrast-400 !important;
+  }
+  &.lighten-2 {
+    color: tokens.$color-brand-deepblue-contrast-300 !important;
+  }
+  &.lighten-3 {
+    color: tokens.$color-brand-deepblue-contrast-200 !important;
+  }
+  &.lighten-4 {
+    color: tokens.$color-brand-deepblue-contrast-100 !important;
+  }
+  &.lighten-5 {
+    color: tokens.$color-brand-deepblue-contrast-50 !important;
+  }
+  &.darken-1 {
+    color: tokens.$color-brand-deepblue-contrast-600 !important;
+  }
+  &.darken-2 {
+    color: tokens.$color-brand-deepblue-contrast-700 !important;
+  }
+  &.darken-3 {
+    color: tokens.$color-brand-deepblue-contrast-800 !important;
+  }
+  &.darken-4 {
+    color: tokens.$color-brand-deepblue-contrast-900 !important;
+  }
+}
+.grayblue {
+  color: tokens.$color-brand-grayblue-contrast-500;
+  &.lighten-1 {
+    color: tokens.$color-brand-grayblue-contrast-400;
+  }
+  &.lighten-2 {
+    color: tokens.$color-brand-grayblue-contrast-300;
+  }
+  &.lighten-3 {
+    color: tokens.$color-brand-grayblue-contrast-200;
+  }
+  &.lighten-4 {
+    color: tokens.$color-brand-grayblue-contrast-100;
+  }
+  &.lighten-5 {
+    color: tokens.$color-brand-grayblue-contrast-50;
+  }
+  &.darken-1 {
+    color: tokens.$color-brand-grayblue-contrast-600;
+  }
+  &.darken-2 {
+    color: tokens.$color-brand-grayblue-contrast-700;
+  }
+  &.darken-3 {
+    color: tokens.$color-brand-grayblue-contrast-800;
+  }
+  &.darken-4 {
+    color: tokens.$color-brand-grayblue-contrast-900;
+  }
+}
+.pink {
+  color: tokens.$color-brand-pink-contrast-500 !important;
+  &.lighten-1 {
+    color: tokens.$color-brand-pink-contrast-400 !important;
+  }
+  &.lighten-2 {
+    color: tokens.$color-brand-pink-contrast-300 !important;
+  }
+  &.lighten-3 {
+    color: tokens.$color-brand-pink-contrast-200 !important;
+  }
+  &.lighten-4 {
+    color: tokens.$color-brand-pink-contrast-100 !important;
+  }
+  &.lighten-5 {
+    color: tokens.$color-brand-pink-contrast-50 !important;
+  }
+  &.darken-1 {
+    color: tokens.$color-brand-pink-contrast-600 !important;
+  }
+  &.darken-2 {
+    color: tokens.$color-brand-pink-contrast-700 !important;
+  }
+  &.darken-3 {
+    color: tokens.$color-brand-pink-contrast-800 !important;
+  }
+  &.darken-4 {
+    color: tokens.$color-brand-pink-contrast-900 !important;
+  }
+}
+.purple {
+  color: tokens.$color-brand-purple-contrast-500 !important;
+  &.lighten-1 {
+    color: tokens.$color-brand-purple-contrast-400 !important;
+  }
+  &.lighten-2 {
+    color: tokens.$color-brand-purple-contrast-300 !important;
+  }
+  &.lighten-3 {
+    color: tokens.$color-brand-purple-contrast-200 !important;
+  }
+  &.lighten-4 {
+    color: tokens.$color-brand-purple-contrast-100 !important;
+  }
+  &.lighten-5 {
+    color: tokens.$color-brand-purple-contrast-50 !important;
+  }
+  &.darken-1 {
+    color: tokens.$color-brand-purple-contrast-600 !important;
+  }
+  &.darken-2 {
+    color: tokens.$color-brand-purple-contrast-700 !important;
+  }
+  &.darken-3 {
+    color: tokens.$color-brand-purple-contrast-800 !important;
+  }
+  &.darken-4 {
+    color: tokens.$color-brand-purple-contrast-900 !important;
+  }
+}
+.red {
+  color: tokens.$color-brand-red-contrast-500 !important;
+  &.lighten-1 {
+    color: tokens.$color-brand-red-contrast-400 !important;
+  }
+  &.lighten-2 {
+    color: tokens.$color-brand-red-contrast-300 !important;
+  }
+  &.lighten-3 {
+    color: tokens.$color-brand-red-contrast-200 !important;
+  }
+  &.lighten-4 {
+    color: tokens.$color-brand-red-contrast-100 !important;
+  }
+  &.lighten-5 {
+    color: tokens.$color-brand-red-contrast-50 !important;
+  }
+  &.darken-1 {
+    color: tokens.$color-brand-red-contrast-600 !important;
+  }
+  &.darken-2 {
+    color: tokens.$color-brand-red-contrast-700 !important;
+  }
+  &.darken-3 {
+    color: tokens.$color-brand-red-contrast-800 !important;
+  }
+  &.darken-4 {
+    color: tokens.$color-brand-red-contrast-900 !important;
+  }
+}
+.green {
+  color: tokens.$color-brand-green-contrast-500 !important;
+  &.lighten-1 {
+    color: tokens.$color-brand-green-contrast-400 !important;
+  }
+  &.lighten-2 {
+    color: tokens.$color-brand-green-contrast-300 !important;
+  }
+  &.lighten-3 {
+    color: tokens.$color-brand-green-contrast-200 !important;
+  }
+  &.lighten-4 {
+    color: tokens.$color-brand-green-contrast-100 !important;
+  }
+  &.lighten-5 {
+    color: tokens.$color-brand-green-contrast-50 !important;
+  }
+  &.darken-1 {
+    color: tokens.$color-brand-green-contrast-600 !important;
+  }
+  &.darken-2 {
+    color: tokens.$color-brand-green-contrast-700 !important;
+  }
+  &.darken-3 {
+    color: tokens.$color-brand-green-contrast-800 !important;
+  }
+  &.darken-4 {
+    color: tokens.$color-brand-green-contrast-900 !important;
+  }
+}
+
+/*.blue.lighten-1 {
+  color: tokens.$color-brand-pink-contrast-900 !important;
+}*/
 
 :export {
   primaryL: tokens.$color-application-primary;
@@ -282,12 +282,18 @@
   tertiaryL: tokens.$color-application-tertiary;
   quaternaryL: tokens.$color-application-quaternary;
   errorL: tokens.$color-application-error;
+  backgroundL: tokens.$color-application-background;
+  surfaceL: tokens.$color-application-surface;
+  outlineL: tokens.$color-application-outline;
 
   primaryD: tokensDark.$color-application-primary;
   secondaryD: tokensDark.$color-application-secondary;
   tertiaryD: tokensDark.$color-application-tertiary;
   quaternaryD: tokensDark.$color-application-quaternary;
   errorD: tokensDark.$color-application-error;
+  backgroundD: tokensDark.$color-application-background;
+  surfaceD: tokensDark.$color-application-surface;
+  outlineD: tokensDark.$color-application-outline;
 
   db: tokens.$color-brand-deepblue-500;
   dbL5: tokens.$color-brand-deepblue-50;
@@ -310,4 +316,87 @@
   gbD2: tokens.$color-brand-grayblue-700;
   gbD3: tokens.$color-brand-grayblue-800;
   gbD4: tokens.$color-brand-grayblue-900;
+
+  //tokens: map-get($map: tokens.$tokens, $key: "color");
+
+  neutral-50: tokens.$color-brand-neutral-50;
+  neutral-100: tokens.$color-brand-neutral-100;
+  neutral-200: tokens.$color-brand-neutral-200;
+  neutral-300: tokens.$color-brand-neutral-300;
+  neutral-400: tokens.$color-brand-neutral-400;
+  neutral-500: tokens.$color-brand-neutral-500;
+  neutral-600: tokens.$color-brand-neutral-600;
+  neutral-700: tokens.$color-brand-neutral-700;
+  neutral-800: tokens.$color-brand-neutral-800;
+  neutral-900: tokens.$color-brand-neutral-900;
+  blue-50: tokens.$color-brand-blue-50;
+  blue-100: tokens.$color-brand-blue-100;
+  blue-200: tokens.$color-brand-blue-200;
+  blue-300: tokens.$color-brand-blue-300;
+  blue-400: tokens.$color-brand-blue-400;
+  blue-500: tokens.$color-brand-blue-500;
+  blue-600: tokens.$color-brand-blue-600;
+  blue-700: tokens.$color-brand-blue-700;
+  blue-800: tokens.$color-brand-blue-800;
+  blue-900: tokens.$color-brand-blue-900;
+  deepblue-50: tokens.$color-brand-deepblue-50;
+  deepblue-100: tokens.$color-brand-deepblue-100;
+  deepblue-200: tokens.$color-brand-deepblue-200;
+  deepblue-300: tokens.$color-brand-deepblue-300;
+  deepblue-400: tokens.$color-brand-deepblue-400;
+  deepblue-500: tokens.$color-brand-deepblue-500;
+  deepblue-600: tokens.$color-brand-deepblue-600;
+  deepblue-700: tokens.$color-brand-deepblue-700;
+  deepblue-800: tokens.$color-brand-deepblue-800;
+  deepblue-900: tokens.$color-brand-deepblue-900;
+  grayblue-50: tokens.$color-brand-grayblue-50;
+  grayblue-100: tokens.$color-brand-grayblue-100;
+  grayblue-200: tokens.$color-brand-grayblue-200;
+  grayblue-300: tokens.$color-brand-grayblue-300;
+  grayblue-400: tokens.$color-brand-grayblue-400;
+  grayblue-500: tokens.$color-brand-grayblue-500;
+  grayblue-600: tokens.$color-brand-grayblue-600;
+  grayblue-700: tokens.$color-brand-grayblue-700;
+  grayblue-800: tokens.$color-brand-grayblue-800;
+  grayblue-900: tokens.$color-brand-grayblue-900;
+  pink-50: tokens.$color-brand-pink-50;
+  pink-100: tokens.$color-brand-pink-100;
+  pink-200: tokens.$color-brand-pink-200;
+  pink-300: tokens.$color-brand-pink-300;
+  pink-400: tokens.$color-brand-pink-400;
+  pink-500: tokens.$color-brand-pink-500;
+  pink-600: tokens.$color-brand-pink-600;
+  pink-700: tokens.$color-brand-pink-700;
+  pink-800: tokens.$color-brand-pink-800;
+  pink-900: tokens.$color-brand-pink-900;
+  purple-50: tokens.$color-brand-purple-50;
+  purple-100: tokens.$color-brand-purple-100;
+  purple-200: tokens.$color-brand-purple-200;
+  purple-300: tokens.$color-brand-purple-300;
+  purple-400: tokens.$color-brand-purple-400;
+  purple-500: tokens.$color-brand-purple-500;
+  purple-600: tokens.$color-brand-purple-600;
+  purple-700: tokens.$color-brand-purple-700;
+  purple-800: tokens.$color-brand-purple-800;
+  purple-900: tokens.$color-brand-purple-900;
+  red-50: tokens.$color-brand-red-50;
+  red-100: tokens.$color-brand-red-100;
+  red-200: tokens.$color-brand-red-200;
+  red-300: tokens.$color-brand-red-300;
+  red-400: tokens.$color-brand-red-400;
+  red-500: tokens.$color-brand-red-500;
+  red-600: tokens.$color-brand-red-600;
+  red-700: tokens.$color-brand-red-700;
+  red-800: tokens.$color-brand-red-800;
+  red-900: tokens.$color-brand-red-900;
+  green-50: tokens.$color-brand-green-50;
+  green-100: tokens.$color-brand-green-100;
+  green-200: tokens.$color-brand-green-200;
+  green-300: tokens.$color-brand-green-300;
+  green-400: tokens.$color-brand-green-400;
+  green-500: tokens.$color-brand-green-500;
+  green-600: tokens.$color-brand-green-600;
+  green-700: tokens.$color-brand-green-700;
+  green-800: tokens.$color-brand-green-800;
+  green-900: tokens.$color-brand-green-900;
 }

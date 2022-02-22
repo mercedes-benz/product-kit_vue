@@ -3,6 +3,7 @@
     class="mx-auto"
     max-width="344"
     outlined
+    elevation="1"
   >
     <v-list-item three-line>
       <v-list-item-content>

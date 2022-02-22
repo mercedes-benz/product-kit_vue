@@ -6,7 +6,7 @@
                 class="ma-2"
                 tile
                 color="indigo"
-                @click="sourceSheet = !sourceSheet"
+                @click="showSource()"
                 >Tile Button</v-btn
             >
             <v-btn class="ma-2" tile outlined color="success">
@@ -38,34 +38,13 @@
 
                 <v-card-actions>
                     <v-spacer></v-spacer>
-                    
-                    <v-btn color="green darken-1" text @click="dialog = false">
+
+                    <v-btn color="green darken-1" text @click="sourceSheet = false">
                         Close
                     </v-btn>
                 </v-card-actions>
             </v-card>
         </v-dialog>
-        <!--<v-bottom-sheet v-model="sourceSheet" inset>
-            <v-sheet>
-                <v-row justify="center">
-                    <v-col cols="12" class="text-center">
-                        <v-btn text color="red" @click="sheet = !sheet">
-                            close
-                        </v-btn>
-                    </v-col>
-                    <v-col
-                        cols="auto"
-                        class="mb-5 mt-0"
-                        style="
-                            background-color: lightgrey;
-                            border: 1px solid black;
-                        "
-                    >
-                        <pre><code style="background-color: transparent">{{sourceCode}}</code></pre>
-                    </v-col>
-                </v-row></v-sheet
-            >
-        </v-bottom-sheet>-->
     </div>
 </template>
 
@@ -75,13 +54,68 @@ export default {
 
     data: () => ({
         sourceSheet: false,
-        sourceCode: '<v-btn \n\ttile \n\tcolor="indigo"\n></v-btn>',
+        elements: {
+            name: "v-btn",
+            attributes: [
+                {
+                    attribute: "tile",
+                    value: null,
+                },
+                {
+                    attribute: "color",
+                    value: "indigo",
+                },
+            ],
+            childs: [],
+        },
+        sourceCode: "",
+        //sourceCode: '<v-btn \n\ttile \n\tcolor="indigo"\n></v-btn>',
     }),
 
     methods: {
+        showSource() {
+            var sc = "<" + this.elements.name;
+            if (this.elements.attributes.length != 0) {
+                this.elements.attributes.forEach((element) => {
+                    sc += "\n\t" + element.attribute;
+                    sc +=
+                        element.value != null ? "='" + element.value + "'" : "";
+                });
+                sc += "\n>";
+            } else {
+                sc += ">";
+            }
+            if (this.elements.childs.length != 0) {
+                for (let index = 0; index < array.length; index++) {
+                    var depth = index++;
+                    const child = array[index];
+                    var temp = "<" + child.name;
+                    if (child.attributes.length != 0) {
+                        child.attributes.forEach((element) => {
+                            temp += "\n\t" + element.attribute;
+                            temp +=
+                                element.value != null
+                                    ? "='" + element.value + "'"
+                                    : "";
+                        });
+                        temp += "\n>";
+                    } else {
+                        temp += ">";
+                    }
+                    temp += "</" + child.name + ">"
+                    sc += temp
+                }
+                sc += "";
+                sc += "\n</" + this.elements.name + ">";
+            } else {
+                sc += "</" + this.elements.name + ">";
+            }
+            this.sourceCode = sc
+            this.sourceSheet = !this.sourceSheet;
+        },
         copy() {
             navigator.clipboard.writeText(this.sourceCode);
         },
-    }
+    },
 };
 </script>
