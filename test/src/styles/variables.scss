@@ -1,5 +1,7 @@
 ///--- IMPORTS ---///
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
 
 ///--- COLORS ---///
 $neutral: (
@@ -117,123 +119,296 @@ $shades: (
 );
 
 ///--- FONT ---///
-$body-font-family: tokens.$font-family-brand;
-//todo: font sizes? See below
-/*$headings: (
-  "h1": (
-    "size": 6rem,
-    "weight": 300,
-    "line-height": 6rem,
-    "letter-spacing": -0.015625em,
-    "font-family": $heading-font-family,
-    "text-transform": false,
-  ),
-  "h2": (
-    "size": 3.75rem,
-    "weight": 300,
-    "line-height": 3.75rem,
-    "letter-spacing": -0.0083333333em,
-    "font-family": $heading-font-family,
-    "text-transform": false,
-  ),
-  "h3": (
-    "size": 3rem,
-    "weight": 400,
-    "line-height": 3.125rem,
-    "letter-spacing": normal,
-    "font-family": $heading-font-family,
-    "text-transform": false,
-  ),
-  "h4": (
-    "size": 2.125rem,
-    "weight": 400,
-    "line-height": 2.5rem,
-    "letter-spacing": 0.0073529412em,
-    "font-family": $heading-font-family,
-    "text-transform": false,
-  ),
-  "h5": (
-    "size": 1.5rem,
-    "weight": 400,
-    "line-height": 2rem,
-    "letter-spacing": normal,
-    "font-family": $heading-font-family,
-    "text-transform": false,
-  ),
-  "h6": (
-    "size": 1.25rem,
-    "weight": 500,
-    "line-height": 2rem,
-    "letter-spacing": 0.0125em,
-    "font-family": $heading-font-family,
-    "text-transform": false,
-  ),
-  "subtitle-1": (
-    "size": 1rem,
-    "weight": normal,
-    "line-height": 1.75rem,
-    "letter-spacing": 0.009375em,
-    "font-family": $body-font-family,
-    "text-transform": false,
-  ),
-  "subtitle-2": (
-    "size": 0.875rem,
-    "weight": 500,
-    "line-height": 1.375rem,
-    "letter-spacing": 0.0071428571em,
-    "font-family": $body-font-family,
-    "text-transform": false,
-  ),
-  "body-1": (
-    "size": 1rem,
-    "weight": 400,
-    "line-height": 1.5rem,
-    "letter-spacing": 0.03125em,
-    "font-family": $body-font-family,
-    "text-transform": false,
-  ),
-  "body-2": (
-    "size": 0.875rem,
-    "weight": 400,
-    "line-height": 1.25rem,
-    "letter-spacing": 0.0178571429em,
-    "font-family": $body-font-family,
-    "text-transform": false,
-  ),
-  "button": (
-    "size": 0.875rem,
-    "weight": 500,
-    "line-height": 2.25rem,
-    "letter-spacing": 0.0892857143em,
-    "font-family": $body-font-family,
-    "text-transform": uppercase,
-  ),
-  "caption": (
-    "size": 0.75rem,
-    "weight": 400,
-    "line-height": 1.25rem,
-    "letter-spacing": 0.0333333333em,
-    "font-family": $body-font-family,
-    "text-transform": false,
-  ),
-  "overline": (
-    "size": 0.75rem,
-    "weight": 500,
-    "line-height": 2rem,
-    "letter-spacing": 0.1666666667em,
-    "font-family": $body-font-family,
-    "text-transform": uppercase,
-  ),
-);*/
 
+//todo: font sizes? See below
 ///--- SIZES ---///
 /*$grid-breakpoints: (
-  "xs": tokens.$layout-application-xs-screen-min-width,
-  "sm": tokens.$layout-application-s-screen-min-width,
-  "md": tokens.$layout-application-m-screen-min-width,
-  "lg": tokens.$layout-application-l-screen-min-width - 16px,
-  "xl": tokens.$layout-application-xl-screen-min-width - 16px,
+  "xs": 0px,
+  "sm": 600px,
+  "md": 960px,
+  "lg": 1280px - 16px,
+  "xl": 1920px - 16px,
+);
+$spacer: 4px !default;
+$form-grid-gutter: $spacer * 2 !default;
+$grid-gutter: $spacer * 6 !default;
+$spacers-steps: 16 !default;*/
+$border-radius-root: 0px !default;
+/*$code-kbd-border-radius: 0px !default;
+$container-max-widths: (
+  "md": map-get($grid-breakpoints, "md") * 0.9375,
+  "lg": map-get($grid-breakpoints, "lg") * 0.9375,
+  "xl": map-get($grid-breakpoints, "xl") * 0.9375,
+);
+$container-padding-x: $grid-gutter / 2 !default;
+$grid-columns: 12 !default;
+$grid-gutters: (
+  "xs": $grid-gutter / 12,
+  "sm": $grid-gutter / 6,
+  "md": $grid-gutter / 3,
+  "lg": $grid-gutter * 2/3,
+  "xl": $grid-gutter,
 );*/
+$grid-breakpoints: (
+  'xs': 0,
+  'sm': 600px,
+  'md': 960px,
+  'lg': 1280px - 16px,
+  'xl': 1920px - 16px
+);
+$display-breakpoints: (
+  'print-only': 'only print',
+  'screen-only': 'only screen',
+  'xs-only': 'only screen and (max-width: #{map-get($grid-breakpoints, 'sm') - 0.02})',
+  'sm-only': 'only screen and (min-width: #{map-get($grid-breakpoints, 'sm')}) and (max-width: #{map-get($grid-breakpoints, 'md') - 0.02})',
+  'sm-and-down': 'only screen and (max-width: #{map-get($grid-breakpoints, 'md') - 0.02})',
+  'sm-and-up': 'only screen and (min-width: #{map-get($grid-breakpoints, 'sm')})',
+  'md-only': 'only screen and (min-width: #{map-get($grid-breakpoints, 'md')}) and (max-width: #{map-get($grid-breakpoints, 'lg') - 0.02})',
+  'md-and-down': 'only screen and (max-width: #{map-get($grid-breakpoints, 'lg') - 0.02})',
+  'md-and-up': 'only screen and (min-width: #{map-get($grid-breakpoints, 'md')})',
+  'lg-only': 'only screen and (min-width: #{map-get($grid-breakpoints, 'lg')}) and (max-width: #{map-get($grid-breakpoints, 'xl') - 0.02})',
+  'lg-and-down': 'only screen and (max-width: #{map-get($grid-breakpoints, 'xl') - 0.02})',
+  'lg-and-up': 'only screen and (min-width: #{map-get($grid-breakpoints, 'lg')})',
+  'xl-only': 'only screen and (min-width: #{map-get($grid-breakpoints, 'xl')})'
+);
+
+$body-font-family: tokens.$font-family-brand;
+$heading-font-family: $body-font-family !default;
+
+/*@media only screen and (min-width: 1000px) {
+  .text-h1 {
+    font-size: tokens.$font-application-l-headline1-font-size !important;
+    font-weight: 300;
+    line-height: tokens.$font-application-s-headline1-line-height;
+    letter-spacing: tokens.$font-application-s-headline1-letter-spacing;
+    font-family: $heading-font-family;
+    text-transform: tokens.$font-application-s-headline1-text-transform;
+  }
+  .text-h2 {
+    font-size: tokens.$font-application-s-headline2-font-size;
+    font-weight: 300;
+    line-height: tokens.$font-application-s-headline2-line-height;
+    letter-spacing: tokens.$font-application-s-headline2-letter-spacing;
+    font-family: $heading-font-family;
+    text-transform: tokens.$font-application-s-headline2-text-transform;
+  }
+  .text-h3 {
+    font-size: tokens.$font-application-s-headline3-font-size;
+    font-weight: 400;
+    line-height: tokens.$font-application-s-headline3-line-height;
+    letter-spacing: tokens.$font-application-s-headline3-letter-spacing;
+    font-family: $heading-font-family;
+    text-transform: tokens.$font-application-s-headline3-text-transform;
+  }
+  .text-h4 {
+    font-size: tokens.$font-application-s-headline4-font-size;
+    font-weight: 400;
+    line-height: tokens.$font-application-s-headline4-line-height;
+    letter-spacing: tokens.$font-application-s-headline4-letter-spacing;
+    font-family: $heading-font-family;
+    text-transform: tokens.$font-application-s-headline4-text-transform;
+  }
+  .text-h5 {
+    font-size: tokens.$font-application-s-headline5-font-size;
+    font-weight: 400;
+    line-height: tokens.$font-application-s-headline5-line-height;
+    letter-spacing: tokens.$font-application-s-headline5-letter-spacing;
+    font-family: $heading-font-family;
+    text-transform: tokens.$font-application-s-headline5-text-transform;
+  }
+  .text-h6 {
+    font-size: tokens.$font-application-s-headline6-font-size;
+    font-weight: 500;
+    line-height: tokens.$font-application-s-headline6-line-height;
+    letter-spacing: tokens.$font-application-s-headline6-letter-spacing;
+    font-family: $heading-font-family;
+    text-transform: tokens.$font-application-s-headline6-text-transform;
+  }
+  .text-subtitle-1 {
+    font-size: tokens.$font-application-s-subtitle1-font-size;
+    font-weight: normal;
+    line-height: tokens.$font-application-s-subtitle1-line-height;
+    letter-spacing: tokens.$font-application-s-subtitle1-letter-spacing;
+    font-family: $body-font-family;
+    text-transform: tokens.$font-application-s-subtitle1-text-transform;
+  }
+  .text-subtitle-2 {
+    font-size: tokens.$font-application-s-subtitle2-font-size;
+    font-weight: 500;
+    line-height: tokens.$font-application-s-subtitle2-line-height;
+    letter-spacing: tokens.$font-application-s-subtitle2-letter-spacing;
+    font-family: $body-font-family;
+    text-transform: tokens.$font-application-s-subtitle2-text-transform;
+  }
+  .text-body-1 {
+    font-size: tokens.$font-application-s-body1-font-size;
+    font-weight: 400;
+    line-height: tokens.$font-application-s-body1-line-height;
+    letter-spacing: tokens.$font-application-s-body1-letter-spacing;
+    font-family: $body-font-family;
+    text-transform: tokens.$font-application-s-body1-text-transform;
+  }
+  .text-body-2 {
+    font-size: tokens.$font-application-s-body2-font-size;
+    font-weight: 400;
+    line-height: tokens.$font-application-s-body2-line-height;
+    letter-spacing: tokens.$font-application-s-body2-letter-spacing;
+    font-family: $body-font-family;
+    text-transform: tokens.$font-application-s-body2-text-transform;
+  }
+  .text-button {
+    font-size: tokens.$font-application-s-button-font-size;
+    font-weight: 500;
+    line-height: tokens.$font-application-s-button-line-height;
+    letter-spacing: tokens.$font-application-s-button-letter-spacing;
+    font-family: $body-font-family;
+    text-transform: tokens.$font-application-s-button-text-transform;
+  }
+  .text-caption {
+    font-size: tokens.$font-application-s-caption-font-size;
+    font-weight: 400;
+    line-height: tokens.$font-application-s-caption-line-height;
+    letter-spacing: tokens.$font-application-s-caption-letter-spacing;
+    font-family: $body-font-family;
+    text-transform: tokens.$font-application-s-caption-text-transform;
+  }
+  .text-overline {
+    font-size: tokens.$font-application-s-overline-font-size;
+    font-weight: tokens.$font-application-s-overline-font-weight;
+    line-height: tokens.$font-application-s-overline-line-height;
+    letter-spacing: tokens.$font-application-s-overline-letter-spacing;
+    font-family: $body-font-family;
+    text-transform: tokens.$font-application-s-overline-text-transform;
+    color: tokens.$font-application-s-overline-color;
+  };
+};*/
+
+$headings: (
+  "h1": (
+    "size": clamp(tokens.$font-application-s-headline1-font-size, 10vw, tokens.$font-application-l-headline1-font-size),
+    "weight": 300,
+    "line-height": tokens.$font-application-s-headline1-line-height,
+    "letter-spacing": tokens.$font-application-s-headline1-letter-spacing,
+    "font-family": $heading-font-family,
+    "text-transform": tokens.$font-application-s-headline1-text-transform,
+  ),
+  "h2": (
+    "size": tokens.$font-application-s-headline2-font-size,
+    "weight": 300,
+    "line-height": tokens.$font-application-s-headline2-line-height,
+    "letter-spacing": tokens.$font-application-s-headline2-letter-spacing,
+    "font-family": $heading-font-family,
+    "text-transform": tokens.$font-application-s-headline2-text-transform,
+  ),
+  "h3": (
+    "size": tokens.$font-application-s-headline3-font-size,
+    "weight": 400,
+    "line-height": tokens.$font-application-s-headline3-line-height,
+    "letter-spacing": tokens.$font-application-s-headline3-letter-spacing,
+    "font-family": $heading-font-family,
+    "text-transform": tokens.$font-application-s-headline3-text-transform,
+  ),
+  "h4": (
+    "size": tokens.$font-application-s-headline4-font-size,
+    "weight": 400,
+    "line-height": tokens.$font-application-s-headline4-line-height,
+    "letter-spacing": tokens.$font-application-s-headline4-letter-spacing,
+    "font-family": $heading-font-family,
+    "text-transform": tokens.$font-application-s-headline4-text-transform,
+  ),
+  "h5": (
+    "size": tokens.$font-application-s-headline5-font-size,
+    "weight": 400,
+    "line-height": tokens.$font-application-s-headline5-line-height,
+    "letter-spacing": tokens.$font-application-s-headline5-letter-spacing,
+    "font-family": $heading-font-family,
+    "text-transform": tokens.$font-application-s-headline5-text-transform,
+  ),
+  "h6": (
+    "size": tokens.$font-application-s-headline6-font-size,
+    "weight": 500,
+    "line-height": tokens.$font-application-s-headline6-line-height,
+    "letter-spacing": tokens.$font-application-s-headline6-letter-spacing,
+    "font-family": $heading-font-family,
+    "text-transform": tokens.$font-application-s-headline6-text-transform,
+  ),
+  "subtitle-1": (
+    "size": tokens.$font-application-s-subtitle1-font-size,
+    "weight": normal,
+    "line-height": tokens.$font-application-s-subtitle1-line-height,
+    "letter-spacing": tokens.$font-application-s-subtitle1-letter-spacing,
+    "font-family": $body-font-family,
+    "text-transform": tokens.$font-application-s-subtitle1-text-transform,
+  ),
+  "subtitle-2": (
+    "size": tokens.$font-application-s-subtitle2-font-size,
+    "weight": 500,
+    "line-height": tokens.$font-application-s-subtitle2-line-height,
+    "letter-spacing": tokens.$font-application-s-subtitle2-letter-spacing,
+    "font-family": $body-font-family,
+    "text-transform": tokens.$font-application-s-subtitle2-text-transform,
+  ),
+  "body-1": (
+    "size": tokens.$font-application-s-body1-font-size,
+    "weight": 400,
+    "line-height": tokens.$font-application-s-body1-line-height,
+    "letter-spacing": tokens.$font-application-s-body1-letter-spacing,
+    "font-family": $body-font-family,
+    "text-transform": tokens.$font-application-s-body1-text-transform,
+  ),
+  "body-2": (
+    "size": tokens.$font-application-s-body2-font-size,
+    "weight": 400,
+    "line-height": tokens.$font-application-s-body2-line-height,
+    "letter-spacing": tokens.$font-application-s-body2-letter-spacing,
+    "font-family": $body-font-family,
+    "text-transform": tokens.$font-application-s-body2-text-transform,
+  ),
+  "button": (
+    "size": tokens.$font-application-s-button-font-size,
+    "weight": 500,
+    "line-height": tokens.$font-application-s-button-line-height,
+    "letter-spacing": tokens.$font-application-s-button-letter-spacing,
+    "font-family": $body-font-family,
+    "text-transform": tokens.$font-application-s-button-text-transform,
+  ),
+  "caption": (
+    "size": tokens.$font-application-s-caption-font-size,
+    "weight": 400,
+    "line-height": tokens.$font-application-s-caption-line-height,
+    "letter-spacing": tokens.$font-application-s-caption-letter-spacing,
+    "font-family": $body-font-family,
+    "text-transform": tokens.$font-application-s-caption-text-transform,
+  ),
+  "overline": (
+    "size": tokens.$font-application-s-overline-font-size,
+    "weight": tokens.$font-application-s-overline-font-weight,
+    "line-height": tokens.$font-application-s-overline-line-height,
+    "letter-spacing": tokens.$font-application-s-overline-letter-spacing,
+    "font-family": $body-font-family,
+    "text-transform": tokens.$font-application-s-overline-text-transform,
+    "color": tokens.$font-application-s-overline-color,
+  ),
+);
+@each $type, $values in $headings {
+  $typography: (#{$type}: map-values($values));
+};
+
+$font-weights: (
+  (
+    "thin": 100,
+    "light": tokens.$font-weight-light,
+    "regular": tokens.$font-weight-regular,
+    "medium": 500,
+    "bold": tokens.$font-weight-bold,
+    "black": tokens.$font-weight-black,
+  )
+);
+
+
+
+
+
 
 ///--- THEME SPECIFIC ---///
 $material-dark-elevation-colors: () !default;
@@ -390,7 +565,7 @@ $material-light: (
     "text-color": map-get($shades, "black"),
     "past-color": rgba(map-get($shades, "black"), 0.38),
   ),
-  "cards": map-get($shades, "white"),
+  "cards": tokens.$color-application-surface,
   "chips": #e0e0e0,
   "code": (
     "background": rgba(map-get($shades, "black"), 0.05),

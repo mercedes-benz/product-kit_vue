@@ -46,7 +46,7 @@
         <v-btn color="error">Error</v-btn>
       </div>
       <div class="my-2">
-        <v-btn color="indigo darken-3">indigo d3</v-btn>
+        <v-btn color="deepblue darken-2">deepblue d2</v-btn>
       </div>
       <div class="my-2">
         <v-btn disabled>Disabled</v-btn>
@@ -72,7 +72,7 @@
         <v-btn large color="error">Error</v-btn>
       </div>
       <div class="my-2">
-        <v-btn large color="blue-grey lighten-1">blue-grey l1</v-btn>
+        <v-btn large color="grayblue lighten-1">grayblue l1</v-btn>
       </div>
       <div class="my-2">
         <v-btn large disabled>Disabled</v-btn>

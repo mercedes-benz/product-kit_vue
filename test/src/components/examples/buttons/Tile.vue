@@ -9,7 +9,7 @@
                 @click="showSource()"
                 >Tile Button</v-btn
             >
-            <v-btn class="ma-2" tile outlined color="success">
+            <v-btn class="ma-2" tile outlined color="secondary">
                 <v-icon left>mdi-pencil</v-icon> Edit
             </v-btn>
             <v-btn class="ma-2" tile large color="teal" icon>

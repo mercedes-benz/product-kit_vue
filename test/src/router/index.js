@@ -71,6 +71,7 @@ import DataIterators from '../components/examples/DataIterators';
 import SimpleTables from '../components/examples/SimpleTables';
 import DataTables from '../components/examples/DataTables';
 import Colors from '../components/Colors.vue';
+import Font from '../components/Font.vue';
 
 
 Vue.use(VueRouter);
@@ -145,6 +146,7 @@ const routes = [
   { path: '/simple-tables', component: SimpleTables },
   { path: '/data-tables', component: DataTables },
   { path: '/colors', component: Colors },
+  { path: '/font', component: Font },
   { path: '*', component: PageNotFound }
 ];
 

@@ -1,6 +1,7 @@
 .theme--dark {
   &.primary {
     color: tokensDark.$color-application-contrast-primary !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.secondary {
     color: tokensDark.$color-application-contrast-secondary !important;
@@ -13,6 +14,78 @@
   }
   &.error {
     color: tokensDark.$color-application-contrast-error !important;
+  }s
+  &.elevation-1 {
+    background-color: rgba($color: #ffffff, $alpha: 0.05);
+  }
+  &.elevation-2 {
+    background-color: rgba($color: #ffffff, $alpha: 0.07);
+  }
+  &.elevation-3 {
+    background-color: rgba($color: #ffffff, $alpha: 0.08) !important;
+  }
+  &.elevation-4 {
+    background-color: rgba($color: #ffffff, $alpha: 0.09);
+  }
+  &.elevation-5 {
+    @extend .elevation-4
+  }
+  &.elevation-6 {
+    background-color: rgba($color: #ffffff, $alpha: 0.11);
+  }
+  &.elevation-7 {
+    @extend .elevation-6
+  }
+  &.elevation-8 {
+    background-color: rgba($color: #ffffff, $alpha: 0.12);
+  }
+  &.elevation-9 {
+    @extend .elevation-8
+  }
+  &.elevation-10 {
+    @extend .elevation-8
+  }
+  &.elevation-11 {
+    @extend .elevation-8
+  }
+  &.elevation-12 {
+    background-color: rgba($color: #ffffff, $alpha: 0.14);
+  }
+  &.elevation-13 {
+    @extend .elevation-12
+  }
+  &.elevation-14 {
+    @extend .elevation-12
+  }
+  &.elevation-15 {
+    @extend .elevation-12
+  }
+  &.elevation-16 {
+    background-color: rgba($color: #ffffff, $alpha: 0.15);
+  }
+  &.elevation-17 {
+    @extend .elevation-16
+  }
+  &.elevation-18 {
+    @extend .elevation-16
+  }
+  &.elevation-19 {
+    @extend .elevation-16
+  }
+  &.elevation-20 {
+    @extend .elevation-16
+  }
+  &.elevation-21 {
+    @extend .elevation-16
+  }
+  &.elevation-22 {
+    @extend .elevation-16
+  }
+  &.elevation-23 {
+    @extend .elevation-16
+  }
+  &.elevation-24 {
+    background-color: rgba($color: #ffffff, $alpha: 0.16);
   }
 }
 
@@ -62,33 +135,43 @@
   }
 }
 .neutral {
-  color: tokens.$color-brand-neutral-contrast-500;
+  color: tokens.$color-brand-neutral-contrast-500 !important;
+  opacity: tokens.$opacity-application-text-high !important;
   &.lighten-1 {
-    color: tokens.$color-brand-neutral-contrast-400;
+    color: tokens.$color-brand-neutral-contrast-400 !important;
+    opacity: tokens.$opacity-application-text-high !important;
   }
   &.lighten-2 {
-    color: tokens.$color-brand-neutral-contrast-300;
+    color: tokens.$color-brand-neutral-contrast-300 !important;
+    opacity: tokens.$opacity-application-text-high !important;
   }
   &.lighten-3 {
-    color: tokens.$color-brand-neutral-contrast-200;
+    color: tokens.$color-brand-neutral-contrast-200 !important;
+    opacity: tokens.$opacity-application-text-high !important;
   }
   &.lighten-4 {
-    color: tokens.$color-brand-neutral-contrast-100;
+    color: tokens.$color-brand-neutral-contrast-100 !important;
+    opacity: tokens.$opacity-application-text-high !important;
   }
   &.lighten-5 {
-    color: tokens.$color-brand-neutral-contrast-50;
+    color: tokens.$color-brand-neutral-contrast-50 !important;
+    opacity: tokens.$opacity-application-text-high !important;
   }
   &.darken-1 {
-    color: tokens.$color-brand-neutral-contrast-600;
+    color: tokens.$color-brand-neutral-contrast-600 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.darken-2 {
-    color: tokens.$color-brand-neutral-contrast-700;
+    color: tokens.$color-brand-neutral-contrast-700 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.darken-3 {
-    color: tokens.$color-brand-neutral-contrast-800;
+    color: tokens.$color-brand-neutral-contrast-800 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.darken-4 {
-    color: tokens.$color-brand-neutral-contrast-900;
+    color: tokens.$color-brand-neutral-contrast-900 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
 }
 .deepblue {
@@ -122,33 +205,33 @@
   }
 }
 .grayblue {
-  color: tokens.$color-brand-grayblue-contrast-500;
+  color: tokens.$color-brand-grayblue-contrast-500 !important;
   &.lighten-1 {
-    color: tokens.$color-brand-grayblue-contrast-400;
+    color: tokens.$color-brand-grayblue-contrast-400 !important;
   }
   &.lighten-2 {
-    color: tokens.$color-brand-grayblue-contrast-300;
+    color: tokens.$color-brand-grayblue-contrast-300 !important;
   }
   &.lighten-3 {
-    color: tokens.$color-brand-grayblue-contrast-200;
+    color: tokens.$color-brand-grayblue-contrast-200 !important;
   }
   &.lighten-4 {
-    color: tokens.$color-brand-grayblue-contrast-100;
+    color: tokens.$color-brand-grayblue-contrast-100 !important;
   }
   &.lighten-5 {
-    color: tokens.$color-brand-grayblue-contrast-50;
+    color: tokens.$color-brand-grayblue-contrast-50 !important;
   }
   &.darken-1 {
-    color: tokens.$color-brand-grayblue-contrast-600;
+    color: tokens.$color-brand-grayblue-contrast-600 !important;
   }
   &.darken-2 {
-    color: tokens.$color-brand-grayblue-contrast-700;
+    color: tokens.$color-brand-grayblue-contrast-700 !important;
   }
   &.darken-3 {
-    color: tokens.$color-brand-grayblue-contrast-800;
+    color: tokens.$color-brand-grayblue-contrast-800 !important;
   }
   &.darken-4 {
-    color: tokens.$color-brand-grayblue-contrast-900;
+    color: tokens.$color-brand-grayblue-contrast-900 !important;
   }
 }
 .pink {
@@ -272,9 +355,486 @@
   }
 }
 
-/*.blue.lighten-1 {
-  color: tokens.$color-brand-pink-contrast-900 !important;
+code, kbd, pre, samp {
+  font-family: tokens.$font-family-monospace, monospace;
+}
+
+/*@media only screen and (max-width: 999px) {
+  .text-h1 {
+    font-size: tokens.$font-application-s-headline1-font-size !important;
+    font-weight: 300;
+    line-height: tokens.$font-application-s-headline1-line-height;
+    letter-spacing: tokens.$font-application-s-headline1-letter-spacing;
+    font-family: $heading-font-family;
+    text-transform: tokens.$font-application-s-headline1-text-transform;
+  }
+  .text-h2 {
+    font-size: tokens.$font-application-s-headline2-font-size;
+    font-weight: 300;
+    line-height: tokens.$font-application-s-headline2-line-height;
+    letter-spacing: tokens.$font-application-s-headline2-letter-spacing;
+    font-family: $heading-font-family;
+    text-transform: tokens.$font-application-s-headline2-text-transform;
+  }
+  .text-h3 {
+    font-size: tokens.$font-application-s-headline3-font-size;
+    font-weight: 400;
+    line-height: tokens.$font-application-s-headline3-line-height;
+    letter-spacing: tokens.$font-application-s-headline3-letter-spacing;
+    font-family: $heading-font-family;
+    text-transform: tokens.$font-application-s-headline3-text-transform;
+  }
+  .text-h4 {
+    font-size: tokens.$font-application-s-headline4-font-size;
+    font-weight: 400;
+    line-height: tokens.$font-application-s-headline4-line-height;
+    letter-spacing: tokens.$font-application-s-headline4-letter-spacing;
+    font-family: $heading-font-family;
+    text-transform: tokens.$font-application-s-headline4-text-transform;
+  }
+  .text-h5 {
+    font-size: tokens.$font-application-s-headline5-font-size;
+    font-weight: 400;
+    line-height: tokens.$font-application-s-headline5-line-height;
+    letter-spacing: tokens.$font-application-s-headline5-letter-spacing;
+    font-family: $heading-font-family;
+    text-transform: tokens.$font-application-s-headline5-text-transform;
+  }
+  .text-h6 {
+    font-size: tokens.$font-application-s-headline6-font-size;
+    font-weight: 500;
+    line-height: tokens.$font-application-s-headline6-line-height;
+    letter-spacing: tokens.$font-application-s-headline6-letter-spacing;
+    font-family: $heading-font-family;
+    text-transform: tokens.$font-application-s-headline6-text-transform;
+  }
+  .text-subtitle-1 {
+    font-size: tokens.$font-application-s-subtitle1-font-size;
+    font-weight: normal;
+    line-height: tokens.$font-application-s-subtitle1-line-height;
+    letter-spacing: tokens.$font-application-s-subtitle1-letter-spacing;
+    font-family: $body-font-family;
+    text-transform: tokens.$font-application-s-subtitle1-text-transform;
+  }
+  .text-subtitle-2 {
+    font-size: tokens.$font-application-s-subtitle2-font-size;
+    font-weight: 500;
+    line-height: tokens.$font-application-s-subtitle2-line-height;
+    letter-spacing: tokens.$font-application-s-subtitle2-letter-spacing;
+    font-family: $body-font-family;
+    text-transform: tokens.$font-application-s-subtitle2-text-transform;
+  }
+  .text-body-1 {
+    font-size: tokens.$font-application-s-body1-font-size;
+    font-weight: 400;
+    line-height: tokens.$font-application-s-body1-line-height;
+    letter-spacing: tokens.$font-application-s-body1-letter-spacing;
+    font-family: $body-font-family;
+    text-transform: tokens.$font-application-s-body1-text-transform;
+  }
+  .text-body-2 {
+    font-size: tokens.$font-application-s-body2-font-size;
+    font-weight: 400;
+    line-height: tokens.$font-application-s-body2-line-height;
+    letter-spacing: tokens.$font-application-s-body2-letter-spacing;
+    font-family: $body-font-family;
+    text-transform: tokens.$font-application-s-body2-text-transform;
+  }
+  .text-button {
+    font-size: tokens.$font-application-s-button-font-size;
+    font-weight: 500;
+    line-height: tokens.$font-application-s-button-line-height;
+    letter-spacing: tokens.$font-application-s-button-letter-spacing;
+    font-family: $body-font-family;
+    text-transform: tokens.$font-application-s-button-text-transform;
+  }
+  .text-caption {
+    font-size: tokens.$font-application-s-caption-font-size;
+    font-weight: 400;
+    line-height: tokens.$font-application-s-caption-line-height;
+    letter-spacing: tokens.$font-application-s-caption-letter-spacing;
+    font-family: $body-font-family;
+    text-transform: tokens.$font-application-s-caption-text-transform;
+  }
+  .text-overline {
+    font-size: tokens.$font-application-s-overline-font-size;
+    font-weight: tokens.$font-application-s-overline-font-weight;
+    line-height: tokens.$font-application-s-overline-line-height;
+    letter-spacing: tokens.$font-application-s-overline-letter-spacing;
+    font-family: $body-font-family;
+    text-transform: tokens.$font-application-s-overline-text-transform;
+    color: tokens.$font-application-s-overline-color;
+  };
+};
+
+@media only screen and (min-width: 1000px) {
+  .text-h1 {
+    font-size: tokens.$font-application-l-headline1-font-size !important;
+    font-weight: 300;
+    line-height: tokens.$font-application-s-headline1-line-height;
+    letter-spacing: tokens.$font-application-s-headline1-letter-spacing;
+    font-family: $heading-font-family;
+    text-transform: tokens.$font-application-s-headline1-text-transform;
+  }
+  .text-h2 {
+    font-size: tokens.$font-application-s-headline2-font-size;
+    font-weight: 300;
+    line-height: tokens.$font-application-s-headline2-line-height;
+    letter-spacing: tokens.$font-application-s-headline2-letter-spacing;
+    font-family: $heading-font-family;
+    text-transform: tokens.$font-application-s-headline2-text-transform;
+  }
+  .text-h3 {
+    font-size: tokens.$font-application-s-headline3-font-size;
+    font-weight: 400;
+    line-height: tokens.$font-application-s-headline3-line-height;
+    letter-spacing: tokens.$font-application-s-headline3-letter-spacing;
+    font-family: $heading-font-family;
+    text-transform: tokens.$font-application-s-headline3-text-transform;
+  }
+  .text-h4 {
+    font-size: tokens.$font-application-s-headline4-font-size;
+    font-weight: 400;
+    line-height: tokens.$font-application-s-headline4-line-height;
+    letter-spacing: tokens.$font-application-s-headline4-letter-spacing;
+    font-family: $heading-font-family;
+    text-transform: tokens.$font-application-s-headline4-text-transform;
+  }
+  .text-h5 {
+    font-size: tokens.$font-application-s-headline5-font-size;
+    font-weight: 400;
+    line-height: tokens.$font-application-s-headline5-line-height;
+    letter-spacing: tokens.$font-application-s-headline5-letter-spacing;
+    font-family: $heading-font-family;
+    text-transform: tokens.$font-application-s-headline5-text-transform;
+  }
+  .text-h6 {
+    font-size: tokens.$font-application-s-headline6-font-size;
+    font-weight: 500;
+    line-height: tokens.$font-application-s-headline6-line-height;
+    letter-spacing: tokens.$font-application-s-headline6-letter-spacing;
+    font-family: $heading-font-family;
+    text-transform: tokens.$font-application-s-headline6-text-transform;
+  }
+  .text-subtitle-1 {
+    font-size: tokens.$font-application-s-subtitle1-font-size;
+    font-weight: normal;
+    line-height: tokens.$font-application-s-subtitle1-line-height;
+    letter-spacing: tokens.$font-application-s-subtitle1-letter-spacing;
+    font-family: $body-font-family;
+    text-transform: tokens.$font-application-s-subtitle1-text-transform;
+  }
+  .text-subtitle-2 {
+    font-size: tokens.$font-application-s-subtitle2-font-size;
+    font-weight: 500;
+    line-height: tokens.$font-application-s-subtitle2-line-height;
+    letter-spacing: tokens.$font-application-s-subtitle2-letter-spacing;
+    font-family: $body-font-family;
+    text-transform: tokens.$font-application-s-subtitle2-text-transform;
+  }
+  .text-body-1 {
+    font-size: tokens.$font-application-s-body1-font-size;
+    font-weight: 400;
+    line-height: tokens.$font-application-s-body1-line-height;
+    letter-spacing: tokens.$font-application-s-body1-letter-spacing;
+    font-family: $body-font-family;
+    text-transform: tokens.$font-application-s-body1-text-transform;
+  }
+  .text-body-2 {
+    font-size: tokens.$font-application-s-body2-font-size;
+    font-weight: 400;
+    line-height: tokens.$font-application-s-body2-line-height;
+    letter-spacing: tokens.$font-application-s-body2-letter-spacing;
+    font-family: $body-font-family;
+    text-transform: tokens.$font-application-s-body2-text-transform;
+  }
+  .text-button {
+    font-size: tokens.$font-application-s-button-font-size;
+    font-weight: 500;
+    line-height: tokens.$font-application-s-button-line-height;
+    letter-spacing: tokens.$font-application-s-button-letter-spacing;
+    font-family: $body-font-family;
+    text-transform: tokens.$font-application-s-button-text-transform;
+  }
+  .text-caption {
+    font-size: tokens.$font-application-s-caption-font-size;
+    font-weight: 400;
+    line-height: tokens.$font-application-s-caption-line-height;
+    letter-spacing: tokens.$font-application-s-caption-letter-spacing;
+    font-family: $body-font-family;
+    text-transform: tokens.$font-application-s-caption-text-transform;
+  }
+  .text-overline {
+    font-size: tokens.$font-application-s-overline-font-size;
+    font-weight: tokens.$font-application-s-overline-font-weight;
+    line-height: tokens.$font-application-s-overline-line-height;
+    letter-spacing: tokens.$font-application-s-overline-letter-spacing;
+    font-family: $body-font-family;
+    text-transform: tokens.$font-application-s-overline-text-transform;
+    color: tokens.$font-application-s-overline-color;
+  };
+};*/
+@media (min-width: 1264px) {
+  .text-h1 {
+    font-size: tokens.$font-application-l-headline1-font-size !important;
+    font-weight: 300;
+    line-height: tokens.$font-application-l-headline1-line-height;
+    letter-spacing: tokens.$font-application-l-headline1-letter-spacing !important;
+    font-family: $heading-font-family !important;
+    text-transform: tokens.$font-application-l-headline1-text-transform !important;
+  }
+}
+@media (min-width: 1264px) {
+  .text-r-h1 {
+    font-size: tokens.$font-application-l-headline1-font-size !important;
+    font-weight: 300;
+    line-height: tokens.$font-application-l-headline1-line-height;
+    letter-spacing: tokens.$font-application-l-headline1-letter-spacing !important;
+    font-family: $heading-font-family !important;
+    text-transform: tokens.$font-application-l-headline1-text-transform !important;
+  }
+  .v-application {
+    &.text-r-h1 {
+      font-size: tokens.$font-application-l-headline1-font-size !important;
+      font-weight: 300;
+      line-height: tokens.$font-application-l-headline1-line-height;
+      letter-spacing: tokens.$font-application-l-headline1-letter-spacing !important;
+      font-family: $heading-font-family !important;
+      text-transform: tokens.$font-application-l-headline1-text-transform !important;
+    }
+    &.text-h2 {
+      font-size: tokens.$font-application-l-headline1-font-size !important;
+      font-weight: 300;
+      line-height: tokens.$font-application-l-headline1-line-height;
+      letter-spacing: tokens.$font-application-l-headline1-letter-spacing !important;
+      font-family: $heading-font-family !important;
+      text-transform: tokens.$font-application-l-headline1-text-transform !important;
+    }
+    &.text-h3 {
+      font-size: tokens.$font-application-l-headline3-font-size;
+      font-weight: 400;
+      line-height: tokens.$font-application-l-headline3-line-height;
+      letter-spacing: tokens.$font-application-l-headline3-letter-spacing;
+      font-family: $heading-font-family;
+      text-transform: tokens.$font-application-l-headline3-text-transform;
+    }
+    &.text-h4 {
+      font-size: tokens.$font-application-l-headline4-font-size;
+      font-weight: 400;
+      line-height: tokens.$font-application-l-headline4-line-height;
+      letter-spacing: tokens.$font-application-l-headline4-letter-spacing;
+      font-family: $heading-font-family;
+      text-transform: tokens.$font-application-l-headline4-text-transform;
+    }
+    &.text-h5 {
+      font-size: tokens.$font-application-l-headline5-font-size;
+      font-weight: 400;
+      line-height: tokens.$font-application-l-headline5-line-height;
+      letter-spacing: tokens.$font-application-l-headline5-letter-spacing;
+      font-family: $heading-font-family;
+      text-transform: tokens.$font-application-l-headline5-text-transform;
+    }
+    &.text-h6 {
+      font-size: tokens.$font-application-l-headline6-font-size;
+      font-weight: 500;
+      line-height: tokens.$font-application-l-headline6-line-height;
+      letter-spacing: tokens.$font-application-l-headline6-letter-spacing;
+      font-family: $heading-font-family;
+      text-transform: tokens.$font-application-l-headline6-text-transform;
+    }
+    &.text-subtitle-1 {
+      font-size: tokens.$font-application-l-subtitle1-font-size;
+      font-weight: normal;
+      line-height: tokens.$font-application-l-subtitle1-line-height;
+      letter-spacing: tokens.$font-application-l-subtitle1-letter-spacing;
+      font-family: $body-font-family;
+      text-transform: tokens.$font-application-l-subtitle1-text-transform;
+    }
+    &.text-subtitle-2 {
+      font-size: tokens.$font-application-l-subtitle2-font-size;
+      font-weight: 500;
+      line-height: tokens.$font-application-l-subtitle2-line-height;
+      letter-spacing: tokens.$font-application-l-subtitle2-letter-spacing;
+      font-family: $body-font-family;
+      text-transform: tokens.$font-application-l-subtitle2-text-transform;
+    }
+    &.text-body-1 {
+      font-size: tokens.$font-application-l-body1-font-size;
+      font-weight: 400;
+      line-height: tokens.$font-application-l-body1-line-height;
+      letter-spacing: tokens.$font-application-l-body1-letter-spacing;
+      font-family: $body-font-family;
+      text-transform: tokens.$font-application-l-body1-text-transform;
+    }
+    &.text-body-2 {
+      font-size: tokens.$font-application-l-body2-font-size;
+      font-weight: 400;
+      line-height: tokens.$font-application-l-body2-line-height;
+      letter-spacing: tokens.$font-application-l-body2-letter-spacing;
+      font-family: $body-font-family;
+      text-transform: tokens.$font-application-l-body2-text-transform;
+    }
+    &.text-button {
+      font-size: tokens.$font-application-l-button-font-size;
+      font-weight: 500;
+      line-height: tokens.$font-application-l-button-line-height;
+      letter-spacing: tokens.$font-application-l-button-letter-spacing;
+      font-family: $body-font-family;
+      text-transform: tokens.$font-application-l-button-text-transform;
+    }
+    &.text-caption {
+      font-size: tokens.$font-application-l-caption-font-size;
+      font-weight: 400;
+      line-height: tokens.$font-application-l-caption-line-height;
+      letter-spacing: tokens.$font-application-l-caption-letter-spacing;
+      font-family: $body-font-family;
+      text-transform: tokens.$font-application-l-caption-text-transform;
+    }
+    &.text-overline {
+      font-size: tokens.$font-application-l-overline-font-size;
+      font-weight: tokens.$font-application-l-overline-font-weight;
+      line-height: tokens.$font-application-l-overline-line-height;
+      letter-spacing: tokens.$font-application-l-overline-letter-spacing;
+      font-family: $body-font-family;
+      text-transform: tokens.$font-application-l-overline-text-transform;
+      color: tokens.$font-application-l-overline-color;
+    };
+  }
+};
+
+/*.text-sm-h1 {
+  font-size: tokens.$font-application-s-headline1-font-size;
+  font-weight: 300;
+  line-height: tokens.$font-application-s-headline1-line-height;
+  letter-spacing: tokens.$font-application-s-headline1-letter-spacing;
+  font-family: $heading-font-family;
+  text-transform: tokens.$font-application-s-headline1-text-transform;
+}
+.text-md-h1 {
+  @extend .text-sm-h1;
+}
+.text-lg-h1 {
+  font-size: tokens.$font-application-l-headline1-font-size !important;
+  font-weight: 300;
+  line-height: tokens.$font-application-l-headline1-line-height;
+  letter-spacing: tokens.$font-application-l-headline1-letter-spacing;
+  font-family: $heading-font-family;
+  text-transform: tokens.$font-application-l-headline1-text-transform;
+}
+.text-xl-h1 {
+  @extend .text-lg-h1;
+}
+.text-sm-h2 {
+  font-size: tokens.$font-application-s-headline2-font-size;
+  font-weight: 300;
+  line-height: tokens.$font-application-s-headline2-line-height;
+  letter-spacing: tokens.$font-application-s-headline2-letter-spacing;
+  font-family: $heading-font-family;
+  text-transform: tokens.$font-application-s-headline2-text-transform;
+}
+.text-md-h2 {
+  @extend .text-sm-h2;
+}
+.text-lg-h2 {
+  font-size: tokens.$font-application-l-headline2-font-size;
+  font-weight: 300;
+  line-height: tokens.$font-application-l-headline2-line-height;
+  letter-spacing: tokens.$font-application-l-headline2-letter-spacing;
+  font-family: $heading-font-family;
+  text-transform: tokens.$font-application-l-headline2-text-transform;
+}
+.text-xl-h2 {
+  @extend .text-lg-h2;
 }*/
+.text-h3 {
+  font-size: tokens.$font-application-s-headline3-font-size;
+  font-weight: 400;
+  line-height: tokens.$font-application-s-headline3-line-height;
+  letter-spacing: tokens.$font-application-s-headline3-letter-spacing;
+  font-family: $heading-font-family;
+  text-transform: tokens.$font-application-s-headline3-text-transform;
+}
+.text-h4 {
+  font-size: tokens.$font-application-s-headline4-font-size;
+  font-weight: 400;
+  line-height: tokens.$font-application-s-headline4-line-height;
+  letter-spacing: tokens.$font-application-s-headline4-letter-spacing;
+  font-family: $heading-font-family;
+  text-transform: tokens.$font-application-s-headline4-text-transform;
+}
+.text-h5 {
+  font-size: tokens.$font-application-s-headline5-font-size;
+  font-weight: 400;
+  line-height: tokens.$font-application-s-headline5-line-height;
+  letter-spacing: tokens.$font-application-s-headline5-letter-spacing;
+  font-family: $heading-font-family;
+  text-transform: tokens.$font-application-s-headline5-text-transform;
+}
+.text-h6 {
+  font-size: tokens.$font-application-s-headline6-font-size;
+  font-weight: 500;
+  line-height: tokens.$font-application-s-headline6-line-height;
+  letter-spacing: tokens.$font-application-s-headline6-letter-spacing;
+  font-family: $heading-font-family;
+  text-transform: tokens.$font-application-s-headline6-text-transform;
+}
+.text-subtitle-1 {
+  font-size: tokens.$font-application-s-subtitle1-font-size;
+  font-weight: normal;
+  line-height: tokens.$font-application-s-subtitle1-line-height;
+  letter-spacing: tokens.$font-application-s-subtitle1-letter-spacing;
+  font-family: $body-font-family;
+  text-transform: tokens.$font-application-s-subtitle1-text-transform;
+}
+.text-subtitle-2 {
+  font-size: tokens.$font-application-s-subtitle2-font-size;
+  font-weight: 500;
+  line-height: tokens.$font-application-s-subtitle2-line-height;
+  letter-spacing: tokens.$font-application-s-subtitle2-letter-spacing;
+  font-family: $body-font-family;
+  text-transform: tokens.$font-application-s-subtitle2-text-transform;
+}
+.text-body-1 {
+  font-size: tokens.$font-application-s-body1-font-size;
+  font-weight: 400;
+  line-height: tokens.$font-application-s-body1-line-height;
+  letter-spacing: tokens.$font-application-s-body1-letter-spacing;
+  font-family: $body-font-family;
+  text-transform: tokens.$font-application-s-body1-text-transform;
+}
+.text-body-2 {
+  font-size: tokens.$font-application-s-body2-font-size;
+  font-weight: 400;
+  line-height: tokens.$font-application-s-body2-line-height;
+  letter-spacing: tokens.$font-application-s-body2-letter-spacing;
+  font-family: $body-font-family;
+  text-transform: tokens.$font-application-s-body2-text-transform;
+}
+.text-button {
+  font-size: tokens.$font-application-s-button-font-size;
+  font-weight: 500;
+  line-height: tokens.$font-application-s-button-line-height;
+  letter-spacing: tokens.$font-application-s-button-letter-spacing;
+  font-family: $body-font-family;
+  text-transform: tokens.$font-application-s-button-text-transform;
+}
+.text-caption {
+  font-size: tokens.$font-application-s-caption-font-size;
+  font-weight: 400;
+  line-height: tokens.$font-application-s-caption-line-height;
+  letter-spacing: tokens.$font-application-s-caption-letter-spacing;
+  font-family: $body-font-family;
+  text-transform: tokens.$font-application-s-caption-text-transform;
+}
+.text-overline {
+  font-size: tokens.$font-application-s-overline-font-size;
+  font-weight: tokens.$font-application-s-overline-font-weight;
+  line-height: tokens.$font-application-s-overline-line-height;
+  letter-spacing: tokens.$font-application-s-overline-letter-spacing;
+  font-family: $body-font-family;
+  text-transform: tokens.$font-application-s-overline-text-transform;
+  color: tokens.$font-application-s-overline-color;
+};
 
 :export {
   primaryL: tokens.$color-application-primary;
@@ -317,7 +877,7 @@
   gbD3: tokens.$color-brand-grayblue-800;
   gbD4: tokens.$color-brand-grayblue-900;
 
-  //tokens: map-get($map: tokens.$tokens, $key: "color");
+  //tokens: map-get($map: tokens.$tokens; $key: color);
 
   neutral-50: tokens.$color-brand-neutral-50;
   neutral-100: tokens.$color-brand-neutral-100;
