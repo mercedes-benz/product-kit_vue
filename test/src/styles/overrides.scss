@@ -5,16 +5,20 @@
   }
   &.secondary {
     color: tokensDark.$color-application-contrast-secondary !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.tertiary {
     color: tokensDark.$color-application-contrast-tertiary !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.quaternary {
     color: tokensDark.$color-application-contrast-quaternary !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.error {
     color: tokensDark.$color-application-contrast-error !important;
-  }s
+    opacity: tokens.$opacity-application-text-contrast-high !important;
+  }
   &.elevation-1 {
     background-color: rgba($color: #ffffff, $alpha: 0.05);
   }
@@ -91,47 +95,62 @@
 
 .primary {
   color: tokens.$color-application-contrast-primary !important;
+  opacity: tokens.$opacity-application-text-contrast-high !important;
 }
 .secondary {
   color: tokens.$color-application-contrast-secondary !important;
+  opacity: tokens.$opacity-application-text-contrast-high !important;
 }
 .tertiary {
   color: tokens.$color-application-contrast-tertiary !important;
+  opacity: tokens.$opacity-application-text-contrast-high !important;
 }
 .quaternary {
   color: tokens.$color-application-contrast-quaternary !important;
+  opacity: tokens.$opacity-application-text-contrast-high !important;
 }
 .error {
   color: tokens.$color-application-contrast-error !important;
+  opacity: tokens.$opacity-application-text-contrast-high !important;
 }
 .blue {
   color: tokens.$color-brand-blue-contrast-500 !important;
+  opacity: tokens.$opacity-application-text-contrast-high !important;
   &.lighten-1 {
     color: tokens.$color-brand-blue-contrast-400 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.lighten-2 {
     color: tokens.$color-brand-blue-contrast-300 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.lighten-3 {
     color: tokens.$color-brand-blue-contrast-200 !important;
+    opacity: tokens.$opacity-application-text-high !important;
   }
   &.lighten-4 {
     color: tokens.$color-brand-blue-contrast-100 !important;
+    opacity: tokens.$opacity-application-text-high !important;
   }
   &.lighten-5 {
     color: tokens.$color-brand-blue-contrast-50 !important;
+    opacity: tokens.$opacity-application-text-high !important;
   }
   &.darken-1 {
     color: tokens.$color-brand-blue-contrast-600 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.darken-2 {
     color: tokens.$color-brand-blue-contrast-700 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.darken-3 {
     color: tokens.$color-brand-blue-contrast-800 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.darken-4 {
     color: tokens.$color-brand-blue-contrast-900 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
 }
 .neutral {
@@ -176,182 +195,242 @@
 }
 .deepblue {
   color: tokens.$color-brand-deepblue-contrast-500 !important;
+  opacity: tokens.$opacity-application-text-contrast-high !important;
   &.lighten-1 {
     color: tokens.$color-brand-deepblue-contrast-400 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.lighten-2 {
     color: tokens.$color-brand-deepblue-contrast-300 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.lighten-3 {
     color: tokens.$color-brand-deepblue-contrast-200 !important;
+    opacity: tokens.$opacity-application-text-high !important;
   }
   &.lighten-4 {
     color: tokens.$color-brand-deepblue-contrast-100 !important;
+    opacity: tokens.$opacity-application-text-high !important;
   }
   &.lighten-5 {
     color: tokens.$color-brand-deepblue-contrast-50 !important;
+    opacity: tokens.$opacity-application-text-high !important;
   }
   &.darken-1 {
     color: tokens.$color-brand-deepblue-contrast-600 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.darken-2 {
     color: tokens.$color-brand-deepblue-contrast-700 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.darken-3 {
     color: tokens.$color-brand-deepblue-contrast-800 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.darken-4 {
     color: tokens.$color-brand-deepblue-contrast-900 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
 }
 .grayblue {
   color: tokens.$color-brand-grayblue-contrast-500 !important;
+  opacity: tokens.$opacity-application-text-contrast-high !important;
   &.lighten-1 {
     color: tokens.$color-brand-grayblue-contrast-400 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.lighten-2 {
     color: tokens.$color-brand-grayblue-contrast-300 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.lighten-3 {
     color: tokens.$color-brand-grayblue-contrast-200 !important;
+    opacity: tokens.$opacity-application-text-high !important;
   }
   &.lighten-4 {
     color: tokens.$color-brand-grayblue-contrast-100 !important;
+    opacity: tokens.$opacity-application-text-high !important;
   }
   &.lighten-5 {
     color: tokens.$color-brand-grayblue-contrast-50 !important;
+    opacity: tokens.$opacity-application-text-high !important;
   }
   &.darken-1 {
     color: tokens.$color-brand-grayblue-contrast-600 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.darken-2 {
     color: tokens.$color-brand-grayblue-contrast-700 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.darken-3 {
     color: tokens.$color-brand-grayblue-contrast-800 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.darken-4 {
     color: tokens.$color-brand-grayblue-contrast-900 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
 }
 .pink {
   color: tokens.$color-brand-pink-contrast-500 !important;
+  opacity: tokens.$opacity-application-text-contrast-high !important;
   &.lighten-1 {
     color: tokens.$color-brand-pink-contrast-400 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.lighten-2 {
     color: tokens.$color-brand-pink-contrast-300 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.lighten-3 {
     color: tokens.$color-brand-pink-contrast-200 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.lighten-4 {
     color: tokens.$color-brand-pink-contrast-100 !important;
+    opacity: tokens.$opacity-application-text-high !important;
   }
   &.lighten-5 {
     color: tokens.$color-brand-pink-contrast-50 !important;
+    opacity: tokens.$opacity-application-text-high !important;
   }
   &.darken-1 {
     color: tokens.$color-brand-pink-contrast-600 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.darken-2 {
     color: tokens.$color-brand-pink-contrast-700 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.darken-3 {
     color: tokens.$color-brand-pink-contrast-800 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.darken-4 {
     color: tokens.$color-brand-pink-contrast-900 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
 }
 .purple {
   color: tokens.$color-brand-purple-contrast-500 !important;
+  opacity: tokens.$opacity-application-text-contrast-high !important;
   &.lighten-1 {
     color: tokens.$color-brand-purple-contrast-400 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.lighten-2 {
     color: tokens.$color-brand-purple-contrast-300 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.lighten-3 {
     color: tokens.$color-brand-purple-contrast-200 !important;
+    opacity: tokens.$opacity-application-text-high !important;
   }
   &.lighten-4 {
     color: tokens.$color-brand-purple-contrast-100 !important;
+    opacity: tokens.$opacity-application-text-high !important;
   }
   &.lighten-5 {
     color: tokens.$color-brand-purple-contrast-50 !important;
+    opacity: tokens.$opacity-application-text-high !important;
   }
   &.darken-1 {
     color: tokens.$color-brand-purple-contrast-600 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.darken-2 {
     color: tokens.$color-brand-purple-contrast-700 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.darken-3 {
     color: tokens.$color-brand-purple-contrast-800 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.darken-4 {
     color: tokens.$color-brand-purple-contrast-900 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
 }
 .red {
   color: tokens.$color-brand-red-contrast-500 !important;
+  opacity: tokens.$opacity-application-text-contrast-high !important;
   &.lighten-1 {
     color: tokens.$color-brand-red-contrast-400 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.lighten-2 {
     color: tokens.$color-brand-red-contrast-300 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.lighten-3 {
     color: tokens.$color-brand-red-contrast-200 !important;
+    opacity: tokens.$opacity-application-text-high !important;
   }
   &.lighten-4 {
     color: tokens.$color-brand-red-contrast-100 !important;
+    opacity: tokens.$opacity-application-text-high !important;
   }
   &.lighten-5 {
     color: tokens.$color-brand-red-contrast-50 !important;
+    opacity: tokens.$opacity-application-text-high !important;
   }
   &.darken-1 {
     color: tokens.$color-brand-red-contrast-600 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.darken-2 {
     color: tokens.$color-brand-red-contrast-700 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.darken-3 {
     color: tokens.$color-brand-red-contrast-800 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.darken-4 {
     color: tokens.$color-brand-red-contrast-900 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
 }
 .green {
   color: tokens.$color-brand-green-contrast-500 !important;
+  opacity: tokens.$opacity-application-text-contrast-high !important;
   &.lighten-1 {
     color: tokens.$color-brand-green-contrast-400 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.lighten-2 {
     color: tokens.$color-brand-green-contrast-300 !important;
+    opacity: tokens.$opacity-application-text-high !important;
   }
   &.lighten-3 {
     color: tokens.$color-brand-green-contrast-200 !important;
+    opacity: tokens.$opacity-application-text-high !important;
   }
   &.lighten-4 {
     color: tokens.$color-brand-green-contrast-100 !important;
+    opacity: tokens.$opacity-application-text-high !important;
   }
   &.lighten-5 {
     color: tokens.$color-brand-green-contrast-50 !important;
+    opacity: tokens.$opacity-application-text-high !important;
   }
   &.darken-1 {
     color: tokens.$color-brand-green-contrast-600 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.darken-2 {
     color: tokens.$color-brand-green-contrast-700 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.darken-3 {
     color: tokens.$color-brand-green-contrast-800 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
   &.darken-4 {
     color: tokens.$color-brand-green-contrast-900 !important;
+    opacity: tokens.$opacity-application-text-contrast-high !important;
   }
 }
 
