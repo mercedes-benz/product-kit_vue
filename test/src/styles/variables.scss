@@ -272,20 +272,19 @@ $heading-font-family: $body-font-family !default;
     font-family: $body-font-family;
     text-transform: tokens.$font-application-s-caption-text-transform;
   }
-  .text-overline {
-    font-size: tokens.$font-application-s-overline-font-size;
-    font-weight: tokens.$font-application-s-overline-font-weight;
-    line-height: tokens.$font-application-s-overline-line-height;
-    letter-spacing: tokens.$font-application-s-overline-letter-spacing;
-    font-family: $body-font-family;
-    text-transform: tokens.$font-application-s-overline-text-transform;
-    color: tokens.$font-application-s-overline-color;
-  };
 };*/
+
+@function clampMe($minFont, $maxFont) {
+  $slope: calc(calc(#{$maxFont / 1px} - #{$minFont / 1px}) / calc(#{tokens.$layout-application-l-screen-min-width / 1px} - #{tokens.$layout-application-s-screen-min-width / 1px}));
+  $slopeVw: calc(#{$slope} * 1vw);
+  $slopePercent: calc(#{$slopeVw} * 100);
+  $yAxis: calc(calc(-#{tokens.$layout-application-s-screen-min-width} * #{$slope}) + #{$minFont});
+  @return clamp(#{$minFont}, #{$yAxis} + #{$slopePercent}, #{$maxFont}); //3.0625rem + 2.5vw bzw. 49px + 2.5vw
+}
 
 $headings: (
   "h1": (
-    "size": clamp(tokens.$font-application-s-headline1-font-size, 10vw, tokens.$font-application-l-headline1-font-size),
+    "size": clampMe(tokens.$font-application-s-headline1-font-size, tokens.$font-application-l-headline1-font-size),
     "weight": 300,
     "line-height": tokens.$font-application-s-headline1-line-height,
     "letter-spacing": tokens.$font-application-s-headline1-letter-spacing,
@@ -293,7 +292,7 @@ $headings: (
     "text-transform": tokens.$font-application-s-headline1-text-transform,
   ),
   "h2": (
-    "size": tokens.$font-application-s-headline2-font-size,
+    "size": clampMe(tokens.$font-application-s-headline2-font-size, tokens.$font-application-l-headline2-font-size),
     "weight": 300,
     "line-height": tokens.$font-application-s-headline2-line-height,
     "letter-spacing": tokens.$font-application-s-headline2-letter-spacing,
@@ -301,7 +300,7 @@ $headings: (
     "text-transform": tokens.$font-application-s-headline2-text-transform,
   ),
   "h3": (
-    "size": tokens.$font-application-s-headline3-font-size,
+    "size": clampMe(tokens.$font-application-s-headline3-font-size, tokens.$font-application-l-headline3-font-size),
     "weight": 400,
     "line-height": tokens.$font-application-s-headline3-line-height,
     "letter-spacing": tokens.$font-application-s-headline3-letter-spacing,
@@ -309,7 +308,7 @@ $headings: (
     "text-transform": tokens.$font-application-s-headline3-text-transform,
   ),
   "h4": (
-    "size": tokens.$font-application-s-headline4-font-size,
+    "size": clampMe(tokens.$font-application-s-headline4-font-size, tokens.$font-application-l-headline4-font-size),
     "weight": 400,
     "line-height": tokens.$font-application-s-headline4-line-height,
     "letter-spacing": tokens.$font-application-s-headline4-letter-spacing,
@@ -317,7 +316,7 @@ $headings: (
     "text-transform": tokens.$font-application-s-headline4-text-transform,
   ),
   "h5": (
-    "size": tokens.$font-application-s-headline5-font-size,
+    "size": clampMe(tokens.$font-application-s-headline5-font-size, tokens.$font-application-l-headline5-font-size),
     "weight": 400,
     "line-height": tokens.$font-application-s-headline5-line-height,
     "letter-spacing": tokens.$font-application-s-headline5-letter-spacing,
@@ -325,7 +324,7 @@ $headings: (
     "text-transform": tokens.$font-application-s-headline5-text-transform,
   ),
   "h6": (
-    "size": tokens.$font-application-s-headline6-font-size,
+    "size": clampMe(tokens.$font-application-s-headline6-font-size, tokens.$font-application-l-headline6-font-size),
     "weight": 500,
     "line-height": tokens.$font-application-s-headline6-line-height,
     "letter-spacing": tokens.$font-application-s-headline6-letter-spacing,
@@ -333,7 +332,7 @@ $headings: (
     "text-transform": tokens.$font-application-s-headline6-text-transform,
   ),
   "subtitle-1": (
-    "size": tokens.$font-application-s-subtitle1-font-size,
+    "size": clampMe(tokens.$font-application-s-subtitle1-font-size, tokens.$font-application-l-subtitle1-font-size),
     "weight": normal,
     "line-height": tokens.$font-application-s-subtitle1-line-height,
     "letter-spacing": tokens.$font-application-s-subtitle1-letter-spacing,
@@ -341,7 +340,7 @@ $headings: (
     "text-transform": tokens.$font-application-s-subtitle1-text-transform,
   ),
   "subtitle-2": (
-    "size": tokens.$font-application-s-subtitle2-font-size,
+    "size": clampMe(tokens.$font-application-s-subtitle2-font-size, tokens.$font-application-l-subtitle2-font-size),
     "weight": 500,
     "line-height": tokens.$font-application-s-subtitle2-line-height,
     "letter-spacing": tokens.$font-application-s-subtitle2-letter-spacing,
@@ -349,7 +348,7 @@ $headings: (
     "text-transform": tokens.$font-application-s-subtitle2-text-transform,
   ),
   "body-1": (
-    "size": tokens.$font-application-s-body1-font-size,
+    "size": clampMe(tokens.$font-application-s-body1-font-size, tokens.$font-application-l-body1-font-size),
     "weight": 400,
     "line-height": tokens.$font-application-s-body1-line-height,
     "letter-spacing": tokens.$font-application-s-body1-letter-spacing,
@@ -357,7 +356,7 @@ $headings: (
     "text-transform": tokens.$font-application-s-body1-text-transform,
   ),
   "body-2": (
-    "size": tokens.$font-application-s-body2-font-size,
+    "size": clampMe(tokens.$font-application-s-body2-font-size, tokens.$font-application-l-body2-font-size),
     "weight": 400,
     "line-height": tokens.$font-application-s-body2-line-height,
     "letter-spacing": tokens.$font-application-s-body2-letter-spacing,
@@ -365,7 +364,7 @@ $headings: (
     "text-transform": tokens.$font-application-s-body2-text-transform,
   ),
   "button": (
-    "size": tokens.$font-application-s-button-font-size,
+    "size": clampMe(tokens.$font-application-s-button-font-size, tokens.$font-application-l-button-font-size),
     "weight": 500,
     "line-height": tokens.$font-application-s-button-line-height,
     "letter-spacing": tokens.$font-application-s-button-letter-spacing,
@@ -373,7 +372,7 @@ $headings: (
     "text-transform": tokens.$font-application-s-button-text-transform,
   ),
   "caption": (
-    "size": tokens.$font-application-s-caption-font-size,
+    "size": clampMe(tokens.$font-application-s-caption-font-size, tokens.$font-application-l-caption-font-size),
     "weight": 400,
     "line-height": tokens.$font-application-s-caption-line-height,
     "letter-spacing": tokens.$font-application-s-caption-letter-spacing,
@@ -381,13 +380,12 @@ $headings: (
     "text-transform": tokens.$font-application-s-caption-text-transform,
   ),
   "overline": (
-    "size": tokens.$font-application-s-overline-font-size,
+    "size": clampMe(tokens.$font-application-s-overline-font-size, tokens.$font-application-l-overline-font-size),
     "weight": tokens.$font-application-s-overline-font-weight,
     "line-height": tokens.$font-application-s-overline-line-height,
     "letter-spacing": tokens.$font-application-s-overline-letter-spacing,
     "font-family": $body-font-family,
     "text-transform": tokens.$font-application-s-overline-text-transform,
-    "color": tokens.$font-application-s-overline-color,
   ),
 );
 @each $type, $values in $headings {

@@ -653,7 +653,7 @@ code, kbd, pre, samp {
     color: tokens.$font-application-s-overline-color;
   };
 };*/
-@media (min-width: 1264px) {
+/*@media (min-width: 1264px) {
   .text-h1 {
     font-size: tokens.$font-application-l-headline1-font-size !important;
     font-weight: 300;
@@ -779,7 +779,7 @@ code, kbd, pre, samp {
       color: tokens.$font-application-l-overline-color;
     };
   }
-};
+};*/
 
 /*.text-sm-h1 {
   font-size: tokens.$font-application-s-headline1-font-size;
@@ -824,7 +824,7 @@ code, kbd, pre, samp {
 }
 .text-xl-h2 {
   @extend .text-lg-h2;
-}*/
+}
 .text-h3 {
   font-size: tokens.$font-application-s-headline3-font-size;
   font-weight: 400;
@@ -904,14 +904,8 @@ code, kbd, pre, samp {
   letter-spacing: tokens.$font-application-s-caption-letter-spacing;
   font-family: $body-font-family;
   text-transform: tokens.$font-application-s-caption-text-transform;
-}
+}*/
 .text-overline {
-  font-size: tokens.$font-application-s-overline-font-size;
-  font-weight: tokens.$font-application-s-overline-font-weight;
-  line-height: tokens.$font-application-s-overline-line-height;
-  letter-spacing: tokens.$font-application-s-overline-letter-spacing;
-  font-family: $body-font-family;
-  text-transform: tokens.$font-application-s-overline-text-transform;
   color: tokens.$font-application-s-overline-color;
 };
 
