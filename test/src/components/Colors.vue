@@ -1,5 +1,8 @@
 <template>
     <div>
+        <v-subheader>
+            Applications and Brand Colors
+        </v-subheader>
         <v-row justify="center">
             <v-col cols="auto">
                 <v-btn class="my-4" color="primary" @click="getColor()">
