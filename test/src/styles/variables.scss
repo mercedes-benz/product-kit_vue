@@ -122,39 +122,32 @@ $shades: (
 
 //todo: font sizes? See below
 ///--- SIZES ---///
-/*$grid-breakpoints: (
-  "xs": 0px,
-  "sm": 600px,
-  "md": 960px,
-  "lg": 1280px - 16px,
-  "xl": 1920px - 16px,
-);
 $spacer: 4px !default;
 $form-grid-gutter: $spacer * 2 !default;
 $grid-gutter: $spacer * 6 !default;
-$spacers-steps: 16 !default;*/
+$spacers-steps: 16 !default;
 $border-radius-root: 0px !default;
-/*$code-kbd-border-radius: 0px !default;
+$code-kbd-border-radius: 0px !default;
+$grid-breakpoints: (
+  'xs': 0,
+  'sm': 600px,
+  'md': 905px,
+  'lg': 1240px,
+  'xl': 1440px
+);
 $container-max-widths: (
-  "md": map-get($grid-breakpoints, "md") * 0.9375,
-  "lg": map-get($grid-breakpoints, "lg") * 0.9375,
-  "xl": map-get($grid-breakpoints, "xl") * 0.9375,
+  "md": 840px,
+  "lg": 840px,
+  "xl": 1040px,
 );
 $container-padding-x: $grid-gutter / 2 !default;
 $grid-columns: 12 !default;
 $grid-gutters: (
-  "xs": $grid-gutter / 12,
-  "sm": $grid-gutter / 6,
-  "md": $grid-gutter / 3,
+  "xs": $grid-gutter,
+  "sm": $grid-gutter,
+  "md": $grid-gutter,
   "lg": $grid-gutter * 2/3,
-  "xl": $grid-gutter,
-);*/
-$grid-breakpoints: (
-  'xs': 0,
-  'sm': 600px,
-  'md': 960px,
-  'lg': 1280px - 16px,
-  'xl': 1920px - 16px
+  "xl": $grid-gutter * 2/3,
 );
 $display-breakpoints: (
   'print-only': 'only print',
@@ -275,12 +268,23 @@ $heading-font-family: $body-font-family !default;
 };*/
 
 @function clampMe($minFont, $maxFont) {
+  @if $minFont == $maxFont {
+    @return $minFont;
+  }
   $slope: calc(calc(#{$maxFont / 1px} - #{$minFont / 1px}) / calc(#{tokens.$layout-application-l-screen-min-width / 1px} - #{tokens.$layout-application-s-screen-min-width / 1px}));
   $slopeVw: calc(#{$slope} * 1vw);
   $slopePercent: calc(#{$slopeVw} * 100);
   $yAxis: calc(calc(-#{tokens.$layout-application-s-screen-min-width} * #{$slope}) + #{$minFont});
   @return clamp(#{$minFont}, #{$yAxis} + #{$slopePercent}, #{$maxFont}); //3.0625rem + 2.5vw bzw. 49px + 2.5vw
 }
+
+/*@function decider($minFont, $maxFont) {
+  @if calc(min(100vw, tokens.$layout-application-l-screen-min-width)) == 100vw {
+    @return $minFont;
+  } @else {
+    @return $maxFont;
+  }
+}*/
 
 $headings: (
   "h1": (
