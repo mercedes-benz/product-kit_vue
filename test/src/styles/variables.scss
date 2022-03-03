@@ -137,7 +137,7 @@ $grid-breakpoints: (
 );
 $container-max-widths: (
   "md": 840px,
-  "lg": 1240px,
+  "lg": 1240px-384px,
   "xl": 1040px,
 );
 $container-padding-x: $grid-gutter / 2 !default;
