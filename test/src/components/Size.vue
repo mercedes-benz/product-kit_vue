@@ -205,9 +205,13 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .containerBG {
     background-color: antiquewhite;
+    border: 1px solid black;
+}
+.containerBGMargin {
+    background-color: cornsilk;
     border: 1px solid black;
 }
 </style>

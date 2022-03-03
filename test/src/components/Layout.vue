@@ -26,44 +26,50 @@
                     ></v-switch>
                 </v-col>
             </v-row>
-            <v-row :dense="toggleD" :no-gutters="toggleNG">
-                <v-col cols="3" sm="2" md="1" lg="1" xl="1">
-                    <v-sheet color="secondary" height="200px"> </v-sheet>
-                </v-col>
-                <v-col cols="3" sm="2" md="1" id="colTest">
-                    <v-sheet color="secondary" height="200px"> </v-sheet>
-                </v-col>
-                <v-col cols="3" sm="2" md="1">
-                    <v-sheet color="secondary" height="200px"> </v-sheet>
-                </v-col>
-                <v-col cols="3" sm="2" md="1">
-                    <v-sheet color="secondary" height="200px"> </v-sheet>
-                </v-col>
-                <v-col cols="3" sm="2" md="1">
-                    <v-sheet color="secondary" height="200px"> </v-sheet>
-                </v-col>
-                <v-col cols="3" sm="2" md="1">
-                    <v-sheet color="secondary" height="200px"> </v-sheet>
-                </v-col>
-                <v-col cols="3" sm="2" md="1">
-                    <v-sheet color="secondary" height="200px"> </v-sheet>
-                </v-col>
-                <v-col cols="3" sm="2" md="1">
-                    <v-sheet color="secondary" height="200px"> </v-sheet>
-                </v-col>
-                <v-col cols="3" sm="2" md="1">
-                    <v-sheet color="secondary" height="200px"> </v-sheet>
-                </v-col>
-                <v-col cols="3" sm="2" md="1">
-                    <v-sheet color="secondary" height="200px"> </v-sheet>
-                </v-col>
-                <v-col cols="3" sm="2" md="1">
-                    <v-sheet color="secondary" height="200px"> </v-sheet>
-                </v-col>
-                <v-col cols="3" sm="2" md="1">
-                    <v-sheet color="secondary" height="200px"> </v-sheet>
-                </v-col>
-            </v-row>
+            <div class="containerBGMargin">
+                <v-row
+                    class="containerBG"
+                    :dense="toggleD"
+                    :no-gutters="toggleNG"
+                >
+                    <v-col cols="3" sm="2" md="1" lg="1" xl="1">
+                        <v-sheet color="secondary" height="200px"> </v-sheet>
+                    </v-col>
+                    <v-col cols="3" sm="2" md="1" id="colTest">
+                        <v-sheet color="secondary" height="200px"> </v-sheet>
+                    </v-col>
+                    <v-col cols="3" sm="2" md="1">
+                        <v-sheet color="secondary" height="200px"> </v-sheet>
+                    </v-col>
+                    <v-col cols="3" sm="2" md="1">
+                        <v-sheet color="secondary" height="200px"> </v-sheet>
+                    </v-col>
+                    <v-col cols="3" sm="2" md="1">
+                        <v-sheet color="secondary" height="200px"> </v-sheet>
+                    </v-col>
+                    <v-col cols="3" sm="2" md="1">
+                        <v-sheet color="secondary" height="200px"> </v-sheet>
+                    </v-col>
+                    <v-col cols="3" sm="2" md="1">
+                        <v-sheet color="secondary" height="200px"> </v-sheet>
+                    </v-col>
+                    <v-col cols="3" sm="2" md="1">
+                        <v-sheet color="secondary" height="200px"> </v-sheet>
+                    </v-col>
+                    <v-col cols="3" sm="2" md="1">
+                        <v-sheet color="secondary" height="200px"> </v-sheet>
+                    </v-col>
+                    <v-col cols="3" sm="2" md="1">
+                        <v-sheet color="secondary" height="200px"> </v-sheet>
+                    </v-col>
+                    <v-col cols="3" sm="2" md="1">
+                        <v-sheet color="secondary" height="200px"> </v-sheet>
+                    </v-col>
+                    <v-col cols="3" sm="2" md="1">
+                        <v-sheet color="secondary" height="200px"> </v-sheet>
+                    </v-col>
+                </v-row>
+            </div>
         </v-container>
     </div>
 </template>
@@ -98,5 +104,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>
