@@ -445,6 +445,17 @@ samp {
   color: tokens.$font-application-s-overline-color;
 }
 
+/*** GRID ***/
+.row {
+  margin: - tokens.$layout-application-xs-gutter-size / 2;
+  margin-left: tokens.$layout-application-xs-margin-size - tokens.$layout-application-xs-gutter-size / 2;
+  margin-right: tokens.$layout-application-xs-margin-size - tokens.$layout-application-xs-gutter-size / 2;
+}
+
+.col-xl, .col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .col-xl-6, .col-xl-5, .col-xl-4, .col-xl-3, .col-xl-2, .col-xl-1, .col-lg, .col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md, .col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm, .col-sm-auto, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col, .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
+  padding: tokens.$layout-application-xs-gutter-size / 2;
+}
+
 .ma-3xs {
   margin: tokens.$size-application-spacing-xs-3xs;
 }
@@ -874,6 +885,15 @@ samp {
 }
 
 @media only screen and (min-width: #{map-get($grid-breakpoints, 'sm')}) {
+  .row {
+    margin: - tokens.$layout-application-s-gutter-size / 2;
+    margin-left: tokens.$layout-application-s-margin-size - tokens.$layout-application-s-gutter-size / 2;
+    margin-right: tokens.$layout-application-s-margin-size - tokens.$layout-application-s-gutter-size / 2;
+  }
+  .col-xl, .col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .col-xl-6, .col-xl-5, .col-xl-4, .col-xl-3, .col-xl-2, .col-xl-1, .col-lg, .col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md, .col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm, .col-sm-auto, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col, .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
+    padding: tokens.$layout-application-s-gutter-size / 2;
+  }
+
   .ma-3xs {
     margin: tokens.$size-application-spacing-s-3xs;
   }
@@ -1304,6 +1324,15 @@ samp {
 }
 
 @media only screen and (min-width: #{map-get($grid-breakpoints, 'md')}) {
+  .row {
+    margin: - tokens.$layout-application-m-gutter-size / 2;
+    //margin-left: tokens.$layout-application-m-margin-size;
+    //margin-right: tokens.$layout-application-m-margin-size;
+  }
+  .col-xl, .col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .col-xl-6, .col-xl-5, .col-xl-4, .col-xl-3, .col-xl-2, .col-xl-1, .col-lg, .col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md, .col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm, .col-sm-auto, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col, .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
+    padding: tokens.$layout-application-m-gutter-size / 2;
+  }
+
   .ma-3xs {
     margin: tokens.$size-application-spacing-m-3xs;
   }
@@ -1734,6 +1763,55 @@ samp {
 }
 
 @media only screen and (min-width: #{map-get($grid-breakpoints, 'lg')}) {
+  .text-h1 {
+    line-height: tokens.$font-application-l-headline1-line-height !important;
+  }
+  .text-h2 {
+    line-height: tokens.$font-application-l-headline2-line-height !important;
+  }
+  .text-h3 {
+    line-height: tokens.$font-application-l-headline3-line-height !important;
+  }
+  .text-h4 {
+    line-height: tokens.$font-application-l-headline4-line-height !important;
+  }
+  .text-h5 {
+    line-height: tokens.$font-application-l-headline5-line-height !important;
+  }
+  .text-h6 {
+    line-height: tokens.$font-application-l-headline6-line-height !important;
+  }
+  .text-subtitle-1 {
+    line-height: tokens.$font-application-l-subtitle1-line-height !important;
+  }
+  .text-subtitle-2 {
+    line-height: tokens.$font-application-l-subtitle2-line-height !important;
+  }
+  .text-body-1 {
+    line-height: tokens.$font-application-l-body1-line-height !important;
+  }
+  .text-body-2 {
+    line-height: tokens.$font-application-l-body1-line-height !important;
+  }
+  .text-button {
+    line-height: tokens.$font-application-l-button-line-height !important;
+  }
+  .text-caption {
+    line-height: tokens.$font-application-l-caption-line-height !important;
+  }
+  .text-overline {
+    line-height: tokens.$font-application-l-overline-line-height !important;
+  }
+  
+  .row {
+    margin: - tokens.$layout-application-l-gutter-size / 2;
+    margin-left: tokens.$layout-application-l-margin-size - tokens.$layout-application-l-gutter-size / 2;
+    margin-right: tokens.$layout-application-l-margin-size - tokens.$layout-application-l-gutter-size / 2;
+  }
+  .col-xl, .col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .col-xl-6, .col-xl-5, .col-xl-4, .col-xl-3, .col-xl-2, .col-xl-1, .col-lg, .col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md, .col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm, .col-sm-auto, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col, .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
+    padding: tokens.$layout-application-l-gutter-size / 2;
+  }
+  
   .ma-3xs {
     margin: tokens.$size-application-spacing-l-3xs;
   }
@@ -2164,6 +2242,15 @@ samp {
 }
 
 @media only screen and (min-width: #{map-get($grid-breakpoints, 'xl')}) {
+  .row {
+    margin: - tokens.$layout-application-xl-gutter-size / 2;
+    //margin-left: tokens.$layout-application-xl-margin-size;
+    //margin-right: tokens.$layout-application-xl-margin-size;
+  }
+  .col-xl, .col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .col-xl-6, .col-xl-5, .col-xl-4, .col-xl-3, .col-xl-2, .col-xl-1, .col-lg, .col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md, .col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm, .col-sm-auto, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col, .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
+    padding: tokens.$layout-application-xl-gutter-size / 2;
+  }
+  
   .ma-3xs {
     margin: tokens.$size-application-spacing-xl-3xs;
   }
