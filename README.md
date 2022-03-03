@@ -1,9 +1,17 @@
 <!-- SPDX-License-Identifier: MIT -->
-# My Project
+⚠️ //TODO// Banner
 
-## Intended Usage
+Product Kit for Vue provides components for Daimler TSS web frontends based on the material design framework Vuetify.
 
-⚠️ //TODO// Describe your example! Eg: This project is made for cooking the best Tiramisu. It works best with high quality ingredients and the best tools. Please describe your project as accurately and concisely as possible to help others understand your use case.
+Feel free to open an [issue](https://github.com/mercedes-benz/product-kit_vue/issues) or provide a pull request with the desired modifications.
+
+## Examples
+
+⚠️ //TODO// Add examples as pictures.
+
+## Usage
+
+⚠️ //TODO// Add source code of usage examples and descriptions.
 
 ## Installation
 
