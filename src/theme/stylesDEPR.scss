@@ -1,0 +1,4 @@
+@use "@daimler/productkit-core/exports/web/styles/scss/variables" as tokens;
+@use "@daimler/productkit-core/exports/web/styles/scss/variables-dark" as tokensDark;
+@import "./variables.scss";
+@import "./overrides.scss";

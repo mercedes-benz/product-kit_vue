@@ -1,4 +1,11 @@
+const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
+
 module.exports = {
+  configureWebpack: {
+    plugins: [
+      new VuetifyLoaderPlugin()
+    ],
+  },
   transpileDependencies: [
     'vuetify'
   ],
@@ -8,21 +15,32 @@ module.exports = {
         additionalData: `
           @use "@daimler/productkit-core/exports/web/styles/scss/variables" as tokens;
           @use "@daimler/productkit-core/exports/web/styles/scss/variables-dark" as tokensDark;
+          @import "../src/theme/variables.scss";
+          @import "../src/theme/overrides.scss";
         `,
       },
       sass: { // 9.0.0
         additionalData: `
           @use "@daimler/productkit-core/exports/web/styles/scss/variables" as tokens
           @use "@daimler/productkit-core/exports/web/styles/scss/variables-dark" as tokensDark
+          @import "../src/theme/variables.scss"
+          @import "../src/theme/overrides.scss"
         `,
       },
     },
   },
   /*css: {
     loaderOptions: {
-      sass: {
-        additionalData: `@import "@/styles/_variables.scss"`
-      }
-    }
-  }*/
+      scss: { // 9.0.0
+        additionalData: `
+          @use "../src/theme/styles.scss";
+        `,
+      },
+      sass: { // 9.0.0
+        additionalData: `
+          @use "../src/theme/styles.scss"
+        `,
+      },
+    },
+  },*/
 }
