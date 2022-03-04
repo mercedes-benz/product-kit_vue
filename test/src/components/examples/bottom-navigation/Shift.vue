@@ -1,7 +1,7 @@
 <template>
   <v-bottom-navigation
     v-model="bottomNav"
-    dark
+    
     shift
   >
     <v-btn>

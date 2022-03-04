@@ -1,7 +1,7 @@
 <template>
   <v-toolbar>
     <v-tabs
-      dark
+      
       background-color="primary"
       grow
     >

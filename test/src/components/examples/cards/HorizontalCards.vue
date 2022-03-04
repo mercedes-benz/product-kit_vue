@@ -31,7 +31,7 @@
       </v-btn>
     </v-app-bar>
 
-    <v-container>
+    <v-container fluid>
       <v-row dense>
         <v-col cols="12">
           <v-card

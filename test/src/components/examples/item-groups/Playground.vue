@@ -35,7 +35,7 @@
                 v-if="type === 'cards'"
                 :color="active ? 'primary' : ''"
                 class="d-flex align-center"
-                dark
+                
                 height="200"
                 @click="toggle"
               >

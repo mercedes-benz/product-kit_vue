@@ -17,7 +17,7 @@
     >
       <v-card
         color="primary"
-        dark
+        
       >
         <v-card-text>
           Please stand by

@@ -85,7 +85,7 @@
       <v-btn
         block
         color="primary"
-        dark
+        
         @click="snackbar = true"
       >
         Show Snackbar
@@ -105,7 +105,7 @@
     >
       {{ text }}
       <v-btn
-        dark
+        
         text
         @click="snackbar = false"
       >

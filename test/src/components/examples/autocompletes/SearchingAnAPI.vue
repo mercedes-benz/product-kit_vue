@@ -1,7 +1,7 @@
 <template>
   <v-card
     color="red lighten-2"
-    dark
+    
   >
     <v-card-title class="headline red lighten-3">
       Search for Public APIs

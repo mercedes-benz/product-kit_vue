@@ -2,7 +2,7 @@
   <div class="text-center">
     <v-btn
       color="blue"
-      dark
+      
       @click="sheet = !sheet"
     >
       Open v-model

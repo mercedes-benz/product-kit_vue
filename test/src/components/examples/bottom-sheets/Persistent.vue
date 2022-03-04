@@ -4,7 +4,7 @@
       <template v-slot:activator="{ on }">
         <v-btn
           color="green"
-          dark
+          
           v-on="on"
         >
           Open Persistent

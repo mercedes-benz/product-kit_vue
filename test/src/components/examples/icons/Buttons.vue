@@ -1,22 +1,22 @@
 <template>
   <div class="text-center">
     <div>
-      <v-btn class="ma-2" color="primary" dark>Accept
-        <v-icon dark right>mdi-checkbox-marked-circle</v-icon>
+      <v-btn class="ma-2" color="primary">Accept
+        <v-icon right>mdi-checkbox-marked-circle</v-icon>
       </v-btn>
 
-      <v-btn class="ma-2" color="red" dark>Decline
-        <v-icon dark right>mdi-cancel</v-icon>
+      <v-btn class="ma-2" color="red" >Decline
+        <v-icon  right>mdi-cancel</v-icon>
       </v-btn>
 
-      <v-btn class="ma-2" dark>
-        <v-icon dark left>mdi-minus_circle</v-icon>Cancel
+      <v-btn class="ma-2" >
+        <v-icon dark left>mdi-minus-circle</v-icon>Cancel
       </v-btn>
     </div>
 
     <div>
-      <v-btn class="ma-2" color="orange darken-2" dark>
-        <v-icon dark left>mdi-arrow-left</v-icon>Back
+      <v-btn class="ma-2" color="orange darken-2" >
+        <v-icon  left>mdi-arrow-left</v-icon>Back
       </v-btn>
 
       <v-btn class="ma-2" color="purple" dark>

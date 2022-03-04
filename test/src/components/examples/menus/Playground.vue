@@ -24,7 +24,7 @@
       <template v-slot:activator="{ on }">
         <v-btn
           color="primary"
-          dark
+          
           v-on="on"
         >
           Dropdown

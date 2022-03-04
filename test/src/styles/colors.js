@@ -1,7 +1,6 @@
 const variables = require('./overrides.scss')
-console.log(variables)
 
-const colors = {
+const colorObject = {
     deepblue: {
         base: variables.db,
         lighten1: variables.dbL1,
@@ -49,12 +48,11 @@ colorNames.forEach(color => {
         var temp = variables[name]
         var variable = {}
         variable[name] = temp
-        Object.assign(colors, variable)
+        Object.assign(colorObject, variable)
     });
 });
-console.log(colors)
 
-const preset = {
+const colors = {
     theme: {
         themes: {
             light: {
@@ -66,7 +64,6 @@ const preset = {
                 background: variables.backgroundL,
                 surface: variables.surfaceL,
                 outline: variables.outlineL,
-                //anchor: '#8c9eff',
             },
             dark: {
                 primary: variables.primaryD,
@@ -85,7 +82,7 @@ const preset = {
     },
 }
 
-Object.assign(preset.theme.themes.light, colors)
-Object.assign(preset.theme.themes.dark, colors)
+Object.assign(colors.theme.themes.light, colorObject)
+Object.assign(colors.theme.themes.dark, colorObject)
 
-export default preset
+export default colors

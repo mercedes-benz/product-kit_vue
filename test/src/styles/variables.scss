@@ -128,6 +128,7 @@ $grid-gutter: $spacer * 6 !default;
 $spacers-steps: 16 !default;
 $border-radius-root: 0px !default;
 $code-kbd-border-radius: 0px !default;
+$text-field-enclosed-details-padding: 0 12px !default;
 $grid-breakpoints: (
   'xs': 0,
   'sm': 600px,
@@ -137,7 +138,6 @@ $grid-breakpoints: (
 );
 $container-max-widths: (
   "md": 840px,
-  "lg": 1240px-384px,
   "xl": 1040px,
 );
 $container-padding-x: $grid-gutter / 2 !default;

@@ -3,7 +3,7 @@
     <v-app-bar
       absolute
       color="#fcb69f"
-      dark
+      
       shrink-on-scroll
       src="https://picsum.photos/1920/1080?random"
       scroll-target="#scrolling-techniques-2"

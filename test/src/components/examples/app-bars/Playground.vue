@@ -100,7 +100,7 @@
     <v-card class="overflow-hidden">
       <v-app-bar
         absolute
-        dark
+        
         scroll-target="#playground-example"
         :color="color"
         :elevate-on-scroll="elevateOnScroll"

@@ -1,7 +1,7 @@
 <template>
   <v-card
     color="blue-grey darken-1"
-    dark
+    
     :loading="isUpdating"
   >
     <template v-slot:progress>

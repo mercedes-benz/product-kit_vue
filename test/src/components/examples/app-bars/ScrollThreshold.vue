@@ -3,7 +3,7 @@
     <v-app-bar
       absolute
       color="#43a047"
-      dark
+      
       shrink-on-scroll
       prominent
       src="https://picsum.photos/1920/1080?random"

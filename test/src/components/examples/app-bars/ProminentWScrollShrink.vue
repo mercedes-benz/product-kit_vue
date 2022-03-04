@@ -3,7 +3,7 @@
     <v-app-bar
       absolute
       color="indigo darken-2"
-      dark
+      
       shrink-on-scroll
       prominent
       scroll-target="#scrolling-techniques"

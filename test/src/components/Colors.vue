@@ -186,7 +186,6 @@ export default {
                 temp["shades"] = temp2;
                 result.push(temp);
             });
-            console.log(result);
             this.temp = result;
         },
 

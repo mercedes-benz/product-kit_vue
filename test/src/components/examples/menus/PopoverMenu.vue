@@ -9,7 +9,7 @@
       <template v-slot:activator="{ on }">
         <v-btn
           color="indigo"
-          dark
+          
           v-on="on"
         >
           Menu as Popover

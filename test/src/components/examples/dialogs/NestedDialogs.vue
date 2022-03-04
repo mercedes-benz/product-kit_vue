@@ -6,7 +6,7 @@
       <v-btn
         color="primary"
         class="ma-2"
-        dark
+        
         @click="dialog = true"
       >
         Open Dialog 1
@@ -14,7 +14,7 @@
       <v-btn
         color="primary"
         class="ma-2"
-        dark
+        
         @click="dialog2 = true"
       >
         Open Dialog 2
@@ -22,7 +22,7 @@
       <v-btn
         color="primary"
         class="ma-2"
-        dark
+        
         @click="dialog3 = true"
       >
         Open Dialog 3
@@ -57,7 +57,7 @@
         <v-card tile>
           <v-toolbar
             flat
-            dark
+            
             color="primary"
           >
             <v-btn
@@ -106,7 +106,7 @@
           <v-card-text>
             <v-btn
               color="primary"
-              dark
+              
               class="ma-2"
               @click="dialog2 = !dialog2"
             >
@@ -190,7 +190,7 @@
           <v-card-text>
             <v-btn
               color="primary"
-              dark
+              
               @click="dialog3 = !dialog3"
             >
               Open Dialog 3

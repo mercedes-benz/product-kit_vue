@@ -1,6 +1,6 @@
 <template>
   <v-card class="d-inline-block mx-auto">
-    <v-container>
+    <v-container fluid>
       <v-row justify="space-between">
         <v-col cols="auto">
           <v-img

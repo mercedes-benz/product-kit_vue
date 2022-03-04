@@ -13,7 +13,7 @@
     </v-alert>
     <v-alert
       color="blue-grey"
-      dark
+      
       dense
       icon="mdi-school"
       prominent

@@ -4,7 +4,7 @@
       <template v-slot:activator="{ on }">
         <v-btn
           color="purple"
-          dark
+          
           v-on="on"
         >
           Open In

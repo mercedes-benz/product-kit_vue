@@ -1,3 +1,7 @@
+.theme--dark.v-sheet {
+  background-color: black;
+}
+
 .theme--dark {
   &.primary {
     color: tokensDark.$color-application-contrast-primary !important;
@@ -111,6 +115,10 @@
 }
 .error {
   color: tokens.$color-application-contrast-error !important;
+  opacity: tokens.$opacity-application-text-contrast-high !important;
+}
+.indigo {
+  color: tokens.$color-brand-neutral-contrast-900 !important;
   opacity: tokens.$opacity-application-text-contrast-high !important;
 }
 .blue {
@@ -445,11 +453,18 @@ samp {
   color: tokens.$font-application-s-overline-color;
 }
 
+.v-text-field .v-text-field__details, .v-text-field:not(.v-text-field--rounded)>.v-input__control>.v-input__slot {
+  padding: 0 12px !important;
+}
+
 /*** GRID ***/
+.container:not(.container--fluid) {
+  padding-left: tokens.$layout-application-xs-margin-size;
+  padding-right: tokens.$layout-application-xs-margin-size;
+}
+
 .row {
   margin: - tokens.$layout-application-xs-gutter-size / 2;
-  margin-left: tokens.$layout-application-xs-margin-size - tokens.$layout-application-xs-gutter-size / 2;
-  margin-right: tokens.$layout-application-xs-margin-size - tokens.$layout-application-xs-gutter-size / 2;
 }
 
 .col-xl, .col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .col-xl-6, .col-xl-5, .col-xl-4, .col-xl-3, .col-xl-2, .col-xl-1, .col-lg, .col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md, .col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm, .col-sm-auto, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col, .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
@@ -885,10 +900,13 @@ samp {
 }
 
 @media only screen and (min-width: #{map-get($grid-breakpoints, 'sm')}) {
+  .container:not(.container--fluid) {
+    padding-left: tokens.$layout-application-s-margin-size;
+    padding-right: tokens.$layout-application-s-margin-size;
+  }
+
   .row {
     margin: - tokens.$layout-application-s-gutter-size / 2;
-    margin-left: tokens.$layout-application-s-margin-size - tokens.$layout-application-s-gutter-size / 2;
-    margin-right: tokens.$layout-application-s-margin-size - tokens.$layout-application-s-gutter-size / 2;
   }
   .col-xl, .col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .col-xl-6, .col-xl-5, .col-xl-4, .col-xl-3, .col-xl-2, .col-xl-1, .col-lg, .col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md, .col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm, .col-sm-auto, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col, .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
     padding: tokens.$layout-application-s-gutter-size / 2;
@@ -1326,8 +1344,6 @@ samp {
 @media only screen and (min-width: #{map-get($grid-breakpoints, 'md')}) {
   .row {
     margin: - tokens.$layout-application-m-gutter-size / 2;
-    //margin-left: tokens.$layout-application-m-margin-size;
-    //margin-right: tokens.$layout-application-m-margin-size;
   }
   .col-xl, .col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .col-xl-6, .col-xl-5, .col-xl-4, .col-xl-3, .col-xl-2, .col-xl-1, .col-lg, .col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md, .col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm, .col-sm-auto, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col, .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
     padding: tokens.$layout-application-m-gutter-size / 2;
@@ -1803,10 +1819,13 @@ samp {
     line-height: tokens.$font-application-l-overline-line-height !important;
   }
 
+  .container:not(.container--fluid) {
+    padding-left: tokens.$layout-application-l-margin-size;
+    padding-right: tokens.$layout-application-l-margin-size;
+  }
+
   .row {
     margin: - tokens.$layout-application-l-gutter-size / 2;
-    //margin-left: tokens.$layout-application-l-margin-size - tokens.$layout-application-l-gutter-size / 2;
-    //margin-right: tokens.$layout-application-l-margin-size - tokens.$layout-application-l-gutter-size / 2;
   }
   .col-xl, .col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .col-xl-6, .col-xl-5, .col-xl-4, .col-xl-3, .col-xl-2, .col-xl-1, .col-lg, .col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md, .col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm, .col-sm-auto, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col, .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
     padding: tokens.$layout-application-l-gutter-size / 2;
@@ -2244,8 +2263,6 @@ samp {
 @media only screen and (min-width: #{map-get($grid-breakpoints, 'xl')}) {
   .row {
     margin: - tokens.$layout-application-xl-gutter-size / 2;
-    //margin-left: tokens.$layout-application-xl-margin-size;
-    //margin-right: tokens.$layout-application-xl-margin-size;
   }
   .col-xl, .col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .col-xl-6, .col-xl-5, .col-xl-4, .col-xl-3, .col-xl-2, .col-xl-1, .col-lg, .col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md, .col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm, .col-sm-auto, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col, .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
     padding: tokens.$layout-application-xl-gutter-size / 2;
@@ -2720,8 +2737,6 @@ samp {
   gbD2: tokens.$color-brand-grayblue-700;
   gbD3: tokens.$color-brand-grayblue-800;
   gbD4: tokens.$color-brand-grayblue-900;
-
-  //tokens: map-get($map: tokens.$tokens; $key: color);
 
   neutral-50: tokens.$color-brand-neutral-50;
   neutral-100: tokens.$color-brand-neutral-100;

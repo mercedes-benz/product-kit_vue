@@ -21,7 +21,7 @@
     </v-list-item>
 
     <v-card-actions>
-      <v-btn text>Button</v-btn>
+      <v-btn text color="primary">Button</v-btn>
       <v-btn text>Button</v-btn>
     </v-card-actions>
   </v-card>

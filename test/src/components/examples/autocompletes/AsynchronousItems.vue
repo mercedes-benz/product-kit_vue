@@ -1,6 +1,6 @@
 <template>
   <v-toolbar
-    dark
+    
     color="teal"
   >
     <v-toolbar-title>State selection</v-toolbar-title>

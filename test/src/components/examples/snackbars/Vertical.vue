@@ -1,7 +1,7 @@
 <template>
   <div class="text-center">
     <v-btn
-      dark
+      
       color="indigo"
       @click="snackbar = true"
     >
@@ -14,7 +14,6 @@
     >
       {{ text }}
       <v-btn
-        color="indigo"
         text
         @click="snackbar = false"
       >

@@ -11,7 +11,7 @@
     <v-alert
       :value="alert"
       color="pink"
-      dark
+      
       border="top"
       icon="mdi-home"
       transition="scale-transition"

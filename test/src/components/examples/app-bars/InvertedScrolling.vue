@@ -3,7 +3,7 @@
     <v-app-bar
       absolute
       color="primary"
-      dark
+      
       inverted-scroll
       scroll-target="#scrolling-techniques-8"
     >
