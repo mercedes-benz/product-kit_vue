@@ -40,18 +40,6 @@ $grey: (
   "darken-3": #424242,
   "darken-4": #212121,
 );
-/*$indigo: (
-  "base": tokens.$color-brand-deepblue-500,
-  "lighten-5": tokens.$color-brand-deepblue-50,
-  "lighten-4": tokens.$color-brand-deepblue-100,
-  "lighten-3": tokens.$color-brand-deepblue-200,
-  "lighten-2": tokens.$color-brand-deepblue-300,
-  "lighten-1": tokens.$color-brand-deepblue-400,
-  "darken-1": tokens.$color-brand-deepblue-600,
-  "darken-2": tokens.$color-brand-deepblue-700,
-  "darken-3": tokens.$color-brand-deepblue-800,
-  "darken-4": tokens.$color-brand-deepblue-900,
-);*/
 $blue-grey: (
   "base": tokens.$color-brand-grayblue-500,
   "lighten-5": tokens.$color-brand-grayblue-50,
@@ -120,7 +108,6 @@ $shades: (
 
 ///--- FONT ---///
 
-//todo: font sizes? See below
 ///--- SIZES ---///
 $spacer: 4px !default;
 $form-grid-gutter: $spacer * 2 !default;
@@ -168,104 +155,6 @@ $display-breakpoints: (
 $body-font-family: tokens.$font-family-brand;
 $heading-font-family: $body-font-family !default;
 
-/*@media only screen and (min-width: 1000px) {
-  .text-h1 {
-    font-size: tokens.$font-application-l-headline1-font-size !important;
-    font-weight: 300;
-    line-height: tokens.$font-application-s-headline1-line-height;
-    letter-spacing: tokens.$font-application-s-headline1-letter-spacing;
-    font-family: $heading-font-family;
-    text-transform: tokens.$font-application-s-headline1-text-transform;
-  }
-  .text-h2 {
-    font-size: tokens.$font-application-s-headline2-font-size;
-    font-weight: 300;
-    line-height: tokens.$font-application-s-headline2-line-height;
-    letter-spacing: tokens.$font-application-s-headline2-letter-spacing;
-    font-family: $heading-font-family;
-    text-transform: tokens.$font-application-s-headline2-text-transform;
-  }
-  .text-h3 {
-    font-size: tokens.$font-application-s-headline3-font-size;
-    font-weight: 400;
-    line-height: tokens.$font-application-s-headline3-line-height;
-    letter-spacing: tokens.$font-application-s-headline3-letter-spacing;
-    font-family: $heading-font-family;
-    text-transform: tokens.$font-application-s-headline3-text-transform;
-  }
-  .text-h4 {
-    font-size: tokens.$font-application-s-headline4-font-size;
-    font-weight: 400;
-    line-height: tokens.$font-application-s-headline4-line-height;
-    letter-spacing: tokens.$font-application-s-headline4-letter-spacing;
-    font-family: $heading-font-family;
-    text-transform: tokens.$font-application-s-headline4-text-transform;
-  }
-  .text-h5 {
-    font-size: tokens.$font-application-s-headline5-font-size;
-    font-weight: 400;
-    line-height: tokens.$font-application-s-headline5-line-height;
-    letter-spacing: tokens.$font-application-s-headline5-letter-spacing;
-    font-family: $heading-font-family;
-    text-transform: tokens.$font-application-s-headline5-text-transform;
-  }
-  .text-h6 {
-    font-size: tokens.$font-application-s-headline6-font-size;
-    font-weight: 500;
-    line-height: tokens.$font-application-s-headline6-line-height;
-    letter-spacing: tokens.$font-application-s-headline6-letter-spacing;
-    font-family: $heading-font-family;
-    text-transform: tokens.$font-application-s-headline6-text-transform;
-  }
-  .text-subtitle-1 {
-    font-size: tokens.$font-application-s-subtitle1-font-size;
-    font-weight: normal;
-    line-height: tokens.$font-application-s-subtitle1-line-height;
-    letter-spacing: tokens.$font-application-s-subtitle1-letter-spacing;
-    font-family: $body-font-family;
-    text-transform: tokens.$font-application-s-subtitle1-text-transform;
-  }
-  .text-subtitle-2 {
-    font-size: tokens.$font-application-s-subtitle2-font-size;
-    font-weight: 500;
-    line-height: tokens.$font-application-s-subtitle2-line-height;
-    letter-spacing: tokens.$font-application-s-subtitle2-letter-spacing;
-    font-family: $body-font-family;
-    text-transform: tokens.$font-application-s-subtitle2-text-transform;
-  }
-  .text-body-1 {
-    font-size: tokens.$font-application-s-body1-font-size;
-    font-weight: 400;
-    line-height: tokens.$font-application-s-body1-line-height;
-    letter-spacing: tokens.$font-application-s-body1-letter-spacing;
-    font-family: $body-font-family;
-    text-transform: tokens.$font-application-s-body1-text-transform;
-  }
-  .text-body-2 {
-    font-size: tokens.$font-application-s-body2-font-size;
-    font-weight: 400;
-    line-height: tokens.$font-application-s-body2-line-height;
-    letter-spacing: tokens.$font-application-s-body2-letter-spacing;
-    font-family: $body-font-family;
-    text-transform: tokens.$font-application-s-body2-text-transform;
-  }
-  .text-button {
-    font-size: tokens.$font-application-s-button-font-size;
-    font-weight: 500;
-    line-height: tokens.$font-application-s-button-line-height;
-    letter-spacing: tokens.$font-application-s-button-letter-spacing;
-    font-family: $body-font-family;
-    text-transform: tokens.$font-application-s-button-text-transform;
-  }
-  .text-caption {
-    font-size: tokens.$font-application-s-caption-font-size;
-    font-weight: 400;
-    line-height: tokens.$font-application-s-caption-line-height;
-    letter-spacing: tokens.$font-application-s-caption-letter-spacing;
-    font-family: $body-font-family;
-    text-transform: tokens.$font-application-s-caption-text-transform;
-  }
-};*/
 
 @function clampMe($minFont, $maxFont) {
   @if $minFont == $maxFont {
@@ -275,16 +164,9 @@ $heading-font-family: $body-font-family !default;
   $slopeVw: calc(#{$slope} * 1vw);
   $slopePercent: calc(#{$slopeVw} * 100);
   $yAxis: calc(calc(-#{tokens.$layout-application-s-screen-min-width} * #{$slope}) + #{$minFont});
-  @return clamp(#{$minFont}, #{$yAxis} + #{$slopePercent}, #{$maxFont}); //3.0625rem + 2.5vw bzw. 49px + 2.5vw
+  @return clamp(#{$minFont}, #{$yAxis} + #{$slopePercent}, #{$maxFont});
 }
 
-/*@function decider($minFont, $maxFont) {
-  @if calc(min(100vw, tokens.$layout-application-l-screen-min-width)) == 100vw {
-    @return $minFont;
-  } @else {
-    @return $maxFont;
-  }
-}*/
 
 $headings: (
   "h1": (
