@@ -161,7 +161,10 @@ export const COMPONENTS_MANIFEST = [
         title: 'Sheets'
     }, {
         title: 'Skeleton Loaders'
-    },*/ 
+    },*/
+    {
+        title: 'Showroom'
+    },
     {
         title: 'Snackbars'
     },

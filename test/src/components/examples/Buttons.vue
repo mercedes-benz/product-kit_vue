@@ -63,7 +63,7 @@ export default {
     }),
 
     methods: {
-        
+
     },
 };
 </script>

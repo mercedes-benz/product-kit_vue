@@ -4,7 +4,7 @@
     max-width="344"
   >
     <v-card-text>
-      <div>Word of the Day</div>
+      <div class="text-overline">Word of the Day</div>
       <p class="display-1 text--primary">
         be•nev•o•lent
       </p>
@@ -17,7 +17,7 @@
     <v-card-actions>
       <v-btn
         text
-        color="deep-purple accent-4"
+        color="primary"
       >
         Learn More
       </v-btn>

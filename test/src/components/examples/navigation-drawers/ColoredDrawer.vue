@@ -5,10 +5,22 @@
     width="256"
   >
     <v-navigation-drawer
-      class="deep-purple accent-4"
+      class="primary accent-4"
       dark
       permanent
     >
+    <v-list-item>
+        <v-list-item-content>
+          <v-list-item-title class="text-h6">
+            Headline 6
+          </v-list-item-title>
+          <v-list-item-subtitle>
+            Subtitle
+          </v-list-item-subtitle>
+        </v-list-item-content>
+      </v-list-item>
+
+      <v-divider></v-divider>
       <v-list>
         <v-list-item
           v-for="item in items"
@@ -27,7 +39,7 @@
 
       <template v-slot:append>
         <div class="pa-2">
-          <v-btn block>Logout</v-btn>
+          <v-btn block color="secondary">Logout</v-btn>
         </div>
       </template>
     </v-navigation-drawer>
