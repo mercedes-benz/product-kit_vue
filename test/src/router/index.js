@@ -74,6 +74,7 @@ import Colors from '../components/Colors.vue';
 import Font from '../components/Font.vue';
 import Layout from '../components/Layout.vue';
 import Size from '../components/Size.vue';
+import Showroom from '../components/examples/Showroom.vue';
 
 Vue.use(VueRouter);
 
@@ -150,6 +151,7 @@ const routes = [
   { path: '/font', component: Font },
   { path: '/layout', component: Layout },
   { path: '/size', component: Size },
+  { path: '/showroom', component: Showroom },
   { path: '*', component: PageNotFound }
 ];
 
