@@ -64,11 +64,75 @@ css: {
   },
 ```
 
-Your Material components should now be styled accordingly to the styleguide of Daimler TSS!
+Your Vuetify components should now be styled accordingly to the styleguide of Daimler TSS!
 
 ## Usage
 
-⚠️ //TODO// Add source code of usage examples and descriptions.
+### Colors
+Product Kit Vue comes with all custom Daimler TSS colors like `primary` (corporate blue) or `secondary` (corporate pink) and their shades (`lighten-1` to `lighten 5` and `darken-1` to `darken-4`). It furthermore works with the standard Vuetify color palette, including colors like `green` or `blue-grey`. 
+
+You can use the custom Daimler TSS colors in different ways:
+- In the `color` attribute of supporting elements like `v-btn` or `v-sheet`
+- Adding `class="primary"` to an element will change the background color of it. Adding for example `class="primary darken-3"` will apply a darker blue
+- Font color is set automatically based on the background-color. If you want to use a specific font color you can do so by applying for example the `primary--text` class. Combined with the `text-lighten-1` class the text will appear slightly lighter
+- In CSS you can use `var(--v-primary-base)` or `var(--v-primary-lighten1)`
+```html
+<v-btn
+    color="primary"
+    raised
+    large
+> Button </v-btn>
+
+<v-btn
+    color="secondary lighten-2"
+    tile
+> Button </v-btn>
+
+<v-sheet
+    color="secondary"
+    style="border: 1px solid var(--v-secondary-darken4)"
+    height="200px"
+></v-sheet>
+
+<span class="primary--text">Hello World!</span>
+```
+For further information on colors visit the [Vuetify Documentation](https://vuetifyjs.com/en/styles/colors/).
+
+### Spacing
+The standard way of applying spacing in Vuetify is adding for example `class="pa-4"` for padding or `class="ma-4"` for margin. With Product Kit Vue, you are now also able to use custom and responsive spacings for `padding` and `margin` by applying t-shirt sizes (`3xs`, `xxs`, `xs`, `s`, `m`, `l`, `xl`, `xxl`, `3xl`) instead of absolute numbers. The spacing will now be responsive regarding the width of the screen:
+```html
+<v-btn
+    class="ma-xl"
+> Button </v-btn>
+
+<v-sheet
+    class="pt-m"
+    height="300px"
+></v-sheet>
+```
+
+### Container
+When building applications with Vuetify and Product Kit Vue, you should use `v-container` as a root container after `v-app` and `v-main`, as it includes responsive margins and max-widths.
+```html
+<v-app>
+    <v-main>
+        <v-container>
+            ...
+        </v-container>
+    </v-main>
+</v-app>
+```
+When you want to use `v-container` as a wrapper for other elements that should not have responsive margins and max-widths, you must either use the `fluid` attribute or use `div`:
+```html
+<v-container fluid>
+    ...
+</v-container>
+
+<div>
+    ...
+</div>
+```
+
 
 ## Contributing
 
