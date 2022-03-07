@@ -12,7 +12,7 @@ Feel free to open an [issue](https://github.com/mercedes-benz/product-kit_vue/is
 
 ## Examples
 
-⚠️ //TODO// Add examples as pictures.
+![Examples of UI Components](./docs/images/examples_pk_vue.png)
 
 ## Installation
 
