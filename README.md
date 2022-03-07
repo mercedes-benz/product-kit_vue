@@ -1,6 +1,6 @@
 <!-- SPDX-License-Identifier: MIT --->
 <!-- © Daimler TSS GmbH --->
-![Product Kit Vue Logo](https://github.com/Daimler/product-kit_vue/raw/main/docs/images/productkit_vue_github_logo.png)
+![Product Kit Vue Logo](./docs/images/productkit_vue_github_logo.png)
 [![license](https://img.shields.io/badge/license-MIT-38de03e?style=flat)](LICENSE)
 ![vue](https://img.shields.io/badge/vue-2.6.11-brightgreen.svg)
 ![vuetify](https://img.shields.io/badge/vuetify-2.6.0-brightgreen.svg)
