@@ -29,18 +29,4 @@ module.exports = {
       },
     },
   },
-  /*css: {
-    loaderOptions: {
-      scss: { // 9.0.0
-        additionalData: `
-          @use "../src/theme/styles.scss";
-        `,
-      },
-      sass: { // 9.0.0
-        additionalData: `
-          @use "../src/theme/styles.scss"
-        `,
-      },
-    },
-  },*/
 }

@@ -37,10 +37,6 @@
                     <v-list-item-icon><v-icon>mdi-grid</v-icon></v-list-item-icon>
                     <v-list-item-title>Layout</v-list-item-title>
                 </v-list-item>
-                <!--<v-list-item :to="getRoutePath('opacity')">
-                    <v-list-item-icon><v-icon>mdi-opacity</v-icon></v-list-item-icon>
-                    <v-list-item-title>Opacity</v-list-item-title>
-                </v-list-item>-->
                 <v-list-item :to="getRoutePath('size')">
                     <v-list-item-icon><v-icon>mdi-resize</v-icon></v-list-item-icon>
                     <v-list-item-title>Size</v-list-item-title>
