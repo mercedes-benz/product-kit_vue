@@ -123,10 +123,6 @@ $grid-breakpoints: (
   'lg': 1240px,
   'xl': 1440px
 );
-$container-max-widths: (
-  "md": 840px,
-  "xl": 1040px,
-);
 $container-padding-x: $grid-gutter / 2 !default;
 $grid-columns: 12 !default;
 $grid-gutters: (
