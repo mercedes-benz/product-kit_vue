@@ -1,113 +1,55 @@
 <template>
-  <v-card flat>
-    <v-card-text>
-      <v-container fluid class="pa-0">
-        <v-row>
-          <v-col cols="12">
-            <p>Normal</p>
-          </v-col>
+      <v-container fluid class="pa-0 text-center">
+        <v-row justify="center">
 
-          <v-col cols="12" sm="2">
-            <v-btn text icon color="blue">
+          <v-col cols="auto">
+            <v-btn text icon color="blue" class="mx-3">
               <v-icon>mdi-heart</v-icon>
-              blue
             </v-btn>
-          </v-col>
-
-          <v-col cols="12" sm="2">
-            <v-btn text icon color="grey">
-              <v-icon>mdi-star</v-icon>
-              grey
-            </v-btn>
-          </v-col>
-
-          <v-col cols="12" sm="2">
-            <v-btn text icon color="indigo">
+            <v-btn text icon color="indigo" class="mx-3">
               <v-icon>mdi-cached</v-icon>
-              indigo
-            </v-btn>
-          </v-col>
-
-          <v-col cols="12" sm="2">
-            <v-btn text icon color="blue-grey">
+              
+            </v-btn><v-btn text icon color="indigo" class="mx-3">
+              <v-icon>mdi-cached</v-icon>
+              
+            </v-btn><v-btn text icon color="blue-grey" class="mx-3">
               <v-icon>mdi-thumb-up</v-icon>
-              blue-grey
-            </v-btn>
-          </v-col>
-
-          <v-col cols="12" sm="2">
-            <v-btn text icon color="pink">
+              
+            </v-btn><v-btn text icon color="pink" class="mx-3">
               <v-icon>mdi-thumb-down</v-icon>
-              pink
-            </v-btn>
-          </v-col>
-
-          <v-col cols="12" sm="2">
-            <v-btn text icon color="purple">
+              
+            </v-btn><v-btn text icon color="purple" class="mx-3">
               <v-icon>mdi-earth</v-icon>
-              purple
-            </v-btn>
-          </v-col>
-
-          <v-col cols="12" sm="2">
-            <v-btn text icon color="red">
+              
+            </v-btn><v-btn text icon color="red" class="mx-3">
               <v-icon>mdi-download</v-icon>
-              red
-            </v-btn>
-          </v-col>
-
-          <v-col cols="12" sm="2">
-            <v-btn text icon color="green">
+              
+            </v-btn><v-btn text icon color="green" class="mx-3">
               <v-icon>mdi-home</v-icon>
-              green
+              
             </v-btn>
           </v-col>
         </v-row>
+        <v-row class="mt-12 text-center">
 
-        <v-row class="mt-12">
-          <v-col cols="12">
-            <p>Disabled</p>
-          </v-col>
-
-          <v-col cols="12" sm="2">
-            <v-btn icon disabled>
+          <v-col cols="auto">
+            <v-btn icon disabled class="mx-3">
               <v-icon>mdi-heart</v-icon>
-            </v-btn>
-          </v-col>
-
-          <v-col cols="12" sm="2">
-            <v-btn icon disabled>
+            </v-btn> <v-btn icon disabled class="mx-3">
               <v-icon>mdi-star</v-icon>
-            </v-btn>
-          </v-col>
-
-          <v-col cols="12" sm="2">
-            <v-btn icon disabled>
+            </v-btn><v-btn icon disabled class="mx-3">
               <v-icon>mdi-cached</v-icon>
-            </v-btn>
-          </v-col>
-
-          <v-col cols="12" sm="2">
-            <v-btn icon disabled>
+            </v-btn><v-btn icon disabled class="mx-3">
               <v-icon>mdi-thumb-up</v-icon>
-            </v-btn>
-          </v-col>
-
-          <v-col cols="12" sm="2">
-            <v-btn icon disabled>
+            </v-btn><v-btn icon disabled class="mx-3">
               <v-icon>mdi-thumb-down</v-icon>
-            </v-btn>
-          </v-col>
-
-          <v-col cols="12" sm="2">
-            <v-btn icon disabled>
+            </v-btn><v-btn icon disabled class="mx-3">
               <v-icon>mdi-earth</v-icon>
             </v-btn>
           </v-col>
+
         </v-row>
       </v-container>
-    </v-card-text>
-  </v-card>
 </template>
 
 <style lang="scss" scoped>

@@ -20,7 +20,7 @@
       <v-btn text>Share</v-btn>
 
       <v-btn
-        color="purple"
+        color="primary"
         text
       >
         Explore
@@ -30,6 +30,7 @@
 
       <v-btn
         icon
+        color="primary"
         @click="show = !show"
       >
         <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>

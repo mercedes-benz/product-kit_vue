@@ -36,7 +36,7 @@
                 </v-row>
                 <v-subheader>Top App Bar</v-subheader>
                 <Dense />
-                <v-subheader>Top App Bar</v-subheader>
+                <v-subheader>Navigation Drawer</v-subheader>
                 <ColoredDrawer />
             </v-col>
             <v-col cols="6">
