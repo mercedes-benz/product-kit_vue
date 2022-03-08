@@ -49,16 +49,12 @@ css: {
         additionalData: `
           @use "@daimler/productkit-core/exports/web/styles/scss/variables" as tokens;
           @use "@daimler/productkit-core/exports/web/styles/scss/variables-dark" as tokensDark;
-          @import "@daimler/productkit-vue/src/theme/variables.scss";
-          @import "@daimler/productkit-vue/src/theme/overrides.scss";
         `,
       },
       sass: { // 9.0.0
         additionalData: `
           @use "@daimler/productkit-core/exports/web/styles/scss/variables" as tokens
           @use "@daimler/productkit-core/exports/web/styles/scss/variables-dark" as tokensDark
-          @import "@daimler/productkit-vue/src/theme/variables.scss"
-          @import "@daimler/productkit-vue/src/theme/overrides.scss"
         `,
       },
     },
@@ -70,7 +66,7 @@ Your Vuetify components should now be styled accordingly to the styleguide of Da
 ## Usage
 
 ### Colors
-Product Kit Vue comes with all custom Daimler TSS colors like `primary` (corporate blue) or `secondary` (corporate pink) and their shades (`lighten-1` to `lighten 5` and `darken-1` to `darken-4`). It furthermore works with the standard Vuetify color palette, including colors like `green` or `blue-grey`. 
+Product Kit Vue comes with all custom Daimler TSS colors like `primary` (corporate blue) or `secondary` (corporate pink) and their shades (`lighten-1` to `lighten 5` and `darken-1` to `darken-4`). It furthermore supports the standard Vuetify color palette, including colors like `green` or `blue-grey`. 
 
 You can use the custom Daimler TSS colors in different ways:
 - In the `color` attribute of supporting elements like `v-btn` or `v-sheet`
@@ -97,7 +93,7 @@ You can use the custom Daimler TSS colors in different ways:
 
 <span class="primary--text">Hello World!</span>
 ```
-For further information on colors visit the [Vuetify Documentation](https://vuetifyjs.com/en/styles/colors/).
+> For further information on colors visit the [Vuetify Colors Documentation](https://vuetifyjs.com/en/styles/colors/). All custom colors of Daimler TSS are mentioned in [Product Kit Core](https://github.com/mercedes-benz/product-kit_core). Note: Contrast colors are used as text colors. If text is displayed on the background color `primary` the text color should be `contrast-primary`.
 
 ### Spacing
 The standard way of applying spacing in Vuetify is adding for example `class="pa-4"` for padding or `class="ma-4"` for margin. With Product Kit Vue, you are now also able to use custom and responsive spacings for `padding` and `margin` by applying t-shirt sizes (`3xs`, `xxs`, `xs`, `s`, `m`, `l`, `xl`, `xxl`, `3xl`) instead of absolute numbers. The spacing will now be responsive regarding the width of the screen:
@@ -111,29 +107,59 @@ The standard way of applying spacing in Vuetify is adding for example `class="pa
     height="300px"
 ></v-sheet>
 ```
+> For further information on Vuetify spacings visit the [Vuetify Spacing Documentation](https://vuetifyjs.com/en/styles/spacing/). Information on responsive spacings with t-shirt sizes can be found in [Product Kit Core](https://github.com/mercedes-benz/product-kit_core)
 
 ### Container
-When building applications with Vuetify and Product Kit Vue, you should use `v-container` as a root container after `v-app` and `v-main`, as it includes responsive margins and max-widths.
+When building applications with Vuetify and Product Kit Vue, you should use `v-main` as a root container after `v-app`, as it includes responsive margins and max-widths.
 ```html
 <v-app>
     <v-main>
-        <v-container>
-            ...
-        </v-container>
+        ...
     </v-main>
 </v-app>
 ```
-When you want to use `v-container` as a wrapper for other elements that should not have responsive margins and max-widths, you must either use the `fluid` attribute or use `div`:
+When you don't wish to use responsive margins and max-widths, you can add `class="fluid"` to the `v-main` tag. Your main-content will now always stretch 95% of the available space, regardless of the screen size. This could come in handy for layouts like dashboards.
 ```html
-<v-container fluid>
-    ...
-</v-container>
-
-<div>
-    ...
-</div>
+<v-app>
+    <v-main class="fluid">
+        ...
+    </v-main>
+</v-app>
 ```
 
+### Typography
+
+You can use typography as you are used to from Vuetify. Custom Daimler TSS responsive tokens are applied automatically. For accessibility reasons it is recommended to always use the referring `html` tag to display a typography-class:
+```html
+<h1 class="text-h1">I'm a h1</h1>
+
+<h5 class="text-h1">I also look like h1 although I'm a h5 so this should be avoided</h5>
+
+<span class="text-overline">I'm an overline</span>
+```
+
+> Information on the custom Daimler TSS typography can be found in [Product Kit Core](https://github.com/mercedes-benz/product-kit_core)
+
+### Darkmode
+
+In Vuetify, you can toggle dark mode by accessing the `$vuetify` object like following:
+```javascript
+toggleDarkMode() {
+  this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+},
+```
+This will change the theme from light to dark and vice versa on every call. For example, one could change the theme with a `v-switch` like this:
+```html
+<v-switch
+  v-model="darkSwitch"
+  label="Darkmode"
+  color="primary"
+  @change="toggleDarkMode"
+  hide-details
+></v-switch>
+```
+
+The Daimler TSS application colors like `primary` are also automatically changed when switching to dark mode (see examples).
 
 ## Contributing
 
