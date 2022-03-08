@@ -16,7 +16,6 @@ module.exports = {
           @use "@daimler/productkit-core/exports/web/styles/scss/variables" as tokens;
           @use "@daimler/productkit-core/exports/web/styles/scss/variables-dark" as tokensDark;
           @import "../src/theme/variables.scss";
-          @import "../src/theme/overrides.scss";
         `,
       },
       sass: { // 9.0.0
@@ -24,7 +23,6 @@ module.exports = {
           @use "@daimler/productkit-core/exports/web/styles/scss/variables" as tokens
           @use "@daimler/productkit-core/exports/web/styles/scss/variables-dark" as tokensDark
           @import "../src/theme/variables.scss"
-          @import "../src/theme/overrides.scss"
         `,
       },
     },

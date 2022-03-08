@@ -1,4 +1,5 @@
 const variables = require('./colors.scss')
+const overrides = require('./overrides.scss')
 
 const colorObject = {
     deepblue: {
