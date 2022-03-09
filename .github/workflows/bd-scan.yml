@@ -1,0 +1,86 @@
+name: Blackduck Scan
+on:
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+    inputs:
+      branch:
+        required: true
+        description: "Branch that should be scanned"
+        default: "main"
+  workflow_run:
+    workflows: ["Update Version"]
+    types:
+      - completed
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ☁ Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.inputs.branch }}
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - run: npm install
+      - name: Synopsys Detect
+        uses: blackducksoftware/github-action@v2
+        with: 
+          args: 
+            '--blackduck.url="https://bdscan.daimler.com" --blackduck.api.token="${{ secrets.BD_SCAN_API_TOKEN }}" --detect.policy.check.fail.on.severities="MAJOR,CRITICAL,BLOCKER" --detect.npm.include.dev.dependencies=false --detect.project.name="product-kit-vue" --detect.project.version.name="${{ github.event.inputs.version }}" --detect.project.version.phase="RELEASED" --detect.notices.report=true'
+
+
+
+  # bd-scan:
+  #   runs-on: [ self-hosted ]
+  #   needs: build-runner
+  #   container:
+  #     image: ${{ needs.build-runner.outputs.runnerImage }}
+  #     credentials:
+  #       username: ${{ secrets.DOCKER_PUSH_USER }}
+  #       password: ${{ secrets.DOCKER_PUSH_USER_PW }}
+  #   steps:
+  #     - name: ☁ Checkout code
+  #       uses: actions/checkout@v2
+  #       with:
+  #         ref: ${{ github.event.inputs.branch }}
+
+  #     - uses: DCE/action-blackduck-scan@v8
+  #       name: 🦆 Scan atc-backend
+  #       id: atc-backend
+  #       if: always()
+  #       env:
+  #         BLACKDUCK_URL: https://bdscan.daimler.com
+  #         PROJECT_NAME: ATC-DataStore
+  #         SCAN_DIR: ./system/atc-backend
+  #         SCAN_NAME: atc-backend
+  #         SCAN_VERSION: DEVELOPMENT
+  #         EXCLUDE_DIRECTORIES: gradle
+  #         DETECT_SCRIPT_URL: https://detect.synopsys.com/detect7.sh
+  #         SCAN_TYPE: SAAS
+  #         FAIL_ON_SEVERITIES: BLOCKER,CRITICAL
+  #         NOTICES_PATH: ../../notices/
+  #         UNMAP_CODELOCATION: true
+  #       with:
+  #         blackduck-api-token: ${{ secrets.BD_SCAN_API_TOKEN }}
+
+  #     - name: 💾 Archive risk reports
+  #       uses: actions/upload-artifact@v2
+  #       if: always()
+  #       with:
+  #         name: BlackDuck_RiskReports
+  #         path: "*.pdf"
+
+  #     - name: 💾 Archive Notices file reports
+  #       uses: actions/upload-artifact@v2
+  #       if: always()
+  #       with:
+  #         name: BlackDuck_NoticesFiles
+  #         path: "./notices"
+
+  #   outputs:
+  #     atc-backend-result: ${{ steps.atc-backend.outcome }}
+  #     atc-backend-url: ${{ steps.atc-backend.outputs.result-url }}
