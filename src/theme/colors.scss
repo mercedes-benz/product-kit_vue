@@ -1,21 +1,37 @@
 :export {
   primaryL: tokens.$color-application-primary;
+  primaryContrastL: tokens.$color-application-contrast-primary;
   secondaryL: tokens.$color-application-secondary;
+  secondaryContrastL: tokens.$color-application-contrast-secondary;
   tertiaryL: tokens.$color-application-tertiary;
+  tertiaryContrastL: tokens.$color-application-contrast-tertiary;
   quaternaryL: tokens.$color-application-quaternary;
+  quaternaryContrastL: tokens.$color-application-contrast-quaternary;
   errorL: tokens.$color-application-error;
+  errorContrastL: tokens.$color-application-contrast-error;
   backgroundL: tokens.$color-application-background;
+  backgroundContrastL: tokens.$color-application-contrast-background;
   surfaceL: tokens.$color-application-surface;
+  surfaceContrastL: tokens.$color-application-contrast-surface;
   outlineL: tokens.$color-application-outline;
+  outlineContrastL: tokens.$color-application-contrast-outline;
 
   primaryD: tokensDark.$color-application-primary;
+  primaryContrastD: tokensDark.$color-application-contrast-primary;
   secondaryD: tokensDark.$color-application-secondary;
+  secondaryContrastD: tokensDark.$color-application-contrast-secondary;
   tertiaryD: tokensDark.$color-application-tertiary;
+  tertiaryContrastD: tokensDark.$color-application-contrast-tertiary;
   quaternaryD: tokensDark.$color-application-quaternary;
+  quaternaryContrastD: tokensDark.$color-application-contrast-quaternary;
   errorD: tokensDark.$color-application-error;
+  errorContrastD: tokensDark.$color-application-contrast-error;
   backgroundD: tokensDark.$color-application-background;
+  backgroundContrastD: tokensDark.$color-application-contrast-background;
   surfaceD: tokensDark.$color-application-surface;
+  surfaceContrastD: tokensDark.$color-application-contrast-surface;
   outlineD: tokensDark.$color-application-outline;
+  outlineContrastD: tokensDark.$color-application-contrast-outline;
 
   db: tokens.$color-brand-deepblue-500;
   dbL5: tokens.$color-brand-deepblue-50;

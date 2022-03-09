@@ -89,7 +89,7 @@ You can use the custom Daimler TSS colors in different ways:
 
 - In the `color` attribute of supporting elements like `v-btn` or `v-sheet`
 - Adding `class="primary"` to an element will change the background color of it. Adding for example `class="primary darken-3"` will apply a darker blue
-- Font color is set automatically based on the background-color. If you want to use a specific font color you can do so by applying for example the `primary--text` class. Combined with the `text-lighten-1` class the text will appear slightly lighter
+- Font color is set automatically based on the background-color. If you want to use a specific font color you can do so by applying for example the `primary--text` class (for company-blue) or `primary-contrast--text` class (for the specified contrast color for company-blue). Combined with the `text-lighten-1` class the text will appear slightly lighter.
 - In CSS you can use `var(--v-primary-base)` or `var(--v-primary-lighten1)`
 
 ```html
