@@ -96,27 +96,29 @@
       background-color: rgba($color: #ffffff, $alpha: 0.16);
     }
   }
-  
-  .primary {
+
+.theme--light {
+  &.primary:not(.v-chip--outlined,.v-chip--outlined.v-icon) * {
     color: tokens.$color-application-contrast-primary !important;
     opacity: tokens.$opacity-application-text-contrast-high !important;
   }
-  .secondary {
+  &.secondary:not(.v-chip--outlined,.v-chip--outlined.v-icon) * {
     color: tokens.$color-application-contrast-secondary !important;
     opacity: tokens.$opacity-application-text-contrast-high !important;
   }
-  .tertiary {
+  &.tertiary:not(.v-chip--outlined,.v-chip--outlined.v-icon) * {
     color: tokens.$color-application-contrast-tertiary !important;
     opacity: tokens.$opacity-application-text-contrast-high !important;
   }
-  .quaternary {
+  &.quaternary:not(.v-chip--outlined,.v-chip--outlined.v-icon) * {
     color: tokens.$color-application-contrast-quaternary !important;
     opacity: tokens.$opacity-application-text-contrast-high !important;
   }
-  .error {
+  &.error:not(.v-chip--outlined,.v-chip--outlined.v-icon) * {
     color: tokens.$color-application-contrast-error !important;
     opacity: tokens.$opacity-application-text-contrast-high !important;
   }
+}
   .indigo {
     color: tokens.$color-brand-neutral-contrast-900 !important;
     opacity: tokens.$opacity-application-text-contrast-high !important;
@@ -441,6 +443,7 @@
       opacity: tokens.$opacity-application-text-contrast-high !important;
     }
   }
+
   
   code,
   kbd,
