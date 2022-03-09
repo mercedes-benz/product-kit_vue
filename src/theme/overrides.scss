@@ -469,11 +469,15 @@
     max-width: 100%;
     padding-left: tokens.$layout-application-xs-margin-size;
     padding-right: tokens.$layout-application-xs-margin-size;
-    &.fluid {
+  }
+  .fluid {
+    .v-main__wrap {
       max-width: 95%;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
-  
+
   .row {
     margin: - tokens.$layout-application-xs-gutter-size / 2;
   }
