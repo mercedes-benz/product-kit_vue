@@ -36,13 +36,13 @@
                 </v-row>
                 <v-subheader>Top App Bar</v-subheader>
                 <Dense />
-                <v-subheader>Navigation Drawer</v-subheader>
-                <ColoredDrawer />
+                <!--<v-subheader>Navigation Drawer</v-subheader>
+                <ColoredDrawer />-->
             </v-col>
             <v-col cols="6">
-                <v-subheader>Cards</v-subheader>
+                <v-subheader>Card</v-subheader>
                 <OutlinedCards />
-                <v-card
+                <!--<v-card
                     :loading="loading"
                     class="mx-auto my-12"
                     max-width="374"
@@ -115,7 +115,7 @@
                             Reserve
                         </v-btn>
                     </v-card-actions>
-                </v-card>
+                </v-card>-->
             </v-col>
         </v-row>
     </ExampleWrapper>
