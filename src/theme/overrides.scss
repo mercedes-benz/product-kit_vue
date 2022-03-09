@@ -98,23 +98,23 @@
   }
 
 .theme--light {
-  &.primary:not(.v-chip--outlined,.v-chip--outlined.v-icon) * {
+  &.primary:not(.v-chip--outlined,.v-chip--outlined.v-icon) > * {
     color: tokens.$color-application-contrast-primary !important;
     opacity: tokens.$opacity-application-text-contrast-high !important;
   }
-  &.secondary:not(.v-chip--outlined,.v-chip--outlined.v-icon) * {
+  &.secondary:not(.v-chip--outlined,.v-chip--outlined.v-icon) > * {
     color: tokens.$color-application-contrast-secondary !important;
     opacity: tokens.$opacity-application-text-contrast-high !important;
   }
-  &.tertiary:not(.v-chip--outlined,.v-chip--outlined.v-icon) * {
+  &.tertiary:not(.v-chip--outlined,.v-chip--outlined.v-icon) > * {
     color: tokens.$color-application-contrast-tertiary !important;
     opacity: tokens.$opacity-application-text-contrast-high !important;
   }
-  &.quaternary:not(.v-chip--outlined,.v-chip--outlined.v-icon) * {
+  &.quaternary:not(.v-chip--outlined,.v-chip--outlined.v-icon) > * {
     color: tokens.$color-application-contrast-quaternary !important;
     opacity: tokens.$opacity-application-text-contrast-high !important;
   }
-  &.error:not(.v-chip--outlined,.v-chip--outlined.v-icon) * {
+  &.error:not(.v-chip--outlined,.v-chip--outlined.v-icon) > * {
     color: tokens.$color-application-contrast-error !important;
     opacity: tokens.$opacity-application-text-contrast-high !important;
   }
