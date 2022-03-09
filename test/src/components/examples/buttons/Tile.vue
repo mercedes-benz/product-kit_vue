@@ -6,7 +6,6 @@
                 class="ma-2"
                 tile
                 color="indigo"
-                @click="showSource()"
                 >Tile Button</v-btn
             >
             <v-btn class="ma-2" tile outlined color="secondary">
