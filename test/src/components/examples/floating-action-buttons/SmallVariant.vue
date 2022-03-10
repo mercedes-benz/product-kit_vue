@@ -2,20 +2,20 @@
   <v-row>
     <v-col cols="12" sm="6" offset-sm="3">
       <v-card>
-        <v-toolbar color="light-blue" light extended>
-          <v-app-bar-nav-icon></v-app-bar-nav-icon>
-          <v-toolbar-title class="white--text">My files</v-toolbar-title>
+        <v-toolbar color="primary" extended>
+          <v-app-bar-nav-icon class="primary-contrast--text"></v-app-bar-nav-icon>
+          <v-toolbar-title>My files</v-toolbar-title>
           <v-spacer></v-spacer>
-          <v-btn icon>
+          <v-btn icon class="primary-contrast--text">
             <v-icon>mdi-magnify</v-icon>
           </v-btn>
-          <v-btn icon>
+          <v-btn icon class="primary-contrast--text">
             <v-icon>mdi-view-module</v-icon>
           </v-btn>
           <template v-slot:extension>
             <v-btn
               fab
-              color="cyan accent-2"
+              color="secondary"
               bottom
               left
               absolute

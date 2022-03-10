@@ -2,7 +2,7 @@
   <div class="text-center">
     <v-btn
       
-      color="orange darken-2"
+      color="secondary"
       @click="snackbar = true"
     >
       Open Snackbar

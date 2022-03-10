@@ -8,8 +8,7 @@
       <template v-slot:header>
         <v-toolbar
           class="mb-2"
-          color="indigo darken-5"
-          dark
+          color="primary"
           flat
         >
           <v-toolbar-title>This is a header</v-toolbar-title>
@@ -75,8 +74,7 @@
       <template v-slot:footer>
         <v-toolbar
           class="mt-2"
-          color="indigo"
-          dark
+          color="primary"
           flat
         >
           <v-toolbar-title class="subheading">This is a footer</v-toolbar-title>

@@ -1,9 +1,8 @@
 <template>
   <v-card>
     <v-tabs
-      background-color="deep-purple accent-4"
+      background-color="primary"
       center-active
-      dark
     >
       <v-tab>One</v-tab>
       <v-tab>Two</v-tab>

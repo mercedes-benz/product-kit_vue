@@ -8,7 +8,7 @@
     >
       <template v-slot:activator="{ on }">
         <v-btn
-          color="indigo"
+          color="primary"
           
           v-on="on"
         >
@@ -30,7 +30,7 @@
 
             <v-list-item-action>
               <v-btn
-                :class="fav ? 'red--text' : ''"
+                :class="fav ? 'secondary--text' : ''"
                 icon
                 @click="fav = !fav"
               >
@@ -45,14 +45,14 @@
         <v-list>
           <v-list-item>
             <v-list-item-action>
-              <v-switch v-model="message" color="purple"></v-switch>
+              <v-switch v-model="message" color="secondary"></v-switch>
             </v-list-item-action>
             <v-list-item-title>Enable messages</v-list-item-title>
           </v-list-item>
 
           <v-list-item>
             <v-list-item-action>
-              <v-switch v-model="hints" color="purple"></v-switch>
+              <v-switch v-model="hints" color="tertairy"></v-switch>
             </v-list-item-action>
             <v-list-item-title>Enable hints</v-list-item-title>
           </v-list-item>

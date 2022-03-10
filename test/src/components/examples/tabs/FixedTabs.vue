@@ -1,8 +1,7 @@
 <template>
   <v-tabs
     fixed-tabs
-    background-color="indigo"
-    dark
+    background-color="secondary"
   >
     <v-tab>
       Option

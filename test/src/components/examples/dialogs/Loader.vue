@@ -4,7 +4,7 @@
       :disabled="dialog"
       :loading="dialog"
       class="white--text"
-      color="purple darken-2"
+      color="primary"
       @click="dialog = true"
     >
       Start loading

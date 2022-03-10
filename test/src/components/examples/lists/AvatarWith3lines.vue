@@ -4,8 +4,7 @@
     class="mx-auto"
   >
     <v-toolbar
-      color="cyan"
-      dark
+      color="primary"
     >
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
 

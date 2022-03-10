@@ -4,8 +4,7 @@
     class="mx-auto"
   >
     <v-toolbar
-      color="pink"
-      dark
+      color="quaternary"
     >
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
 
@@ -26,7 +25,7 @@
       <v-list-item-group
         v-model="selected"
         multiple
-        active-class="pink--text"
+        active-class="secondary--text"
       >
         <template v-for="(item, index) in items">
           <v-list-item :key="item.title">
@@ -48,7 +47,7 @@
 
                 <v-icon
                   v-else
-                  color="yellow"
+                  color="secondary"
                 >
                   mdi-star
                 </v-icon>

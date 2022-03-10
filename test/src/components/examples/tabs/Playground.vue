@@ -42,9 +42,8 @@
 
     <v-tabs
       v-model="tab"
-      background-color="deep-purple accent-4"
+      background-color="secondary"
       class="elevation-2"
-      dark
       :centered="centered"
       :grow="grow"
       :vertical="vertical"

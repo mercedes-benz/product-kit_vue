@@ -1,8 +1,7 @@
 <template>
   <v-card>
     <v-toolbar
-      color="cyan"
-      dark
+      color="primary"
       flat
     >
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
@@ -24,7 +23,7 @@
           v-model="tab"
           align-with-title
         >
-          <v-tabs-slider color="yellow"></v-tabs-slider>
+          <v-tabs-slider color="secondary"></v-tabs-slider>
 
           <v-tab v-for="item in items" :key="item">
             {{ item }}

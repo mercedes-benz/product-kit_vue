@@ -4,35 +4,33 @@
     style="max-width: 500px;"
   >
     <v-system-bar
-      color="deep-purple darken-4"
-      dark
+      color="tertiary"
     >
       <v-spacer></v-spacer>
-      <v-icon small>mdi-square</v-icon>
+      <v-icon small class="tertiary-contrast--text">mdi-square</v-icon>
       <v-icon
-        class="ml-1"
+        class="ml-1 tertiary-contrast--text"
         small
       >mdi-circle</v-icon>
       <v-icon
-        class="ml-1"
+        class="ml-1 tertiary-contrast--text"
         small
       >mdi-triangle</v-icon>
     </v-system-bar>
     <v-toolbar
-      color="deep-purple accent-4"
+      color="primary"
       cards
-      dark
       flat
     >
-      <v-btn icon>
+      <v-btn icon class="primary-contrast--text">
         <v-icon>mdi-arrow-left</v-icon>
       </v-btn>
       <v-card-title class="title font-weight-regular">Sign up</v-card-title>
       <v-spacer></v-spacer>
-      <v-btn icon>
+      <v-btn icon class="primary-contrast--text">
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
-      <v-btn icon>
+      <v-btn icon class="primary-contrast--text">
         <v-icon>mdi-dots-vertical</v-icon>
       </v-btn>
     </v-toolbar>
@@ -45,7 +43,7 @@
         v-model="password"
         :rules="[rules.password, rules.length(6)]"
         filled
-        color="deep-purple"
+        color="primary"
         counter="6"
         label="Password"
         style="min-height: 96px"
@@ -54,14 +52,14 @@
       <v-text-field
         v-model="phone"
         filled
-        color="deep-purple"
+        color="primary"
         label="Phone number"
       ></v-text-field>
       <v-text-field
         v-model="email"
         :rules="[rules.email]"
         filled
-        color="deep-purple"
+        color="primary"
         label="Email address"
         type="email"
       ></v-text-field>
@@ -69,14 +67,14 @@
         v-model="bio"
         auto-grow
         filled
-        color="deep-purple"
+        color="primary"
         label="Bio"
         rows="1"
       ></v-textarea>
       <v-checkbox
         v-model="agreement"
         :rules="[rules.required]"
-        color="deep-purple"
+        color="primary"
       >
         <template v-slot:label>
           I agree to the&nbsp;
@@ -98,8 +96,7 @@
       <v-btn
         :disabled="!form"
         :loading="isLoading"
-        class="white--text"
-        color="deep-purple accent-4"
+        color="primary"
         depressed
       >Submit</v-btn>
     </v-card-actions>
@@ -124,8 +121,7 @@
           </v-btn>
           <v-spacer></v-spacer>
           <v-btn
-            class="white--text"
-            color="deep-purple accent-4"
+            color="primary"
             @click="agreement = true, dialog = false"
           >
             Yes

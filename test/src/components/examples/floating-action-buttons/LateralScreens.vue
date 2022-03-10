@@ -1,18 +1,17 @@
 <template>
   <v-card id="lateral">
     <v-toolbar
-      dark
       tabs
       flat
-      color="indigo"
+      color="primary"
     >
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon class="primary-contrast--text"></v-app-bar-nav-icon>
       <v-toolbar-title>Page title</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn icon>
+      <v-btn icon class="primary-contrast--text">
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
-      <v-btn icon>
+      <v-btn icon class="primary-contrast--text">
         <v-icon>mdi-dots-vertical</v-icon>
       </v-btn>
       <template v-slot:extension>
@@ -21,10 +20,10 @@
           align-with-title
           background-color="transparent"
         >
-          <v-tab href="#one">Item One</v-tab>
-          <v-tab href="#two">Item Two</v-tab>
-          <v-tab href="#three">Item Three</v-tab>
-          <v-tabs-slider color="pink"></v-tabs-slider>
+          <v-tab href="#one" class="primary-contrast--text">Item One</v-tab>
+          <v-tab href="#two" class="primary-contrast--text">Item Two</v-tab>
+          <v-tab href="#three" class="primary-contrast--text">Item Three</v-tab>
+          <v-tabs-slider color="secondary"></v-tabs-slider>
         </v-tabs>
       </template>
     </v-toolbar>
@@ -49,7 +48,6 @@
         :color="activeFab.color"
         fab
         large
-        dark
         bottom
         left
         class="v-btn--example"
@@ -80,9 +78,9 @@
     computed: {
       activeFab () {
         switch (this.tabs) {
-          case 'one': return { color: 'success', icon: 'mdi-share-variant' }
-          case 'two': return { color: 'red', icon: 'mdi-pencil' }
-          case 'three': return { color: 'green', icon: 'mdi-chevron-up' }
+          case 'one': return { color: 'secondary', icon: 'mdi-share-variant' }
+          case 'two': return { color: 'primary', icon: 'mdi-pencil' }
+          case 'three': return { color: 'quaternary', icon: 'mdi-chevron-up' }
           default: return {}
         }
       },

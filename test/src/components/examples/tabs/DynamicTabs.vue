@@ -2,8 +2,7 @@
   <v-card>
     <v-tabs
       v-model="tab"
-      background-color="red lighten-2"
-      dark
+      background-color="error"
     >
       <v-tab
         v-for="n in length"

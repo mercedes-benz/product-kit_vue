@@ -1,5 +1,5 @@
 <template>
-  <div class="grey lighten-5 pa-4">
+  <div>
     <v-toolbar
       v-if="variant === 'vertical'"
       color="gray"
@@ -120,14 +120,12 @@
           :items="items"
           clearable
           label="Variant"
-          light
         ></v-select>
         <template>
           <v-checkbox
             v-model="inset"
             hide-details
             label="Inset"
-            light
           ></v-checkbox>
         </template>
       </v-col>

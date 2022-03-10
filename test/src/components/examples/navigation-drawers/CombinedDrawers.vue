@@ -10,7 +10,6 @@
     >
       <v-row class="fill-height" no-gutters>
         <v-navigation-drawer
-          dark
           mini-variant
           mini-variant-width="56"
           permanent

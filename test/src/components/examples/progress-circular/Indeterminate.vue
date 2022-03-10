@@ -7,22 +7,22 @@
 
     <v-progress-circular
       indeterminate
-      color="red"
+      color="error"
     ></v-progress-circular>
 
     <v-progress-circular
       indeterminate
-      color="purple"
+      color="secondary"
     ></v-progress-circular>
 
     <v-progress-circular
       indeterminate
-      color="green"
+      color="tertiary"
     ></v-progress-circular>
 
     <v-progress-circular
       indeterminate
-      color="amber"
+      color="quaternary"
     ></v-progress-circular>
   </div>
 </template>

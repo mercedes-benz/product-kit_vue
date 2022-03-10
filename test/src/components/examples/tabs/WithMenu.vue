@@ -1,8 +1,7 @@
 <template>
   <v-card>
     <v-toolbar
-      color="deep-purple accent-4"
-      dark
+      color="quaternary"
       flat
     >
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
@@ -23,7 +22,6 @@
         <v-tabs
           v-model="currentItem"
           fixed-tabs
-          slider-color="white"
         >
           <v-tab
             v-for="item in items"
@@ -49,7 +47,7 @@
               </v-btn>
             </template>
 
-            <v-list class="grey lighten-3">
+            <v-list class="">
               <v-list-item
                 v-for="item in more"
                 :key="item"

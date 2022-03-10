@@ -42,7 +42,6 @@
         <v-col class="text-right">
           <v-btn
             :color="color"
-            dark
             depressed
             fab
             @click="toggle"
@@ -112,10 +111,10 @@
 
     computed: {
       color () {
-        if (this.bpm < 100) return 'indigo'
-        if (this.bpm < 125) return 'teal'
-        if (this.bpm < 140) return 'green'
-        if (this.bpm < 175) return 'orange'
+        if (this.bpm < 100) return 'primary'
+        if (this.bpm < 125) return 'secondary'
+        if (this.bpm < 140) return 'tertiary'
+        if (this.bpm < 175) return 'quaternary'
         return 'red'
       },
       animationDuration () {

@@ -20,7 +20,7 @@
 
       <v-chip-group
         v-model="selection"
-        active-class="deep-purple--text text--accent-4"
+        active-class="primary--text"
         mandatory
       >
         <v-chip v-for="size in sizes" :key="size" :value="size">
@@ -33,7 +33,7 @@
       <v-btn
         block
         class="white--text"
-        color="deep-purple accent-4"
+        color="primary"
       >
         Add to Cart
       </v-btn>

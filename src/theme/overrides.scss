@@ -6,22 +6,62 @@
     &.primary {
       color: tokensDark.$color-application-contrast-primary !important;
       opacity: tokens.$opacity-application-text-contrast-high !important;
+      &> .v-toolbar__content > button {
+        color: tokensDark.$color-application-contrast-primary !important;
+        opacity: tokensDark.$opacity-application-text-contrast-high !important;
+      }
+      &> .v-date-picker-title {
+        color: tokensDark.$color-application-contrast-primary !important;
+        opacity: tokensDark.$opacity-application-text-contrast-high !important;
+      }
     }
     &.secondary {
       color: tokensDark.$color-application-contrast-secondary !important;
       opacity: tokens.$opacity-application-text-contrast-high !important;
+      &> .v-toolbar__content > button {
+        color: tokensDark.$color-application-contrast-secondary !important;
+        opacity: tokensDark.$opacity-application-text-contrast-high !important;
+      }
+      &> .v-date-picker-title {
+        color: tokensDark.$color-application-contrast-secondary !important;
+        opacity: tokensDark.$opacity-application-text-contrast-high !important;
+      }
     }
     &.tertiary {
       color: tokensDark.$color-application-contrast-tertiary !important;
       opacity: tokens.$opacity-application-text-contrast-high !important;
+      &> .v-toolbar__content > button {
+        color: tokensDark.$color-application-contrast-tertiary !important;
+        opacity: tokensDark.$opacity-application-text-contrast-high !important;
+      }
+      &> .v-date-picker-title {
+        color: tokensDark.$color-application-contrast-tertiary !important;
+        opacity: tokensDark.$opacity-application-text-contrast-high !important;
+      }
     }
     &.quaternary {
       color: tokensDark.$color-application-contrast-quaternary !important;
       opacity: tokens.$opacity-application-text-contrast-high !important;
+      &> .v-toolbar__content > button {
+        color: tokensDark.$color-application-contrast-quaternary !important;
+        opacity: tokensDark.$opacity-application-text-contrast-high !important;
+      }
+      &> .v-date-picker-title {
+        color: tokensDark.$color-application-contrast-quaternary !important;
+        opacity: tokensDark.$opacity-application-text-contrast-high !important;
+      }
     }
     &.error {
       color: tokensDark.$color-application-contrast-error !important;
       opacity: tokens.$opacity-application-text-contrast-high !important;
+      &> .v-toolbar__content > button {
+        color: tokensDark.$color-application-contrast-error !important;
+        opacity: tokensDark.$opacity-application-text-contrast-high !important;
+      }
+      &> .v-date-picker-title {
+        color: tokensDark.$color-application-contrast-error !important;
+        opacity: tokensDark.$opacity-application-text-contrast-high !important;
+      }
     }
     &.elevation-1 {
       background-color: rgba($color: #ffffff, $alpha: 0.05);
@@ -98,25 +138,75 @@
   }
 
 .theme--light {
-  &.primary:not(.v-chip--outlined,.v-chip--outlined.v-icon) > * {
-    color: tokens.$color-application-contrast-primary !important;
-    opacity: tokens.$opacity-application-text-contrast-high !important;
+  &.primary {
+    &:not(.v-chip--outlined,.v-chip--outlined.v-icon) > * {
+      color: tokens.$color-application-contrast-primary !important;
+      opacity: tokens.$opacity-application-text-contrast-high !important;
+    }
+    &> .v-toolbar__content > button {
+      color: tokens.$color-application-contrast-primary !important;
+      opacity: tokens.$opacity-application-text-contrast-high !important;
+    }
+    &> .v-date-picker-title {
+      color: tokens.$color-application-contrast-primary !important;
+      opacity: tokens.$opacity-application-text-contrast-high !important;
+    }
   }
-  &.secondary:not(.v-chip--outlined,.v-chip--outlined.v-icon) > * {
-    color: tokens.$color-application-contrast-secondary !important;
-    opacity: tokens.$opacity-application-text-contrast-high !important;
+  &.secondary {
+    &:not(.v-chip--outlined,.v-chip--outlined.v-icon) > * {
+      color: tokens.$color-application-contrast-secondary !important;
+      opacity: tokens.$opacity-application-text-contrast-high !important;
+    }
+    &> .v-toolbar__content > button {
+      color: tokens.$color-application-contrast-secondary !important;
+      opacity: tokens.$opacity-application-text-contrast-high !important;
+    }
+    &> .v-date-picker-title {
+      color: tokens.$color-application-contrast-secondary !important;
+      opacity: tokens.$opacity-application-text-contrast-high !important;
+    }
   }
-  &.tertiary:not(.v-chip--outlined,.v-chip--outlined.v-icon) > * {
-    color: tokens.$color-application-contrast-tertiary !important;
-    opacity: tokens.$opacity-application-text-contrast-high !important;
+  &.tertiary {
+    &:not(.v-chip--outlined,.v-chip--outlined.v-icon) > * {
+      color: tokens.$color-application-contrast-tertiary !important;
+      opacity: tokens.$opacity-application-text-contrast-high !important;
+    }
+    &> .v-toolbar__content > button {
+      color: tokens.$color-application-contrast-tertiary !important;
+      opacity: tokens.$opacity-application-text-contrast-high !important;
+    }
+    &> .v-date-picker-title {
+      color: tokens.$color-application-contrast-tertiary !important;
+      opacity: tokens.$opacity-application-text-contrast-high !important;
+    }
   }
-  &.quaternary:not(.v-chip--outlined,.v-chip--outlined.v-icon) > * {
-    color: tokens.$color-application-contrast-quaternary !important;
-    opacity: tokens.$opacity-application-text-contrast-high !important;
+  &.quaternary {
+    &:not(.v-chip--outlined,.v-chip--outlined.v-icon) > * {
+      color: tokens.$color-application-contrast-quaternary !important;
+      opacity: tokens.$opacity-application-text-contrast-high !important;
+    }
+    &> .v-toolbar__content > button {
+      color: tokens.$color-application-contrast-quaternary !important;
+      opacity: tokens.$opacity-application-text-contrast-high !important;
+    }
+    &> .v-date-picker-title {
+      color: tokens.$color-application-contrast-quaternary !important;
+      opacity: tokens.$opacity-application-text-contrast-high !important;
+    }
   }
-  &.error:not(.v-chip--outlined,.v-chip--outlined.v-icon) > * {
-    color: tokens.$color-application-contrast-error !important;
-    opacity: tokens.$opacity-application-text-contrast-high !important;
+  &.error {
+    &:not(.v-chip--outlined,.v-chip--outlined.v-icon) > * {
+      color: tokens.$color-application-contrast-error !important;
+      opacity: tokens.$opacity-application-text-contrast-high !important;
+    }
+    &> .v-toolbar__content > button {
+      color: tokens.$color-application-contrast-error !important;
+      opacity: tokens.$opacity-application-text-contrast-high !important;
+    }
+    &> .v-date-picker-title {
+      color: tokens.$color-application-contrast-error !important;
+      opacity: tokens.$opacity-application-text-contrast-high !important;
+    }
   }
 }
   .indigo {

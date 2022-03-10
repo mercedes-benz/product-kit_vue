@@ -9,9 +9,8 @@
 
     <v-chip
       class="ma-2"
-      color="pink"
+      color="primary"
       label
-      text-color="white"
     >
       <v-icon left>mdi-label</v-icon>
       Tags
@@ -19,7 +18,7 @@
 
     <v-chip
       class="ma-2"
-      color="primary"
+      color="secondary"
       label
     >
       <v-icon left>mdi-account-circle-outline</v-icon>
@@ -29,9 +28,8 @@
     <v-chip
       class="ma-2"
       close
-      color="cyan"
+      color="quaternary"
       label
-      text-color="white"
     >
       <v-icon left>mdi-twitter</v-icon>
       New Tweets

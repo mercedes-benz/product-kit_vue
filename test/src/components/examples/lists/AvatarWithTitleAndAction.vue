@@ -4,8 +4,7 @@
     class="mx-auto"
   >
     <v-toolbar
-      color="indigo"
-      dark
+      color="secondary"
     >
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
 
@@ -27,7 +26,7 @@
         :key="item.title"
       >
         <v-list-item-icon>
-          <v-icon v-if="item.icon" color="pink">mdi-star</v-icon>
+          <v-icon v-if="item.icon" color="secondary">mdi-star</v-icon>
         </v-list-item-icon>
 
         <v-list-item-content>

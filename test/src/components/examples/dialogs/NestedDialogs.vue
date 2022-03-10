@@ -62,7 +62,7 @@
           >
             <v-btn
               icon
-              dark
+               class="primary-contrast--text"
               @click="dialog = false"
             >
               <v-icon>mdi-close</v-icon>
@@ -71,7 +71,7 @@
             <v-spacer></v-spacer>
             <v-toolbar-items>
               <v-btn
-                dark
+                 class="primary-contrast--text"
                 text
                 @click="dialog = false"
               >
@@ -85,7 +85,7 @@
             >
               <template v-slot:activator="{ on }">
                 <v-btn
-                  dark
+                  class="primary-contrast--text"
                   icon
                   v-on="on"
                 >

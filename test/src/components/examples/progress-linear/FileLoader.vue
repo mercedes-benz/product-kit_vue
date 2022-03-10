@@ -4,8 +4,7 @@
     max-width="344"
   >
     <v-toolbar
-      color="deep-purple accent-4"
-      dark
+      color="primary"
       prominent
     >
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
@@ -15,10 +14,9 @@
       <v-btn
         absolute
         bottom
-        color="white"
+        color="secondary"
         fab
         left
-        light
       >
         <v-icon>mdi-plus</v-icon>
       </v-btn>

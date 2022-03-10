@@ -1,8 +1,7 @@
 <template>
   <v-card>
     <v-toolbar
-      color="purple"
-      dark
+      color="tertiary"
       flat
       prominent
     >

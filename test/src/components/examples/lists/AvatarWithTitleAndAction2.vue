@@ -4,8 +4,7 @@
     class="mx-auto"
   >
     <v-toolbar
-      color="deep-purple accent-4"
-      dark
+      color="tertiary"
     >
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
 
@@ -34,7 +33,7 @@
         </v-list-item-content>
 
         <v-list-item-icon>
-          <v-icon :color="item.active ? 'deep-purple accent-4' : 'grey'">mdi-message</v-icon>
+          <v-icon :color="item.active ? 'primary' : 'grey'">mdi-message</v-icon>
         </v-list-item-icon>
       </v-list-item>
     </v-list>

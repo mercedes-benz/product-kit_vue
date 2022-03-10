@@ -17,7 +17,7 @@
     </v-card-subtitle>
 
     <v-card-actions>
-      <v-btn text>Share</v-btn>
+      <v-btn text color="primary">Share</v-btn>
 
       <v-btn
         color="primary"

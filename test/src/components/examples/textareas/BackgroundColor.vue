@@ -1,21 +1,21 @@
 <template>
   <v-container>
     <v-textarea
-      background-color="light-blue"
-      color="black"
-      label="Label"
+      background-color="primary lighten-3"
+      color="primary-contrast--text"
+      label="Primary-Lighten3 BG"
     ></v-textarea>
 
     <v-textarea
-      background-color="grey lighten-2"
-      color="cyan"
-      label="Label"
+      background-color="secondary lighten-2"
+      color="secondary-contrast--text"
+      label="Secondary-Lighten2 BG"
     ></v-textarea>
 
     <v-textarea
-      background-color="amber lighten-4"
-      color="orange orange-darken-4"
-      label="Label"
+      background-color="quaternary lighten-2"
+      color="quaternaty-contrast--text"
+      label="Quaternary-Lighten2 BG"
     ></v-textarea>
   </v-container>
 </template>

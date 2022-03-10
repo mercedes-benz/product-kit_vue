@@ -7,7 +7,7 @@
         :size="size"
         :value="value"
         :width="width"
-        color="light-blue"
+        color="primary"
       >{{ value }}</v-progress-circular>
     </div>
 

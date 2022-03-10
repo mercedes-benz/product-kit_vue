@@ -2,7 +2,7 @@
   <div class="text-center">
     <v-btn
       
-      color="red darken-2"
+      color="error"
       @click="snackbar = true"
     >
       Open Snackbar

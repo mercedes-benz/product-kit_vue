@@ -4,11 +4,10 @@
     height="400"
     width="344"
   >
-    <v-system-bar color="deep-purple darken-3"></v-system-bar>
+    <v-system-bar color="primary darken-3"></v-system-bar>
 
     <v-app-bar
-      color="deep-purple accent-4"
-      dark
+      color="primary"
       prominent
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>

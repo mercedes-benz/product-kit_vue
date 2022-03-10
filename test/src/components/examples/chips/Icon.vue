@@ -2,8 +2,7 @@
   <div class="text-center">
     <v-chip
       class="ma-2"
-      color="indigo"
-      text-color="white"
+      color="primary"
     >
       <v-avatar left>
         <v-icon>mdi-account-circle</v-icon>
@@ -13,8 +12,7 @@
 
     <v-chip
       class="ma-2"
-      color="orange"
-      text-color="white"
+      color="secondary"
     >
       Premium
       <v-icon right>mdi-star</v-icon>
@@ -22,8 +20,7 @@
 
     <v-chip
       class="ma-2"
-      color="primary"
-      text-color="white"
+      color="tertiary"
     >
       1 Year
       <v-icon right>mdi-cake-variant</v-icon>
@@ -31,12 +28,11 @@
 
     <v-chip
       class="ma-2"
-      color="green"
-      text-color="white"
+      color="quaternary"
     >
       <v-avatar
         left
-        class="green darken-4"
+        class="neutral"
       >
         1
       </v-avatar>
@@ -46,8 +42,6 @@
     <v-chip
       class="ma-2"
       close
-      color="teal"
-      text-color="white"
       @click:close="close"
     >
       <v-avatar left>
@@ -59,8 +53,6 @@
     <v-chip
       class="ma-2"
       close
-      color="teal"
-      text-color="white"
       close-icon="mdi-delete"
       @click:close="close"
     >

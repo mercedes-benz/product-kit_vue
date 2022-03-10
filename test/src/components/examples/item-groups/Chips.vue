@@ -2,8 +2,7 @@
   <v-card>
     <v-toolbar
       flat
-      color="blue-grey"
-      dark
+      color="primary"
     >
       <v-toolbar-title>Submit a post</v-toolbar-title>
     </v-toolbar>
@@ -27,7 +26,7 @@
           v-slot:default="{ active, toggle }"
         >
           <v-chip
-            active-class="purple--text"
+            active-class="primary--text"
             :input-value="active"
             @click="toggle"
           >
@@ -42,7 +41,7 @@
     <v-card-actions>
       <v-spacer></v-spacer>
       <v-btn
-        color="success"
+        color="secondary"
         depressed
       >
         Post

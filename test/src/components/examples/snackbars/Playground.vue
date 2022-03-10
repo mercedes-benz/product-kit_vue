@@ -6,7 +6,7 @@
           <v-col cols="12">
             <v-radio-group v-model="color" row>
               <v-radio
-                v-for="(colorValue, i) in ['success', 'info', 'error', 'cyan darken-2']"
+                v-for="(colorValue, i) in ['primary', 'secondary', 'tertiary', 'quaternary']"
                 :key="i"
                 :color="colorValue"
                 :label="colorValue"
@@ -102,10 +102,11 @@
       :timeout="timeout"
       :top="y === 'top'"
       :vertical="mode === 'vertical'"
+      :class="color + '-contrast--text'"
     >
       {{ text }}
       <v-btn
-        
+        :class="color + '-contrast--text'"
         text
         @click="snackbar = false"
       >

@@ -4,8 +4,7 @@
     max-width="500"
   >
     <v-system-bar
-      color="indigo darken-2"
-      dark
+      color="tertiary"
     >
       <v-spacer></v-spacer>
 
@@ -17,16 +16,15 @@
     </v-system-bar>
 
     <v-toolbar
-      color="indigo"
-      dark
+      color="primary"
     >
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon ></v-app-bar-nav-icon>
 
       <v-toolbar-title>Discover</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
-      <v-btn icon>
+      <v-btn icon >
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
     </v-toolbar>
@@ -38,7 +36,7 @@
           :key="card.title"
           :cols="card.flex"
         >
-          <v-card>
+          <v-card elevation="6">
             <v-img
               :src="card.src"
               class="white--text align-end"

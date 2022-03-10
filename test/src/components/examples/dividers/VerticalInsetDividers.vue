@@ -1,7 +1,6 @@
 <template>
   <v-toolbar
-    color="teal"
-    dark
+    color="secondary"
   >
     <v-toolbar-title>Title</v-toolbar-title>
 
@@ -16,7 +15,7 @@
     <v-spacer></v-spacer>
 
     <v-toolbar-items class="hidden-sm-and-down">
-      <v-btn text>
+      <v-btn text class="secondary-contrast--text">
         News
       </v-btn>
 
@@ -25,7 +24,7 @@
         vertical
       ></v-divider>
 
-      <v-btn text>
+      <v-btn text class="secondary-contrast--text">
         Blog
       </v-btn>
 
@@ -34,7 +33,7 @@
         vertical
       ></v-divider>
 
-      <v-btn text>
+      <v-btn text class="secondary-contrast--text">
         Music
       </v-btn>
 
@@ -44,6 +43,6 @@
       ></v-divider>
     </v-toolbar-items>
 
-    <v-app-bar-nav-icon></v-app-bar-nav-icon>
+    <v-app-bar-nav-icon class="secondary-contrast--text"></v-app-bar-nav-icon>
   </v-toolbar>
 </template>

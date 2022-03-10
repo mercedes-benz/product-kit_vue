@@ -27,7 +27,7 @@
         <v-expansion-panel-header disable-icon-rotate>
           Item
           <template v-slot:actions>
-            <v-icon color="teal">mdi-check</v-icon>
+            <v-icon color="primary">mdi-check</v-icon>
           </template>
         </v-expansion-panel-header>
         <v-expansion-panel-content>
