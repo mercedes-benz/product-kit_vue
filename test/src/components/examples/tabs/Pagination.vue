@@ -1,10 +1,9 @@
 <template>
   <v-card>
     <v-tabs
-      background-color="neutral"
       show-arrows
     >
-      <v-tabs-slider color="teal lighten-3"></v-tabs-slider>
+      <v-tabs-slider></v-tabs-slider>
 
       <v-tab
         v-for="i in 30"

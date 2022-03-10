@@ -1,7 +1,6 @@
 <template>
   <v-card>
     <v-tabs
-      color="secondary"
       right
     >
       <v-tab>Landscape</v-tab>

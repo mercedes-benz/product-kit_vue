@@ -10,7 +10,7 @@
             ></v-img>
             <v-toolbar-title @click="$router.push('/')" style="cursor: pointer">
                 <span class="first-word font py-0">Vuetify</span>
-                <span class="second-word font py-0"> Playground</span>
+                <span class="second-word font py-0"> Daimler TSS</span>
             </v-toolbar-title>
             <v-spacer></v-spacer>
 
@@ -81,7 +81,7 @@
                 </template>
             </v-list>
         </v-navigation-drawer>
-        <v-main>
+        <v-main class="fluid">
             <router-view />
         </v-main>
     </v-app>

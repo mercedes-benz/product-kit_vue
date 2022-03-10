@@ -4,7 +4,7 @@
     max-width="500"
   >
     <v-system-bar
-      color="tertiary"
+      color="primary"
     >
       <v-spacer></v-spacer>
 

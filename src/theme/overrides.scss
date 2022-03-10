@@ -14,6 +14,10 @@
         color: tokensDark.$color-application-contrast-primary !important;
         opacity: tokensDark.$opacity-application-text-contrast-high !important;
       }
+      &.v-system-bar > * {
+        color: tokensDark.$color-application-contrast-primary !important;
+        opacity: tokensDark.$opacity-application-text-contrast-high !important;
+      }
     }
     &.secondary {
       color: tokensDark.$color-application-contrast-secondary !important;
@@ -23,6 +27,10 @@
         opacity: tokensDark.$opacity-application-text-contrast-high !important;
       }
       &> .v-date-picker-title {
+        color: tokensDark.$color-application-contrast-secondary !important;
+        opacity: tokensDark.$opacity-application-text-contrast-high !important;
+      }
+      &.v-system-bar > * {
         color: tokensDark.$color-application-contrast-secondary !important;
         opacity: tokensDark.$opacity-application-text-contrast-high !important;
       }
@@ -38,6 +46,10 @@
         color: tokensDark.$color-application-contrast-tertiary !important;
         opacity: tokensDark.$opacity-application-text-contrast-high !important;
       }
+      &.v-system-bar > * {
+        color: tokensDark.$color-application-contrast-tertiary !important;
+        opacity: tokensDark.$opacity-application-text-contrast-high !important;
+      }
     }
     &.quaternary {
       color: tokensDark.$color-application-contrast-quaternary !important;
@@ -50,6 +62,10 @@
         color: tokensDark.$color-application-contrast-quaternary !important;
         opacity: tokensDark.$opacity-application-text-contrast-high !important;
       }
+      &.v-system-bar > * {
+        color: tokensDark.$color-application-contrast-quaternary !important;
+        opacity: tokensDark.$opacity-application-text-contrast-high !important;
+      }
     }
     &.error {
       color: tokensDark.$color-application-contrast-error !important;
@@ -59,6 +75,10 @@
         opacity: tokensDark.$opacity-application-text-contrast-high !important;
       }
       &> .v-date-picker-title {
+        color: tokensDark.$color-application-contrast-error !important;
+        opacity: tokensDark.$opacity-application-text-contrast-high !important;
+      }
+      &.v-system-bar > * {
         color: tokensDark.$color-application-contrast-error !important;
         opacity: tokensDark.$opacity-application-text-contrast-high !important;
       }
@@ -137,6 +157,11 @@
     }
   }
 
+.theme--dark.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active), .theme--dark.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-icon, .theme--dark.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-btn, .theme--dark.v-tabs > .v-tabs-bar .v-tab--disabled {
+  color: tokensDark.$color-application-contrast-background !important;
+  opacity: 1 - tokensDark.$opacity-application-icon-low !important;
+}
+
 .theme--light {
   &.primary {
     &:not(.v-chip--outlined,.v-chip--outlined.v-icon) > * {
@@ -148,6 +173,10 @@
       opacity: tokens.$opacity-application-text-contrast-high !important;
     }
     &> .v-date-picker-title {
+      color: tokens.$color-application-contrast-primary !important;
+      opacity: tokens.$opacity-application-text-contrast-high !important;
+    }
+    &.v-system-bar > * {
       color: tokens.$color-application-contrast-primary !important;
       opacity: tokens.$opacity-application-text-contrast-high !important;
     }
@@ -165,6 +194,10 @@
       color: tokens.$color-application-contrast-secondary !important;
       opacity: tokens.$opacity-application-text-contrast-high !important;
     }
+    &.v-system-bar > * {
+      color: tokens.$color-application-contrast-secondary !important;
+      opacity: tokens.$opacity-application-text-contrast-high !important;
+    }
   }
   &.tertiary {
     &:not(.v-chip--outlined,.v-chip--outlined.v-icon) > * {
@@ -176,6 +209,10 @@
       opacity: tokens.$opacity-application-text-contrast-high !important;
     }
     &> .v-date-picker-title {
+      color: tokens.$color-application-contrast-tertiary !important;
+      opacity: tokens.$opacity-application-text-contrast-high !important;
+    }
+    &.v-system-bar > * {
       color: tokens.$color-application-contrast-tertiary !important;
       opacity: tokens.$opacity-application-text-contrast-high !important;
     }
@@ -193,6 +230,10 @@
       color: tokens.$color-application-contrast-quaternary !important;
       opacity: tokens.$opacity-application-text-contrast-high !important;
     }
+    &.v-system-bar > * {
+      color: tokens.$color-application-contrast-quaternary !important;
+      opacity: tokens.$opacity-application-text-contrast-high !important;
+    }
   }
   &.error {
     &:not(.v-chip--outlined,.v-chip--outlined.v-icon) > * {
@@ -204,6 +245,10 @@
       opacity: tokens.$opacity-application-text-contrast-high !important;
     }
     &> .v-date-picker-title {
+      color: tokens.$color-application-contrast-error !important;
+      opacity: tokens.$opacity-application-text-contrast-high !important;
+    }
+    &.v-system-bar > * {
       color: tokens.$color-application-contrast-error !important;
       opacity: tokens.$opacity-application-text-contrast-high !important;
     }
@@ -534,6 +579,11 @@
     }
   }
 
+.theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active), .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-icon, .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-btn, .theme--light.v-tabs > .v-tabs-bar .v-tab--disabled {
+  color: tokens.$color-application-contrast-background !important;
+  opacity: 1 - tokens.$opacity-application-icon-low !important;
+}
+
   
   code,
   kbd,
@@ -552,28 +602,30 @@
   
   /*** GRID ***/
   /*.container:not(.container--fluid) {
-    padding-left: tokens.$layout-application-xs-margin-size;
-    padding-right: tokens.$layout-application-xs-margin-size;
+    padding-left: tokens.$layout-application-compact-xs-margin-size;
+    padding-right: tokens.$layout-application-compact-xs-margin-size;
   }*/
   .v-main__wrap {
     max-width: 100%;
-    padding-left: tokens.$layout-application-xs-margin-size;
-    padding-right: tokens.$layout-application-xs-margin-size;
+    padding-left: tokens.$layout-application-compact-xs-margin-size;
+    padding-right: tokens.$layout-application-compact-xs-margin-size;
   }
   .fluid {
     .v-main__wrap {
-      max-width: 95%;
+      max-width: tokens.$layout-application-wide-xs-body-max-size;
       padding-left: 0;
       padding-right: 0;
+      margin-right: auto;
+      margin-left: auto;
     }
   }
 
   .row {
-    margin: - tokens.$layout-application-xs-gutter-size / 2;
+    margin: - tokens.$layout-application-compact-xs-gutter-size / 2;
   }
   
   .col-xl, .col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .col-xl-6, .col-xl-5, .col-xl-4, .col-xl-3, .col-xl-2, .col-xl-1, .col-lg, .col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md, .col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm, .col-sm-auto, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col, .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
-    padding: tokens.$layout-application-xs-gutter-size / 2;
+    padding: tokens.$layout-application-compact-xs-gutter-size / 2;
   }
   
   .ma-3xs {
@@ -1006,21 +1058,30 @@
   
   @media only screen and (min-width: #{map-get($grid-breakpoints, 'sm')}) {
     /*.container:not(.container--fluid) {
-      padding-left: tokens.$layout-application-s-margin-size;
-      padding-right: tokens.$layout-application-s-margin-size;
+      padding-left: tokens.$layout-application-compact-s-margin-size;
+      padding-right: tokens.$layout-application-compact-s-margin-size;
     }*/
 
     .v-main__wrap {
       max-width: 100%;
-      padding-left: tokens.$layout-application-s-margin-size;
-      padding-right: tokens.$layout-application-s-margin-size;
+      padding-left: tokens.$layout-application-compact-s-margin-size;
+      padding-right: tokens.$layout-application-compact-s-margin-size;
+    }
+    .fluid {
+      .v-main__wrap {
+        max-width: tokens.$layout-application-wide-s-body-max-size;
+        padding-left: 0;
+        padding-right: 0;
+        margin-right: auto;
+        margin-left: auto;
+      }
     }
   
     .row {
-      margin: - tokens.$layout-application-s-gutter-size / 2;
+      margin: - tokens.$layout-application-compact-s-gutter-size / 2;
     }
     .col-xl, .col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .col-xl-6, .col-xl-5, .col-xl-4, .col-xl-3, .col-xl-2, .col-xl-1, .col-lg, .col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md, .col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm, .col-sm-auto, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col, .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
-      padding: tokens.$layout-application-s-gutter-size / 2;
+      padding: tokens.$layout-application-compact-s-gutter-size / 2;
     }
   
     .ma-3xs {
@@ -1455,18 +1516,25 @@
   @media only screen and (min-width: #{map-get($grid-breakpoints, 'md')}) {
 
     .v-main__wrap {
-      max-width: tokens.$layout-application-m-body-max-size;
+      max-width: tokens.$layout-application-compact-m-body-max-size;
       padding-left: 0;
       padding-right: 0;
       margin-right: auto;
       margin-left: auto;
     }
+    .fluid {
+      .v-main__wrap {
+        max-width: tokens.$layout-application-wide-m-body-max-size;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
     
     .row {
-      margin: - tokens.$layout-application-m-gutter-size / 2;
+      margin: - tokens.$layout-application-compact-m-gutter-size / 2;
     }
     .col-xl, .col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .col-xl-6, .col-xl-5, .col-xl-4, .col-xl-3, .col-xl-2, .col-xl-1, .col-lg, .col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md, .col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm, .col-sm-auto, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col, .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
-      padding: tokens.$layout-application-m-gutter-size / 2;
+      padding: tokens.$layout-application-compact-m-gutter-size / 2;
     }
   
     .ma-3xs {
@@ -1902,15 +1970,24 @@
 
     .v-main__wrap {
       max-width: 100%;
-      padding-left: tokens.$layout-application-l-margin-size;
-      padding-right: tokens.$layout-application-l-margin-size;
+      padding-left: tokens.$layout-application-compact-l-margin-size;
+      padding-right: tokens.$layout-application-compact-l-margin-size;
+    }
+    .fluid {
+      .v-main__wrap {
+        max-width: tokens.$layout-application-wide-l-body-max-size;
+        padding-left: 0;
+        padding-right: 0;
+        margin-right: auto;
+        margin-left: auto;
+      }
     }
   
     .row {
-      margin: - tokens.$layout-application-l-gutter-size / 2;
+      margin: - tokens.$layout-application-compact-l-gutter-size / 2;
     }
     .col-xl, .col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .col-xl-6, .col-xl-5, .col-xl-4, .col-xl-3, .col-xl-2, .col-xl-1, .col-lg, .col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md, .col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm, .col-sm-auto, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col, .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
-      padding: tokens.$layout-application-l-gutter-size / 2;
+      padding: tokens.$layout-application-compact-l-gutter-size / 2;
     }
     
     .text-h1 {
@@ -2385,18 +2462,25 @@
   @media only screen and (min-width: #{map-get($grid-breakpoints, 'xl')}) {
     
     .v-main__wrap {
-      max-width: tokens.$layout-application-xl-body-max-size;
+      max-width: tokens.$layout-application-compact-xl-body-max-size;
       padding-left: 0;
       padding-right: 0;
       margin-right: auto;
       margin-left: auto;
     }
+    .fluid {
+      .v-main__wrap {
+        max-width: tokens.$layout-application-wide-xl-body-max-size;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
     
     .row {
-      margin: - tokens.$layout-application-xl-gutter-size / 2;
+      margin: - tokens.$layout-application-compact-xl-gutter-size / 2;
     }
     .col-xl, .col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .col-xl-6, .col-xl-5, .col-xl-4, .col-xl-3, .col-xl-2, .col-xl-1, .col-lg, .col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md, .col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm, .col-sm-auto, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col, .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
-      padding: tokens.$layout-application-xl-gutter-size / 2;
+      padding: tokens.$layout-application-compact-xl-gutter-size / 2;
     }
     
     .ma-3xs {

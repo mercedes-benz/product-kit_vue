@@ -1,7 +1,6 @@
 <template>
   <v-card>
     <v-toolbar
-      color="tertiary"
       flat
       prominent
     >
@@ -12,7 +11,7 @@
         hide-details
         label="Search"
         prepend-inner-icon="mdi-magnify"
-        solo-inverted
+        solo
       ></v-text-field>
 
       <template v-slot:extension>

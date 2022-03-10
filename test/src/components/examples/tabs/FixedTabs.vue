@@ -1,7 +1,6 @@
 <template>
   <v-tabs
     fixed-tabs
-    background-color="secondary"
   >
     <v-tab>
       Option

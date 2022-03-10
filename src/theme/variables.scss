@@ -156,10 +156,10 @@ $heading-font-family: $body-font-family !default;
   @if $minFont == $maxFont {
     @return $minFont;
   }
-  $slope: calc(calc(#{$maxFont / 1px} - #{$minFont / 1px}) / calc(#{tokens.$layout-application-l-screen-min-width / 1px} - #{tokens.$layout-application-s-screen-min-width / 1px}));
+  $slope: calc(calc(#{$maxFont / 1px} - #{$minFont / 1px}) / calc(#{tokens.$layout-application-compact-l-screen-min-width / 1px} - #{tokens.$layout-application-compact-s-screen-min-width / 1px}));
   $slopeVw: calc(#{$slope} * 1vw);
   $slopePercent: calc(#{$slopeVw} * 100);
-  $yAxis: calc(calc(-#{tokens.$layout-application-s-screen-min-width} * #{$slope}) + #{$minFont});
+  $yAxis: calc(calc(-#{tokens.$layout-application-compact-s-screen-min-width} * #{$slope}) + #{$minFont});
   @return clamp(#{$minFont}, #{$yAxis} + #{$slopePercent}, #{$maxFont});
 }
 

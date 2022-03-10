@@ -1,7 +1,6 @@
 <template>
   <v-card>
     <v-tabs
-      background-color="primary"
       center-active
     >
       <v-tab>One</v-tab>

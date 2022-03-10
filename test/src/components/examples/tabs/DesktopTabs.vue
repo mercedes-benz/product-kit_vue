@@ -23,21 +23,18 @@
           <v-tabs-slider></v-tabs-slider>
           <v-tab
             href="#mobile-tabs-5-1"
-            class="primary--text"
           >
             <v-icon>mdi-phone</v-icon>
           </v-tab>
 
           <v-tab
             href="#mobile-tabs-5-2"
-            class="primary--text"
           >
             <v-icon>mdi-heart</v-icon>
           </v-tab>
 
           <v-tab
             href="#mobile-tabs-5-3"
-            class="primary--text"
           >
             <v-icon>mdi-account-box</v-icon>
           </v-tab>

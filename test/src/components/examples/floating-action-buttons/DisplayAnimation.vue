@@ -11,7 +11,6 @@
                   v-show="!hidden"
                   color="secondary"
                   fab
-                  dark
                   small
                   absolute
                   bottom
@@ -32,7 +31,6 @@
               <v-btn
                 v-show="!hidden"
                 color="secondary"
-                dark
                 absolute
                 top
                 right

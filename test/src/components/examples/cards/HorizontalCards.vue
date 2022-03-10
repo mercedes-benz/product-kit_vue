@@ -4,8 +4,7 @@
     class="mx-auto"
   >
     <v-system-bar
-      color="secondary darken-2"
-      dark
+      color="secondary"
     >
       <v-spacer></v-spacer>
 

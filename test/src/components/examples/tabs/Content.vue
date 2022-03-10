@@ -1,7 +1,6 @@
 <template>
   <v-card>
     <v-toolbar
-      color="tertiary"
       flat
     >
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
@@ -22,7 +21,6 @@
         <v-tabs
           v-model="model"
           centered
-          slider-color="secondary"
         >
           <v-tab
             v-for="i in 3"

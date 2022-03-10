@@ -1,6 +1,6 @@
 <template>
   <v-card>
-    <v-toolbar flat color="primary" >
+    <v-toolbar flat >
       <v-toolbar-title>User Profile</v-toolbar-title>
     </v-toolbar>
     <v-tabs vertical>

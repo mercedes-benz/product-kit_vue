@@ -2,7 +2,6 @@
   <v-card>
     <v-tabs
       v-model="tab"
-      background-color="primary"
       centered
       icons-and-text
     >
