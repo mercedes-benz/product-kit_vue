@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-container id="dropdown-example-1">
     <v-overflow-btn

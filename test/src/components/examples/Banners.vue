@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <ExampleWrapper>
     <v-subheader>Two-line</v-subheader>

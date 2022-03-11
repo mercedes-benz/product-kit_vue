@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-breadcrumbs :items="items">
     <template v-slot:item="{ item }">

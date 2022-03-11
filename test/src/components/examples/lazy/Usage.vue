@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div>
     <div class="mb-3">The v-lazy component by default will not render its contents until it has been intersected. Scroll down and watch the element render as you go past it.</div>

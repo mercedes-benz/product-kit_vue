@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
     <div>
         <v-subheader>Standard Vuetify Spacings (not responsive)</v-subheader>

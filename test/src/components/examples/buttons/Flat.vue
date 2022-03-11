@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-row align="center">
     <v-col class="text-center" cols="12" sm="4">

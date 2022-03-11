@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-container fluid>
     <v-checkbox v-model="custom" label="Custom progress bar"></v-checkbox>

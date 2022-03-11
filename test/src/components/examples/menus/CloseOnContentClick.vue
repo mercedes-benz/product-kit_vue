@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div class="text-center">
     <v-switch v-model="closeOnContentClick" label="Close on content click"></v-switch>

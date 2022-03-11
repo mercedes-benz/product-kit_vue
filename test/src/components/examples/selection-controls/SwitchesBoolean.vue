@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-container fluid>
     <v-switch v-model="switch1" :label="`Switch 1: ${switch1.toString()}`"></v-switch>

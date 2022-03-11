@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-row justify="space-around">
     <v-date-picker v-model="picker" type="month" color="green lighten-1"></v-date-picker>

@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-container style="max-width: 600px;">
     <v-timeline dense clipped>

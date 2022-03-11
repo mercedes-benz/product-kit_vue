@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div class="d-flex flex-column" justify="center" align="center">
     <v-container>

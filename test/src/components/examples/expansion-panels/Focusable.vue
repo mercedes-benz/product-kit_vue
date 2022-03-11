@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-expansion-panels focusable>
     <v-expansion-panel

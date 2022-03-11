@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
     <div>
         <v-btn class="my-2" block>Block Button (normal)</v-btn>

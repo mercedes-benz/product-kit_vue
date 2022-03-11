@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div>
     <v-select v-model="enabled" :items="slots" label="Slot" clearable></v-select>

@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-toolbar color="orange accent-1">
     <v-app-bar-nav-icon class="hidden-sm-and-down"></v-app-bar-nav-icon>

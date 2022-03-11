@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div style="min-height: 4px;">
     <v-progress-linear

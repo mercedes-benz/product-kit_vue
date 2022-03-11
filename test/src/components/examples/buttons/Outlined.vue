@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div class="text-center">
     <v-btn class="ma-2" outlined color="primary">Outlined Button</v-btn>

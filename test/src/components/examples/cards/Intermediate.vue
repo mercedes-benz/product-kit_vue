@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-card class="mx-auto " max-width="275">
     <v-container fluid>

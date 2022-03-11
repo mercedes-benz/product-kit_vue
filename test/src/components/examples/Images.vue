@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <ExampleWrapper>
     <v-subheader>Contain and Cover</v-subheader>

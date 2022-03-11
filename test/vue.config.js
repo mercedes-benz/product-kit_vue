@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
 
 module.exports = {

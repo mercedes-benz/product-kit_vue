@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-row justify="space-around">
     <v-date-picker v-model="month1" :show-current="false" type="month"></v-date-picker>

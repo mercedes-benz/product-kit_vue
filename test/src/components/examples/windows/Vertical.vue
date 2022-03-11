@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-card flat tile>
     <v-window v-model="onboarding" vertical>

@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-container>
     <v-select v-model="selectionType" :items="['leaf', 'independent']" label="Selection type"></v-select>

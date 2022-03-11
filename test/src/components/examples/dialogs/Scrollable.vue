@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-row justify="center">
     <v-dialog v-model="dialog" scrollable max-width="300px">

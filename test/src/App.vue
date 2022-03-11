@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
     <v-app>
         <v-app-bar clipped-left flat app>

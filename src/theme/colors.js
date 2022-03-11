@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 const variables = require('./colors.scss')
 const overrides = require('./overrides.scss')
 

@@ -1,5 +1,4 @@
 <!-- SPDX-License-Identifier: MIT --->
-<!-- © Daimler TSS GmbH --->
 
 ![Product Kit Vue Logo](./docs/images/productkit_vue_github_logo.png)
 

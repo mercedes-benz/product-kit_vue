@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div class="ma-5 pa-5">
     <v-container class="grey lighten-5">

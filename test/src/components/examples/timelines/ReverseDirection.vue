@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div>
     <v-switch v-model="reverse" label="Toggle reverse"></v-switch>

@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-sheet class="pa-5">
     <v-switch v-model="switch1" inset :label="`Switch 1: ${switch1.toString()}`"></v-switch>

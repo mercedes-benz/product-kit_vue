@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT 
+
 /**
  * This components list was used and modified from user Joouis on github:
  * https://github.com/Joouis/vuetify-playground/blob/master/src/components/UIComponentsList.js

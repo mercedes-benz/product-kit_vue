@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-carousel hide-delimiters>
     <v-carousel-item

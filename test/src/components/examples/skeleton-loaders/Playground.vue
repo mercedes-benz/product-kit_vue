@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-sheet
     :color="`grey ${theme.isDark ? 'darken-2' : 'lighten-4'}`"
