@@ -72,7 +72,7 @@
         },
         {
           image: 'https://cdn-images-1.medium.com/max/1024/1*BBNtYUieAqHoXKjiJ2mMjQ.png',
-          title: 'PWAs on iOS 12.2 beta: the good, the bad, and the “not sure yet if good”',
+          title: 'PWAs on iOS 12.2 beta: the good, the bad, and the "not sure yet if good"',
           category: 'Technology',
           keyword: 'Phones',
         },
