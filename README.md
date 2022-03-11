@@ -60,15 +60,11 @@ css: {
   loaderOptions: {
     scss: { // 9.0.0
       additionalData: `
-        @use "@daimler/productkit-core/exports/web/styles/scss/variables" as tokens;
-        @use "@daimler/productkit-core/exports/web/styles/scss/variables-dark" as tokensDark;
         @import "@daimler/productkit-vue/src/theme/variables.scss";
       `,
     },
     sass: { // 9.0.0
       additionalData: `
-        @use "@daimler/productkit-core/exports/web/styles/scss/variables" as tokens
-        @use "@daimler/productkit-core/exports/web/styles/scss/variables-dark" as tokensDark
         @import "@daimler/productkit-vue/src/theme/variables.scss"
       `,
     },
@@ -121,7 +117,7 @@ The standard way of applying spacing in Vuetify is adding for example `class="pa
 
 ### Container
 
-When building applications with Vuetify and Product Kit Vue, you should use `v-main` as a wrapper container after `v-app`, as it includes responsive margins and max-widths.
+When building applications with Vuetify and Product Kit Vue, you should use `v-main` as a wrapper container after `v-app`, as it includes responsive margins and max-widths that limits the content-width on large screens.
 
 ```html
 <v-app>
@@ -131,7 +127,7 @@ When building applications with Vuetify and Product Kit Vue, you should use `v-m
 </v-app>
 ```
 
-When you don't wish to use responsive margins and max-widths, you can add `class="fluid"` to the `v-main` tag. Your main-content will now always stretch 95% of the available space, regardless of the screen size. This could come in handy for layouts like dashboards.
+When you don't wish to use responsive margins, you can add `class="fluid"` to the `v-main` tag. Your main-content will now always stretch to the defined value in [Product Kit Core](https://github.com/mercedes-benz/product-kit_core). This could come in handy for layouts like dashboards where the content-width should not be limited on large screens.
 
 ```html
 <v-app>
@@ -157,7 +153,7 @@ You can use typography as you are used to from Vuetify. Custom Daimler TSS respo
 
 ### Darkmode
 
-In Vuetify, you can toggle dark mode by accessing the `$vuetify` object like following:
+In Vuetify, you can toggle dark mode globally by accessing the `$vuetify` object like following:
 
 ```javascript
 toggleDarkMode() {
@@ -181,7 +177,7 @@ The Daimler TSS application colors like `primary` are also automatically changed
 
 ### Elevation
 
-In darkmode, you can use the `elevation` attribute in supported elements like `v-card` to also change the surface color of the element: Higher elevation, lighter surface, as described in the [Material Design documentation](https://material.io/design/color/dark-theme.html#properties).
+In darkmode, you can use the `elevation` attribute in supported elements like `v-card` to also change the surface color of the element automatically: Higher elevation, lighter surface, as described in the [Material Design documentation](https://material.io/design/color/dark-theme.html#properties).
 
 ## Contributing
 
