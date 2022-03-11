@@ -83,7 +83,7 @@
                 </template>
             </v-list>
         </v-navigation-drawer>
-        <v-main class="fluid">
+        <v-main>
             <router-view />
         </v-main>
     </v-app>
