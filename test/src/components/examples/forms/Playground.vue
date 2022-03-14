@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div>
     <v-row justify="space-around">
@@ -57,7 +59,7 @@
       </v-btn>
 
       <v-btn
-        color="warning"
+        color="quaternary"
         @click="resetValidation"
       >
         Reset Validation

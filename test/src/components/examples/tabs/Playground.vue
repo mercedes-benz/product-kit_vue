@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div>
     <v-row
@@ -42,9 +44,7 @@
 
     <v-tabs
       v-model="tab"
-      background-color="deep-purple accent-4"
       class="elevation-2"
-      dark
       :centered="centered"
       :grow="grow"
       :vertical="vertical"

@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-card height="400px">
     <v-footer

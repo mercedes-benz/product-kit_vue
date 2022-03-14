@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div>
     <v-progress-linear
@@ -8,7 +10,7 @@
     <v-progress-linear
       v-model="value"
       :buffer-value="bufferValue"
-      color="purple"
+      color="primary"
     ></v-progress-linear>
     <br>
     <v-progress-linear

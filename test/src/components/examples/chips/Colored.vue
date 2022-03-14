@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div class="text-center">
     <v-chip
@@ -22,18 +24,16 @@
 
     <v-chip
       class="ma-2"
-      color="red"
-      text-color="white"
+      color="tertiary"
     >
-      Red Chip
+      Tertiary Chip
     </v-chip>
 
     <v-chip
       class="ma-2"
-      color="green"
-      text-color="white"
+      color="quaternary"
     >
-      Green Chip
+      Quaternary Chip
     </v-chip>
   </div>
 </template>

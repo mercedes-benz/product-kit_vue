@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div>
     <v-row
@@ -6,7 +8,7 @@
       <v-btn
         color="primary"
         class="ma-2"
-        dark
+        
         @click="dialog = true"
       >
         Open Dialog 1
@@ -14,7 +16,7 @@
       <v-btn
         color="primary"
         class="ma-2"
-        dark
+        
         @click="dialog2 = true"
       >
         Open Dialog 2
@@ -22,7 +24,7 @@
       <v-btn
         color="primary"
         class="ma-2"
-        dark
+        
         @click="dialog3 = true"
       >
         Open Dialog 3
@@ -57,12 +59,12 @@
         <v-card tile>
           <v-toolbar
             flat
-            dark
+            
             color="primary"
           >
             <v-btn
               icon
-              dark
+               class="primary-contrast--text"
               @click="dialog = false"
             >
               <v-icon>mdi-close</v-icon>
@@ -71,7 +73,7 @@
             <v-spacer></v-spacer>
             <v-toolbar-items>
               <v-btn
-                dark
+                 class="primary-contrast--text"
                 text
                 @click="dialog = false"
               >
@@ -85,7 +87,7 @@
             >
               <template v-slot:activator="{ on }">
                 <v-btn
-                  dark
+                  class="primary-contrast--text"
                   icon
                   v-on="on"
                 >
@@ -106,7 +108,7 @@
           <v-card-text>
             <v-btn
               color="primary"
-              dark
+              
               class="ma-2"
               @click="dialog2 = !dialog2"
             >
@@ -190,7 +192,7 @@
           <v-card-text>
             <v-btn
               color="primary"
-              dark
+              
               @click="dialog3 = !dialog3"
             >
               Open Dialog 3

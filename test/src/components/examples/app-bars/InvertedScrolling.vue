@@ -1,9 +1,11 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-card class="overflow-hidden">
     <v-app-bar
       absolute
       color="primary"
-      dark
+      
       inverted-scroll
       scroll-target="#scrolling-techniques-8"
     >

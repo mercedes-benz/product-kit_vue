@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-row>
     <v-col cols="12" sm="6" class="my-2 px-1">

@@ -1,10 +1,12 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div class="text-center">
     <v-bottom-sheet v-model="sheet">
       <template v-slot:activator="{ on }">
         <v-btn
           color="purple"
-          dark
+          
           v-on="on"
         >
           Open In

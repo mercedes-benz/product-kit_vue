@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div>
     <v-alert
@@ -13,7 +15,7 @@
     </v-alert>
     <v-alert
       color="blue-grey"
-      dark
+      
       dense
       icon="mdi-school"
       prominent

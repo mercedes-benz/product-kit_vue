@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-card
     class="mx-auto"
@@ -29,7 +31,7 @@
         <v-col class="py-0">
           <v-list-item
             color="rgba(0, 0, 0, .4)"
-            dark
+            
           >
             <v-list-item-content>
               <v-list-item-title class="title">Marcus Obrien</v-list-item-title>

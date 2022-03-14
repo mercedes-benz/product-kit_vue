@@ -1,10 +1,12 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-card
     class="mx-auto"
     max-width="400"
   >
     <v-list>
-      <v-list-item-group v-model="model" active-class="border" color="indigo">
+      <v-list-item-group v-model="model" active-class="border" color="secondary">
         <v-list-item
           v-for="(item, i) in items"
           :key="i"
@@ -46,6 +48,6 @@
 
 <style scoped>
 .border {
-  border: 2px dashed orange;
+  border: 2px dashed var(--v-primary-base);
 }
 </style>

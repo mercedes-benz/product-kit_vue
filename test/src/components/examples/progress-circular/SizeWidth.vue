@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div class="text-center">
     <v-progress-circular
@@ -8,26 +10,26 @@
 
     <v-progress-circular
       :width="3"
-      color="red"
+      color="secondary"
       indeterminate
     ></v-progress-circular>
 
     <v-progress-circular
       :size="70"
       :width="7"
-      color="purple"
+      color="tertiary"
       indeterminate
     ></v-progress-circular>
 
     <v-progress-circular
       :width="3"
-      color="green"
+      color="quaternary"
       indeterminate
     ></v-progress-circular>
 
     <v-progress-circular
       :size="50"
-      color="amber"
+      color="error"
       indeterminate
     ></v-progress-circular>
   </div>

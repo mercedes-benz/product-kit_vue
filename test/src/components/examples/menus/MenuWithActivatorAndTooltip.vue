@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div class="text-center">
     <v-menu>
@@ -6,7 +8,7 @@
           <template v-slot:activator="{ on: tooltip }">
             <v-btn
               color="primary"
-              dark
+              
               v-on="{ ...tooltip, ...menu }"
             >Dropdown w/ Tooltip</v-btn>
           </template>

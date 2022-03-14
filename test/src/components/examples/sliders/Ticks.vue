@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-card flat color="transparent">
     <v-subheader>Show ticks when using slider</v-subheader>

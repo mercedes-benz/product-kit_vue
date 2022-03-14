@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-row align="center" justify="center">
     <v-card height="300" width="250">

@@ -1,9 +1,11 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-card class="overflow-hidden">
     <v-app-bar
       absolute
       color="teal lighten-3"
-      dark
+      
       hide-on-scroll
       prominent
       scroll-target="#scrolling-techniques-4"

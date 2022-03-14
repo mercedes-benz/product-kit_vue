@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT 
+
 import Vue from "vue";
 import VueRouter from "vue-router";
 
@@ -70,7 +72,11 @@ import ProgressCircular from '../components/examples/ProgressCircular';
 import DataIterators from '../components/examples/DataIterators';
 import SimpleTables from '../components/examples/SimpleTables';
 import DataTables from '../components/examples/DataTables';
-
+import Colors from '../components/Colors.vue';
+import Font from '../components/Font.vue';
+import Layout from '../components/Layout.vue';
+import Size from '../components/Size.vue';
+import Showroom from '../components/examples/Showroom.vue';
 
 Vue.use(VueRouter);
 
@@ -143,6 +149,11 @@ const routes = [
   { path: '/data-iterators', component: DataIterators },
   { path: '/simple-tables', component: SimpleTables },
   { path: '/data-tables', component: DataTables },
+  { path: '/colors', component: Colors },
+  { path: '/font', component: Font },
+  { path: '/layout', component: Layout },
+  { path: '/size', component: Size },
+  { path: '/showroom', component: Showroom },
   { path: '*', component: PageNotFound }
 ];
 

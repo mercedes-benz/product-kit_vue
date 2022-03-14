@@ -1,8 +1,10 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div class="text-center">
     <v-btn
-      dark
-      color="red darken-2"
+      
+      color="error"
       @click="snackbar = true"
     >
       Open Snackbar
@@ -14,7 +16,6 @@
     >
       {{ text }}
       <v-btn
-        color="red"
         text
         @click="snackbar = false"
       >

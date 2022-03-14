@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-row justify="space-around">
     <v-time-picker v-model="e4" color="green lighten-1"></v-time-picker>

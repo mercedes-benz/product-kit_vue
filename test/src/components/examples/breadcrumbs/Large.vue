@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div>
     <v-breadcrumbs :items="items"></v-breadcrumbs>

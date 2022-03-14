@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT 
+
 /**
  * This components list was used and modified from user Joouis on github:
  * https://github.com/Joouis/vuetify-playground/blob/master/src/components/UIComponentsList.js
@@ -5,11 +7,13 @@
  * @todo license text?
  */
 export const COMPONENTS_MANIFEST = [
-    {
+    /*{
         title: 'Alerts'
-    }, {
+    },
+    {
         title: 'Avatars'
-    }, {
+    }, 
+    {
         title: 'Badges'
     }, {
         title: 'Banners'
@@ -23,23 +27,29 @@ export const COMPONENTS_MANIFEST = [
             }, {
                 title: 'System Bars'
             }]
-    }, {
+    }, 
+    {
         title: 'Bottom navigation'
     }, {
         title: 'Bottom sheets'
-    }, {
+    },*/ 
+    {
         title: 'Breadcrumbs'
     }, {
         title: 'Buttons'
     }, {
         title: 'Floating action buttons'
-    }, {
+    }, 
+    /*{
         title: 'Calendars'
-    }, {
+    },*/ 
+    {
         title: 'Cards'
-    }, {
+    },
+    /*{
         title: 'Carousels'
-    }, {
+    },*/ 
+    {
         title: 'Chips'
     }, {
         title: 'Dialogs'
@@ -47,11 +57,13 @@ export const COMPONENTS_MANIFEST = [
         title: 'Dividers'
     }, {
         title: 'Expansion panels'
-    }, {
+    },
+    /*{
         title: 'Footer'
     }, {
         title: 'Grids'
-    }, {
+    },*/ 
+    {
         title: 'Groups',
         items: [{
             title: 'Button groups'
@@ -66,17 +78,23 @@ export const COMPONENTS_MANIFEST = [
         }, {
             title: 'Windows'
         }]
-    }, {
+    }, 
+    /*{
         title: 'Hover'
-    }, {
+    },*/ 
+    {
         title: 'Icons'
-    }, {
+    }, 
+    /*{
         title: 'Images'
-    }, {
+    },*/ 
+    {
         title: 'Form inputs & controls',
-        items: [{
+        items: [
+        /*{
             title: 'Autocompletes'
-        }, {
+        },*/ 
+        {
             title: 'Combobox'
         }, {
             title: 'File inputs'
@@ -88,38 +106,49 @@ export const COMPONENTS_MANIFEST = [
             title: 'Overflow buttons'
         }, {
             title: 'Selects'
-        }, {
+        }, 
+        /*{
             title: 'Selection controls'
-        }, {
+        },*/ 
+        {
             title: 'Sliders'
         }, {
             title: 'Textareas'
         }, {
             title: 'Text fields'
         }]
-    }, {
+    }, 
+    /*{
         title: 'Lazy'
-    }, {
+    },*/ 
+    {
         title: 'Lists'
     }, {
         title: 'Menus'
     }, {
         title: 'Navigation drawers'
-    }, {
+    }, 
+    /*{
         title: 'Overlays'
-    }, {
+    },*/ 
+    {
         title: 'Paginations'
-    }, {
+    }, 
+    /*{
         title: 'Parallax'
-    }, {
+    },*/ 
+    {
         title: 'Pickers',
-        items: [{
+        items: [
+        /*{
             title: 'Color pickers'
-        }, {
+        },*/ 
+        {
             title: 'Date pickers'
-        }, {
+        },
+        /*{
             title: 'Time pickers'
-        }]
+        }*/]
     }, {
         title: 'Progress',
         items: [{
@@ -127,21 +156,28 @@ export const COMPONENTS_MANIFEST = [
         }, {
             title: 'Progress linear'
         }]
-    }, {
+    },
+    /*{
         title: 'Ratings'
     }, {
         title: 'Sheets'
     }, {
         title: 'Skeleton Loaders'
-    }, {
+    },*/
+    {
+        title: 'Showroom'
+    },
+    {
         title: 'Snackbars'
-    }, {
+    },
+    /*{
         title: 'Sparklines'
     }, {
         title: 'Steppers'
     }, {
         title: 'Subheaders'
-    }, {
+    },*/ 
+    {
         title: 'Tables',
         items: [{
             title: 'Data iterators'
@@ -152,11 +188,14 @@ export const COMPONENTS_MANIFEST = [
         }]
     }, {
         title: 'Tabs'
-    }, {
+    },
+    /*{
         title: 'Timelines'
-    }, {
+    },*/ 
+    {
         title: 'Tooltips'
-    }, {
+    },
+    /*{
         title: 'Treeview'
-    }
+    }*/
 ];

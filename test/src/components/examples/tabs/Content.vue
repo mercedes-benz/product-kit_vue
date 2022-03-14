@@ -1,8 +1,8 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-card>
     <v-toolbar
-      color="cyan"
-      dark
       flat
     >
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
@@ -23,7 +23,6 @@
         <v-tabs
           v-model="model"
           centered
-          slider-color="yellow"
         >
           <v-tab
             v-for="i in 3"

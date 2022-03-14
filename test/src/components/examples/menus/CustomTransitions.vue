@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-row justify="space-around">
     <v-menu
@@ -8,7 +10,7 @@
       <template v-slot:activator="{ on }">
         <v-btn
           color="primary mb-3"
-          dark
+          
           v-on="on"
         >
           Scale Transition
@@ -34,7 +36,7 @@
         <v-btn
           class="deep-orange mb-3"
           color="primary"
-          dark
+          
           v-on="on"
         >
           Slide X Transition
@@ -59,7 +61,7 @@
         <v-btn
           class="purple mb-3"
           color="primary"
-          dark
+          
           v-on="on"
         >
           Slide Y Transition

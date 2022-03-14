@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-card
     class="mx-auto"
@@ -5,10 +7,9 @@
   >
     <v-toolbar
       flat
-      color="deep-purple accent-4"
-      dark
+      color="primary"
     >
-      <v-btn icon>
+      <v-btn icon class="primary-contrast--text">
         <v-icon>mdi-close</v-icon>
       </v-btn>
       <v-toolbar-title>Filter results</v-toolbar-title>
@@ -19,6 +20,7 @@
 
       <v-chip-group
         v-model="amenities"
+        active-class="primary--text"
         column
         multiple
       >
@@ -37,6 +39,7 @@
       <v-chip-group
         v-model="neighborhoods"
         column
+        active-class="primary--text"
         multiple
       >
         <v-chip filter outlined>Snowy Rock Place</v-chip>

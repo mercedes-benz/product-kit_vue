@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div class="d-flex flex-column" justify="space-around">
     <v-color-picker class="ma-2" hide-inputs></v-color-picker>

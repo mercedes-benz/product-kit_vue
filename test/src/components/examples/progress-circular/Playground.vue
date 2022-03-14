@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div class="d-flex flex-column" justify="center" align="center">
     <div class="text-center ma-12">
@@ -7,7 +9,7 @@
         :size="size"
         :value="value"
         :width="width"
-        color="light-blue"
+        color="primary"
       >{{ value }}</v-progress-circular>
     </div>
 

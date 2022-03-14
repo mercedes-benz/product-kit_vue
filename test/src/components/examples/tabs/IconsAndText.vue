@@ -1,10 +1,10 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-card>
     <v-tabs
       v-model="tab"
-      background-color="deep-purple accent-4"
       centered
-      dark
       icons-and-text
     >
       <v-tabs-slider></v-tabs-slider>

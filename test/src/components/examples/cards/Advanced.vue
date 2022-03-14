@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-card
     max-width="344"
@@ -23,13 +25,13 @@
     <v-card-actions>
       <v-btn
         text
-        color="deep-purple accent-4"
+        color="primary"
       >
         Read
       </v-btn>
       <v-btn
         text
-        color="deep-purple accent-4"
+        color="primary"
       >
         Bookmark
       </v-btn>

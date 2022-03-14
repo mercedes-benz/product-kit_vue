@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-card
     class="mx-auto"
@@ -17,10 +19,10 @@
     </v-card-subtitle>
 
     <v-card-actions>
-      <v-btn text>Share</v-btn>
+      <v-btn text color="primary">Share</v-btn>
 
       <v-btn
-        color="purple"
+        color="primary"
         text
       >
         Explore
@@ -30,6 +32,7 @@
 
       <v-btn
         icon
+        color="primary"
         @click="show = !show"
       >
         <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>

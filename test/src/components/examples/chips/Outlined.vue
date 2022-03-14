@@ -1,8 +1,10 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div class="text-center">
     <v-chip
       class="ma-2"
-      color="success"
+      color="primary"
       outlined
     >
       <v-icon left>mdi-server-plus</v-icon>
@@ -11,7 +13,7 @@
 
     <v-chip
       class="ma-2"
-      color="primary"
+      color="secondary"
       outlined
       pill
     >
@@ -21,7 +23,7 @@
 
     <v-chip
       class="ma-2"
-      color="deep-purple accent-4"
+      color="tertiary"
       outlined
     >
       <v-icon left>mdi-wrench</v-icon>
@@ -31,7 +33,7 @@
     <v-chip
       class="ma-2"
       close
-      color="indigo darken-3"
+      color="quaternary"
       outlined
     >
       <v-icon left>mdi-fire</v-icon>

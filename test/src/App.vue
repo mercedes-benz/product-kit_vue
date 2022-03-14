@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
     <v-app>
         <v-app-bar clipped-left flat app>
@@ -10,9 +12,10 @@
             ></v-img>
             <v-toolbar-title @click="$router.push('/')" style="cursor: pointer">
                 <span class="first-word font py-0">Vuetify</span>
-                <span class="second-word font py-0"> Playground</span>
+                <span class="second-word font py-0"> Daimler TSS</span>
             </v-toolbar-title>
             <v-spacer></v-spacer>
+
             <v-switch
                 v-model="darkSwitch"
                 label="Darkmode"
@@ -23,17 +26,34 @@
         </v-app-bar>
         <v-navigation-drawer clipped permanent app>
             <v-list dense nav>
+                <v-subheader class="mt-0">Styles</v-subheader>
+                <v-list-item :to="getRoutePath('colors')">
+                    <v-list-item-icon><v-icon>mdi-palette</v-icon></v-list-item-icon>
+                    <v-list-item-title>Colors</v-list-item-title>
+                </v-list-item>
+                <v-list-item :to="getRoutePath('font')">
+                    <v-list-item-icon><v-icon>mdi-format-size</v-icon></v-list-item-icon>
+                    <v-list-item-title>Font</v-list-item-title>
+                </v-list-item>
+                <v-list-item :to="getRoutePath('layout')">
+                    <v-list-item-icon><v-icon>mdi-grid</v-icon></v-list-item-icon>
+                    <v-list-item-title>Layout</v-list-item-title>
+                </v-list-item>
+                <v-list-item :to="getRoutePath('size')">
+                    <v-list-item-icon><v-icon>mdi-resize</v-icon></v-list-item-icon>
+                    <v-list-item-title>Size</v-list-item-title>
+                </v-list-item>
+                <v-subheader class="mt-0">UI Components</v-subheader>
                 <v-autocomplete
                     v-model="selectedComponent"
                     :items="components"
                     dense
                     outlined
-                    class="px-2"
+                    class="px-2 mb-2"
                     label="Search components"
                     @change="route()"
                     hide-details
                 ></v-autocomplete>
-                <v-subheader class="mt-0">UI Components</v-subheader>
                 <template v-for="item in menuItems">
                     <template v-if="typeof item.items === 'object'">
                         <v-list-group :key="item.title" no-action sub-group>

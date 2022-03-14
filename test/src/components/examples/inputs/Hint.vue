@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-row>
     <v-switch v-model="showMessages" label="Show messages"></v-switch>

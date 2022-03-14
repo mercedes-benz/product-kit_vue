@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-form
     ref="form"
@@ -52,7 +54,7 @@
     </v-btn>
 
     <v-btn
-      color="warning"
+      color="quaternary"
       @click="resetValidation"
     >
       Reset Validation

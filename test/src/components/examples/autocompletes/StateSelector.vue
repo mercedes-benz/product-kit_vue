@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-card>
     <v-card-title class="headline font-weight-regular blue-grey white--text">Profile</v-card-title>

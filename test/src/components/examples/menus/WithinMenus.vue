@@ -1,8 +1,10 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-row>
     <v-col cols="12" sm="6" offset-sm="3">
       <v-card height="200px">
-        <v-card-title class="blue white--text">
+        <v-card-title class="primary primary-contrast--text">
           <span class="headline">Menu</span>
 
           <v-spacer></v-spacer>
@@ -10,7 +12,7 @@
           <v-menu bottom left>
             <template v-slot:activator="{ on }">
               <v-btn
-                dark
+                class="primary-contrast--text"
                 icon
                 v-on="on"
               >

@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-item-group active-class="primary">
     <v-container>
@@ -11,7 +13,7 @@
           <v-item v-slot:default="{ active, toggle }">
             <v-card
               class="d-flex align-center"
-              dark
+              
               height="200"
               @click="toggle"
             >

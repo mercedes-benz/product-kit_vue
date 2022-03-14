@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div class="overflow-hidden">
     <div class="text-center mb-2">

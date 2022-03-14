@@ -1,0 +1,28 @@
+name: Create New Release
+
+on:
+  workflow_run:
+    workflows: ["Blackduck Scan"]
+    types:
+      - completed
+
+jobs:
+  build:
+    name: Create Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: get-npm-version
+        id: package-version
+        uses: martinbeentjes/npm-get-version-action@main       
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: v${{ steps.package-version.outputs.current-version }}
+          release_name: Release v${{ steps.package-version.outputs.current-version }}
+          body: |
+            See CHANGELOG file to see what's changed in new release.
+          draft: false
+          prerelease: false

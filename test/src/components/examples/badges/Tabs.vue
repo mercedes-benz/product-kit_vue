@@ -1,7 +1,9 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-toolbar>
     <v-tabs
-      dark
+      
       background-color="primary"
       grow
     >

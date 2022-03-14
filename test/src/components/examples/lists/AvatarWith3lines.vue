@@ -1,11 +1,12 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-card
     max-width="450"
     class="mx-auto"
   >
     <v-toolbar
-      color="cyan"
-      dark
+      color="primary"
     >
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
 

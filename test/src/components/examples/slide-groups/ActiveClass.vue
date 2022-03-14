@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-sheet
     class="mx-auto"
@@ -7,7 +9,7 @@
     <v-slide-group
       v-model="model"
       class="pa-4"
-      active-class="success"
+      active-class="secondary"
       show-arrows
     >
       <v-slide-item

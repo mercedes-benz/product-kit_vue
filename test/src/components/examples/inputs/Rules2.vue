@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div>
     <v-text-field label="Main input" :rules="rules" hide-details></v-text-field>

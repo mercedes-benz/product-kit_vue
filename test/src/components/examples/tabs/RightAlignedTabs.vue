@@ -1,8 +1,8 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-card>
     <v-tabs
-      background-color="white"
-      color="deep-purple accent-4"
       right
     >
       <v-tab>Landscape</v-tab>

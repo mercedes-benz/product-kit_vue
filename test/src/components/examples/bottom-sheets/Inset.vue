@@ -1,10 +1,12 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div class="text-center">
     <v-bottom-sheet v-model="sheet" inset>
       <template v-slot:activator="{ on }">
         <v-btn
           color="orange"
-          dark
+          
           v-on="on"
         >
           Open Inset

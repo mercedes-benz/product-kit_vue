@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-text-field :rules="rules"></v-text-field>
 </template>

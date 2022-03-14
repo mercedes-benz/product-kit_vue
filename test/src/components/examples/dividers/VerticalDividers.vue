@@ -1,7 +1,8 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-toolbar
-    color="purple"
-    dark
+    color="primary"
   >
     <v-toolbar-title>Title</v-toolbar-title>
 
@@ -15,25 +16,25 @@
     <v-spacer></v-spacer>
 
     <v-toolbar-items class="hidden-sm-and-down">
-      <v-btn text>
+      <v-btn text class="primary-contrast--text">
         News
       </v-btn>
 
       <v-divider vertical></v-divider>
 
-      <v-btn text>
+      <v-btn text class="primary-contrast--text">
         Blog
       </v-btn>
 
       <v-divider vertical></v-divider>
 
-      <v-btn text>
+      <v-btn text class="primary-contrast--text">
         Music
       </v-btn>
 
       <v-divider vertical></v-divider>
     </v-toolbar-items>
 
-    <v-app-bar-nav-icon></v-app-bar-nav-icon>
+    <v-app-bar-nav-icon class="primary-contrast--text"></v-app-bar-nav-icon>
   </v-toolbar>
 </template>

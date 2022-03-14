@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-row justify="space-around">
     <v-color-picker class="ma-2" hide-canvas></v-color-picker>

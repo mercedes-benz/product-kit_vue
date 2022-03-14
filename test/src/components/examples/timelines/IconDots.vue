@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown">
     <v-timeline-item

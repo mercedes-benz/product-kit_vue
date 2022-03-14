@@ -1,28 +1,30 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div class="text-center">
     <v-progress-circular
       :value="100"
-      color="blue-grey"
+      color="primary"
     ></v-progress-circular>
 
     <v-progress-circular
       :value="80"
-      color="deep-orange lighten-2"
+      color="secondary"
     ></v-progress-circular>
 
     <v-progress-circular
       :value="60"
-      color="brown"
+      color="tertiary"
     ></v-progress-circular>
 
     <v-progress-circular
       :value="40"
-      color="lime"
+      color="quaternary"
     ></v-progress-circular>
 
     <v-progress-circular
       :value="20"
-      color="indigo darken-2"
+      color="neutral"
     ></v-progress-circular>
   </div>
 </template>

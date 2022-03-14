@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-hover v-slot:default="{ hover }">
     <v-card

@@ -1,8 +1,8 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-card>
     <v-toolbar
-      color="purple"
-      dark
       flat
       prominent
     >
@@ -13,7 +13,7 @@
         hide-details
         label="Search"
         prepend-inner-icon="mdi-magnify"
-        solo-inverted
+        solo
       ></v-text-field>
 
       <template v-slot:extension>

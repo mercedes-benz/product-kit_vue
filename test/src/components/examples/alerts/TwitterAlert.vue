@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div>
     <v-alert
@@ -15,7 +17,7 @@
     <div class="text-center">
       <v-btn
         v-if="!alert"
-        dark
+        
         @click="alert = true"
       >
         Reset Alert

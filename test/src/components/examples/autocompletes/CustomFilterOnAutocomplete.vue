@@ -1,8 +1,10 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-card
     class="overflow-hidden"
     color="purple lighten-1"
-    dark
+    
   >
     <v-toolbar
       flat

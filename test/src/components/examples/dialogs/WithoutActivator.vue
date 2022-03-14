@@ -1,8 +1,10 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-row justify="center">
     <v-btn
       color="primary"
-      dark
+      
       @click.stop="dialog = true"
     >
       Open Dialog
@@ -23,7 +25,7 @@
           <v-spacer></v-spacer>
 
           <v-btn
-            color="green darken-1"
+            color="primary"
             text
             @click="dialog = false"
           >
@@ -31,7 +33,7 @@
           </v-btn>
 
           <v-btn
-            color="green darken-1"
+            color="primary"
             text
             @click="dialog = false"
           >

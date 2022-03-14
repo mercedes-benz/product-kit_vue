@@ -1,13 +1,14 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
-  <v-card color="basil">
+  <v-card>
     <v-card-title class="text-center justify-center py-6">
-      <h1 class="font-weight-bold display-3 basil--text">BASiL</h1>
+      <h1 class="font-weight-bold display-3 primary--text">BASiL</h1>
     </v-card-title>
 
     <v-tabs
       v-model="tab"
       background-color="transparent"
-      color="basil"
       grow
     >
       <v-tab
@@ -24,7 +25,6 @@
         :key="item"
       >
         <v-card
-          color="basil"
           flat
         >
           <v-card-text>{{ text }}</v-card-text>

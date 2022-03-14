@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div>
     <v-checkbox v-model="v0" label="Visible"></v-checkbox>

@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-card>
     <v-card-text>
@@ -6,7 +8,7 @@
           <v-col cols="12">
             <v-radio-group v-model="color" row>
               <v-radio
-                v-for="(colorValue, i) in ['success', 'info', 'error', 'cyan darken-2']"
+                v-for="(colorValue, i) in ['primary', 'secondary', 'tertiary', 'quaternary']"
                 :key="i"
                 :color="colorValue"
                 :label="colorValue"
@@ -85,7 +87,7 @@
       <v-btn
         block
         color="primary"
-        dark
+        
         @click="snackbar = true"
       >
         Show Snackbar
@@ -102,10 +104,11 @@
       :timeout="timeout"
       :top="y === 'top'"
       :vertical="mode === 'vertical'"
+      :class="color + '-contrast--text'"
     >
       {{ text }}
       <v-btn
-        dark
+        :class="color + '-contrast--text'"
         text
         @click="snackbar = false"
       >

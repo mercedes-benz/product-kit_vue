@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-row align="center">
     <v-checkbox v-model="landscape" label="Landscape"></v-checkbox>

@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-card
     :loading="loading"
@@ -42,7 +44,7 @@
     <v-card-text>
       <v-chip-group
         v-model="selection"
-        active-class="deep-purple accent-4 white--text"
+        active-class="secondary white--text"
         column
       >
         <v-chip>5:30PM</v-chip>
@@ -57,7 +59,7 @@
 
     <v-card-actions>
       <v-btn
-        color="deep-purple accent-4"
+        color="primary"
         text
         @click="reserve"
       >

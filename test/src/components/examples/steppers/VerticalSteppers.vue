@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-stepper v-model="e6" vertical>
     <v-stepper-step :complete="e6 > 1" step="1">

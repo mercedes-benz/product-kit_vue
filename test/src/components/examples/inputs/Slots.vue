@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-text-field>
     <v-icon slot="append" color="red">mdi-plus</v-icon>

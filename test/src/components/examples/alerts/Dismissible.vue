@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div>
     <v-alert
@@ -5,7 +7,7 @@
       border="left"
       close-text="Close Alert"
       color="deep-purple accent-4"
-      dark
+      
       dismissible
     >
       Aenean imperdiet. Quisque id odio. Cras dapibus. Pellentesque ut neque. Cras dapibus.
@@ -16,7 +18,7 @@
       <v-btn
         v-if="!alert"
         color="deep-purple accent-4"
-        dark
+        
         @click="alert = true"
       >
         Reset

@@ -1,10 +1,12 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div class="text-center">
     <v-btn
       :disabled="dialog"
       :loading="dialog"
       class="white--text"
-      color="purple darken-2"
+      color="primary"
       @click="dialog = true"
     >
       Start loading
@@ -17,7 +19,7 @@
     >
       <v-card
         color="primary"
-        dark
+        
       >
         <v-card-text>
           Please stand by

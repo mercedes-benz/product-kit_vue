@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-card
     class="mx-auto"
@@ -6,7 +8,7 @@
     <v-card-title class="title font-weight-regular justify-space-between">
       <span>{{ currentTitle }}</span>
       <v-avatar
-        color="primary lighten-2"
+        color="primary"
         class="subheading white--text"
         size="24"
         v-text="step"

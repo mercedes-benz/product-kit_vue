@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-col cols="12" sm="6" offset-sm="3">
     <v-card>

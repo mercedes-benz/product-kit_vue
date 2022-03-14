@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-container fluid>
     <v-slider v-model="width" min="200" max="500" step="1"></v-slider>

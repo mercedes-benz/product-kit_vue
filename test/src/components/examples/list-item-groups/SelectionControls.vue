@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-card
     class="mx-auto"
@@ -18,7 +20,7 @@
             v-else
             :key="`item-${i}`"
             :value="item"
-            active-class="deep-purple--text text--accent-4"
+            active-class="primary"
           >
             <template v-slot:default="{ active, toggle }">
               <v-list-item-content>
@@ -29,7 +31,7 @@
                 <v-checkbox
                   :input-value="active"
                   :true-value="item"
-                  color="deep-purple accent-4"
+                  color="secondary"
                   @click="toggle"
                 ></v-checkbox>
               </v-list-item-action>

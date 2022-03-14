@@ -1,0 +1,567 @@
+// SPDX-License-Identifier: MIT
+
+
+///--- IMPORTS ---///
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+
+
+
+///--- COLORS ---///
+$neutral: (
+  "base": tokens.$color-brand-neutral-500,
+  "lighten-5": tokens.$color-brand-neutral-50,
+  "lighten-4": tokens.$color-brand-neutral-100,
+  "lighten-3": tokens.$color-brand-neutral-200,
+  "lighten-2": tokens.$color-brand-neutral-300,
+  "lighten-1": tokens.$color-brand-neutral-400,
+  "darken-1": tokens.$color-brand-neutral-600,
+  "darken-2": tokens.$color-brand-neutral-700,
+  "darken-3": tokens.$color-brand-neutral-800,
+  "darken-4": tokens.$color-brand-neutral-900,
+);
+$blue: (
+  "base": tokens.$color-brand-blue-500,
+  "lighten-5": tokens.$color-brand-blue-50,
+  "lighten-4": tokens.$color-brand-blue-100,
+  "lighten-3": tokens.$color-brand-blue-200,
+  "lighten-2": tokens.$color-brand-blue-300,
+  "lighten-1": tokens.$color-brand-blue-400,
+  "darken-1": tokens.$color-brand-blue-600,
+  "darken-2": tokens.$color-brand-blue-700,
+  "darken-3": tokens.$color-brand-blue-800,
+  "darken-4": tokens.$color-brand-blue-900,
+);
+$grey: (
+  "base": #9e9e9e,
+  "lighten-5": #fafafa,
+  "lighten-4": #f5f5f5,
+  "lighten-3": #eeeeee,
+  "lighten-2": #e0e0e0,
+  "lighten-1": #bdbdbd,
+  "darken-1": #757575,
+  "darken-2": #616161,
+  "darken-3": #424242,
+  "darken-4": #212121,
+);
+$blue-grey: (
+  "base": tokens.$color-brand-grayblue-500,
+  "lighten-5": tokens.$color-brand-grayblue-50,
+  "lighten-4": tokens.$color-brand-grayblue-100,
+  "lighten-3": tokens.$color-brand-grayblue-200,
+  "lighten-2": tokens.$color-brand-grayblue-300,
+  "lighten-1": tokens.$color-brand-grayblue-400,
+  "darken-1": tokens.$color-brand-grayblue-600,
+  "darken-2": tokens.$color-brand-grayblue-700,
+  "darken-3": tokens.$color-brand-grayblue-800,
+  "darken-4": tokens.$color-brand-grayblue-900,
+);
+$pink: (
+  "base": tokens.$color-brand-pink-500,
+  "lighten-5": tokens.$color-brand-pink-50,
+  "lighten-4": tokens.$color-brand-pink-100,
+  "lighten-3": tokens.$color-brand-pink-200,
+  "lighten-2": tokens.$color-brand-pink-300,
+  "lighten-1": tokens.$color-brand-pink-400,
+  "darken-1": tokens.$color-brand-pink-600,
+  "darken-2": tokens.$color-brand-pink-700,
+  "darken-3": tokens.$color-brand-pink-800,
+  "darken-4": tokens.$color-brand-pink-900,
+);
+$purple: (
+  "base": tokens.$color-brand-purple-500,
+  "lighten-5": tokens.$color-brand-purple-50,
+  "lighten-4": tokens.$color-brand-purple-100,
+  "lighten-3": tokens.$color-brand-purple-200,
+  "lighten-2": tokens.$color-brand-purple-300,
+  "lighten-1": tokens.$color-brand-purple-400,
+  "darken-1": tokens.$color-brand-purple-600,
+  "darken-2": tokens.$color-brand-purple-700,
+  "darken-3": tokens.$color-brand-purple-800,
+  "darken-4": tokens.$color-brand-purple-900,
+);
+$red: (
+  "base": tokens.$color-brand-red-500,
+  "lighten-5": tokens.$color-brand-red-50,
+  "lighten-4": tokens.$color-brand-red-100,
+  "lighten-3": tokens.$color-brand-red-200,
+  "lighten-2": tokens.$color-brand-red-300,
+  "lighten-1": tokens.$color-brand-red-400,
+  "darken-1": tokens.$color-brand-red-600,
+  "darken-2": tokens.$color-brand-red-700,
+  "darken-3": tokens.$color-brand-red-800,
+  "darken-4": tokens.$color-brand-red-900,
+);
+$green: (
+  "base": tokens.$color-brand-green-500,
+  "lighten-5": tokens.$color-brand-green-50,
+  "lighten-4": tokens.$color-brand-green-100,
+  "lighten-3": tokens.$color-brand-green-200,
+  "lighten-2": tokens.$color-brand-green-300,
+  "lighten-1": tokens.$color-brand-green-400,
+  "darken-1": tokens.$color-brand-green-600,
+  "darken-2": tokens.$color-brand-green-700,
+  "darken-3": tokens.$color-brand-green-800,
+  "darken-4": tokens.$color-brand-green-900,
+);
+$shades: (
+  "black": #000000,
+  "white": #ffffff,
+  "transparent": transparent,
+);
+
+///--- FONT ---///
+
+///--- SIZES ---///
+$spacer: 4px !default;
+$form-grid-gutter: $spacer * 2 !default;
+$grid-gutter: $spacer * 6 !default;
+$spacers-steps: 16 !default;
+$border-radius-root: 0px !default;
+$code-kbd-border-radius: 0px !default;
+$text-field-enclosed-details-padding: 0 12px !default;
+$grid-breakpoints: (
+  'xs': 0,
+  'sm': 600px,
+  'md': 905px,
+  'lg': 1240px,
+  'xl': 1440px
+);
+$container-padding-x: $grid-gutter / 2 !default;
+$grid-columns: 12 !default;
+$grid-gutters: (
+  "xs": $grid-gutter * 2/3,
+  "sm": $grid-gutter * 2/3,
+  "md": $grid-gutter,
+  "lg": $grid-gutter,
+  "xl": $grid-gutter * 4/3,
+);
+$display-breakpoints: (
+  'print-only': 'only print',
+  'screen-only': 'only screen',
+  'xs-only': 'only screen and (max-width: #{map-get($grid-breakpoints, 'sm') - 0.02})',
+  'sm-only': 'only screen and (min-width: #{map-get($grid-breakpoints, 'sm')}) and (max-width: #{map-get($grid-breakpoints, 'md') - 0.02})',
+  'sm-and-down': 'only screen and (max-width: #{map-get($grid-breakpoints, 'md') - 0.02})',
+  'sm-and-up': 'only screen and (min-width: #{map-get($grid-breakpoints, 'sm')})',
+  'md-only': 'only screen and (min-width: #{map-get($grid-breakpoints, 'md')}) and (max-width: #{map-get($grid-breakpoints, 'lg') - 0.02})',
+  'md-and-down': 'only screen and (max-width: #{map-get($grid-breakpoints, 'lg') - 0.02})',
+  'md-and-up': 'only screen and (min-width: #{map-get($grid-breakpoints, 'md')})',
+  'lg-only': 'only screen and (min-width: #{map-get($grid-breakpoints, 'lg')}) and (max-width: #{map-get($grid-breakpoints, 'xl') - 0.02})',
+  'lg-and-down': 'only screen and (max-width: #{map-get($grid-breakpoints, 'xl') - 0.02})',
+  'lg-and-up': 'only screen and (min-width: #{map-get($grid-breakpoints, 'lg')})',
+  'xl-only': 'only screen and (min-width: #{map-get($grid-breakpoints, 'xl')})'
+);
+
+$body-font-family: tokens.$font-family-brand;
+$heading-font-family: $body-font-family !default;
+
+
+@function clampMe($minFont, $maxFont) {
+  @if $minFont == $maxFont {
+    @return $minFont;
+  }
+  $slope: calc(calc(#{$maxFont / 1px} - #{$minFont / 1px}) / calc(#{tokens.$layout-application-compact-l-screen-min-width / 1px} - #{tokens.$layout-application-compact-s-screen-min-width / 1px}));
+  $slopeVw: calc(#{$slope} * 1vw);
+  $slopePercent: calc(#{$slopeVw} * 100);
+  $yAxis: calc(calc(-#{tokens.$layout-application-compact-s-screen-min-width} * #{$slope}) + #{$minFont});
+  @return clamp(#{$minFont}, #{$yAxis} + #{$slopePercent}, #{$maxFont});
+}
+
+
+$headings: (
+  "h1": (
+    "size": clampMe(tokens.$font-application-s-headline1-font-size, tokens.$font-application-l-headline1-font-size),
+    "weight": 300,
+    "line-height": tokens.$font-application-s-headline1-line-height,
+    "letter-spacing": clampMe(tokens.$font-application-s-headline1-letter-spacing, tokens.$font-application-l-headline1-letter-spacing),
+    "font-family": $heading-font-family,
+    "text-transform": tokens.$font-application-s-headline1-text-transform,
+  ),
+  "h2": (
+    "size": clampMe(tokens.$font-application-s-headline2-font-size, tokens.$font-application-l-headline2-font-size),
+    "weight": 300,
+    "line-height": tokens.$font-application-s-headline2-line-height,
+    "letter-spacing": clampMe(tokens.$font-application-s-headline2-letter-spacing, tokens.$font-application-l-headline2-letter-spacing),
+    "font-family": $heading-font-family,
+    "text-transform": tokens.$font-application-s-headline2-text-transform,
+  ),
+  "h3": (
+    "size": clampMe(tokens.$font-application-s-headline3-font-size, tokens.$font-application-l-headline3-font-size),
+    "weight": 400,
+    "line-height": tokens.$font-application-s-headline3-line-height,
+    "letter-spacing": clampMe(tokens.$font-application-s-headline3-letter-spacing, tokens.$font-application-l-headline3-letter-spacing),
+    "font-family": $heading-font-family,
+    "text-transform": tokens.$font-application-s-headline3-text-transform,
+  ),
+  "h4": (
+    "size": clampMe(tokens.$font-application-s-headline4-font-size, tokens.$font-application-l-headline4-font-size),
+    "weight": 400,
+    "line-height": tokens.$font-application-s-headline4-line-height,
+    "letter-spacing": clampMe(tokens.$font-application-s-headline4-letter-spacing, tokens.$font-application-l-headline4-letter-spacing),
+    "font-family": $heading-font-family,
+    "text-transform": tokens.$font-application-s-headline4-text-transform,
+  ),
+  "h5": (
+    "size": clampMe(tokens.$font-application-s-headline5-font-size, tokens.$font-application-l-headline5-font-size),
+    "weight": 400,
+    "line-height": tokens.$font-application-s-headline5-line-height,
+    "letter-spacing": clampMe(tokens.$font-application-s-headline5-letter-spacing, tokens.$font-application-l-headline5-letter-spacing),
+    "font-family": $heading-font-family,
+    "text-transform": tokens.$font-application-s-headline5-text-transform,
+  ),
+  "h6": (
+    "size": clampMe(tokens.$font-application-s-headline6-font-size, tokens.$font-application-l-headline6-font-size),
+    "weight": 500,
+    "line-height": tokens.$font-application-s-headline6-line-height,
+    "letter-spacing": clampMe(tokens.$font-application-s-headline6-letter-spacing, tokens.$font-application-l-headline6-letter-spacing),
+    "font-family": $heading-font-family,
+    "text-transform": tokens.$font-application-s-headline6-text-transform,
+  ),
+  "subtitle-1": (
+    "size": clampMe(tokens.$font-application-s-subtitle1-font-size, tokens.$font-application-l-subtitle1-font-size),
+    "weight": normal,
+    "line-height": tokens.$font-application-s-subtitle1-line-height,
+    "letter-spacing": clampMe(tokens.$font-application-s-subtitle1-letter-spacing, tokens.$font-application-l-subtitle1-letter-spacing),
+    "font-family": $body-font-family,
+    "text-transform": tokens.$font-application-s-subtitle1-text-transform,
+  ),
+  "subtitle-2": (
+    "size": clampMe(tokens.$font-application-s-subtitle2-font-size, tokens.$font-application-l-subtitle2-font-size),
+    "weight": 500,
+    "line-height": tokens.$font-application-s-subtitle2-line-height,
+    "letter-spacing": clampMe(tokens.$font-application-s-subtitle2-letter-spacing, tokens.$font-application-l-subtitle2-letter-spacing),
+    "font-family": $body-font-family,
+    "text-transform": tokens.$font-application-s-subtitle2-text-transform,
+  ),
+  "body-1": (
+    "size": clampMe(tokens.$font-application-s-body1-font-size, tokens.$font-application-l-body1-font-size),
+    "weight": 400,
+    "line-height": tokens.$font-application-s-body1-line-height,
+    "letter-spacing": clampMe(tokens.$font-application-s-body1-letter-spacing, tokens.$font-application-l-body1-letter-spacing),
+    "font-family": $body-font-family,
+    "text-transform": tokens.$font-application-s-body1-text-transform,
+  ),
+  "body-2": (
+    "size": clampMe(tokens.$font-application-s-body2-font-size, tokens.$font-application-l-body2-font-size),
+    "weight": 400,
+    "line-height": tokens.$font-application-s-body2-line-height,
+    "letter-spacing": clampMe(tokens.$font-application-s-body2-letter-spacing, tokens.$font-application-l-body2-letter-spacing),
+    "font-family": $body-font-family,
+    "text-transform": tokens.$font-application-s-body2-text-transform,
+  ),
+  "button": (
+    "size": clampMe(tokens.$font-application-s-button-font-size, tokens.$font-application-l-button-font-size),
+    "weight": 500,
+    "line-height": tokens.$font-application-s-button-line-height,
+    "letter-spacing": clampMe(tokens.$font-application-s-button-letter-spacing, tokens.$font-application-l-button-letter-spacing),
+    "font-family": $body-font-family,
+    "text-transform": tokens.$font-application-s-button-text-transform,
+  ),
+  "caption": (
+    "size": clampMe(tokens.$font-application-s-caption-font-size, tokens.$font-application-l-caption-font-size),
+    "weight": 400,
+    "line-height": tokens.$font-application-s-caption-line-height,
+    "letter-spacing": clampMe(tokens.$font-application-s-caption-letter-spacing, tokens.$font-application-l-caption-letter-spacing),
+    "font-family": $body-font-family,
+    "text-transform": tokens.$font-application-s-caption-text-transform,
+  ),
+  "overline": (
+    "size": clampMe(tokens.$font-application-s-overline-font-size, tokens.$font-application-l-overline-font-size),
+    "weight": tokens.$font-application-s-overline-font-weight,
+    "line-height": tokens.$font-application-s-overline-line-height,
+    "letter-spacing": clampMe(tokens.$font-application-s-overline-letter-spacing, tokens.$font-application-l-overline-letter-spacing),
+    "font-family": $body-font-family,
+    "text-transform": tokens.$font-application-s-overline-text-transform,
+  ),
+);
+@each $type, $values in $headings {
+  $typography: (#{$type}: map-values($values));
+};
+
+$font-weights: (
+  (
+    "thin": 100,
+    "light": tokens.$font-weight-light,
+    "regular": tokens.$font-weight-regular,
+    "medium": 500,
+    "bold": tokens.$font-weight-bold,
+    "black": tokens.$font-weight-black,
+  )
+);
+
+
+
+
+
+
+///--- THEME SPECIFIC ---///
+$material-dark-elevation-colors: () !default;
+$material-dark: (
+  "status-bar": (
+    "regular": map-get($shades, "black"),
+    "lights-out": rgba(map-get($shades, "black"), 0.2),
+  ),
+  "app-bar": map-get($material-dark-elevation-colors, "4"),
+  "background": tokensDark.$color-application-background,
+  "bottom-navigation": map-get($material-dark-elevation-colors, "8"),
+  "surface": tokensDark.$color-application-surface,
+  "calendar": (
+    "background-color": #303030,
+    "outside-background-color": #202020,
+    "weeknumber-background-color": #202020,
+    "line-color": map-get($grey, "base"),
+    "interval-color": map-get($grey, "lighten-3"),
+    "interval-line-color": map-get($grey, "darken-2"),
+    "text-color": map-get($shades, "white"),
+    "past-color": rgba(map-get($shades, "white"), 0.5),
+  ),
+  "cards": map-get($material-dark-elevation-colors, "1"),
+  "chips": #555,
+  "code": (
+    "background": rgba(map-get($shades, "white"), 0.1),
+    "color": currentColor,
+  ),
+  "kbd": (
+    "background": #212529,
+    "color": map-get($shades, "white"),
+  ),
+  "dividers": rgba(map-get($shades, "white"), 0.12),
+  "text": (
+    "theme": map-get($shades, "white"),
+    "primary": map-get($shades, "white"),
+    "secondary": rgba(map-get($shades, "white"), 0.7),
+    "disabled": rgba(map-get($shades, "white"), 0.5),
+    "link": map-get($blue, "accent-1"),
+    "link-hover": map-get($grey, "lighten-3"),
+  ),
+  "icons": (
+    "active": map-get($shades, "white"),
+    "inactive": rgba(map-get($shades, "white"), 0.5),
+  ),
+  "inputs": (
+    "box": map-get($shades, "white"),
+    "solo-inverted": rgba(map-get($shades, "white"), 0.16),
+    "solo-inverted-focused": map-get($shades, "white"),
+    "solo-inverted-focused-label": rgba(map-get($shades, "black"), 0.6),
+    "solo-inverted-focused-placeholder": rgba(map-get($shades, "black"), 0.38),
+    "solo-inverted-focused-text": rgba(map-get($shades, "black"), 0.87),
+  ),
+  "buttons": (
+    "disabled": rgba(map-get($shades, "white"), 0.3),
+    "focused": rgba(map-get($shades, "white"), 0.12),
+    "focused-alt": rgba(map-get($shades, "white"), 0.1),
+    "pressed": rgba(#ccc, 0.25),
+  ),
+  "expansion-panels": (
+    "focus": #494949,
+  ),
+  "navigation-drawer": map-get($material-dark-elevation-colors, "16"),
+  "selection-controls": (
+    "disabled": rgba(map-get($shades, "white"), 0.3),
+    "thumb": (
+      "inactive": map-get($grey, "lighten-1"),
+      "disabled": map-get($grey, "darken-3"),
+    ),
+    "track": (
+      "inactive": rgba(map-get($shades, "white"), 0.3),
+      "disabled": rgba(map-get($shades, "white"), 0.1),
+    ),
+  ),
+  "slider": (
+    "active": rgba(map-get($shades, "white"), 0.3),
+    "inactive": rgba(map-get($shades, "white"), 0.2),
+    "disabled": rgba(map-get($shades, "white"), 0.2),
+    "discrete": map-get($shades, "white"),
+  ),
+  "skeleton":
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0)
+    ),
+  "states": (
+    "hover": 0.08,
+    "focus": 0.24,
+    "selected": 0.16,
+    "activated": 0.24,
+    "pressed": 0.32,
+    "dragged": 0.16,
+  ),
+  "tabs": rgba(map-get($shades, "white"), 0.6),
+  "toggle-buttons": (
+    "color": map-get($shades, "white"),
+  ),
+  "text-fields": (
+    "filled": rgba(map-get($shades, "white"), 0.08),
+    "filled-hover": rgba(map-get($shades, "white"), 0.16),
+    "outlined": rgba(map-get($shades, "white"), 0.24),
+    "outlined-disabled": rgba(map-get($shades, "white"), 0.16),
+    "outlined-hover": map-get($shades, "white"),
+  ),
+  "input-bottom-line": rgba(map-get($shades, "white"), 0.7),
+  "stepper": (
+    "active": rgba(map-get($shades, "white"), 1),
+    "completed": rgba(map-get($shades, "white"), 0.87),
+    "hover": rgba(map-get($shades, "white"), 0.75),
+  ),
+  "table": (
+    "active": #505050,
+    "hover": map-get($grey, "darken-2"),
+    "group": map-get($grey, "darken-2"),
+  ),
+  "toolbar": map-get($material-dark-elevation-colors, "4"),
+  "picker": (
+    "body": map-get($grey, "darken-3"),
+    "clock": map-get($grey, "darken-2"),
+    "indeterminateTime": map-get($grey, "darken-1"),
+    "title": map-get($grey, "darken-2"),
+  ),
+  "color-picker": (
+    "checkerboard": rgba(map-get($shades, "white"), 0.12),
+  ),
+  "bg-color": tokensDark.$color-application-background,
+  "fg-color": map-get($shades, "white"),
+  "text-color": map-get($shades, "white"),
+  "primary-text-percent": 1,
+  "secondary-text-percent": 0.7,
+  "disabledORhints-text-percent": 0.5,
+  "divider-percent": 0.12,
+  "active-icon-percent": 1,
+  "inactive-icon-percent": 0.5,
+);
+$material-light: (
+  "status-bar": (
+    "regular": map-get($grey, "lighten-2"),
+    "lights-out": rgba(map-get($shades, "white"), 0.7),
+  ),
+  "app-bar": map-get($grey, "lighten-4"),
+  "background": tokens.$color-application-background,
+  "bottom-navigation": map-get($shades, "white"),
+  "surface": tokens.$color-application-surface,
+  "calendar": (
+    "background-color": map-get($shades, "white"),
+    "outside-background-color": #f7f7f7,
+    "weeknumber-background-color": #f1f3f4,
+    "line-color": map-get($grey, "lighten-2"),
+    "interval-color": map-get($grey, "darken-3"),
+    "interval-line-color": map-get($grey, "lighten-2"),
+    "text-color": map-get($shades, "black"),
+    "past-color": rgba(map-get($shades, "black"), 0.38),
+  ),
+  "cards": tokens.$color-application-surface,
+  "chips": #e0e0e0,
+  "code": (
+    "background": rgba(map-get($shades, "black"), 0.05),
+    "color": currentColor,
+  ),
+  "kbd": (
+    "background": #212529,
+    "color": map-get($shades, "white"),
+  ),
+  "dividers": rgba(map-get($shades, "black"), 0.12),
+  "text": (
+    "theme": map-get($shades, "white"),
+    "primary": rgba(map-get($shades, "black"), 0.87),
+    "secondary": rgba(map-get($shades, "black"), 0.6),
+    "disabled": rgba(map-get($shades, "black"), 0.38),
+    "link": map-get($blue, "darken-2"),
+    "link-hover": map-get($grey, "darken-3"),
+  ),
+  "icons": (
+    "active": rgba(map-get($shades, "black"), 0.54),
+    "inactive": rgba(map-get($shades, "black"), 0.38),
+  ),
+  "inputs": (
+    "box": rgba(map-get($shades, "black"), 0.04),
+    "solo-inverted": rgba(map-get($shades, "black"), 0.06),
+    "solo-inverted-focused": map-get($grey, "darken-3"),
+    "solo-inverted-focused-label": rgba(map-get($shades, "white"), 0.7),
+    "solo-inverted-focused-placeholder": rgba(map-get($shades, "white"), 0.5),
+    "solo-inverted-focused-text": map-get($shades, "white"),
+  ),
+  "buttons": (
+    "disabled": rgba(map-get($shades, "black"), 0.26),
+    "focused": rgba(map-get($shades, "black"), 0.12),
+    "focused-alt": rgba(map-get($shades, "white"), 0.6),
+    "pressed": rgba(#999, 0.4),
+  ),
+  "expansion-panels": (
+    "focus": map-get($grey, "lighten-3"),
+  ),
+  "navigation-drawer": map-get($shades, "white"),
+  "selection-controls": (
+    "disabled": rgba(map-get($shades, "black"), 0.26),
+    "thumb": (
+      "inactive": map-get($shades, "white"),
+      "disabled": map-get($grey, "lighten-5"),
+    ),
+    "track": (
+      "inactive": rgba(map-get($shades, "black"), 0.38),
+      "disabled": rgba(map-get($shades, "black"), 0.12),
+    ),
+  ),
+  "slider": (
+    "active": rgba(map-get($shades, "black"), 0.38),
+    "inactive": rgba(map-get($shades, "black"), 0.26),
+    "disabled": rgba(map-get($shades, "black"), 0.26),
+    "discrete": map-get($shades, "black"),
+  ),
+  "skeleton":
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0)
+    ),
+  "states": (
+    "hover": 0.04,
+    "focus": 0.12,
+    "selected": 0.08,
+    "activated": 0.12,
+    "pressed": 0.16,
+    "dragged": 0.08,
+  ),
+  "tabs": rgba(0, 0, 0, 0.54),
+  "toggle-buttons": (
+    "color": map-get($shades, "black"),
+  ),
+  "text-fields": (
+    "filled": rgba(map-get($shades, "black"), 0.06),
+    "filled-hover": rgba(map-get($shades, "black"), 0.12),
+    "outlined": rgba(map-get($shades, "black"), 0.38),
+    "outlined-disabled": rgba(map-get($shades, "black"), 0.26),
+    "outlined-hover": rgba(map-get($shades, "black"), 0.86),
+  ),
+  "toolbar": map-get($shades, "white"),
+  "input-bottom-line": rgba(map-get($shades, "black"), 0.42),
+  "stepper": (
+    "active": rgba(map-get($shades, "white"), 1),
+    "completed": rgba(map-get($shades, "black"), 0.87),
+    "hover": rgba(map-get($shades, "black"), 0.54),
+  ),
+  "table": (
+    "active": map-get($grey, "lighten-4"),
+    "hover": map-get($grey, "lighten-3"),
+    "group": map-get($grey, "lighten-3"),
+  ),
+  "picker": (
+    "body": map-get($shades, "white"),
+    "clock": map-get($grey, "lighten-2"),
+    "indeterminateTime": map-get($grey, "lighten-1"),
+    "title": map-get($grey, "lighten-2"),
+  ),
+  "color-picker": (
+    "checkerboard": rgba(map-get($shades, "white"), 0),
+  ),
+  "bg-color": tokens.$color-application-background,
+  "fg-color": map-get($shades, "black"),
+  "text-color": map-get($shades, "black"),
+  "primary-text-percent": 0.87,
+  "secondary-text-percent": 0.6,
+  "disabledORhints-text-percent": 0.38,
+  "divider-percent": 0.12,
+  "active-icon-percent": 0.54,
+  "inactive-icon-percent": 0.38,
+);

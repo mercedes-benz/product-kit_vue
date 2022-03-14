@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-container fluid>
     <v-row justify="space-around" class="mb-2">
@@ -7,10 +9,10 @@
         <v-icon>mdi-information</v-icon>
       </span>
 
-      <span class="group pa-2 teal">
-        <v-icon dark>mdi-folder-outline</v-icon>
-        <v-icon dark>mdi-widgets</v-icon>
-        <v-icon dark>mdi-gavel</v-icon>
+      <span class="group pa-2 primary">
+        <v-icon class="primary-contrast--text" >mdi-folder-outline</v-icon>
+        <v-icon class="primary-contrast--text">mdi-widgets</v-icon>
+        <v-icon class="primary-contrast--text">mdi-gavel</v-icon>
       </span>
     </v-row>
 
@@ -21,10 +23,10 @@
         <v-icon medium>mdi-information</v-icon>
       </span>
 
-      <span class="group pa-2 teal">
-        <v-icon medium dark>mdi-folder-outline</v-icon>
-        <v-icon medium dark>mdi-widgets</v-icon>
-        <v-icon medium dark>mdi-gavel</v-icon>
+      <span class="group pa-2 secondary">
+        <v-icon medium class="secondary-contrast--text">mdi-folder-outline</v-icon>
+        <v-icon medium class="secondary-contrast--text">mdi-widgets</v-icon>
+        <v-icon medium class="secondary-contrast--text">mdi-gavel</v-icon>
       </span>
     </v-row>
 
@@ -35,10 +37,10 @@
         <v-icon large>mdi-information</v-icon>
       </span>
 
-      <span class="group pa-2 teal">
-        <v-icon large dark>mdi-folder-outline</v-icon>
-        <v-icon large dark>mdi-widgets</v-icon>
-        <v-icon large dark>mdi-gavel</v-icon>
+      <span class="group pa-2 tertiary">
+        <v-icon large class="tertiary-contrast--text">mdi-folder-outline</v-icon>
+        <v-icon large class="tertiary-contrast--text">mdi-widgets</v-icon>
+        <v-icon large class="tertiary-contrast--text">mdi-gavel</v-icon>
       </span>
     </v-row>
 
@@ -49,10 +51,10 @@
         <v-icon x-large>mdi-information</v-icon>
       </span>
 
-      <span class="group pa-2 teal">
-        <v-icon x-large dark>mdi-folder-outline</v-icon>
-        <v-icon x-large dark>mdi-widgets</v-icon>
-        <v-icon x-large dark>mdi-gavel</v-icon>
+      <span class="group pa-2 quaternary">
+        <v-icon x-large class="quaternary-contrast--text">mdi-folder-outline</v-icon>
+        <v-icon x-large class="quaternary-contrast--text">mdi-widgets</v-icon>
+        <v-icon x-large class="quaternary-contrast--text">mdi-gavel</v-icon>
       </span>
     </v-row>
   </v-container>

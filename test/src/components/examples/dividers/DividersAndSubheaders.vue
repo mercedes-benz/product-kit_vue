@@ -1,15 +1,17 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-row justify="center">
     <v-col cols="12" sm="8" md="6">
       <v-card>
-        <v-toolbar color="orange lighten-1" dark>
-          <v-app-bar-nav-icon></v-app-bar-nav-icon>
+        <v-toolbar color="quaternary">
+          <v-app-bar-nav-icon class="quaternary-contrast--text"></v-app-bar-nav-icon>
 
           <v-toolbar-title>Message Board</v-toolbar-title>
 
           <v-spacer></v-spacer>
 
-          <v-btn icon>
+          <v-btn icon class="quaternary-contrast--text">
             <v-icon>mdi-magnify</v-icon>
           </v-btn>
         </v-toolbar>

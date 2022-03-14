@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div class="text-center">
     <v-switch v-model="offset" label="X offset"></v-switch>
@@ -5,7 +7,7 @@
       <template v-slot:activator="{ on }">
         <v-btn
           color="primary"
-          dark
+          
           v-on="on"
         >
           Dropdown

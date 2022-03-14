@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div>
     <div class="text-center mb-4">
@@ -11,7 +13,7 @@
     <v-alert
       :value="alert"
       color="pink"
-      dark
+      
       border="top"
       icon="mdi-home"
       transition="scale-transition"

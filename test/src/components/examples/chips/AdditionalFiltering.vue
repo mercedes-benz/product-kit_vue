@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-card
     class="mx-auto mt-12"
@@ -65,14 +67,14 @@
       items: [
         {
           image: 'https://cdn-images-1.medium.com/max/1024/1*9C9hLji68wV373tk8okLYA.jpeg',
-          title: 'TBI’s 5 Best: SF Mocktails to Finish Dry January Strong',
+          title: "TBIs 5 Best: SF Mocktails to Finish Dry January Strong",
           category: 'Travel',
           keyword: 'Drinks',
 
         },
         {
           image: 'https://cdn-images-1.medium.com/max/1024/1*BBNtYUieAqHoXKjiJ2mMjQ.png',
-          title: 'PWAs on iOS 12.2 beta: the good, the bad, and the “not sure yet if good”',
+          title: 'PWAs on iOS 12.2 beta: the good, the bad, and the "not sure yet if good"',
           category: 'Technology',
           keyword: 'Phones',
         },

@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-container class="pa-4 text-center">
     <v-row class="fill-height" align="center" justify="center">

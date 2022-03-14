@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-container fluid>
     <v-data-iterator
@@ -11,8 +13,7 @@
     >
       <template v-slot:header>
         <v-toolbar
-          dark
-          color="blue darken-3"
+          color="secondary"
           class="mb-1"
         >
           <v-text-field
@@ -96,9 +97,8 @@
           <v-menu offset-y>
             <template v-slot:activator="{ on }">
               <v-btn
-                dark
                 text
-                color="primary"
+                color="secondary"
                 class="ml-2"
                 v-on="on"
               >

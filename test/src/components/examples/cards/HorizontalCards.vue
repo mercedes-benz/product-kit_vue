@@ -1,11 +1,12 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-card
     max-width="400"
     class="mx-auto"
   >
     <v-system-bar
-      color="pink darken-2"
-      dark
+      color="secondary"
     >
       <v-spacer></v-spacer>
 
@@ -17,21 +18,20 @@
     </v-system-bar>
 
     <v-app-bar
-      dark
-      color="pink"
+      color="secondary"
     >
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon class="primary-contrast--text"></v-app-bar-nav-icon>
 
       <v-toolbar-title>My Music</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
-      <v-btn icon>
+      <v-btn icon class="primary-contrast--text">
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
     </v-app-bar>
 
-    <v-container>
+    <v-container fluid>
       <v-row dense>
         <v-col cols="12">
           <v-card

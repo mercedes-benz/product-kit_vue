@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-container class="grey lighten-4">
     <div class="text-center d-flex justify-center align-center mb-12 flex-wrap">

@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-card
     max-width="375"
@@ -6,7 +8,6 @@
     <v-img
       src="https://cdn.vuetifyjs.com/images/lists/ali.png"
       height="300px"
-      dark
     >
       <v-row class="fill-height">
         <v-card-title>
@@ -36,7 +37,7 @@
     <v-list two-line>
       <v-list-item>
         <v-list-item-icon>
-          <v-icon color="indigo">mdi-phone</v-icon>
+          <v-icon color="tertiary">mdi-phone</v-icon>
         </v-list-item-icon>
 
         <v-list-item-content>
@@ -66,7 +67,7 @@
 
       <v-list-item>
         <v-list-item-icon>
-          <v-icon color="indigo">mdi-email</v-icon>
+          <v-icon color="tertiary">mdi-email</v-icon>
         </v-list-item-icon>
 
         <v-list-item-content>
@@ -88,7 +89,7 @@
 
       <v-list-item>
         <v-list-item-icon>
-          <v-icon color="indigo">mdi-map-marker</v-icon>
+          <v-icon color="tertiary">mdi-map-marker</v-icon>
         </v-list-item-icon>
 
         <v-list-item-content>

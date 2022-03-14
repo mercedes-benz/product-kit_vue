@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-row class="fill-height">
     <v-col>
@@ -69,7 +71,7 @@
           >
             <v-toolbar
               :color="selectedEvent.color"
-              dark
+              
             >
               <v-btn icon>
                 <v-icon>mdi-pencil</v-icon>

@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-card id="create">
     <v-container fluid>
@@ -47,8 +49,7 @@
       <template v-slot:activator>
         <v-btn
           v-model="fab"
-          color="blue darken-2"
-          dark
+          color="primary"
           fab
         >
           <v-icon v-if="fab">mdi-close</v-icon>
@@ -57,25 +58,22 @@
       </template>
       <v-btn
         fab
-        dark
         small
-        color="green"
+        color="secondary"
       >
         <v-icon>mdi-pencil</v-icon>
       </v-btn>
       <v-btn
         fab
-        dark
         small
-        color="indigo"
+        color="tertiary"
       >
         <v-icon>mdi-plus</v-icon>
       </v-btn>
       <v-btn
         fab
-        dark
         small
-        color="red"
+        color="quaternary"
       >
         <v-icon>mdi-delete</v-icon>
       </v-btn>

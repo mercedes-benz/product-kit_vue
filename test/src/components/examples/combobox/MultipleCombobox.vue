@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-container fluid>
     <v-row>
@@ -35,7 +37,7 @@
               @click:close="data.parent.selectItem(data.item)"
             >
               <v-avatar
-                class="accent white--text"
+                class="primary primary-contrast--text"
                 left
                 v-text="data.item.slice(0, 1).toUpperCase()"
               ></v-avatar>

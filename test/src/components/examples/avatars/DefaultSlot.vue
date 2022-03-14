@@ -1,8 +1,10 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-row justify="space-around">
 
     <v-avatar color="indigo">
-      <v-icon dark>mdi-account-circle</v-icon>
+      <v-icon >mdi-account-circle</v-icon>
     </v-avatar>
 
     <v-avatar>

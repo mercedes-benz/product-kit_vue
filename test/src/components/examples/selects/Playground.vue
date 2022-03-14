@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-row align="center" justify="space-around">
     <v-switch v-model="disabled" class="ma-2" label="Disabled"></v-switch>

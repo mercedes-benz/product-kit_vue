@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-card flat color="transparent">
     <v-subheader>Default range slider</v-subheader>

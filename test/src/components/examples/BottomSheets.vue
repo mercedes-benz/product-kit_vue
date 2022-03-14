@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <ExampleWrapper>
     <v-subheader>Persistent</v-subheader>

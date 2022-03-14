@@ -1,10 +1,11 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div class="text-center">
     <v-btn
       v-if="!chip1 && !chip2 && !chip3 && !chip4"
       close
       color="primary"
-      dark
       @click="chip1 = true, chip2 = true, chip3 = true, chip4= true"
     >
       Reset Chips
@@ -23,34 +24,33 @@
       v-if="chip2"
       class="ma-2"
       close
-      color="red"
-      text-color="white"
+      color="error"
       @click:close="chip2 = false"
     >
-      Remove
+      Error
     </v-chip>
 
     <v-chip
       v-if="chip3"
       class="ma-2"
       close
-      color="green"
+      color="primary"
       outlined
       @click:close="chip3 = false"
     >
-      Success
+      Primary
     </v-chip>
 
     <v-chip
       v-if="chip4"
       class="ma-2"
       close
-      color="orange"
+      color="secondary"
       label
       outlined
       @click:close="chip4 = false"
     >
-      Complete
+      Secondary
     </v-chip>
   </div>
 </template>

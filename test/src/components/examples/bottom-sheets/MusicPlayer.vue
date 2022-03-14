@@ -1,10 +1,12 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <div class="text-center">
     <v-bottom-sheet inset>
       <template v-slot:activator="{ on }">
         <v-btn
           color="red"
-          dark
+          
           v-on="on"
         >
           Open Player

@@ -1,8 +1,8 @@
+<!-- SPDX-License-Identifier: MIT -->
+
 <template>
   <v-tabs
     fixed-tabs
-    background-color="indigo"
-    dark
   >
     <v-tab>
       Option
