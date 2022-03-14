@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: get-npm-version
         id: package-version
-        uses: martinbeentjes/npm-get-version-action@main        
+        uses: martinbeentjes/npm-get-version-action@main       
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
