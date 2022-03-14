@@ -16,10 +16,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      #- name: get-npm-version
-      #  id: package-version
-      #  uses: martinbeentjes/npm-get-version-action@main
-      #  ${{ steps.package-version.outputs.current-version}}
+      - name: get-npm-version
+        id: package-version
+        uses: martinbeentjes/npm-get-version-action@main
       - name: ☁ Checkout
         uses: actions/checkout@v2
         with:
@@ -32,7 +31,7 @@ jobs:
         uses: blackducksoftware/github-action@v2
         with: 
           args: 
-            '--blackduck.url="https://bdscan.daimler.com" --blackduck.api.token="${{ secrets.BD_SCAN_API_TOKEN }}" --detect.policy.check.fail.on.severities="MAJOR,CRITICAL,BLOCKER" --detect.npm.include.dev.dependencies=false --detect.project.name="product-kit-vue" --detect.project.version.name="${{ github.event.inputs.version }}" --detect.project.version.phase="RELEASED" --detect.notices.report=true'
+            '--blackduck.url="https://bdscan.daimler.com" --blackduck.api.token="${{ secrets.BD_SCAN_API_TOKEN }}" --detect.policy.check.fail.on.severities="MAJOR,CRITICAL,BLOCKER" --detect.npm.include.dev.dependencies=false --detect.project.name="product-kit-vue" --detect.project.version.name="${{ steps.package-version.outputs.current-version }}" --detect.project.version.phase="RELEASED" --detect.notices.report=true'
 
 
 
