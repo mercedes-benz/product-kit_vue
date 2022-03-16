@@ -14,10 +14,6 @@ on:
 
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    strategy:
-      max-parallel: 1
   update-version:
     name: 🙈 Update Version
     uses: ./.github/workflows/update-version.yml
