@@ -12,7 +12,7 @@
             ></v-img>
             <v-toolbar-title @click="$router.push('/')" style="cursor: pointer">
                 <span class="first-word font py-0">Vuetify</span>
-                <span class="second-word font py-0"> Daimler TSS</span>
+                <span class="second-word font py-0"> Mercedes-Benz Tech Innovation</span>
             </v-toolbar-title>
             <v-spacer></v-spacer>
 
