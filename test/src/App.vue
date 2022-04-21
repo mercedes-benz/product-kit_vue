@@ -2,7 +2,7 @@
 
 <template>
     <v-app>
-        <v-app-bar clipped-left flat app>
+        <!--<v-app-bar clipped-left flat app>
             <v-img
                 :src="require('./assets/logo.svg')"
                 class="mx-2"
@@ -82,23 +82,108 @@
                     </template>
                 </template>
             </v-list>
-        </v-navigation-drawer>
+        </v-navigation-drawer>-->
+        <mbti-header title="Vuetify Playground">
+            <template v-slot:logo>
+                <v-img
+                    :src="require('@/assets/mbti.svg')"
+                    class="mr-5"
+                    max-height="60"
+                    max-width="60"
+                    contain
+                ></v-img>
+            </template>
+            <template v-slot:actions>
+                <v-btn text>Start</v-btn>
+                <v-btn text>Home</v-btn>
+                <v-menu offset-y>
+                    <template v-slot:activator="{ on, attrs }">
+                        <v-btn text v-bind="attrs" v-on="on">
+                            Services
+                            <v-icon> mdi-chevron-down </v-icon>
+                        </v-btn>
+                    </template>
+                    <v-list>
+                        <v-list-item>
+                            <v-list-item-title>Test</v-list-item-title>
+                        </v-list-item>
+                        <v-list-item>
+                            <v-list-item-title>Item</v-list-item-title>
+                        </v-list-item>
+                    </v-list>
+                </v-menu>
+                <v-switch
+                    v-model="darkSwitch"
+                    label="Darkmode"
+                    color="primary"
+                    @change="toggleDarkMode"
+                ></v-switch>
+            </template>
+        </mbti-header>
+        <mbti-nav :items="navItems">
+            <!-- <mbti-nav-item icon left dark iconName="mdi-car" title="Modelle" :onclick="alerts"/>
+            <mbti-nav-item title="Online kaufen" />
+            <mbti-nav-item title="Kaufberatung" />
+            <mbti-nav-item title="Service & Zubehör" />
+            <mbti-nav-item title="Technologie" /> -->
+        </mbti-nav>
         <v-main>
             <router-view />
         </v-main>
+        <mbti-footer>
+            <v-spacer></v-spacer>
+            <v-btn text>
+                Imprint
+            </v-btn>
+            <v-btn text>
+                Privacy Policy
+            </v-btn>
+        </mbti-footer>
     </v-app>
 </template>
 
 <script>
 import { COMPONENTS_MANIFEST } from "./components/ComponentsList";
+import MbtiHeader from "../../src/patterns/MbtiHeader.vue";
+import MbtiNav from "../../src/patterns/MbtiNav.vue";
+import MbtiFooter from "../../src/patterns/MbtiFooter.vue";
 
 export default {
     name: "App",
+
+    components: {
+        MbtiHeader,
+        MbtiNav,
+        MbtiFooter
+    },
 
     data: () => ({
         darkSwitch: false,
         menuItems: COMPONENTS_MANIFEST,
         selectedComponent: null,
+        navItems: [
+            {
+                title: "Modelle",
+                icon: true,
+                left: true,
+                iconName: "mdi-car",
+                onclick: function() {
+                    console.log("hi")
+                }
+            },
+            {
+                title: "Online kaufen",
+            },
+            {
+                title: "Kaufberatung",
+            },
+            {
+                title: "Service & Zubehör",
+            },
+            {
+                title: "Technologie"
+            },
+        ]
     }),
 
     methods: {
