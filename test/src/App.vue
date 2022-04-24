@@ -127,17 +127,18 @@
             <mbti-nav-item title="Service & Zubehör" />
             <mbti-nav-item title="Technologie" /> -->
         </mbti-nav>
+        <mbti-headline
+            overline="This is an overline"
+            titleRow1="Welcome to"
+            titleRow2="Mercedes-Benz Tech Innovation"
+        />
         <v-main>
             <router-view />
         </v-main>
         <mbti-footer>
             <v-spacer></v-spacer>
-            <v-btn text>
-                Imprint
-            </v-btn>
-            <v-btn text>
-                Privacy Policy
-            </v-btn>
+            <v-btn text> Imprint </v-btn>
+            <v-btn text> Privacy Policy </v-btn>
         </mbti-footer>
     </v-app>
 </template>
@@ -147,6 +148,7 @@ import { COMPONENTS_MANIFEST } from "./components/ComponentsList";
 import MbtiHeader from "../../src/patterns/MbtiHeader.vue";
 import MbtiNav from "../../src/patterns/MbtiNav.vue";
 import MbtiFooter from "../../src/patterns/MbtiFooter.vue";
+import MbtiHeadline from "../../src/patterns/MbtiHeadline.vue";
 
 export default {
     name: "App",
@@ -154,7 +156,8 @@ export default {
     components: {
         MbtiHeader,
         MbtiNav,
-        MbtiFooter
+        MbtiFooter,
+        MbtiHeadline,
     },
 
     data: () => ({
@@ -167,9 +170,9 @@ export default {
                 icon: true,
                 left: true,
                 iconName: "mdi-car",
-                onclick: function() {
-                    console.log("hi")
-                }
+                onclick: function () {
+                    console.log("hi");
+                },
             },
             {
                 title: "Online kaufen",
@@ -181,9 +184,9 @@ export default {
                 title: "Service & Zubehör",
             },
             {
-                title: "Technologie"
+                title: "Technologie",
             },
-        ]
+        ],
     }),
 
     methods: {
