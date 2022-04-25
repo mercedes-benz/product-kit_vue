@@ -15,11 +15,11 @@
                     </v-col>
 
                     <v-col class="mb-4">
-                        <h1 class="display-2 font-weight-bold mb-3">
+                        <h1 class="display-2 mb-3">
                             Welcome to the Vuetify Playground
                         </h1>
 
-                        <p class="subheading font-weight-regular">
+                        <p class="subheading">
                             This app contains content from the open-source Vuetify Playground project <br> from GitHub User "Joouis" under the MIT license
                             <br />Collaborate via
                             <a
@@ -31,7 +31,7 @@
                     </v-col>
 
                     <v-col class="mb-5" cols="12">
-                        <h2 class="headline font-weight-bold mb-3">
+                        <h2 class="headline mb-3">
                             MIT License
                         </h2>
 

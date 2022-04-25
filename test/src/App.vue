@@ -127,17 +127,20 @@
             <mbti-nav-item title="Service & Zubehör" />
             <mbti-nav-item title="Technologie" /> -->
         </mbti-nav>
-        <mbti-headline
-            overline="This is an overline"
-            titleRow1="Welcome to"
-            titleRow2="Mercedes-Benz Tech Innovation"
-        />
         <v-main>
+            <div class="container">
+                <mbti-headline
+                    overline="This is an overline"
+                    size="h1"
+                    titleRow1="Welcome to"
+                    titleRow2="Mercedes-Benz Tech Innovation"
+                />
+            </div>
             <router-view />
         </v-main>
         <mbti-footer>
             <v-spacer></v-spacer>
-            <v-btn text class="deluge-contrast--text text--lighten-2"> Imprint </v-btn>
+            <v-btn text class="primary-contrast--text"> Imprint </v-btn>
             <v-btn text> Privacy Policy </v-btn>
         </mbti-footer>
     </v-app>
@@ -222,19 +225,5 @@ export default {
 };
 </script>
 
-<style scoped>
-.font {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-.uppercase {
-    text-transform: uppercase;
-}
-.first-word {
-    font-weight: 400;
-}
-.second-word {
-    font-weight: 200;
-    color: grey;
-}
+<style lang="scss">
 </style>
