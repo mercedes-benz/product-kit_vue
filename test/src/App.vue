@@ -137,7 +137,7 @@
         </v-main>
         <mbti-footer>
             <v-spacer></v-spacer>
-            <v-btn text> Imprint </v-btn>
+            <v-btn text class="deluge-contrast--text text--lighten-2"> Imprint </v-btn>
             <v-btn text> Privacy Policy </v-btn>
         </mbti-footer>
     </v-app>
