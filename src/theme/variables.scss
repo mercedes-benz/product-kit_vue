@@ -37,8 +37,7 @@ $blue: ('base': #2196F3,
   'accent-1': #82B1FF,
   'accent-2': #448AFF,
   'accent-3': #2979FF,
-  'accent-4': #2962FF
-);
+  'accent-4': #2962FF);
 $red: ("base": tokens.$color-brand-red-500,
   "lighten-5": tokens.$color-brand-red-50,
   "lighten-4": tokens.$color-brand-red-100,
@@ -110,108 +109,126 @@ $display-breakpoints: ('print-only': 'only print',
 $body-font-family: "MB Corpo S Text Office";
 $heading-font-family: "MB Corpo A Title Cond Office" !default;
 
+:root {
+  --headings-size-h1: #{tokens.$font-application-s-headline1-font-size};
+  --headings-size-h2: #{tokens.$font-application-s-headline2-font-size};
+  --headings-size-h3: #{tokens.$font-application-s-headline3-font-size};
+  --headings-size-h4: #{tokens.$font-application-s-headline4-font-size};
+  --headings-size-h5: #{tokens.$font-application-s-headline5-font-size};
+  --headings-size-h6: #{tokens.$font-application-s-headline6-font-size};
+  --subtitle1-size: #{tokens.$font-application-s-subtitle1-font-size};
+  --subtitle2-size: #{tokens.$font-application-s-subtitle2-font-size};
+  --body1-size: #{tokens.$font-application-s-body1-font-size};
+  --body2-size: #{tokens.$font-application-s-body2-font-size};
+  --button-size: #{tokens.$font-application-s-button-font-size};
+  --caption-size: #{tokens.$font-application-s-caption-font-size};
+  --overline-size: #{tokens.$font-application-s-overline-font-size};
 
-@function clampMe($minFont, $maxFont) {
-  @if $minFont==$maxFont {
-    @return $minFont;
+  @media #{map-get($display-breakpoints, 'lg-and-up')} {
+    --headings-size-h1: #{tokens.$font-application-l-headline1-font-size};
+    --headings-size-h2: #{tokens.$font-application-l-headline2-font-size};
+    --headings-size-h3: #{tokens.$font-application-l-headline3-font-size};
+    --headings-size-h4: #{tokens.$font-application-l-headline4-font-size};
+    --headings-size-h5: #{tokens.$font-application-l-headline5-font-size};
+    --headings-size-h6: #{tokens.$font-application-l-headline6-font-size};
+    --subtitle1-size: #{tokens.$font-application-l-subtitle1-font-size};
+    --subtitle2-size: #{tokens.$font-application-l-subtitle2-font-size};
+    --body1-size: #{tokens.$font-application-l-body1-font-size};
+    --body2-size: #{tokens.$font-application-l-body2-font-size};
+    --button-size: #{tokens.$font-application-l-button-font-size};
+    --caption-size: #{tokens.$font-application-l-caption-font-size};
+    --overline-size: #{tokens.$font-application-l-overline-font-size};
   }
-
-  $slope: calc(calc(#{$maxFont / 1px} - #{$minFont / 1px}) / calc(1024 - 480));
-  $slopeVw: calc(#{$slope} * 1vw);
-  $slopePercent: calc(#{$slopeVw} * 100);
-  $yAxis: calc(calc(-480px * #{$slope}) + #{$minFont});
-  @return clamp(#{$minFont}, #{$yAxis} + #{$slopePercent}, #{$maxFont});
 }
 
-
-$headings: ("h1": ("size": clampMe(tokens.$font-application-s-headline1-font-size, tokens.$font-application-l-headline1-font-size),
+$headings: ("h1": ("size": var(--headings-size-h1, tokens.$font-application-l-headline1-font-size),
     "weight": 300,
-    "line-height": tokens.$font-application-s-headline1-line-height,
-    "letter-spacing": clampMe(tokens.$font-application-s-headline1-letter-spacing, tokens.$font-application-l-headline1-letter-spacing),
+    "line-height": var(--headings-size-h1, tokens.$font-application-l-headline1-font-size),
+    "letter-spacing": tokens.$font-application-s-headline1-letter-spacing,
     "font-family": $heading-font-family,
     "text-transform": tokens.$font-application-s-headline1-text-transform,
   ),
-  "h2": ("size": clampMe(tokens.$font-application-s-headline2-font-size, tokens.$font-application-l-headline2-font-size),
+  "h2": ("size": var(--headings-size-h2, tokens.$font-application-l-headline2-font-size),
     "weight": 300,
-    "line-height": tokens.$font-application-s-headline2-line-height,
-    "letter-spacing": clampMe(tokens.$font-application-s-headline2-letter-spacing, tokens.$font-application-l-headline2-letter-spacing),
+    "line-height": var(--headings-size-h2, tokens.$font-application-l-headline2-font-size),
+    "letter-spacing": tokens.$font-application-s-headline2-letter-spacing,
     "font-family": $heading-font-family,
     "text-transform": tokens.$font-application-s-headline2-text-transform,
   ),
-  "h3": ("size": clampMe(tokens.$font-application-s-headline3-font-size, tokens.$font-application-l-headline3-font-size),
+  "h3": ("size": var(--headings-size-h3, tokens.$font-application-l-headline3-font-size),
     "weight": 400,
-    "line-height": tokens.$font-application-s-headline3-line-height,
-    "letter-spacing": clampMe(tokens.$font-application-s-headline3-letter-spacing, tokens.$font-application-l-headline3-letter-spacing),
+    "line-height": var(--headings-size-h3, tokens.$font-application-l-headline3-font-size),
+    "letter-spacing": tokens.$font-application-s-headline3-letter-spacing,
     "font-family": $heading-font-family,
     "text-transform": tokens.$font-application-s-headline3-text-transform,
   ),
-  "h4": ("size": clampMe(tokens.$font-application-s-headline4-font-size, tokens.$font-application-l-headline4-font-size),
+  "h4": ("size": var(--headings-size-h4, tokens.$font-application-l-headline4-font-size),
     "weight": 400,
-    "line-height": tokens.$font-application-s-headline4-line-height,
-    "letter-spacing": clampMe(tokens.$font-application-s-headline4-letter-spacing, tokens.$font-application-l-headline4-letter-spacing),
+    "line-height": var(--headings-size-h4, tokens.$font-application-l-headline4-font-size),
+    "letter-spacing": tokens.$font-application-s-headline4-letter-spacing,
     "font-family": $heading-font-family,
     "text-transform": tokens.$font-application-s-headline4-text-transform,
   ),
-  "h5": ("size": clampMe(tokens.$font-application-s-headline5-font-size, tokens.$font-application-l-headline5-font-size),
+  "h5": ("size": var(--headings-size-h5, tokens.$font-application-l-headline5-font-size),
     "weight": 400,
-    "line-height": tokens.$font-application-s-headline5-line-height,
-    "letter-spacing": clampMe(tokens.$font-application-s-headline5-letter-spacing, tokens.$font-application-l-headline5-letter-spacing),
+    "line-height": var(--headings-size-h5, tokens.$font-application-l-headline5-font-size),
+    "letter-spacing": tokens.$font-application-s-headline5-letter-spacing,
     "font-family": $heading-font-family,
     "text-transform": tokens.$font-application-s-headline5-text-transform,
   ),
-  "h6": ("size": clampMe(tokens.$font-application-s-headline6-font-size, tokens.$font-application-l-headline6-font-size),
+  "h6": ("size": var(--headings-size-h6, tokens.$font-application-l-headline6-font-size),
     "weight": 500,
-    "line-height": tokens.$font-application-s-headline6-line-height,
-    "letter-spacing": clampMe(tokens.$font-application-s-headline6-letter-spacing, tokens.$font-application-l-headline6-letter-spacing),
+    "line-height": var(--headings-size-h6, tokens.$font-application-l-headline6-font-size),
+    "letter-spacing": tokens.$font-application-s-headline6-letter-spacing,
     "font-family": $heading-font-family,
     "text-transform": tokens.$font-application-s-headline6-text-transform,
   ),
-  "subtitle-1": ("size": clampMe(tokens.$font-application-s-subtitle1-font-size, tokens.$font-application-l-subtitle1-font-size),
+  "subtitle-1": ("size": var(--subtitle1-size, tokens.$font-application-l-subtitle1-font-size),
     "weight": normal,
-    "line-height": tokens.$font-application-s-subtitle1-line-height,
-    "letter-spacing": clampMe(tokens.$font-application-s-subtitle1-letter-spacing, tokens.$font-application-l-subtitle1-letter-spacing),
+    "line-height": var(--subtitle1-size, tokens.$font-application-l-subtitle1-font-size),
+    "letter-spacing": tokens.$font-application-s-subtitle1-letter-spacing,
     "font-family": $body-font-family,
     "text-transform": tokens.$font-application-s-subtitle1-text-transform,
   ),
-  "subtitle-2": ("size": clampMe(tokens.$font-application-s-subtitle2-font-size, tokens.$font-application-l-subtitle2-font-size),
+  "subtitle-2": ("size": var(--subtitle2-size, tokens.$font-application-l-subtitle2-font-size),
     "weight": 500,
-    "line-height": tokens.$font-application-s-subtitle2-line-height,
-    "letter-spacing": clampMe(tokens.$font-application-s-subtitle2-letter-spacing, tokens.$font-application-l-subtitle2-letter-spacing),
+    "line-height": var(--subtitle2-size, tokens.$font-application-l-subtitle2-font-size),
+    "letter-spacing": tokens.$font-application-s-subtitle2-letter-spacing,
     "font-family": $body-font-family,
     "text-transform": tokens.$font-application-s-subtitle2-text-transform,
   ),
-  "body-1": ("size": clampMe(tokens.$font-application-s-body1-font-size, tokens.$font-application-l-body1-font-size),
+  "body-1": ("size": var(--body1-size, tokens.$font-application-l-body1-font-size),
     "weight": 400,
-    "line-height": tokens.$font-application-s-body1-line-height,
-    "letter-spacing": clampMe(tokens.$font-application-s-body1-letter-spacing, tokens.$font-application-l-body1-letter-spacing),
+    "line-height": var(--body1-size, tokens.$font-application-l-body1-font-size),
+    "letter-spacing": tokens.$font-application-s-body1-letter-spacing,
     "font-family": $body-font-family,
     "text-transform": tokens.$font-application-s-body1-text-transform,
   ),
-  "body-2": ("size": clampMe(tokens.$font-application-s-body2-font-size, tokens.$font-application-l-body2-font-size),
+  "body-2": ("size": var(--body2-size, tokens.$font-application-l-body2-font-size),
     "weight": 400,
-    "line-height": tokens.$font-application-s-body2-line-height,
-    "letter-spacing": clampMe(tokens.$font-application-s-body2-letter-spacing, tokens.$font-application-l-body2-letter-spacing),
+    "line-height": var(--body2-size, tokens.$font-application-l-body2-font-size),
+    "letter-spacing": tokens.$font-application-s-body2-letter-spacing,
     "font-family": $body-font-family,
     "text-transform": tokens.$font-application-s-body2-text-transform,
   ),
-  "button": ("size": clampMe(tokens.$font-application-s-button-font-size, tokens.$font-application-l-button-font-size),
+  "button": ("size": var(--button-size, tokens.$font-application-l-button-font-size),
     "weight": 500,
-    "line-height": tokens.$font-application-s-button-line-height,
-    "letter-spacing": clampMe(tokens.$font-application-s-button-letter-spacing, tokens.$font-application-l-button-letter-spacing),
+    "line-height": var(--button-size, tokens.$font-application-l-button-font-size),
+    "letter-spacing": tokens.$font-application-s-button-letter-spacing,
     "font-family": $body-font-family,
     "text-transform": tokens.$font-application-s-button-text-transform,
   ),
-  "caption": ("size": clampMe(tokens.$font-application-s-caption-font-size, tokens.$font-application-l-caption-font-size),
+  "caption": ("size": var(--caption-size, tokens.$font-application-l-caption-font-size),
     "weight": 400,
-    "line-height": tokens.$font-application-s-caption-line-height,
-    "letter-spacing": clampMe(tokens.$font-application-s-caption-letter-spacing, tokens.$font-application-l-caption-letter-spacing),
+    "line-height": var(--caption-size, tokens.$font-application-l-caption-font-size),
+    "letter-spacing": tokens.$font-application-s-caption-letter-spacing,
     "font-family": $body-font-family,
     "text-transform": tokens.$font-application-s-caption-text-transform,
   ),
-  "overline": ("size": clampMe(tokens.$font-application-s-overline-font-size, tokens.$font-application-l-overline-font-size),
+  "overline": ("size": var(--overline-size, tokens.$font-application-l-overline-font-size),
     "weight": tokens.$font-application-s-overline-font-weight,
-    "line-height": tokens.$font-application-s-overline-line-height,
-    "letter-spacing": clampMe(tokens.$font-application-s-overline-letter-spacing, tokens.$font-application-l-overline-letter-spacing),
+    "line-height": var(--overline-size, tokens.$font-application-l-overline-font-size),
+    "letter-spacing": tokens.$font-application-s-overline-letter-spacing,
     "font-family": $body-font-family,
     "text-transform": tokens.$font-application-s-overline-text-transform,
   ),

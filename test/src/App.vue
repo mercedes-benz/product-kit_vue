@@ -126,12 +126,19 @@
             <mbti-nav-item title="Kaufberatung" />
             <mbti-nav-item title="Service & Zubehör" />
             <mbti-nav-item title="Technologie" /> -->
+            <v-tab>
+
+            </v-tab>
+            <v-tab>
+                
+            </v-tab>
         </mbti-nav>
         <v-main>
             <div class="container">
                 <mbti-headline
                     overline="This is an overline"
                     size="h1"
+                    divider
                     titleRow1="Welcome to"
                     titleRow2="Mercedes-Benz Tech Innovation"
                 />
@@ -174,7 +181,7 @@ export default {
                 left: true,
                 iconName: "mdi-car",
                 onclick: function () {
-                    console.log("hi");
+                    this.$router.push("/button");
                 },
             },
             {

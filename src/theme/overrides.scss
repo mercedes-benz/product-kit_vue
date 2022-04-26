@@ -1140,7 +1140,7 @@ samp {
         max-width: tokens.$layout-application-platform-compact-s-body-max-size;
         margin: 0 auto;
     }
-    
+
     .fluid {
         .v-main__wrap {
             max-width: tokens.$layout-application-platform-wide-s-body-max-size;
@@ -1775,7 +1775,7 @@ samp {
         max-width: tokens.$layout-application-platform-compact-m-body-max-size;
         margin: 0 auto;
     }
-    
+
     .fluid {
         .v-main__wrap {
             max-width: tokens.$layout-application-platform-wide-m-body-max-size;
@@ -2410,7 +2410,7 @@ samp {
         max-width: tokens.$layout-application-platform-compact-l-body-max-size;
         margin: 0 auto;
     }
-    
+
     .fluid {
         .v-main__wrap {
             max-width: tokens.$layout-application-platform-wide-l-body-max-size;
@@ -2497,7 +2497,7 @@ samp {
     .col-1 {
         padding: tokens.$layout-application-platform-compact-l-gutter-size / 2;
     }
-
+/* 
     .text-h1 {
         line-height: tokens.$font-application-l-headline1-line-height !important;
     }
@@ -2548,7 +2548,7 @@ samp {
 
     .text-overline {
         line-height: tokens.$font-application-l-overline-line-height !important;
-    }
+    } */
 
     .ma-3xs {
         margin: tokens.$size-application-platform-spacing-l-3xs;
@@ -3097,7 +3097,7 @@ samp {
         max-width: tokens.$layout-application-platform-compact-l-body-max-size;
         margin: 0 auto;
     }
-    
+
     .fluid {
         .v-main__wrap {
             max-width: tokens.$layout-application-platform-wide-l-body-max-size;
