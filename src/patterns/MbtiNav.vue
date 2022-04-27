@@ -53,25 +53,12 @@
             <v-tabs
                 background-color="background"
                 class="no-hover"
-                @click="clicked(item, index)"
-                v-model="activeItem"
                 optional
+                center-active
+                show-arrows
             >
-                <v-tab
-                    :ripple="false"
-                    v-for="(item, index) in items"
-                    :key="index"
-                    @click="item.onclick"
-                >
-                    <v-icon
-                        v-if="'icon' in item && item.icon"
-                        left
-                        :dark="'dark' in item && item.dark"
-                    >
-                        {{ item.iconName }}
-                    </v-icon>
-                    {{ item.title }}
-                </v-tab>
+                <v-tabs-slider color="primary"></v-tabs-slider>
+                <slot />
             </v-tabs>
         </div>
     </nav>
@@ -83,20 +70,15 @@ export default {
 
     components: {},
 
-    props: {
-        items: Array,
-    },
+    props: {},
 
-    data: () => ({
-        activeItem: -1,
-    }),
+    data: () => ({}),
 
     computed: {},
 
     methods: {
-        clicked(item, index) {
+        clicked(index) {
             this.activeItem = index;
-            item.onclick;
         },
     },
 
@@ -108,9 +90,6 @@ export default {
 /* nav {
     border-top: 1px solid var(--v-outline-base);
 } */
-.active {
-    border-top: 2px solid var(--v-primary-base);
-}
 .v-tabs-slider-wrapper {
     top: 0 !important;
 }

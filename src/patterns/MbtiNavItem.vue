@@ -1,14 +1,19 @@
 <template>
-    <div :class="isActive ? 'active' : ''">
-        <v-btn text v-if="left" @click="onclick">
-            <v-icon v-if="icon" left :dark="dark"> {{ iconName }} </v-icon>
-            {{ title }}
-        </v-btn>
-        <v-btn text v-else @click="onclick">
-            {{ title }}
-            <v-icon v-if="icon" right :dark="dark"> {{ iconName }} </v-icon>
-        </v-btn>
-    </div>
+    <v-tab
+        v-if="to"
+        :ripple="false"
+        :to="to"
+        exact-active-class="active"
+    >
+        <v-icon
+            v-if="icon"
+            left
+            :dark="dark"
+        >
+            {{ icon }}
+        </v-icon>
+        {{ title }}
+    </v-tab>
 </template>
 
 <script>
@@ -18,25 +23,43 @@ export default {
     components: {},
 
     props: {
-        icon: Boolean,
-        left: Boolean,
-        right: Boolean,
-        dark: Boolean,
-        iconName: String,
-        title: String,
-        onclick: Function,
+        icon: {
+            type: String,
+            required: false,
+            default: false
+        },
+        dark: {
+            type: Boolean,
+            required: false,
+            default: false
+        },
+        title: {
+            type: String,
+            required: true,
+            default: "Hello World"
+        },
+        onclick: {
+            type: Function,
+            required: false,
+            default: null
+        },
+        to: {
+            type: [String, Function],
+            required: false,
+            default: null
+        }
     },
 
     data: () => ({
-        isActive: false
+        isActive: false,
     }),
 
     computed: {},
 
     methods: {
         clicked() {
-            this.isActive
-        }
+            this.isActive;
+        },
     },
 
     mounted() {},
@@ -45,6 +68,7 @@ export default {
 
 <style scoped>
 .active {
-    border-top: 2px solid var(--v-primary-base);
+    color: var(--v-background-contrast-base) !important
 }
+
 </style>

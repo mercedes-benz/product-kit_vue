@@ -120,29 +120,35 @@
                 ></v-switch>
             </template>
         </mbti-header>
-        <mbti-nav :items="navItems">
-            <!-- <mbti-nav-item icon left dark iconName="mdi-car" title="Modelle" :onclick="alerts"/>
-            <mbti-nav-item title="Online kaufen" />
-            <mbti-nav-item title="Kaufberatung" />
-            <mbti-nav-item title="Service & Zubehör" />
-            <mbti-nav-item title="Technologie" /> -->
-            <v-tab>
-
-            </v-tab>
-            <v-tab>
-                
-            </v-tab>
+        <mbti-nav>
+            <mbti-nav-item
+                icon="mdi-palette"
+                title="Colors"
+                :to="getRoutePath('colors')"
+            />
+            <mbti-nav-item
+                icon="mdi-format-size"
+                title="Font"
+                :to="getRoutePath('font')"
+            />
+            <mbti-nav-item
+                icon="mdi-grid"
+                title="Layout"
+                :to="getRoutePath('layout')"
+            />
+            <mbti-nav-item
+                icon="mdi-resize"
+                title="Size"
+                :to="getRoutePath('size')"
+            />
+            <mbti-nav-item
+                v-for="item in menuItems"
+                :key="item.title"
+                :title="item.title"
+                :to="getRoutePath(item.title)"
+            />
         </mbti-nav>
         <v-main>
-            <div class="container">
-                <mbti-headline
-                    overline="This is an overline"
-                    size="h1"
-                    divider
-                    titleRow1="Welcome to"
-                    titleRow2="Mercedes-Benz Tech Innovation"
-                />
-            </div>
             <router-view />
         </v-main>
         <mbti-footer>
@@ -157,6 +163,7 @@
 import { COMPONENTS_MANIFEST } from "./components/ComponentsList";
 import MbtiHeader from "../../src/patterns/MbtiHeader.vue";
 import MbtiNav from "../../src/patterns/MbtiNav.vue";
+import MbtiNavItem from "../../src/patterns/MbtiNavItem.vue";
 import MbtiFooter from "../../src/patterns/MbtiFooter.vue";
 import MbtiHeadline from "../../src/patterns/MbtiHeadline.vue";
 
@@ -166,6 +173,7 @@ export default {
     components: {
         MbtiHeader,
         MbtiNav,
+        MbtiNavItem,
         MbtiFooter,
         MbtiHeadline,
     },
@@ -174,29 +182,7 @@ export default {
         darkSwitch: false,
         menuItems: COMPONENTS_MANIFEST,
         selectedComponent: null,
-        navItems: [
-            {
-                title: "Modelle",
-                icon: true,
-                left: true,
-                iconName: "mdi-car",
-                onclick: function () {
-                    this.$router.push("/button");
-                },
-            },
-            {
-                title: "Online kaufen",
-            },
-            {
-                title: "Kaufberatung",
-            },
-            {
-                title: "Service & Zubehör",
-            },
-            {
-                title: "Technologie",
-            },
-        ],
+        drawer: false
     }),
 
     methods: {
@@ -210,6 +196,9 @@ export default {
 
         route() {
             this.$router.push(this.getRoutePath(this.selectedComponent));
+        },
+        openModal() {
+            
         },
     },
 
@@ -232,5 +221,5 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style>
 </style>

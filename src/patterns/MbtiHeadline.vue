@@ -1,23 +1,89 @@
 <template>
     <div>
-        <p class="text-overline primary--text">{{ overline }}</p>
+        <p v-if="overline" class="text-overline primary--text mb-xs">{{ overline }}</p>
         <div v-if="size === 'h1'">
-            <h1 :class="`text-${size}`">{{ titleRow1 }}</h1>
-            <h1 v-if="titleRow2" :class="`text-${size}`">{{ titleRow2 }}</h1>
+            <h1
+                :class="`text-${size}`"
+                :style="
+                    titleRow2
+                        ? 'line-height: calc(var(--headings-size-h1) - 12%); font-size: calc(var(--headings-size-h1) - 12%) !important'
+                        : ''
+                "
+            >
+                {{ titleRow1 }}
+            </h1>
+            <h1
+                v-if="titleRow2"
+                :class="`text-${size}`"
+                :style="
+                    titleRow2
+                        ? 'line-height: calc(var(--headings-size-h1) - 12%); font-size: calc(var(--headings-size-h1) - 12%) !important'
+                        : ''
+                "
+            >
+                {{ titleRow2 }}
+            </h1>
         </div>
         <div v-if="size === 'h2'">
-            <h2 :class="`text-${size}`">{{ titleRow1 }}</h2>
-            <h2 v-if="titleRow2" :class="`text-${size}`">{{ titleRow2 }}</h2>
+            <h2
+                :class="`text-${size}`"
+                :style="
+                    titleRow2
+                        ? 'line-height: calc(var(--headings-size-h2) - 12%); font-size: calc(var(--headings-size-h2) - 12%) !important'
+                        : ''
+                "
+            >
+                {{ titleRow1 }}
+            </h2>
+            <h2
+                v-if="titleRow2"
+                :class="`text-${size}`"
+                :style="
+                    titleRow2
+                        ? 'line-height: calc(var(--headings-size-h2) - 12%); font-size: calc(var(--headings-size-h2) - 12%) !important'
+                        : ''
+                "
+            >
+                {{ titleRow2 }}
+            </h2>
         </div>
         <div v-if="size === 'h3'">
-            <h3 :class="`text-${size}`">{{ titleRow1 }}</h3>
-            <h3 v-if="titleRow2" :class="`text-${size}`">{{ titleRow2 }}</h3>
+            <h3
+                :class="`text-${size}`"
+                :style="
+                    titleRow2 && this.$vuetify.breakpoint.lgAndUp
+                        ? 'line-height: calc(var(--headings-size-h3) - 12%); font-size: calc(var(--headings-size-h3) - 12%) !important'
+                        : ''
+                "
+            >
+                {{ titleRow1 }}
+            </h3>
+            <h3
+                v-if="titleRow2"
+                :class="`text-${size}`"
+                :style="
+                    titleRow2 && this.$vuetify.breakpoint.lgAndUp
+                        ? 'line-height: calc(var(--headings-size-h3) - 12%); font-size: calc(var(--headings-size-h3) - 12%) !important'
+                        : ''
+                "
+            >
+                {{ titleRow2 }}
+            </h3>
         </div>
         <div v-if="size === 'h4'">
-            <h4 :class="`text-${size}`">{{ titleRow1 }}</h4>
-            <h4 v-if="titleRow2" :class="`text-${size}`">{{ titleRow2 }}</h4>
+            <h4
+                :class="`text-${size}`"
+            >
+                {{ titleRow1 }}
+            </h4>
+            <h4
+                v-if="titleRow2"
+                :class="`text-${size}`"
+            >
+                {{ titleRow2 }}
+            </h4>
         </div>
-        <hr
+        <div
             v-if="divider"
             :style="`
                 background-color: var(--v-primary-base);
@@ -25,7 +91,9 @@
                 width: ${hrWidth};
                 height: ${hrHeight};
             `"
-        />
+            class="mt-xxs"
+        >
+        </div>
     </div>
 </template>
 

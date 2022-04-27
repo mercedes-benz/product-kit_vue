@@ -32,11 +32,16 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 footer {
     position: absolute;
     height: 100px;
-    bottom: -100px;
+    bottom: 0px;
     width: 100%;
+}
+.v-application--wrap:after {
+  content: '';
+  display: block;
+  height: 100px; /* Set same as footer's height */
 }
 </style>
