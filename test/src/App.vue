@@ -94,24 +94,17 @@
                 ></v-img>
             </template>
             <template v-slot:actions>
-                <v-btn text>Start</v-btn>
-                <v-btn text>Home</v-btn>
-                <v-menu offset-y>
-                    <template v-slot:activator="{ on, attrs }">
-                        <v-btn text v-bind="attrs" v-on="on">
-                            Services
-                            <v-icon> mdi-chevron-down </v-icon>
-                        </v-btn>
-                    </template>
-                    <v-list>
-                        <v-list-item>
-                            <v-list-item-title>Test</v-list-item-title>
-                        </v-list-item>
-                        <v-list-item>
-                            <v-list-item-title>Item</v-list-item-title>
-                        </v-list-item>
-                    </v-list>
-                </v-menu>
+                <v-autocomplete
+                    v-model="selectedComponent"
+                    :items="components"
+                    dense
+                    outlined
+                    class="mx-2"
+                    style="width: 0px"
+                    label="Search components"
+                    @change="route()"
+                    hide-details
+                ></v-autocomplete>
                 <v-switch
                     v-model="darkSwitch"
                     label="Darkmode"
@@ -121,6 +114,11 @@
             </template>
         </mbti-header>
         <mbti-nav>
+            <mbti-nav-item
+                icon="mdi-home"
+                title="Home"
+                :to="getRoutePath('/')"
+            />
             <mbti-nav-item
                 icon="mdi-palette"
                 title="Colors"
@@ -153,7 +151,7 @@
         </v-main>
         <mbti-footer>
             <v-spacer></v-spacer>
-            <v-btn text class="primary-contrast--text"> Imprint </v-btn>
+            <v-btn text> Imprint </v-btn>
             <v-btn text> Privacy Policy </v-btn>
         </mbti-footer>
     </v-app>
@@ -182,7 +180,7 @@ export default {
         darkSwitch: false,
         menuItems: COMPONENTS_MANIFEST,
         selectedComponent: null,
-        drawer: false
+        drawer: false,
     }),
 
     methods: {
@@ -197,9 +195,7 @@ export default {
         route() {
             this.$router.push(this.getRoutePath(this.selectedComponent));
         },
-        openModal() {
-            
-        },
+        openModal() {},
     },
 
     computed: {

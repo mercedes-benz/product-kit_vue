@@ -472,3 +472,6 @@ $material-light: ("status-bar": ("regular": map-get($grey, "lighten-2"),
   "active-icon-percent": 0.54,
   "inactive-icon-percent": 0.38,
 );
+
+$tab-font-size: var(--button-size, tokens.$font-application-l-button-font-size);
+$tab-font-weight: 500;

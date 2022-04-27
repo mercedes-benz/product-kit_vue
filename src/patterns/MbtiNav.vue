@@ -51,13 +51,12 @@
                 </v-btn>
             </div> -->
             <v-tabs
-                background-color="background"
+                background-color="transparent"
                 class="no-hover"
                 optional
                 center-active
                 show-arrows
             >
-                <v-tabs-slider color="primary"></v-tabs-slider>
                 <slot />
             </v-tabs>
         </div>
@@ -82,7 +81,9 @@ export default {
         },
     },
 
-    mounted() {},
+    mounted() {
+        console.log(this.$router.currentRoute.path)
+    },
 };
 </script>
 
