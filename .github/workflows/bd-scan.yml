@@ -11,10 +11,6 @@ on:
         description: 'Version number'
         required: true
         default: '1.0.0'
-      projectname:
-        description: 'BD project name'
-        required: true
-        default: 'product-kit-vue'
   workflow_call:
     inputs:
       branch:
@@ -24,6 +20,8 @@ on:
         type: string
         required: true
 
+env:
+  PROJECT_NAME: product-kit-vue
 
 jobs:
   scan:
@@ -31,7 +29,7 @@ jobs:
     with:
       branch: ${{ github.event.inputs.branch }}
       version: ${{ github.event.inputs.version }}
-      projectname: ${{ github.event.inputs.projectname }}
+      projectname: $PROJECT_NAME
     secrets:
       BLACKDUCK_API_TOKEN: ${{ secrets.BD_SCAN_API_TOKEN }}
       
