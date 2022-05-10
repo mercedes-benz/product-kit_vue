@@ -27,6 +27,6 @@ jobs:
       branch: ${{ github.event.inputs.branch }}
       version: ${{ github.event.inputs.version }}
     secrets:
-      projectname: ${{ secrets.BD_SCAN_PROJECT_NAME }}
+      PROJECT_NAME: ${{ secrets.BD_SCAN_PROJECT_NAME }}
       BLACKDUCK_API_TOKEN: ${{ secrets.BD_SCAN_API_TOKEN }}
       
