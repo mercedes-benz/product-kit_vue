@@ -20,16 +20,13 @@ on:
         type: string
         required: true
 
-env:
-  PROJECT_NAME: product-kit-vue
-
 jobs:
   scan:
     uses: mercedes-benz/product-kit_core/.github/workflows/bd-scan.yml@main
     with:
       branch: ${{ github.event.inputs.branch }}
       version: ${{ github.event.inputs.version }}
-      projectname: $PROJECT_NAME
+      projectname: product-kit-vue
     secrets:
       BLACKDUCK_API_TOKEN: ${{ secrets.BD_SCAN_API_TOKEN }}
       
