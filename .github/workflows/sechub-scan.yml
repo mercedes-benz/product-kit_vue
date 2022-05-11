@@ -1,0 +1,13 @@
+name: Blackduck Scan
+
+on:
+  workflow_dispatch:
+  workflow_call:
+
+jobs:
+  scan:
+    uses: mercedes-benz/product-kit_core/.github/workflows/sechub-scan.yml@main
+    secrets:
+      SECHUB_SERVER: ${{ secrets.SECHUB_SERVER }}
+      SECHUB_APITOKEN: ${{ secrets.SECHUB_APITOKEN }}
+      SECHUB_USERID: ${{ secrets.SECHUB_USERID }}
