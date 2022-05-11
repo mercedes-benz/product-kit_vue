@@ -1,83 +1,8 @@
 // SPDX-License-Identifier: MIT
 
-.theme--dark.v-sheet {
-    background-color: black;
-}
-
 .theme--dark {
-    &.primary {
-        color: tokensDark.$color-application-contrast-primary  !important;
-        opacity: tokens.$opacity-application-text-contrast-high  !important;
-
-        &>.v-toolbar__content>button {
-            color: tokensDark.$color-application-contrast-primary  !important;
-            opacity: tokensDark.$opacity-application-text-contrast-high  !important;
-        }
-
-        &.v-system-bar>* {
-            color: tokensDark.$color-application-contrast-primary  !important;
-            opacity: tokensDark.$opacity-application-text-contrast-high  !important;
-        }
-    }
-
-    &.secondary {
-        color: tokensDark.$color-application-contrast-secondary  !important;
-        opacity: tokens.$opacity-application-text-contrast-high  !important;
-
-        &>.v-toolbar__content>button {
-            color: tokensDark.$color-application-contrast-secondary  !important;
-            opacity: tokensDark.$opacity-application-text-contrast-high  !important;
-        }
-
-        &.v-system-bar>* {
-            color: tokensDark.$color-application-contrast-secondary  !important;
-            opacity: tokensDark.$opacity-application-text-contrast-high  !important;
-        }
-    }
-
-    &.tertiary {
-        color: tokensDark.$color-application-contrast-tertiary  !important;
-        opacity: tokens.$opacity-application-text-contrast-high  !important;
-
-        &>.v-toolbar__content>button {
-            color: tokensDark.$color-application-contrast-tertiary  !important;
-            opacity: tokensDark.$opacity-application-text-contrast-high  !important;
-        }
-
-        &.v-system-bar>* {
-            color: tokensDark.$color-application-contrast-tertiary  !important;
-            opacity: tokensDark.$opacity-application-text-contrast-high  !important;
-        }
-    }
-
-    &.quaternary {
-        color: tokensDark.$color-application-contrast-quaternary  !important;
-        opacity: tokens.$opacity-application-text-contrast-high  !important;
-
-        &>.v-toolbar__content>button {
-            color: tokensDark.$color-application-contrast-quaternary  !important;
-            opacity: tokensDark.$opacity-application-text-contrast-high  !important;
-        }
-
-        &.v-system-bar>* {
-            color: tokensDark.$color-application-contrast-quaternary  !important;
-            opacity: tokensDark.$opacity-application-text-contrast-high  !important;
-        }
-    }
-
-    &.error {
-        color: tokensDark.$color-application-contrast-error  !important;
-        opacity: tokens.$opacity-application-text-contrast-high  !important;
-
-        &>.v-toolbar__content>button {
-            color: tokensDark.$color-application-contrast-error  !important;
-            opacity: tokensDark.$opacity-application-text-contrast-high  !important;
-        }
-
-        &.v-system-bar>* {
-            color: tokensDark.$color-application-contrast-error  !important;
-            opacity: tokensDark.$opacity-application-text-contrast-high  !important;
-        }
+    &.v-sheet {
+        background-color: black;
     }
 
     &.elevation-1 {
@@ -174,126 +99,6 @@
 
     &.elevation-24 {
         background-color: rgba($color: #ffffff, $alpha: 0.16);
-    }
-}
-
-.theme--dark.v-tabs>.v-tabs-bar .v-tab:not(.v-tab--active),
-.theme--dark.v-tabs>.v-tabs-bar .v-tab:not(.v-tab--active)>.v-icon,
-.theme--dark.v-tabs>.v-tabs-bar .v-tab:not(.v-tab--active)>.v-btn,
-.theme--dark.v-tabs>.v-tabs-bar .v-tab--disabled {
-    color: tokensDark.$color-application-contrast-background  !important;
-    opacity: 1 - tokensDark.$opacity-application-icon-low  !important;
-}
-
-.theme--light {
-    &.primary {
-        &:not(.v-chip--outlined, .v-chip--outlined.v-icon)>* {
-            color: tokens.$color-application-contrast-primary  !important;
-            opacity: tokens.$opacity-application-text-contrast-high  !important;
-        }
-
-        &>.v-toolbar__content>button {
-            color: tokens.$color-application-contrast-primary  !important;
-            opacity: tokens.$opacity-application-text-contrast-high  !important;
-        }
-
-        &>.v-date-picker-title {
-            color: tokens.$color-application-contrast-primary  !important;
-            opacity: tokens.$opacity-application-text-contrast-high  !important;
-        }
-
-        &.v-system-bar>* {
-            color: tokens.$color-application-contrast-primary  !important;
-            opacity: tokens.$opacity-application-text-contrast-high  !important;
-        }
-    }
-
-    &.secondary {
-        &:not(.v-chip--outlined, .v-chip--outlined.v-icon)>* {
-            color: tokens.$color-application-contrast-secondary  !important;
-            opacity: tokens.$opacity-application-text-contrast-high  !important;
-        }
-
-        &>.v-toolbar__content>button {
-            color: tokens.$color-application-contrast-secondary  !important;
-            opacity: tokens.$opacity-application-text-contrast-high  !important;
-        }
-
-        &>.v-date-picker-title {
-            color: tokens.$color-application-contrast-secondary  !important;
-            opacity: tokens.$opacity-application-text-contrast-high  !important;
-        }
-
-        &.v-system-bar>* {
-            color: tokens.$color-application-contrast-secondary  !important;
-            opacity: tokens.$opacity-application-text-contrast-high  !important;
-        }
-    }
-
-    &.tertiary {
-        &:not(.v-chip--outlined, .v-chip--outlined.v-icon)>* {
-            color: tokens.$color-application-contrast-tertiary  !important;
-            opacity: tokens.$opacity-application-text-contrast-high  !important;
-        }
-
-        &>.v-toolbar__content>button {
-            color: tokens.$color-application-contrast-tertiary  !important;
-            opacity: tokens.$opacity-application-text-contrast-high  !important;
-        }
-
-        &>.v-date-picker-title {
-            color: tokens.$color-application-contrast-tertiary  !important;
-            opacity: tokens.$opacity-application-text-contrast-high  !important;
-        }
-
-        &.v-system-bar>* {
-            color: tokens.$color-application-contrast-tertiary  !important;
-            opacity: tokens.$opacity-application-text-contrast-high  !important;
-        }
-    }
-
-    &.quaternary {
-        &:not(.v-chip--outlined, .v-chip--outlined.v-icon)>* {
-            color: tokens.$color-application-contrast-quaternary  !important;
-            opacity: tokens.$opacity-application-text-contrast-high  !important;
-        }
-
-        &>.v-toolbar__content>button {
-            color: tokens.$color-application-contrast-quaternary  !important;
-            opacity: tokens.$opacity-application-text-contrast-high  !important;
-        }
-
-        &>.v-date-picker-title {
-            color: tokens.$color-application-contrast-quaternary  !important;
-            opacity: tokens.$opacity-application-text-contrast-high  !important;
-        }
-
-        &.v-system-bar>* {
-            color: tokens.$color-application-contrast-quaternary  !important;
-            opacity: tokens.$opacity-application-text-contrast-high  !important;
-        }
-    }
-
-    &.error {
-        &:not(.v-chip--outlined, .v-chip--outlined.v-icon)>* {
-            color: tokens.$color-application-contrast-error  !important;
-            opacity: tokens.$opacity-application-text-contrast-high  !important;
-        }
-
-        &>.v-toolbar__content>button {
-            color: tokens.$color-application-contrast-error  !important;
-            opacity: tokens.$opacity-application-text-contrast-high  !important;
-        }
-
-        &>.v-date-picker-title {
-            color: tokens.$color-application-contrast-error  !important;
-            opacity: tokens.$opacity-application-text-contrast-high  !important;
-        }
-
-        &.v-system-bar>* {
-            color: tokens.$color-application-contrast-error  !important;
-            opacity: tokens.$opacity-application-text-contrast-high  !important;
-        }
     }
 }
 
@@ -447,26 +252,12 @@
     }
 }
 
-.theme--light.v-tabs>.v-tabs-bar .v-tab:not(.v-tab--active),
-.theme--light.v-tabs>.v-tabs-bar .v-tab:not(.v-tab--active)>.v-icon,
-.theme--light.v-tabs>.v-tabs-bar .v-tab:not(.v-tab--active)>.v-btn,
-.theme--light.v-tabs>.v-tabs-bar .v-tab--disabled {
-    color: tokens.$color-application-contrast-background  !important;
-    opacity: 1 - tokens.$opacity-application-icon-low  !important;
-}
-
 
 code,
 kbd,
 pre,
 samp {
     font-family: monospace;
-}
-
-
-.v-text-field .v-text-field__details,
-.v-text-field:not(.v-text-field--rounded)>.v-input__control>.v-input__slot {
-    padding: 0 12px !important;
 }
 
 /*** GRID ***/
@@ -3700,6 +3491,44 @@ samp {
 }
 
 .v-application {
+    & .primary {
+        color: var(--v-primary-contrast-base) !important;
+        caret-color: var(--v-primary-contrast-base) !important
+    }
+
+    & .primary-variant {
+        color: var(--v-primary-variant-contrast-base) !important;
+        caret-color: var(--v-primary-variant-contrast-base) !important
+    }
+
+    & .secondary {
+        color: var(--v-secondary-contrast-base) !important;
+        caret-color: var(--v-secondary-contrast-base) !important
+    }
+
+    & .tertiary {
+        color: var(--v-tertiary-contrast-base) !important;
+        caret-color: var(--v-tertiary-contrast-base) !important
+    }
+
+    & .quaternary {
+        color: var(--v-quaternary-contrast-base) !important;
+        caret-color: var(--v-quaternary-contrast-base) !important
+    }
+
+    & .v-tabs {
+        & .v-tabs-bar {
+            color: var(--v-primary-variant-base) !important;
+            caret-color: var(--v-primary-variant-base) !important
+        }
+
+        & .v-tab {
+            &:hover {
+                color: var(--v-primary-variant-base) !important;
+            }
+        }
+    }
+
     & .v-icon {
         &.primary--text {
             color: var(--v-primary-variant-base) !important;
