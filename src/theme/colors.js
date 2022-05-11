@@ -7,8 +7,8 @@ require('./overrides.scss')
 
 var colorObject = {}
 var application = {}
-application["light"] = {}
-application["dark"] = {}
+application["light"] = {anchor: tokens.colorApplicationPrimaryVariant}
+application["dark"] = {anchor: tokensDark.colorApplicationPrimaryVariant}
 
 const colorNames = ["neutral", "goldentanoi", "deepblue", "deluge", "xanadu", "lividbrown", "red", "green"]
 const applicationColors = ["primary", "primary-variant", "secondary", "tertiary", "quaternary", "background", "surface", "outline", "error", "success"]

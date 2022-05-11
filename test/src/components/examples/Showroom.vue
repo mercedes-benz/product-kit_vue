@@ -4,6 +4,8 @@
     <ExampleWrapper>
         <v-row>
             <v-col cols="6">
+                <v-subheader>Breadcrumbs</v-subheader>
+                <v-breadcrumbs :items="links"></v-breadcrumbs>
                 <v-subheader>Button</v-subheader>
                 <v-row justify="space-between">
                     <v-col cols="auto">
@@ -36,98 +38,31 @@
                         </v-btn>
                     </v-col>
                 </v-row>
+                <v-row justify="space-around">
+                    <v-col cols="4" class="text-left">
+                        <v-btn icon color="primary">
+                            <v-icon> mdi-home</v-icon>
+                        </v-btn>
+                    </v-col>
+                    <v-col cols="4" class="text-center">
+                        <v-btn color="primary" plain>
+                            <v-icon left> mdi-heart</v-icon>
+                            Plain Button
+                        </v-btn>
+                    </v-col>
+                    <v-col cols="4" class="text-right">
+                        <v-btn color="primary" plain> Plain Button </v-btn>
+                    </v-col>
+                </v-row>
                 <v-subheader>Top App Bar</v-subheader>
                 <Dense />
-                <!--<v-subheader>Navigation Drawer</v-subheader>
-                <ColoredDrawer />-->
-            </v-col>
-            <v-col cols="6">
-                <v-subheader>Card</v-subheader>
-                <OutlinedCards />
-                <!--<v-card
-                    :loading="loading"
-                    class="mx-auto my-12"
-                    max-width="374"
-                >
-                    <template slot="progress">
-                        <v-progress-linear
-                            color="deep-purple"
-                            height="10"
-                            indeterminate
-                        ></v-progress-linear>
-                    </template>
-
-                    <v-img
-                        height="250"
-                        src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
-                    ></v-img>
-
-                    <v-card-title>Cafe Badilico</v-card-title>
-
-                    <v-card-text>
-                        <v-row align="center" class="mx-0">
-                            <v-rating
-                                :value="4.5"
-                                color="amber"
-                                dense
-                                half-increments
-                                readonly
-                                size="14"
-                            ></v-rating>
-
-                            <div class="grey--text ms-4">4.5 (413)</div>
-                        </v-row>
-
-                        <div class="my-4 text-subtitle-1">
-                            $ • Italian, Cafe
-                        </div>
-
-                        <div>
-                            Small plates, salads & sandwiches - an intimate
-                            setting with 12 indoor seats plus patio seating.
-                        </div>
-                    </v-card-text>
-
-                    <v-divider class="mx-4"></v-divider>
-
-                    <v-card-title>Tonight's availability</v-card-title>
-
-                    <v-card-text>
-                        <v-chip-group
-                            v-model="selection"
-                            active-class="deep-purple accent-4 white--text"
-                            column
-                        >
-                            <v-chip>5:30PM</v-chip>
-
-                            <v-chip>7:30PM</v-chip>
-
-                            <v-chip>8:00PM</v-chip>
-
-                            <v-chip>9:00PM</v-chip>
-                        </v-chip-group>
-                    </v-card-text>
-
-                    <v-card-actions>
-                        <v-btn
-                            color="deep-purple lighten-2"
-                            text
-                            @click="reserve"
-                        >
-                            Reserve
-                        </v-btn>
-                    </v-card-actions>
-                </v-card>-->
-            </v-col>
-            <v-col cols="12">
+                <v-subheader>Controls</v-subheader>
                 <v-checkbox label="This is a checkbox" hide-details />
                 <v-checkbox
                     v-model="checked"
                     label="This is a checkbox"
                     hide-details
                 />
-            </v-col>
-            <v-col cols="12">
                 <v-radio-group v-model="radioGroup">
                     <v-radio
                         v-for="n in 3"
@@ -136,23 +71,49 @@
                         :value="n"
                     ></v-radio>
                 </v-radio-group>
-            </v-col>
-            <v-col cols="6">
                 <v-slider
                     hint="Im a hint"
                     max="50"
+                    value="20"
                     min="0"
                     label="Slider"
                     thumb-label
                     hide-details
                 ></v-slider>
-            </v-col>
-            <v-col cols="12">
                 <v-switch
                     v-model="checked"
                     label="Switch"
                     hide-details
                 ></v-switch>
+                <v-otp-input length="6"></v-otp-input>
+            </v-col>
+            <v-col cols="6">
+                <v-subheader>Alert</v-subheader>
+                <v-alert color="primary"> This is an alert </v-alert>
+                <v-alert outlined color="primary">
+                    This is an outlined alert
+                </v-alert>
+                <v-alert text color="primary"> This is a text alert </v-alert>
+                <v-subheader>Chips</v-subheader>
+                <v-chip color="primary" class="mr-2">
+                    <v-icon left> mdi-home </v-icon>
+                    Normal Chip
+                </v-chip>
+                <v-chip outlined color="primary">
+                    <v-icon left> mdi-home </v-icon>
+                    Outlined Chip
+                </v-chip>
+                <v-subheader>Card</v-subheader>
+                <OutlinedCards />
+                <v-subheader>Icons</v-subheader>
+                <v-icon color="primary" class="mr-2"> mdi-home </v-icon>
+                <v-icon color="primary" disabled> mdi-home </v-icon>
+                <!-- <v-subheader>Colored Navigation Drawers</v-subheader>
+                <ColoredDrawer /> -->
+                <v-subheader>Pagination</v-subheader>
+                <v-pagination v-model="page" :length="6"></v-pagination>
+                <!-- <v-subheader>Time Picker</v-subheader>
+                <v-time-picker scrollable format="24hr"></v-time-picker> -->
             </v-col>
         </v-row>
     </ExampleWrapper>
@@ -174,9 +135,27 @@ export default {
 
     data: () => ({
         loading: false,
+        page: 3,
         selection: 1,
         checked: true,
         radioGroup: 1,
+        links: [
+            {
+                text: "Dashboard",
+                disabled: false,
+                href: "breadcrumbs_dashboard",
+            },
+            {
+                text: "Link 1",
+                disabled: false,
+                href: "breadcrumbs_link_1",
+            },
+            {
+                text: "Link 2",
+                disabled: true,
+                href: "breadcrumbs_link_2",
+            },
+        ],
     }),
 
     methods: {
@@ -190,5 +169,4 @@ export default {
 </script>
 
 <style>
-
 </style>

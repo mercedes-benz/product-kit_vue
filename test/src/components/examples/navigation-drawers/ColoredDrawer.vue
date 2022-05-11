@@ -5,11 +5,11 @@
         <v-navigation-drawer class="primary" permanent>
             <v-list-item >
                 <v-list-item-content>
-                    <v-list-item-title class="text-h6 primary-contrast--text">
-                        Headline 6
+                    <v-list-item-title class="text-h5 primary-contrast--text">
+                        Headline 5
                     </v-list-item-title>
-                    <v-list-item-subtitle class="text-subtitle-1 primary-contrast--text">
-                        Subtitle 1
+                    <v-list-item-subtitle class="text-subtitle-2 primary-contrast--text">
+                        Subtitle 2
                     </v-list-item-subtitle>
                 </v-list-item-content>
             </v-list-item>
