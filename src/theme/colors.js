@@ -84,7 +84,7 @@ const colors = {
     theme: {
         themes: {
             light: {
-
+                
             },
             dark: {
 

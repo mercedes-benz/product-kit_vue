@@ -488,9 +488,6 @@ samp {
     font-family: monospace;
 }
 
-.text-overline {
-    color: tokens.$font-application-s-overline-color;
-}
 
 .v-text-field .v-text-field__details,
 .v-text-field:not(.v-text-field--rounded)>.v-input__control>.v-input__slot {
@@ -3724,4 +3721,64 @@ samp {
         padding-top: tokens.$size-application-platform-spacing-xl-3xl;
         padding-bottom: tokens.$size-application-platform-spacing-xl-3xl;
     }
+}
+
+.theme--light .v-icon.primary--text {
+    color: #996E00 !important;
+    caret-color: #996E00 !important
+}
+
+.theme--light .v-btn.v-btn--text.primary--text {
+    color: #996E00 !important;
+    caret-color: #996E00 !important
+}
+
+.theme--light .v-btn.v-btn--outlined.primary--text {
+    color: #996E00 !important;
+    caret-color: #996E00 !important
+}
+
+.theme--light .v-slider__thumb.primary {
+    background-color: #996E00 !important;
+    border-color: #996E00 !important
+}
+
+.v-application .v-slider__track-fill.primary {
+    background-color: var(--v-button-outlined-primary-focused) !important;
+    border-color: var(--v-primary-variant-base) !important
+}
+
+.theme--light .v-slider__track-background.primary.lighten-3 {
+    background-color: tokens.$color-application-primary !important;
+    border-color: tokens.$color-application-primary !important
+}
+
+.theme--light .v-slider__thumb-label.primary {
+    background-color: #996E00 !important;
+    border-color: #996E00 !important
+}
+
+.theme--light .v-input--switch__thumb.theme--light.primary--text {
+    color: #996E00 !important;
+    caret-color: #996E00 !important
+}
+
+.theme--light .text-overline {
+    color: #996E00 !important;
+    caret-color: #996E00 !important
+}
+
+.theme--dark .text-overline {
+    color: tokens.$color-application-primary !important;
+    caret-color: tokens.$color-application-primary !important
+}
+
+.theme--light .v-input.v-input--is-focused.v-text-field--outlined.v-select.v-select--is-menu-active.primary--text {
+    color: #996E00 !important;
+    caret-color: #996E00 !important
+}
+
+.theme--light .v-label.v-label--active.primary--text {
+    color: #996E00 !important;
+    caret-color: #996E00 !important
 }

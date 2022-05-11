@@ -18,19 +18,19 @@
                 </v-row>
                 <v-row justify="space-between">
                     <v-col cols="auto">
-                        <v-btn color="secondary" raised>
+                        <v-btn color="primary" raised>
                             <v-icon left> mdi-home</v-icon>
                             Button
                         </v-btn>
                     </v-col>
                     <v-col cols="auto">
-                        <v-btn color="secondary" text>
+                        <v-btn color="primary" text>
                             <v-icon left> mdi-heart</v-icon>
                             Button
                         </v-btn>
                     </v-col>
                     <v-col cols="auto">
-                        <v-btn color="secondary" outlined>
+                        <v-btn color="primary" outlined>
                             <v-icon left> mdi-plus</v-icon>
                             Button
                         </v-btn>
@@ -119,6 +119,41 @@
                     </v-card-actions>
                 </v-card>-->
             </v-col>
+            <v-col cols="12">
+                <v-checkbox label="This is a checkbox" hide-details />
+                <v-checkbox
+                    v-model="checked"
+                    label="This is a checkbox"
+                    hide-details
+                />
+            </v-col>
+            <v-col cols="12">
+                <v-radio-group v-model="radioGroup">
+                    <v-radio
+                        v-for="n in 3"
+                        :key="n"
+                        :label="`Radio ${n}`"
+                        :value="n"
+                    ></v-radio>
+                </v-radio-group>
+            </v-col>
+            <v-col cols="6">
+                <v-slider
+                    hint="Im a hint"
+                    max="50"
+                    min="0"
+                    label="Slider"
+                    thumb-label
+                    hide-details
+                ></v-slider>
+            </v-col>
+            <v-col cols="12">
+                <v-switch
+                    v-model="checked"
+                    label="Switch"
+                    hide-details
+                ></v-switch>
+            </v-col>
         </v-row>
     </ExampleWrapper>
 </template>
@@ -140,6 +175,8 @@ export default {
     data: () => ({
         loading: false,
         selection: 1,
+        checked: true,
+        radioGroup: 1,
     }),
 
     methods: {
@@ -153,4 +190,5 @@ export default {
 </script>
 
 <style>
+
 </style>
