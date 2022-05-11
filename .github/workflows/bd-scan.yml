@@ -33,4 +33,16 @@ jobs:
     runs-on: ubuntu-latest
     needs: scan
     steps:
-      - run: echo ${{ needs.scan.outputs.notices }}
+      #- run: echo ${{ needs.scan.outputs.notices }}
+      - name: Create file
+        run: |
+          echo ${{ needs.scan.outputs.notices }} > 3RD_PARTY_LICENSES.txt
+      - name: ☁ Commit Changes
+        uses: EndBug/add-and-commit@v7
+        with:
+          author_name: bd-scan automated script
+          author_email: ci@automate.bot
+          message: "Updated 3rd party licenses file to version ${{ github.event.inputs.version }}"
+          add: "3RD_PARTY_LICENSES.txt"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
