@@ -85,7 +85,7 @@
                     label="Switch"
                     hide-details
                 ></v-switch>
-                <v-otp-input length="6"></v-otp-input>
+                <v-otp-input style="max-width: 400px" length="6"></v-otp-input>
             </v-col>
             <v-col cols="6">
                 <v-subheader>Alert</v-subheader>
@@ -115,6 +115,72 @@
                 <!-- <v-subheader>Time Picker</v-subheader>
                 <v-time-picker scrollable format="24hr"></v-time-picker> -->
             </v-col>
+            <v-col cols="12">
+                <v-subheader>Stepper</v-subheader>
+                <v-stepper v-model="e1">
+                    <v-stepper-header>
+                        <v-stepper-step :complete="e1 > 1" step="1">
+                            Name of step 1
+                        </v-stepper-step>
+
+                        <v-divider></v-divider>
+
+                        <v-stepper-step :complete="e1 > 2" step="2">
+                            Name of step 2
+                        </v-stepper-step>
+
+                        <v-divider></v-divider>
+
+                        <v-stepper-step step="3">
+                            Name of step 3
+                        </v-stepper-step>
+                    </v-stepper-header>
+
+                    <v-stepper-items>
+                        <v-stepper-content step="1">
+                            <v-card
+                                class="mb-12"
+                                color="grey lighten-1"
+                                height="200px"
+                            ></v-card>
+
+                            <v-btn color="primary" @click="e1 = 2">
+                                Continue
+                            </v-btn>
+
+                            <v-btn text> Cancel </v-btn>
+                        </v-stepper-content>
+
+                        <v-stepper-content step="2">
+                            <v-card
+                                class="mb-12"
+                                color="grey lighten-1"
+                                height="200px"
+                            ></v-card>
+
+                            <v-btn color="primary" @click="e1 = 3">
+                                Continue
+                            </v-btn>
+
+                            <v-btn text> Cancel </v-btn>
+                        </v-stepper-content>
+
+                        <v-stepper-content step="3">
+                            <v-card
+                                class="mb-12"
+                                color="grey lighten-1"
+                                height="200px"
+                            ></v-card>
+
+                            <v-btn color="primary" @click="e1 = 1">
+                                Continue
+                            </v-btn>
+
+                            <v-btn text> Cancel </v-btn>
+                        </v-stepper-content>
+                    </v-stepper-items>
+                </v-stepper>
+            </v-col>
         </v-row>
     </ExampleWrapper>
 </template>
@@ -135,6 +201,7 @@ export default {
 
     data: () => ({
         loading: false,
+        e1: 1,
         page: 3,
         selection: 1,
         checked: true,
