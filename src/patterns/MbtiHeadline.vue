@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p v-if="overline" class="text-overline primary--text mb-xs">{{ overline }}</p>
+        <p v-if="overline" class="text-overline primary-variant--text mb-xs">{{ overline }}</p>
         <div v-if="size === 'h1'">
             <h1
                 :class="`text-${size}`"
