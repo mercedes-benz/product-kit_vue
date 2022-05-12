@@ -262,13 +262,13 @@ samp {
 
 /*** GRID ***/
 .v-main__wrap {
-    max-width: tokens.$layout-application-platform-compact-xs-body-max-size;
+    max-width: tokens.$layout-application-compact-xs-body-max-size;
     margin: 0 auto;
 }
 
 .fluid {
     .v-main__wrap {
-        max-width: tokens.$layout-application-platform-wide-xs-body-max-size;
+        max-width: tokens.$layout-application-wide-xs-body-max-size;
         padding-left: 0;
         padding-right: 0;
         margin-right: auto;
@@ -277,7 +277,7 @@ samp {
 }
 
 .row {
-    margin: - tokens.$layout-application-platform-compact-xs-gutter-size / 2;
+    margin: - tokens.$layout-application-compact-xs-gutter-size / 2;
 }
 
 .col-xl,
@@ -350,563 +350,563 @@ samp {
 .col-3,
 .col-2,
 .col-1 {
-    padding: tokens.$layout-application-platform-compact-xs-gutter-size / 2;
+    padding: tokens.$layout-application-compact-xs-gutter-size / 2;
 }
 
 .ma-3xs {
-    margin: tokens.$size-application-platform-spacing-xs-3xs;
+    margin: tokens.$size-application-spacing-xs-3xs;
 }
 
 .ma-xxs {
-    margin: tokens.$size-application-platform-spacing-xs-xxs;
+    margin: tokens.$size-application-spacing-xs-xxs;
 }
 
 .ma-xs {
-    margin: tokens.$size-application-platform-spacing-xs-xs;
+    margin: tokens.$size-application-spacing-xs-xs;
 }
 
 .ma-s {
-    margin: tokens.$size-application-platform-spacing-xs-s;
+    margin: tokens.$size-application-spacing-xs-s;
 }
 
 .ma-m {
-    margin: tokens.$size-application-platform-spacing-xs-m;
+    margin: tokens.$size-application-spacing-xs-m;
 }
 
 .ma-l {
-    margin: tokens.$size-application-platform-spacing-xs-l;
+    margin: tokens.$size-application-spacing-xs-l;
 }
 
 .ma-xl {
-    margin: tokens.$size-application-platform-spacing-xs-xl;
+    margin: tokens.$size-application-spacing-xs-xl;
 }
 
 .ma-xxl {
-    margin: tokens.$size-application-platform-spacing-xs-xxl;
+    margin: tokens.$size-application-spacing-xs-xxl;
 }
 
 .ma-3xl {
-    margin: tokens.$size-application-platform-spacing-xs-3xl;
+    margin: tokens.$size-application-spacing-xs-3xl;
 }
 
 .mt-3xs {
-    margin-top: tokens.$size-application-platform-spacing-xs-3xs;
+    margin-top: tokens.$size-application-spacing-xs-3xs;
 }
 
 .mt-xxs {
-    margin-top: tokens.$size-application-platform-spacing-xs-xxs;
+    margin-top: tokens.$size-application-spacing-xs-xxs;
 }
 
 .mt-xs {
-    margin-top: tokens.$size-application-platform-spacing-xs-xs;
+    margin-top: tokens.$size-application-spacing-xs-xs;
 }
 
 .mt-s {
-    margin-top: tokens.$size-application-platform-spacing-xs-s;
+    margin-top: tokens.$size-application-spacing-xs-s;
 }
 
 .mt-m {
-    margin-top: tokens.$size-application-platform-spacing-xs-m;
+    margin-top: tokens.$size-application-spacing-xs-m;
 }
 
 .mt-l {
-    margin-top: tokens.$size-application-platform-spacing-xs-l;
+    margin-top: tokens.$size-application-spacing-xs-l;
 }
 
 .mt-xl {
-    margin-top: tokens.$size-application-platform-spacing-xs-xl;
+    margin-top: tokens.$size-application-spacing-xs-xl;
 }
 
 .mt-xxl {
-    margin-top: tokens.$size-application-platform-spacing-xs-xxl;
+    margin-top: tokens.$size-application-spacing-xs-xxl;
 }
 
 .mt-3xl {
-    margin-top: tokens.$size-application-platform-spacing-xs-3xl;
+    margin-top: tokens.$size-application-spacing-xs-3xl;
 }
 
 .mb-3xs {
-    margin-bottom: tokens.$size-application-platform-spacing-xs-3xs;
+    margin-bottom: tokens.$size-application-spacing-xs-3xs;
 }
 
 .mb-xxs {
-    margin-bottom: tokens.$size-application-platform-spacing-xs-xxs;
+    margin-bottom: tokens.$size-application-spacing-xs-xxs;
 }
 
 .mb-xs {
-    margin-bottom: tokens.$size-application-platform-spacing-xs-xs;
+    margin-bottom: tokens.$size-application-spacing-xs-xs;
 }
 
 .mb-s {
-    margin-bottom: tokens.$size-application-platform-spacing-xs-s;
+    margin-bottom: tokens.$size-application-spacing-xs-s;
 }
 
 .mb-m {
-    margin-bottom: tokens.$size-application-platform-spacing-xs-m;
+    margin-bottom: tokens.$size-application-spacing-xs-m;
 }
 
 .mb-l {
-    margin-bottom: tokens.$size-application-platform-spacing-xs-l;
+    margin-bottom: tokens.$size-application-spacing-xs-l;
 }
 
 .mb-xl {
-    margin-bottom: tokens.$size-application-platform-spacing-xs-xl;
+    margin-bottom: tokens.$size-application-spacing-xs-xl;
 }
 
 .mb-xxl {
-    margin-bottom: tokens.$size-application-platform-spacing-xs-xxl;
+    margin-bottom: tokens.$size-application-spacing-xs-xxl;
 }
 
 .mb-3xl {
-    margin-bottom: tokens.$size-application-platform-spacing-xs-3xl;
+    margin-bottom: tokens.$size-application-spacing-xs-3xl;
 }
 
 .ml-3xs {
-    margin-left: tokens.$size-application-platform-spacing-xs-3xs;
+    margin-left: tokens.$size-application-spacing-xs-3xs;
 }
 
 .ml-xxs {
-    margin-left: tokens.$size-application-platform-spacing-xs-xxs;
+    margin-left: tokens.$size-application-spacing-xs-xxs;
 }
 
 .ml-xs {
-    margin-left: tokens.$size-application-platform-spacing-xs-xs;
+    margin-left: tokens.$size-application-spacing-xs-xs;
 }
 
 .ml-s {
-    margin-left: tokens.$size-application-platform-spacing-xs-s;
+    margin-left: tokens.$size-application-spacing-xs-s;
 }
 
 .ml-m {
-    margin-left: tokens.$size-application-platform-spacing-xs-m;
+    margin-left: tokens.$size-application-spacing-xs-m;
 }
 
 .ml-l {
-    margin-left: tokens.$size-application-platform-spacing-xs-l;
+    margin-left: tokens.$size-application-spacing-xs-l;
 }
 
 .ml-xl {
-    margin-left: tokens.$size-application-platform-spacing-xs-xl;
+    margin-left: tokens.$size-application-spacing-xs-xl;
 }
 
 .ml-xxl {
-    margin-left: tokens.$size-application-platform-spacing-xs-xxl;
+    margin-left: tokens.$size-application-spacing-xs-xxl;
 }
 
 .ml-3xl {
-    margin-left: tokens.$size-application-platform-spacing-xs-3xl;
+    margin-left: tokens.$size-application-spacing-xs-3xl;
 }
 
 .mr-3xs {
-    margin-right: tokens.$size-application-platform-spacing-xs-3xs;
+    margin-right: tokens.$size-application-spacing-xs-3xs;
 }
 
 .mr-xxs {
-    margin-right: tokens.$size-application-platform-spacing-xs-xxs;
+    margin-right: tokens.$size-application-spacing-xs-xxs;
 }
 
 .mr-xs {
-    margin-right: tokens.$size-application-platform-spacing-xs-xs;
+    margin-right: tokens.$size-application-spacing-xs-xs;
 }
 
 .mr-s {
-    margin-right: tokens.$size-application-platform-spacing-xs-s;
+    margin-right: tokens.$size-application-spacing-xs-s;
 }
 
 .mr-m {
-    margin-right: tokens.$size-application-platform-spacing-xs-m;
+    margin-right: tokens.$size-application-spacing-xs-m;
 }
 
 .mr-l {
-    margin-right: tokens.$size-application-platform-spacing-xs-l;
+    margin-right: tokens.$size-application-spacing-xs-l;
 }
 
 .mr-xl {
-    margin-right: tokens.$size-application-platform-spacing-xs-xl;
+    margin-right: tokens.$size-application-spacing-xs-xl;
 }
 
 .mr-xxl {
-    margin-right: tokens.$size-application-platform-spacing-xs-xxl;
+    margin-right: tokens.$size-application-spacing-xs-xxl;
 }
 
 .mr-3xl {
-    margin-right: tokens.$size-application-platform-spacing-xs-3xl;
+    margin-right: tokens.$size-application-spacing-xs-3xl;
 }
 
 .mx-3xs {
-    margin-right: tokens.$size-application-platform-spacing-xs-3xs;
-    margin-left: tokens.$size-application-platform-spacing-xs-3xs;
+    margin-right: tokens.$size-application-spacing-xs-3xs;
+    margin-left: tokens.$size-application-spacing-xs-3xs;
 }
 
 .mx-xxs {
-    margin-right: tokens.$size-application-platform-spacing-xs-xxs;
-    margin-left: tokens.$size-application-platform-spacing-xs-xxs;
+    margin-right: tokens.$size-application-spacing-xs-xxs;
+    margin-left: tokens.$size-application-spacing-xs-xxs;
 }
 
 .mx-xs {
-    margin-right: tokens.$size-application-platform-spacing-xs-xs;
-    margin-left: tokens.$size-application-platform-spacing-xs-xs;
+    margin-right: tokens.$size-application-spacing-xs-xs;
+    margin-left: tokens.$size-application-spacing-xs-xs;
 }
 
 .mx-s {
-    margin-right: tokens.$size-application-platform-spacing-xs-s;
-    margin-left: tokens.$size-application-platform-spacing-xs-s;
+    margin-right: tokens.$size-application-spacing-xs-s;
+    margin-left: tokens.$size-application-spacing-xs-s;
 }
 
 .mx-m {
-    margin-right: tokens.$size-application-platform-spacing-xs-m;
-    margin-left: tokens.$size-application-platform-spacing-xs-m;
+    margin-right: tokens.$size-application-spacing-xs-m;
+    margin-left: tokens.$size-application-spacing-xs-m;
 }
 
 .mx-l {
-    margin-right: tokens.$size-application-platform-spacing-xs-l;
-    margin-left: tokens.$size-application-platform-spacing-xs-l;
+    margin-right: tokens.$size-application-spacing-xs-l;
+    margin-left: tokens.$size-application-spacing-xs-l;
 }
 
 .mx-xl {
-    margin-right: tokens.$size-application-platform-spacing-xs-xl;
-    margin-left: tokens.$size-application-platform-spacing-xs-xl;
+    margin-right: tokens.$size-application-spacing-xs-xl;
+    margin-left: tokens.$size-application-spacing-xs-xl;
 }
 
 .mx-xxl {
-    margin-right: tokens.$size-application-platform-spacing-xs-xxl;
-    margin-left: tokens.$size-application-platform-spacing-xs-xxl;
+    margin-right: tokens.$size-application-spacing-xs-xxl;
+    margin-left: tokens.$size-application-spacing-xs-xxl;
 }
 
 .mx-3xl {
-    margin-right: tokens.$size-application-platform-spacing-xs-3xl;
-    margin-left: tokens.$size-application-platform-spacing-xs-3xl;
+    margin-right: tokens.$size-application-spacing-xs-3xl;
+    margin-left: tokens.$size-application-spacing-xs-3xl;
 }
 
 .my-3xs {
-    margin-top: tokens.$size-application-platform-spacing-xs-3xs;
-    margin-bottom: tokens.$size-application-platform-spacing-xs-3xs;
+    margin-top: tokens.$size-application-spacing-xs-3xs;
+    margin-bottom: tokens.$size-application-spacing-xs-3xs;
 }
 
 .my-xxs {
-    margin-top: tokens.$size-application-platform-spacing-xs-xxs;
-    margin-bottom: tokens.$size-application-platform-spacing-xs-xxs;
+    margin-top: tokens.$size-application-spacing-xs-xxs;
+    margin-bottom: tokens.$size-application-spacing-xs-xxs;
 }
 
 .my-xs {
-    margin-top: tokens.$size-application-platform-spacing-xs-xs;
-    margin-bottom: tokens.$size-application-platform-spacing-xs-xs;
+    margin-top: tokens.$size-application-spacing-xs-xs;
+    margin-bottom: tokens.$size-application-spacing-xs-xs;
 }
 
 .my-s {
-    margin-top: tokens.$size-application-platform-spacing-xs-s;
-    margin-bottom: tokens.$size-application-platform-spacing-xs-s;
+    margin-top: tokens.$size-application-spacing-xs-s;
+    margin-bottom: tokens.$size-application-spacing-xs-s;
 }
 
 .my-m {
-    margin-top: tokens.$size-application-platform-spacing-xs-m;
-    margin-bottom: tokens.$size-application-platform-spacing-xs-m;
+    margin-top: tokens.$size-application-spacing-xs-m;
+    margin-bottom: tokens.$size-application-spacing-xs-m;
 }
 
 .my-l {
-    margin-top: tokens.$size-application-platform-spacing-xs-l;
-    margin-bottom: tokens.$size-application-platform-spacing-xs-l;
+    margin-top: tokens.$size-application-spacing-xs-l;
+    margin-bottom: tokens.$size-application-spacing-xs-l;
 }
 
 .my-xl {
-    margin-top: tokens.$size-application-platform-spacing-xs-xl;
-    margin-bottom: tokens.$size-application-platform-spacing-xs-xl;
+    margin-top: tokens.$size-application-spacing-xs-xl;
+    margin-bottom: tokens.$size-application-spacing-xs-xl;
 }
 
 .my-xxl {
-    margin-top: tokens.$size-application-platform-spacing-xs-xxl;
-    margin-bottom: tokens.$size-application-platform-spacing-xs-xxl;
+    margin-top: tokens.$size-application-spacing-xs-xxl;
+    margin-bottom: tokens.$size-application-spacing-xs-xxl;
 }
 
 .my-3xl {
-    margin-top: tokens.$size-application-platform-spacing-xs-3xl;
-    margin-bottom: tokens.$size-application-platform-spacing-xs-3xl;
+    margin-top: tokens.$size-application-spacing-xs-3xl;
+    margin-bottom: tokens.$size-application-spacing-xs-3xl;
 }
 
 .pa-3xs {
-    padding: tokens.$size-application-platform-spacing-xs-3xs;
+    padding: tokens.$size-application-spacing-xs-3xs;
 }
 
 .pa-xxs {
-    padding: tokens.$size-application-platform-spacing-xs-xxs;
+    padding: tokens.$size-application-spacing-xs-xxs;
 }
 
 .pa-xs {
-    padding: tokens.$size-application-platform-spacing-xs-xs;
+    padding: tokens.$size-application-spacing-xs-xs;
 }
 
 .pa-s {
-    padding: tokens.$size-application-platform-spacing-xs-s;
+    padding: tokens.$size-application-spacing-xs-s;
 }
 
 .pa-m {
-    padding: tokens.$size-application-platform-spacing-xs-m;
+    padding: tokens.$size-application-spacing-xs-m;
 }
 
 .pa-l {
-    padding: tokens.$size-application-platform-spacing-xs-l;
+    padding: tokens.$size-application-spacing-xs-l;
 }
 
 .pa-xl {
-    padding: tokens.$size-application-platform-spacing-xs-xl;
+    padding: tokens.$size-application-spacing-xs-xl;
 }
 
 .pa-xxl {
-    padding: tokens.$size-application-platform-spacing-xs-xxl;
+    padding: tokens.$size-application-spacing-xs-xxl;
 }
 
 .pa-3xl {
-    padding: tokens.$size-application-platform-spacing-xs-3xl;
+    padding: tokens.$size-application-spacing-xs-3xl;
 }
 
 .pt-3xs {
-    padding-top: tokens.$size-application-platform-spacing-xs-3xs;
+    padding-top: tokens.$size-application-spacing-xs-3xs;
 }
 
 .pt-xxs {
-    padding-top: tokens.$size-application-platform-spacing-xs-xxs;
+    padding-top: tokens.$size-application-spacing-xs-xxs;
 }
 
 .pt-xs {
-    padding-top: tokens.$size-application-platform-spacing-xs-xs;
+    padding-top: tokens.$size-application-spacing-xs-xs;
 }
 
 .pt-s {
-    padding-top: tokens.$size-application-platform-spacing-xs-s;
+    padding-top: tokens.$size-application-spacing-xs-s;
 }
 
 .pt-m {
-    padding-top: tokens.$size-application-platform-spacing-xs-m;
+    padding-top: tokens.$size-application-spacing-xs-m;
 }
 
 .pt-l {
-    padding-top: tokens.$size-application-platform-spacing-xs-l;
+    padding-top: tokens.$size-application-spacing-xs-l;
 }
 
 .pt-xl {
-    padding-top: tokens.$size-application-platform-spacing-xs-xl;
+    padding-top: tokens.$size-application-spacing-xs-xl;
 }
 
 .pt-xxl {
-    padding-top: tokens.$size-application-platform-spacing-xs-xxl;
+    padding-top: tokens.$size-application-spacing-xs-xxl;
 }
 
 .pt-3xl {
-    padding-top: tokens.$size-application-platform-spacing-xs-3xl;
+    padding-top: tokens.$size-application-spacing-xs-3xl;
 }
 
 .pb-3xs {
-    padding-bottom: tokens.$size-application-platform-spacing-xs-3xs;
+    padding-bottom: tokens.$size-application-spacing-xs-3xs;
 }
 
 .pb-xxs {
-    padding-bottom: tokens.$size-application-platform-spacing-xs-xxs;
+    padding-bottom: tokens.$size-application-spacing-xs-xxs;
 }
 
 .pb-xs {
-    padding-bottom: tokens.$size-application-platform-spacing-xs-xs;
+    padding-bottom: tokens.$size-application-spacing-xs-xs;
 }
 
 .pb-s {
-    padding-bottom: tokens.$size-application-platform-spacing-xs-s;
+    padding-bottom: tokens.$size-application-spacing-xs-s;
 }
 
 .pb-m {
-    padding-bottom: tokens.$size-application-platform-spacing-xs-m;
+    padding-bottom: tokens.$size-application-spacing-xs-m;
 }
 
 .pb-l {
-    padding-bottom: tokens.$size-application-platform-spacing-xs-l;
+    padding-bottom: tokens.$size-application-spacing-xs-l;
 }
 
 .pb-xl {
-    padding-bottom: tokens.$size-application-platform-spacing-xs-xl;
+    padding-bottom: tokens.$size-application-spacing-xs-xl;
 }
 
 .pb-xxl {
-    padding-bottom: tokens.$size-application-platform-spacing-xs-xxl;
+    padding-bottom: tokens.$size-application-spacing-xs-xxl;
 }
 
 .pb-3xl {
-    padding-bottom: tokens.$size-application-platform-spacing-xs-3xl;
+    padding-bottom: tokens.$size-application-spacing-xs-3xl;
 }
 
 .pl-3xs {
-    padding-left: tokens.$size-application-platform-spacing-xs-3xs;
+    padding-left: tokens.$size-application-spacing-xs-3xs;
 }
 
 .pl-xxs {
-    padding-left: tokens.$size-application-platform-spacing-xs-xxs;
+    padding-left: tokens.$size-application-spacing-xs-xxs;
 }
 
 .pl-xs {
-    padding-left: tokens.$size-application-platform-spacing-xs-xs;
+    padding-left: tokens.$size-application-spacing-xs-xs;
 }
 
 .pl-s {
-    padding-left: tokens.$size-application-platform-spacing-xs-s;
+    padding-left: tokens.$size-application-spacing-xs-s;
 }
 
 .pl-m {
-    padding-left: tokens.$size-application-platform-spacing-xs-m;
+    padding-left: tokens.$size-application-spacing-xs-m;
 }
 
 .pl-l {
-    padding-left: tokens.$size-application-platform-spacing-xs-l;
+    padding-left: tokens.$size-application-spacing-xs-l;
 }
 
 .pl-xl {
-    padding-left: tokens.$size-application-platform-spacing-xs-xl;
+    padding-left: tokens.$size-application-spacing-xs-xl;
 }
 
 .pl-xxl {
-    padding-left: tokens.$size-application-platform-spacing-xs-xxl;
+    padding-left: tokens.$size-application-spacing-xs-xxl;
 }
 
 .pl-3xl {
-    padding-left: tokens.$size-application-platform-spacing-xs-3xl;
+    padding-left: tokens.$size-application-spacing-xs-3xl;
 }
 
 .pr-3xs {
-    padding-right: tokens.$size-application-platform-spacing-xs-3xs;
+    padding-right: tokens.$size-application-spacing-xs-3xs;
 }
 
 .pr-xxs {
-    padding-right: tokens.$size-application-platform-spacing-xs-xxs;
+    padding-right: tokens.$size-application-spacing-xs-xxs;
 }
 
 .pr-xs {
-    padding-right: tokens.$size-application-platform-spacing-xs-xs;
+    padding-right: tokens.$size-application-spacing-xs-xs;
 }
 
 .pr-s {
-    padding-right: tokens.$size-application-platform-spacing-xs-s;
+    padding-right: tokens.$size-application-spacing-xs-s;
 }
 
 .pr-m {
-    padding-right: tokens.$size-application-platform-spacing-xs-m;
+    padding-right: tokens.$size-application-spacing-xs-m;
 }
 
 .pr-l {
-    padding-right: tokens.$size-application-platform-spacing-xs-l;
+    padding-right: tokens.$size-application-spacing-xs-l;
 }
 
 .pr-xl {
-    padding-right: tokens.$size-application-platform-spacing-xs-xl;
+    padding-right: tokens.$size-application-spacing-xs-xl;
 }
 
 .pr-xxl {
-    padding-right: tokens.$size-application-platform-spacing-xs-xxl;
+    padding-right: tokens.$size-application-spacing-xs-xxl;
 }
 
 .pr-3xl {
-    padding-right: tokens.$size-application-platform-spacing-xs-3xl;
+    padding-right: tokens.$size-application-spacing-xs-3xl;
 }
 
 .px-3xs {
-    padding-right: tokens.$size-application-platform-spacing-xs-3xs;
-    padding-left: tokens.$size-application-platform-spacing-xs-3xs;
+    padding-right: tokens.$size-application-spacing-xs-3xs;
+    padding-left: tokens.$size-application-spacing-xs-3xs;
 }
 
 .px-xxs {
-    padding-right: tokens.$size-application-platform-spacing-xs-xxs;
-    padding-left: tokens.$size-application-platform-spacing-xs-xxs;
+    padding-right: tokens.$size-application-spacing-xs-xxs;
+    padding-left: tokens.$size-application-spacing-xs-xxs;
 }
 
 .px-xs {
-    padding-right: tokens.$size-application-platform-spacing-xs-xs;
-    padding-left: tokens.$size-application-platform-spacing-xs-xs;
+    padding-right: tokens.$size-application-spacing-xs-xs;
+    padding-left: tokens.$size-application-spacing-xs-xs;
 }
 
 .px-s {
-    padding-right: tokens.$size-application-platform-spacing-xs-s;
-    padding-left: tokens.$size-application-platform-spacing-xs-s;
+    padding-right: tokens.$size-application-spacing-xs-s;
+    padding-left: tokens.$size-application-spacing-xs-s;
 }
 
 .px-m {
-    padding-right: tokens.$size-application-platform-spacing-xs-m;
-    padding-left: tokens.$size-application-platform-spacing-xs-m;
+    padding-right: tokens.$size-application-spacing-xs-m;
+    padding-left: tokens.$size-application-spacing-xs-m;
 }
 
 .px-l {
-    padding-right: tokens.$size-application-platform-spacing-xs-l;
-    padding-left: tokens.$size-application-platform-spacing-xs-l;
+    padding-right: tokens.$size-application-spacing-xs-l;
+    padding-left: tokens.$size-application-spacing-xs-l;
 }
 
 .px-xl {
-    padding-right: tokens.$size-application-platform-spacing-xs-xl;
-    padding-left: tokens.$size-application-platform-spacing-xs-xl;
+    padding-right: tokens.$size-application-spacing-xs-xl;
+    padding-left: tokens.$size-application-spacing-xs-xl;
 }
 
 .px-xxl {
-    padding-right: tokens.$size-application-platform-spacing-xs-xxl;
-    padding-left: tokens.$size-application-platform-spacing-xs-xxl;
+    padding-right: tokens.$size-application-spacing-xs-xxl;
+    padding-left: tokens.$size-application-spacing-xs-xxl;
 }
 
 .px-3xl {
-    padding-right: tokens.$size-application-platform-spacing-xs-3xl;
-    padding-left: tokens.$size-application-platform-spacing-xs-3xl;
+    padding-right: tokens.$size-application-spacing-xs-3xl;
+    padding-left: tokens.$size-application-spacing-xs-3xl;
 }
 
 .py-3xs {
-    padding-top: tokens.$size-application-platform-spacing-xs-3xs;
-    padding-bottom: tokens.$size-application-platform-spacing-xs-3xs;
+    padding-top: tokens.$size-application-spacing-xs-3xs;
+    padding-bottom: tokens.$size-application-spacing-xs-3xs;
 }
 
 .py-xxs {
-    padding-top: tokens.$size-application-platform-spacing-xs-xxs;
-    padding-bottom: tokens.$size-application-platform-spacing-xs-xxs;
+    padding-top: tokens.$size-application-spacing-xs-xxs;
+    padding-bottom: tokens.$size-application-spacing-xs-xxs;
 }
 
 .py-xs {
-    padding-top: tokens.$size-application-platform-spacing-xs-xs;
-    padding-bottom: tokens.$size-application-platform-spacing-xs-xs;
+    padding-top: tokens.$size-application-spacing-xs-xs;
+    padding-bottom: tokens.$size-application-spacing-xs-xs;
 }
 
 .py-s {
-    padding-top: tokens.$size-application-platform-spacing-xs-s;
-    padding-bottom: tokens.$size-application-platform-spacing-xs-s;
+    padding-top: tokens.$size-application-spacing-xs-s;
+    padding-bottom: tokens.$size-application-spacing-xs-s;
 }
 
 .py-m {
-    padding-top: tokens.$size-application-platform-spacing-xs-m;
-    padding-bottom: tokens.$size-application-platform-spacing-xs-m;
+    padding-top: tokens.$size-application-spacing-xs-m;
+    padding-bottom: tokens.$size-application-spacing-xs-m;
 }
 
 .py-l {
-    padding-top: tokens.$size-application-platform-spacing-xs-l;
-    padding-bottom: tokens.$size-application-platform-spacing-xs-l;
+    padding-top: tokens.$size-application-spacing-xs-l;
+    padding-bottom: tokens.$size-application-spacing-xs-l;
 }
 
 .py-xl {
-    padding-top: tokens.$size-application-platform-spacing-xs-xl;
-    padding-bottom: tokens.$size-application-platform-spacing-xs-xl;
+    padding-top: tokens.$size-application-spacing-xs-xl;
+    padding-bottom: tokens.$size-application-spacing-xs-xl;
 }
 
 .py-xxl {
-    padding-top: tokens.$size-application-platform-spacing-xs-xxl;
-    padding-bottom: tokens.$size-application-platform-spacing-xs-xxl;
+    padding-top: tokens.$size-application-spacing-xs-xxl;
+    padding-bottom: tokens.$size-application-spacing-xs-xxl;
 }
 
 .py-3xl {
-    padding-top: tokens.$size-application-platform-spacing-xs-3xl;
-    padding-bottom: tokens.$size-application-platform-spacing-xs-3xl;
+    padding-top: tokens.$size-application-spacing-xs-3xl;
+    padding-bottom: tokens.$size-application-spacing-xs-3xl;
 }
 
 @media only screen and (min-width: #{map-get($grid-breakpoints, 'sm')}) {
     /*.container:not(.container--fluid) {
-      padding-left: tokens.$layout-application-platform-compact-s-margin-size;
-      padding-right: tokens.$layout-application-platform-compact-s-margin-size;
+      padding-left: tokens.$layout-application-compact-s-margin-size;
+      padding-right: tokens.$layout-application-compact-s-margin-size;
     }*/
 
     .v-main__wrap {
-        max-width: tokens.$layout-application-platform-compact-s-body-max-size;
+        max-width: tokens.$layout-application-compact-s-body-max-size;
         margin: 0 auto;
     }
 
     .fluid {
         .v-main__wrap {
-            max-width: tokens.$layout-application-platform-wide-s-body-max-size;
+            max-width: tokens.$layout-application-wide-s-body-max-size;
             padding-left: 0;
             padding-right: 0;
             margin-right: auto;
@@ -915,7 +915,7 @@ samp {
     }
 
     .row {
-        margin: - tokens.$layout-application-platform-compact-s-gutter-size / 2;
+        margin: - tokens.$layout-application-compact-s-gutter-size / 2;
     }
 
     .col-xl,
@@ -988,560 +988,560 @@ samp {
     .col-3,
     .col-2,
     .col-1 {
-        padding: tokens.$layout-application-platform-compact-s-gutter-size / 2;
+        padding: tokens.$layout-application-compact-s-gutter-size / 2;
     }
 
     .ma-3xs {
-        margin: tokens.$size-application-platform-spacing-s-3xs;
+        margin: tokens.$size-application-spacing-s-3xs;
     }
 
     .ma-xxs {
-        margin: tokens.$size-application-platform-spacing-s-xxs;
+        margin: tokens.$size-application-spacing-s-xxs;
     }
 
     .ma-xs {
-        margin: tokens.$size-application-platform-spacing-s-xs;
+        margin: tokens.$size-application-spacing-s-xs;
     }
 
     .ma-s {
-        margin: tokens.$size-application-platform-spacing-s-s;
+        margin: tokens.$size-application-spacing-s-s;
     }
 
     .ma-m {
-        margin: tokens.$size-application-platform-spacing-s-m;
+        margin: tokens.$size-application-spacing-s-m;
     }
 
     .ma-l {
-        margin: tokens.$size-application-platform-spacing-s-l;
+        margin: tokens.$size-application-spacing-s-l;
     }
 
     .ma-xl {
-        margin: tokens.$size-application-platform-spacing-s-xl;
+        margin: tokens.$size-application-spacing-s-xl;
     }
 
     .ma-xxl {
-        margin: tokens.$size-application-platform-spacing-s-xxl;
+        margin: tokens.$size-application-spacing-s-xxl;
     }
 
     .ma-3xl {
-        margin: tokens.$size-application-platform-spacing-s-3xl;
+        margin: tokens.$size-application-spacing-s-3xl;
     }
 
     .mt-3xs {
-        margin-top: tokens.$size-application-platform-spacing-s-3xs;
+        margin-top: tokens.$size-application-spacing-s-3xs;
     }
 
     .mt-xxs {
-        margin-top: tokens.$size-application-platform-spacing-s-xxs;
+        margin-top: tokens.$size-application-spacing-s-xxs;
     }
 
     .mt-xs {
-        margin-top: tokens.$size-application-platform-spacing-s-xs;
+        margin-top: tokens.$size-application-spacing-s-xs;
     }
 
     .mt-s {
-        margin-top: tokens.$size-application-platform-spacing-s-s;
+        margin-top: tokens.$size-application-spacing-s-s;
     }
 
     .mt-m {
-        margin-top: tokens.$size-application-platform-spacing-s-m;
+        margin-top: tokens.$size-application-spacing-s-m;
     }
 
     .mt-l {
-        margin-top: tokens.$size-application-platform-spacing-s-l;
+        margin-top: tokens.$size-application-spacing-s-l;
     }
 
     .mt-xl {
-        margin-top: tokens.$size-application-platform-spacing-s-xl;
+        margin-top: tokens.$size-application-spacing-s-xl;
     }
 
     .mt-xxl {
-        margin-top: tokens.$size-application-platform-spacing-s-xxl;
+        margin-top: tokens.$size-application-spacing-s-xxl;
     }
 
     .mt-3xl {
-        margin-top: tokens.$size-application-platform-spacing-s-3xl;
+        margin-top: tokens.$size-application-spacing-s-3xl;
     }
 
     .mb-3xs {
-        margin-bottom: tokens.$size-application-platform-spacing-s-3xs;
+        margin-bottom: tokens.$size-application-spacing-s-3xs;
     }
 
     .mb-xxs {
-        margin-bottom: tokens.$size-application-platform-spacing-s-xxs;
+        margin-bottom: tokens.$size-application-spacing-s-xxs;
     }
 
     .mb-xs {
-        margin-bottom: tokens.$size-application-platform-spacing-s-xs;
+        margin-bottom: tokens.$size-application-spacing-s-xs;
     }
 
     .mb-s {
-        margin-bottom: tokens.$size-application-platform-spacing-s-s;
+        margin-bottom: tokens.$size-application-spacing-s-s;
     }
 
     .mb-m {
-        margin-bottom: tokens.$size-application-platform-spacing-s-m;
+        margin-bottom: tokens.$size-application-spacing-s-m;
     }
 
     .mb-l {
-        margin-bottom: tokens.$size-application-platform-spacing-s-l;
+        margin-bottom: tokens.$size-application-spacing-s-l;
     }
 
     .mb-xl {
-        margin-bottom: tokens.$size-application-platform-spacing-s-xl;
+        margin-bottom: tokens.$size-application-spacing-s-xl;
     }
 
     .mb-xxl {
-        margin-bottom: tokens.$size-application-platform-spacing-s-xxl;
+        margin-bottom: tokens.$size-application-spacing-s-xxl;
     }
 
     .mb-3xl {
-        margin-bottom: tokens.$size-application-platform-spacing-s-3xl;
+        margin-bottom: tokens.$size-application-spacing-s-3xl;
     }
 
     .ml-3xs {
-        margin-left: tokens.$size-application-platform-spacing-s-3xs;
+        margin-left: tokens.$size-application-spacing-s-3xs;
     }
 
     .ml-xxs {
-        margin-left: tokens.$size-application-platform-spacing-s-xxs;
+        margin-left: tokens.$size-application-spacing-s-xxs;
     }
 
     .ml-xs {
-        margin-left: tokens.$size-application-platform-spacing-s-xs;
+        margin-left: tokens.$size-application-spacing-s-xs;
     }
 
     .ml-s {
-        margin-left: tokens.$size-application-platform-spacing-s-s;
+        margin-left: tokens.$size-application-spacing-s-s;
     }
 
     .ml-m {
-        margin-left: tokens.$size-application-platform-spacing-s-m;
+        margin-left: tokens.$size-application-spacing-s-m;
     }
 
     .ml-l {
-        margin-left: tokens.$size-application-platform-spacing-s-l;
+        margin-left: tokens.$size-application-spacing-s-l;
     }
 
     .ml-xl {
-        margin-left: tokens.$size-application-platform-spacing-s-xl;
+        margin-left: tokens.$size-application-spacing-s-xl;
     }
 
     .ml-xxl {
-        margin-left: tokens.$size-application-platform-spacing-s-xxl;
+        margin-left: tokens.$size-application-spacing-s-xxl;
     }
 
     .ml-3xl {
-        margin-left: tokens.$size-application-platform-spacing-s-3xl;
+        margin-left: tokens.$size-application-spacing-s-3xl;
     }
 
     .mr-3xs {
-        margin-right: tokens.$size-application-platform-spacing-s-3xs;
+        margin-right: tokens.$size-application-spacing-s-3xs;
     }
 
     .mr-xxs {
-        margin-right: tokens.$size-application-platform-spacing-s-xxs;
+        margin-right: tokens.$size-application-spacing-s-xxs;
     }
 
     .mr-xs {
-        margin-right: tokens.$size-application-platform-spacing-s-xs;
+        margin-right: tokens.$size-application-spacing-s-xs;
     }
 
     .mr-s {
-        margin-right: tokens.$size-application-platform-spacing-s-s;
+        margin-right: tokens.$size-application-spacing-s-s;
     }
 
     .mr-m {
-        margin-right: tokens.$size-application-platform-spacing-s-m;
+        margin-right: tokens.$size-application-spacing-s-m;
     }
 
     .mr-l {
-        margin-right: tokens.$size-application-platform-spacing-s-l;
+        margin-right: tokens.$size-application-spacing-s-l;
     }
 
     .mr-xl {
-        margin-right: tokens.$size-application-platform-spacing-s-xl;
+        margin-right: tokens.$size-application-spacing-s-xl;
     }
 
     .mr-xxl {
-        margin-right: tokens.$size-application-platform-spacing-s-xxl;
+        margin-right: tokens.$size-application-spacing-s-xxl;
     }
 
     .mr-3xl {
-        margin-right: tokens.$size-application-platform-spacing-s-3xl;
+        margin-right: tokens.$size-application-spacing-s-3xl;
     }
 
     .mx-3xs {
-        margin-right: tokens.$size-application-platform-spacing-s-3xs;
-        margin-left: tokens.$size-application-platform-spacing-s-3xs;
+        margin-right: tokens.$size-application-spacing-s-3xs;
+        margin-left: tokens.$size-application-spacing-s-3xs;
     }
 
     .mx-xxs {
-        margin-right: tokens.$size-application-platform-spacing-s-xxs;
-        margin-left: tokens.$size-application-platform-spacing-s-xxs;
+        margin-right: tokens.$size-application-spacing-s-xxs;
+        margin-left: tokens.$size-application-spacing-s-xxs;
     }
 
     .mx-xs {
-        margin-right: tokens.$size-application-platform-spacing-s-xs;
-        margin-left: tokens.$size-application-platform-spacing-s-xs;
+        margin-right: tokens.$size-application-spacing-s-xs;
+        margin-left: tokens.$size-application-spacing-s-xs;
     }
 
     .mx-s {
-        margin-right: tokens.$size-application-platform-spacing-s-s;
-        margin-left: tokens.$size-application-platform-spacing-s-s;
+        margin-right: tokens.$size-application-spacing-s-s;
+        margin-left: tokens.$size-application-spacing-s-s;
     }
 
     .mx-m {
-        margin-right: tokens.$size-application-platform-spacing-s-m;
-        margin-left: tokens.$size-application-platform-spacing-s-m;
+        margin-right: tokens.$size-application-spacing-s-m;
+        margin-left: tokens.$size-application-spacing-s-m;
     }
 
     .mx-l {
-        margin-right: tokens.$size-application-platform-spacing-s-l;
-        margin-left: tokens.$size-application-platform-spacing-s-l;
+        margin-right: tokens.$size-application-spacing-s-l;
+        margin-left: tokens.$size-application-spacing-s-l;
     }
 
     .mx-xl {
-        margin-right: tokens.$size-application-platform-spacing-s-xl;
-        margin-left: tokens.$size-application-platform-spacing-s-xl;
+        margin-right: tokens.$size-application-spacing-s-xl;
+        margin-left: tokens.$size-application-spacing-s-xl;
     }
 
     .mx-xxl {
-        margin-right: tokens.$size-application-platform-spacing-s-xxl;
-        margin-left: tokens.$size-application-platform-spacing-s-xxl;
+        margin-right: tokens.$size-application-spacing-s-xxl;
+        margin-left: tokens.$size-application-spacing-s-xxl;
     }
 
     .mx-3xl {
-        margin-right: tokens.$size-application-platform-spacing-s-3xl;
-        margin-left: tokens.$size-application-platform-spacing-s-3xl;
+        margin-right: tokens.$size-application-spacing-s-3xl;
+        margin-left: tokens.$size-application-spacing-s-3xl;
     }
 
     .my-3xs {
-        margin-top: tokens.$size-application-platform-spacing-s-3xs;
-        margin-bottom: tokens.$size-application-platform-spacing-s-3xs;
+        margin-top: tokens.$size-application-spacing-s-3xs;
+        margin-bottom: tokens.$size-application-spacing-s-3xs;
     }
 
     .my-xxs {
-        margin-top: tokens.$size-application-platform-spacing-s-xxs;
-        margin-bottom: tokens.$size-application-platform-spacing-s-xxs;
+        margin-top: tokens.$size-application-spacing-s-xxs;
+        margin-bottom: tokens.$size-application-spacing-s-xxs;
     }
 
     .my-xs {
-        margin-top: tokens.$size-application-platform-spacing-s-xs;
-        margin-bottom: tokens.$size-application-platform-spacing-s-xs;
+        margin-top: tokens.$size-application-spacing-s-xs;
+        margin-bottom: tokens.$size-application-spacing-s-xs;
     }
 
     .my-s {
-        margin-top: tokens.$size-application-platform-spacing-s-s;
-        margin-bottom: tokens.$size-application-platform-spacing-s-s;
+        margin-top: tokens.$size-application-spacing-s-s;
+        margin-bottom: tokens.$size-application-spacing-s-s;
     }
 
     .my-m {
-        margin-top: tokens.$size-application-platform-spacing-s-m;
-        margin-bottom: tokens.$size-application-platform-spacing-s-m;
+        margin-top: tokens.$size-application-spacing-s-m;
+        margin-bottom: tokens.$size-application-spacing-s-m;
     }
 
     .my-l {
-        margin-top: tokens.$size-application-platform-spacing-s-l;
-        margin-bottom: tokens.$size-application-platform-spacing-s-l;
+        margin-top: tokens.$size-application-spacing-s-l;
+        margin-bottom: tokens.$size-application-spacing-s-l;
     }
 
     .my-xl {
-        margin-top: tokens.$size-application-platform-spacing-s-xl;
-        margin-bottom: tokens.$size-application-platform-spacing-s-xl;
+        margin-top: tokens.$size-application-spacing-s-xl;
+        margin-bottom: tokens.$size-application-spacing-s-xl;
     }
 
     .my-xxl {
-        margin-top: tokens.$size-application-platform-spacing-s-xxl;
-        margin-bottom: tokens.$size-application-platform-spacing-s-xxl;
+        margin-top: tokens.$size-application-spacing-s-xxl;
+        margin-bottom: tokens.$size-application-spacing-s-xxl;
     }
 
     .my-3xl {
-        margin-top: tokens.$size-application-platform-spacing-s-3xl;
-        margin-bottom: tokens.$size-application-platform-spacing-s-3xl;
+        margin-top: tokens.$size-application-spacing-s-3xl;
+        margin-bottom: tokens.$size-application-spacing-s-3xl;
     }
 
     .pa-3xs {
-        padding: tokens.$size-application-platform-spacing-s-3xs;
+        padding: tokens.$size-application-spacing-s-3xs;
     }
 
     .pa-xxs {
-        padding: tokens.$size-application-platform-spacing-s-xxs;
+        padding: tokens.$size-application-spacing-s-xxs;
     }
 
     .pa-xs {
-        padding: tokens.$size-application-platform-spacing-s-xs;
+        padding: tokens.$size-application-spacing-s-xs;
     }
 
     .pa-s {
-        padding: tokens.$size-application-platform-spacing-s-s;
+        padding: tokens.$size-application-spacing-s-s;
     }
 
     .pa-m {
-        padding: tokens.$size-application-platform-spacing-s-m;
+        padding: tokens.$size-application-spacing-s-m;
     }
 
     .pa-l {
-        padding: tokens.$size-application-platform-spacing-s-l;
+        padding: tokens.$size-application-spacing-s-l;
     }
 
     .pa-xl {
-        padding: tokens.$size-application-platform-spacing-s-xl;
+        padding: tokens.$size-application-spacing-s-xl;
     }
 
     .pa-xxl {
-        padding: tokens.$size-application-platform-spacing-s-xxl;
+        padding: tokens.$size-application-spacing-s-xxl;
     }
 
     .pa-3xl {
-        padding: tokens.$size-application-platform-spacing-s-3xl;
+        padding: tokens.$size-application-spacing-s-3xl;
     }
 
     .pt-3xs {
-        padding-top: tokens.$size-application-platform-spacing-s-3xs;
+        padding-top: tokens.$size-application-spacing-s-3xs;
     }
 
     .pt-xxs {
-        padding-top: tokens.$size-application-platform-spacing-s-xxs;
+        padding-top: tokens.$size-application-spacing-s-xxs;
     }
 
     .pt-xs {
-        padding-top: tokens.$size-application-platform-spacing-s-xs;
+        padding-top: tokens.$size-application-spacing-s-xs;
     }
 
     .pt-s {
-        padding-top: tokens.$size-application-platform-spacing-s-s;
+        padding-top: tokens.$size-application-spacing-s-s;
     }
 
     .pt-m {
-        padding-top: tokens.$size-application-platform-spacing-s-m;
+        padding-top: tokens.$size-application-spacing-s-m;
     }
 
     .pt-l {
-        padding-top: tokens.$size-application-platform-spacing-s-l;
+        padding-top: tokens.$size-application-spacing-s-l;
     }
 
     .pt-xl {
-        padding-top: tokens.$size-application-platform-spacing-s-xl;
+        padding-top: tokens.$size-application-spacing-s-xl;
     }
 
     .pt-xxl {
-        padding-top: tokens.$size-application-platform-spacing-s-xxl;
+        padding-top: tokens.$size-application-spacing-s-xxl;
     }
 
     .pt-3xl {
-        padding-top: tokens.$size-application-platform-spacing-s-3xl;
+        padding-top: tokens.$size-application-spacing-s-3xl;
     }
 
     .pb-3xs {
-        padding-bottom: tokens.$size-application-platform-spacing-s-3xs;
+        padding-bottom: tokens.$size-application-spacing-s-3xs;
     }
 
     .pb-xxs {
-        padding-bottom: tokens.$size-application-platform-spacing-s-xxs;
+        padding-bottom: tokens.$size-application-spacing-s-xxs;
     }
 
     .pb-xs {
-        padding-bottom: tokens.$size-application-platform-spacing-s-xs;
+        padding-bottom: tokens.$size-application-spacing-s-xs;
     }
 
     .pb-s {
-        padding-bottom: tokens.$size-application-platform-spacing-s-s;
+        padding-bottom: tokens.$size-application-spacing-s-s;
     }
 
     .pb-m {
-        padding-bottom: tokens.$size-application-platform-spacing-s-m;
+        padding-bottom: tokens.$size-application-spacing-s-m;
     }
 
     .pb-l {
-        padding-bottom: tokens.$size-application-platform-spacing-s-l;
+        padding-bottom: tokens.$size-application-spacing-s-l;
     }
 
     .pb-xl {
-        padding-bottom: tokens.$size-application-platform-spacing-s-xl;
+        padding-bottom: tokens.$size-application-spacing-s-xl;
     }
 
     .pb-xxl {
-        padding-bottom: tokens.$size-application-platform-spacing-s-xxl;
+        padding-bottom: tokens.$size-application-spacing-s-xxl;
     }
 
     .pb-3xl {
-        padding-bottom: tokens.$size-application-platform-spacing-s-3xl;
+        padding-bottom: tokens.$size-application-spacing-s-3xl;
     }
 
     .pl-3xs {
-        padding-left: tokens.$size-application-platform-spacing-s-3xs;
+        padding-left: tokens.$size-application-spacing-s-3xs;
     }
 
     .pl-xxs {
-        padding-left: tokens.$size-application-platform-spacing-s-xxs;
+        padding-left: tokens.$size-application-spacing-s-xxs;
     }
 
     .pl-xs {
-        padding-left: tokens.$size-application-platform-spacing-s-xs;
+        padding-left: tokens.$size-application-spacing-s-xs;
     }
 
     .pl-s {
-        padding-left: tokens.$size-application-platform-spacing-s-s;
+        padding-left: tokens.$size-application-spacing-s-s;
     }
 
     .pl-m {
-        padding-left: tokens.$size-application-platform-spacing-s-m;
+        padding-left: tokens.$size-application-spacing-s-m;
     }
 
     .pl-l {
-        padding-left: tokens.$size-application-platform-spacing-s-l;
+        padding-left: tokens.$size-application-spacing-s-l;
     }
 
     .pl-xl {
-        padding-left: tokens.$size-application-platform-spacing-s-xl;
+        padding-left: tokens.$size-application-spacing-s-xl;
     }
 
     .pl-xxl {
-        padding-left: tokens.$size-application-platform-spacing-s-xxl;
+        padding-left: tokens.$size-application-spacing-s-xxl;
     }
 
     .pl-3xl {
-        padding-left: tokens.$size-application-platform-spacing-s-3xl;
+        padding-left: tokens.$size-application-spacing-s-3xl;
     }
 
     .pr-3xs {
-        padding-right: tokens.$size-application-platform-spacing-s-3xs;
+        padding-right: tokens.$size-application-spacing-s-3xs;
     }
 
     .pr-xxs {
-        padding-right: tokens.$size-application-platform-spacing-s-xxs;
+        padding-right: tokens.$size-application-spacing-s-xxs;
     }
 
     .pr-xs {
-        padding-right: tokens.$size-application-platform-spacing-s-xs;
+        padding-right: tokens.$size-application-spacing-s-xs;
     }
 
     .pr-s {
-        padding-right: tokens.$size-application-platform-spacing-s-s;
+        padding-right: tokens.$size-application-spacing-s-s;
     }
 
     .pr-m {
-        padding-right: tokens.$size-application-platform-spacing-s-m;
+        padding-right: tokens.$size-application-spacing-s-m;
     }
 
     .pr-l {
-        padding-right: tokens.$size-application-platform-spacing-s-l;
+        padding-right: tokens.$size-application-spacing-s-l;
     }
 
     .pr-xl {
-        padding-right: tokens.$size-application-platform-spacing-s-xl;
+        padding-right: tokens.$size-application-spacing-s-xl;
     }
 
     .pr-xxl {
-        padding-right: tokens.$size-application-platform-spacing-s-xxl;
+        padding-right: tokens.$size-application-spacing-s-xxl;
     }
 
     .pr-3xl {
-        padding-right: tokens.$size-application-platform-spacing-s-3xl;
+        padding-right: tokens.$size-application-spacing-s-3xl;
     }
 
     .px-3xs {
-        padding-right: tokens.$size-application-platform-spacing-s-3xs;
-        padding-left: tokens.$size-application-platform-spacing-s-3xs;
+        padding-right: tokens.$size-application-spacing-s-3xs;
+        padding-left: tokens.$size-application-spacing-s-3xs;
     }
 
     .px-xxs {
-        padding-right: tokens.$size-application-platform-spacing-s-xxs;
-        padding-left: tokens.$size-application-platform-spacing-s-xxs;
+        padding-right: tokens.$size-application-spacing-s-xxs;
+        padding-left: tokens.$size-application-spacing-s-xxs;
     }
 
     .px-xs {
-        padding-right: tokens.$size-application-platform-spacing-s-xs;
-        padding-left: tokens.$size-application-platform-spacing-s-xs;
+        padding-right: tokens.$size-application-spacing-s-xs;
+        padding-left: tokens.$size-application-spacing-s-xs;
     }
 
     .px-s {
-        padding-right: tokens.$size-application-platform-spacing-s-s;
-        padding-left: tokens.$size-application-platform-spacing-s-s;
+        padding-right: tokens.$size-application-spacing-s-s;
+        padding-left: tokens.$size-application-spacing-s-s;
     }
 
     .px-m {
-        padding-right: tokens.$size-application-platform-spacing-s-m;
-        padding-left: tokens.$size-application-platform-spacing-s-m;
+        padding-right: tokens.$size-application-spacing-s-m;
+        padding-left: tokens.$size-application-spacing-s-m;
     }
 
     .px-l {
-        padding-right: tokens.$size-application-platform-spacing-s-l;
-        padding-left: tokens.$size-application-platform-spacing-s-l;
+        padding-right: tokens.$size-application-spacing-s-l;
+        padding-left: tokens.$size-application-spacing-s-l;
     }
 
     .px-xl {
-        padding-right: tokens.$size-application-platform-spacing-s-xl;
-        padding-left: tokens.$size-application-platform-spacing-s-xl;
+        padding-right: tokens.$size-application-spacing-s-xl;
+        padding-left: tokens.$size-application-spacing-s-xl;
     }
 
     .px-xxl {
-        padding-right: tokens.$size-application-platform-spacing-s-xxl;
-        padding-left: tokens.$size-application-platform-spacing-s-xxl;
+        padding-right: tokens.$size-application-spacing-s-xxl;
+        padding-left: tokens.$size-application-spacing-s-xxl;
     }
 
     .px-3xl {
-        padding-right: tokens.$size-application-platform-spacing-s-3xl;
-        padding-left: tokens.$size-application-platform-spacing-s-3xl;
+        padding-right: tokens.$size-application-spacing-s-3xl;
+        padding-left: tokens.$size-application-spacing-s-3xl;
     }
 
     .py-3xs {
-        padding-top: tokens.$size-application-platform-spacing-s-3xs;
-        padding-bottom: tokens.$size-application-platform-spacing-s-3xs;
+        padding-top: tokens.$size-application-spacing-s-3xs;
+        padding-bottom: tokens.$size-application-spacing-s-3xs;
     }
 
     .py-xxs {
-        padding-top: tokens.$size-application-platform-spacing-s-xxs;
-        padding-bottom: tokens.$size-application-platform-spacing-s-xxs;
+        padding-top: tokens.$size-application-spacing-s-xxs;
+        padding-bottom: tokens.$size-application-spacing-s-xxs;
     }
 
     .py-xs {
-        padding-top: tokens.$size-application-platform-spacing-s-xs;
-        padding-bottom: tokens.$size-application-platform-spacing-s-xs;
+        padding-top: tokens.$size-application-spacing-s-xs;
+        padding-bottom: tokens.$size-application-spacing-s-xs;
     }
 
     .py-s {
-        padding-top: tokens.$size-application-platform-spacing-s-s;
-        padding-bottom: tokens.$size-application-platform-spacing-s-s;
+        padding-top: tokens.$size-application-spacing-s-s;
+        padding-bottom: tokens.$size-application-spacing-s-s;
     }
 
     .py-m {
-        padding-top: tokens.$size-application-platform-spacing-s-m;
-        padding-bottom: tokens.$size-application-platform-spacing-s-m;
+        padding-top: tokens.$size-application-spacing-s-m;
+        padding-bottom: tokens.$size-application-spacing-s-m;
     }
 
     .py-l {
-        padding-top: tokens.$size-application-platform-spacing-s-l;
-        padding-bottom: tokens.$size-application-platform-spacing-s-l;
+        padding-top: tokens.$size-application-spacing-s-l;
+        padding-bottom: tokens.$size-application-spacing-s-l;
     }
 
     .py-xl {
-        padding-top: tokens.$size-application-platform-spacing-s-xl;
-        padding-bottom: tokens.$size-application-platform-spacing-s-xl;
+        padding-top: tokens.$size-application-spacing-s-xl;
+        padding-bottom: tokens.$size-application-spacing-s-xl;
     }
 
     .py-xxl {
-        padding-top: tokens.$size-application-platform-spacing-s-xxl;
-        padding-bottom: tokens.$size-application-platform-spacing-s-xxl;
+        padding-top: tokens.$size-application-spacing-s-xxl;
+        padding-bottom: tokens.$size-application-spacing-s-xxl;
     }
 
     .py-3xl {
-        padding-top: tokens.$size-application-platform-spacing-s-3xl;
-        padding-bottom: tokens.$size-application-platform-spacing-s-3xl;
+        padding-top: tokens.$size-application-spacing-s-3xl;
+        padding-bottom: tokens.$size-application-spacing-s-3xl;
     }
 }
 
 @media only screen and (min-width: #{map-get($grid-breakpoints, 'md')}) {
 
     .v-main__wrap {
-        max-width: tokens.$layout-application-platform-compact-m-body-max-size;
+        max-width: tokens.$layout-application-compact-m-body-max-size;
         margin: 0 auto;
     }
 
     .fluid {
         .v-main__wrap {
-            max-width: tokens.$layout-application-platform-wide-m-body-max-size;
+            max-width: tokens.$layout-application-wide-m-body-max-size;
             padding-left: 0;
             padding-right: 0;
             margin-right: auto;
@@ -1550,7 +1550,7 @@ samp {
     }
 
     .row {
-        margin: - tokens.$layout-application-platform-compact-m-gutter-size / 2;
+        margin: - tokens.$layout-application-compact-m-gutter-size / 2;
     }
 
     .col-xl,
@@ -1623,560 +1623,560 @@ samp {
     .col-3,
     .col-2,
     .col-1 {
-        padding: tokens.$layout-application-platform-compact-m-gutter-size / 2;
+        padding: tokens.$layout-application-compact-m-gutter-size / 2;
     }
 
     .ma-3xs {
-        margin: tokens.$size-application-platform-spacing-m-3xs;
+        margin: tokens.$size-application-spacing-m-3xs;
     }
 
     .ma-xxs {
-        margin: tokens.$size-application-platform-spacing-m-xxs;
+        margin: tokens.$size-application-spacing-m-xxs;
     }
 
     .ma-xs {
-        margin: tokens.$size-application-platform-spacing-m-xs;
+        margin: tokens.$size-application-spacing-m-xs;
     }
 
     .ma-s {
-        margin: tokens.$size-application-platform-spacing-m-s;
+        margin: tokens.$size-application-spacing-m-s;
     }
 
     .ma-m {
-        margin: tokens.$size-application-platform-spacing-m-m;
+        margin: tokens.$size-application-spacing-m-m;
     }
 
     .ma-l {
-        margin: tokens.$size-application-platform-spacing-m-l;
+        margin: tokens.$size-application-spacing-m-l;
     }
 
     .ma-xl {
-        margin: tokens.$size-application-platform-spacing-m-xl;
+        margin: tokens.$size-application-spacing-m-xl;
     }
 
     .ma-xxl {
-        margin: tokens.$size-application-platform-spacing-m-xxl;
+        margin: tokens.$size-application-spacing-m-xxl;
     }
 
     .ma-3xl {
-        margin: tokens.$size-application-platform-spacing-m-3xl;
+        margin: tokens.$size-application-spacing-m-3xl;
     }
 
     .mt-3xs {
-        margin-top: tokens.$size-application-platform-spacing-m-3xs;
+        margin-top: tokens.$size-application-spacing-m-3xs;
     }
 
     .mt-xxs {
-        margin-top: tokens.$size-application-platform-spacing-m-xxs;
+        margin-top: tokens.$size-application-spacing-m-xxs;
     }
 
     .mt-xs {
-        margin-top: tokens.$size-application-platform-spacing-m-xs;
+        margin-top: tokens.$size-application-spacing-m-xs;
     }
 
     .mt-s {
-        margin-top: tokens.$size-application-platform-spacing-m-s;
+        margin-top: tokens.$size-application-spacing-m-s;
     }
 
     .mt-m {
-        margin-top: tokens.$size-application-platform-spacing-m-m;
+        margin-top: tokens.$size-application-spacing-m-m;
     }
 
     .mt-l {
-        margin-top: tokens.$size-application-platform-spacing-m-l;
+        margin-top: tokens.$size-application-spacing-m-l;
     }
 
     .mt-xl {
-        margin-top: tokens.$size-application-platform-spacing-m-xl;
+        margin-top: tokens.$size-application-spacing-m-xl;
     }
 
     .mt-xxl {
-        margin-top: tokens.$size-application-platform-spacing-m-xxl;
+        margin-top: tokens.$size-application-spacing-m-xxl;
     }
 
     .mt-3xl {
-        margin-top: tokens.$size-application-platform-spacing-m-3xl;
+        margin-top: tokens.$size-application-spacing-m-3xl;
     }
 
     .mb-3xs {
-        margin-bottom: tokens.$size-application-platform-spacing-m-3xs;
+        margin-bottom: tokens.$size-application-spacing-m-3xs;
     }
 
     .mb-xxs {
-        margin-bottom: tokens.$size-application-platform-spacing-m-xxs;
+        margin-bottom: tokens.$size-application-spacing-m-xxs;
     }
 
     .mb-xs {
-        margin-bottom: tokens.$size-application-platform-spacing-m-xs;
+        margin-bottom: tokens.$size-application-spacing-m-xs;
     }
 
     .mb-s {
-        margin-bottom: tokens.$size-application-platform-spacing-m-s;
+        margin-bottom: tokens.$size-application-spacing-m-s;
     }
 
     .mb-m {
-        margin-bottom: tokens.$size-application-platform-spacing-m-m;
+        margin-bottom: tokens.$size-application-spacing-m-m;
     }
 
     .mb-l {
-        margin-bottom: tokens.$size-application-platform-spacing-m-l;
+        margin-bottom: tokens.$size-application-spacing-m-l;
     }
 
     .mb-xl {
-        margin-bottom: tokens.$size-application-platform-spacing-m-xl;
+        margin-bottom: tokens.$size-application-spacing-m-xl;
     }
 
     .mb-xxl {
-        margin-bottom: tokens.$size-application-platform-spacing-m-xxl;
+        margin-bottom: tokens.$size-application-spacing-m-xxl;
     }
 
     .mb-3xl {
-        margin-bottom: tokens.$size-application-platform-spacing-m-3xl;
+        margin-bottom: tokens.$size-application-spacing-m-3xl;
     }
 
     .ml-3xs {
-        margin-left: tokens.$size-application-platform-spacing-m-3xs;
+        margin-left: tokens.$size-application-spacing-m-3xs;
     }
 
     .ml-xxs {
-        margin-left: tokens.$size-application-platform-spacing-m-xxs;
+        margin-left: tokens.$size-application-spacing-m-xxs;
     }
 
     .ml-xs {
-        margin-left: tokens.$size-application-platform-spacing-m-xs;
+        margin-left: tokens.$size-application-spacing-m-xs;
     }
 
     .ml-s {
-        margin-left: tokens.$size-application-platform-spacing-m-s;
+        margin-left: tokens.$size-application-spacing-m-s;
     }
 
     .ml-m {
-        margin-left: tokens.$size-application-platform-spacing-m-m;
+        margin-left: tokens.$size-application-spacing-m-m;
     }
 
     .ml-l {
-        margin-left: tokens.$size-application-platform-spacing-m-l;
+        margin-left: tokens.$size-application-spacing-m-l;
     }
 
     .ml-xl {
-        margin-left: tokens.$size-application-platform-spacing-m-xl;
+        margin-left: tokens.$size-application-spacing-m-xl;
     }
 
     .ml-xxl {
-        margin-left: tokens.$size-application-platform-spacing-m-xxl;
+        margin-left: tokens.$size-application-spacing-m-xxl;
     }
 
     .ml-3xl {
-        margin-left: tokens.$size-application-platform-spacing-m-3xl;
+        margin-left: tokens.$size-application-spacing-m-3xl;
     }
 
     .mr-3xs {
-        margin-right: tokens.$size-application-platform-spacing-m-3xs;
+        margin-right: tokens.$size-application-spacing-m-3xs;
     }
 
     .mr-xxs {
-        margin-right: tokens.$size-application-platform-spacing-m-xxs;
+        margin-right: tokens.$size-application-spacing-m-xxs;
     }
 
     .mr-xs {
-        margin-right: tokens.$size-application-platform-spacing-m-xs;
+        margin-right: tokens.$size-application-spacing-m-xs;
     }
 
     .mr-s {
-        margin-right: tokens.$size-application-platform-spacing-m-s;
+        margin-right: tokens.$size-application-spacing-m-s;
     }
 
     .mr-m {
-        margin-right: tokens.$size-application-platform-spacing-m-m;
+        margin-right: tokens.$size-application-spacing-m-m;
     }
 
     .mr-l {
-        margin-right: tokens.$size-application-platform-spacing-m-l;
+        margin-right: tokens.$size-application-spacing-m-l;
     }
 
     .mr-xl {
-        margin-right: tokens.$size-application-platform-spacing-m-xl;
+        margin-right: tokens.$size-application-spacing-m-xl;
     }
 
     .mr-xxl {
-        margin-right: tokens.$size-application-platform-spacing-m-xxl;
+        margin-right: tokens.$size-application-spacing-m-xxl;
     }
 
     .mr-3xl {
-        margin-right: tokens.$size-application-platform-spacing-m-3xl;
+        margin-right: tokens.$size-application-spacing-m-3xl;
     }
 
     .mx-3xs {
-        margin-right: tokens.$size-application-platform-spacing-m-3xs;
-        margin-left: tokens.$size-application-platform-spacing-m-3xs;
+        margin-right: tokens.$size-application-spacing-m-3xs;
+        margin-left: tokens.$size-application-spacing-m-3xs;
     }
 
     .mx-xxs {
-        margin-right: tokens.$size-application-platform-spacing-m-xxs;
-        margin-left: tokens.$size-application-platform-spacing-m-xxs;
+        margin-right: tokens.$size-application-spacing-m-xxs;
+        margin-left: tokens.$size-application-spacing-m-xxs;
     }
 
     .mx-xs {
-        margin-right: tokens.$size-application-platform-spacing-m-xs;
-        margin-left: tokens.$size-application-platform-spacing-m-xs;
+        margin-right: tokens.$size-application-spacing-m-xs;
+        margin-left: tokens.$size-application-spacing-m-xs;
     }
 
     .mx-s {
-        margin-right: tokens.$size-application-platform-spacing-m-s;
-        margin-left: tokens.$size-application-platform-spacing-m-s;
+        margin-right: tokens.$size-application-spacing-m-s;
+        margin-left: tokens.$size-application-spacing-m-s;
     }
 
     .mx-m {
-        margin-right: tokens.$size-application-platform-spacing-m-m;
-        margin-left: tokens.$size-application-platform-spacing-m-m;
+        margin-right: tokens.$size-application-spacing-m-m;
+        margin-left: tokens.$size-application-spacing-m-m;
     }
 
     .mx-l {
-        margin-right: tokens.$size-application-platform-spacing-m-l;
-        margin-left: tokens.$size-application-platform-spacing-m-l;
+        margin-right: tokens.$size-application-spacing-m-l;
+        margin-left: tokens.$size-application-spacing-m-l;
     }
 
     .mx-xl {
-        margin-right: tokens.$size-application-platform-spacing-m-xl;
-        margin-left: tokens.$size-application-platform-spacing-m-xl;
+        margin-right: tokens.$size-application-spacing-m-xl;
+        margin-left: tokens.$size-application-spacing-m-xl;
     }
 
     .mx-xxl {
-        margin-right: tokens.$size-application-platform-spacing-m-xxl;
-        margin-left: tokens.$size-application-platform-spacing-m-xxl;
+        margin-right: tokens.$size-application-spacing-m-xxl;
+        margin-left: tokens.$size-application-spacing-m-xxl;
     }
 
     .mx-3xl {
-        margin-right: tokens.$size-application-platform-spacing-m-3xl;
-        margin-left: tokens.$size-application-platform-spacing-m-3xl;
+        margin-right: tokens.$size-application-spacing-m-3xl;
+        margin-left: tokens.$size-application-spacing-m-3xl;
     }
 
     .my-3xs {
-        margin-top: tokens.$size-application-platform-spacing-m-3xs;
-        margin-bottom: tokens.$size-application-platform-spacing-m-3xs;
+        margin-top: tokens.$size-application-spacing-m-3xs;
+        margin-bottom: tokens.$size-application-spacing-m-3xs;
     }
 
     .my-xxs {
-        margin-top: tokens.$size-application-platform-spacing-m-xxs;
-        margin-bottom: tokens.$size-application-platform-spacing-m-xxs;
+        margin-top: tokens.$size-application-spacing-m-xxs;
+        margin-bottom: tokens.$size-application-spacing-m-xxs;
     }
 
     .my-xs {
-        margin-top: tokens.$size-application-platform-spacing-m-xs;
-        margin-bottom: tokens.$size-application-platform-spacing-m-xs;
+        margin-top: tokens.$size-application-spacing-m-xs;
+        margin-bottom: tokens.$size-application-spacing-m-xs;
     }
 
     .my-s {
-        margin-top: tokens.$size-application-platform-spacing-m-s;
-        margin-bottom: tokens.$size-application-platform-spacing-m-s;
+        margin-top: tokens.$size-application-spacing-m-s;
+        margin-bottom: tokens.$size-application-spacing-m-s;
     }
 
     .my-m {
-        margin-top: tokens.$size-application-platform-spacing-m-m;
-        margin-bottom: tokens.$size-application-platform-spacing-m-m;
+        margin-top: tokens.$size-application-spacing-m-m;
+        margin-bottom: tokens.$size-application-spacing-m-m;
     }
 
     .my-l {
-        margin-top: tokens.$size-application-platform-spacing-m-l;
-        margin-bottom: tokens.$size-application-platform-spacing-m-l;
+        margin-top: tokens.$size-application-spacing-m-l;
+        margin-bottom: tokens.$size-application-spacing-m-l;
     }
 
     .my-xl {
-        margin-top: tokens.$size-application-platform-spacing-m-xl;
-        margin-bottom: tokens.$size-application-platform-spacing-m-xl;
+        margin-top: tokens.$size-application-spacing-m-xl;
+        margin-bottom: tokens.$size-application-spacing-m-xl;
     }
 
     .my-xxl {
-        margin-top: tokens.$size-application-platform-spacing-m-xxl;
-        margin-bottom: tokens.$size-application-platform-spacing-m-xxl;
+        margin-top: tokens.$size-application-spacing-m-xxl;
+        margin-bottom: tokens.$size-application-spacing-m-xxl;
     }
 
     .my-3xl {
-        margin-top: tokens.$size-application-platform-spacing-m-3xl;
-        margin-bottom: tokens.$size-application-platform-spacing-m-3xl;
+        margin-top: tokens.$size-application-spacing-m-3xl;
+        margin-bottom: tokens.$size-application-spacing-m-3xl;
     }
 
     .pa-3xs {
-        padding: tokens.$size-application-platform-spacing-m-3xs;
+        padding: tokens.$size-application-spacing-m-3xs;
     }
 
     .pa-xxs {
-        padding: tokens.$size-application-platform-spacing-m-xxs;
+        padding: tokens.$size-application-spacing-m-xxs;
     }
 
     .pa-xs {
-        padding: tokens.$size-application-platform-spacing-m-xs;
+        padding: tokens.$size-application-spacing-m-xs;
     }
 
     .pa-s {
-        padding: tokens.$size-application-platform-spacing-m-s;
+        padding: tokens.$size-application-spacing-m-s;
     }
 
     .pa-m {
-        padding: tokens.$size-application-platform-spacing-m-m;
+        padding: tokens.$size-application-spacing-m-m;
     }
 
     .pa-l {
-        padding: tokens.$size-application-platform-spacing-m-l;
+        padding: tokens.$size-application-spacing-m-l;
     }
 
     .pa-xl {
-        padding: tokens.$size-application-platform-spacing-m-xl;
+        padding: tokens.$size-application-spacing-m-xl;
     }
 
     .pa-xxl {
-        padding: tokens.$size-application-platform-spacing-m-xxl;
+        padding: tokens.$size-application-spacing-m-xxl;
     }
 
     .pa-3xl {
-        padding: tokens.$size-application-platform-spacing-m-3xl;
+        padding: tokens.$size-application-spacing-m-3xl;
     }
 
     .pt-3xs {
-        padding-top: tokens.$size-application-platform-spacing-m-3xs;
+        padding-top: tokens.$size-application-spacing-m-3xs;
     }
 
     .pt-xxs {
-        padding-top: tokens.$size-application-platform-spacing-m-xxs;
+        padding-top: tokens.$size-application-spacing-m-xxs;
     }
 
     .pt-xs {
-        padding-top: tokens.$size-application-platform-spacing-m-xs;
+        padding-top: tokens.$size-application-spacing-m-xs;
     }
 
     .pt-s {
-        padding-top: tokens.$size-application-platform-spacing-m-s;
+        padding-top: tokens.$size-application-spacing-m-s;
     }
 
     .pt-m {
-        padding-top: tokens.$size-application-platform-spacing-m-m;
+        padding-top: tokens.$size-application-spacing-m-m;
     }
 
     .pt-l {
-        padding-top: tokens.$size-application-platform-spacing-m-l;
+        padding-top: tokens.$size-application-spacing-m-l;
     }
 
     .pt-xl {
-        padding-top: tokens.$size-application-platform-spacing-m-xl;
+        padding-top: tokens.$size-application-spacing-m-xl;
     }
 
     .pt-xxl {
-        padding-top: tokens.$size-application-platform-spacing-m-xxl;
+        padding-top: tokens.$size-application-spacing-m-xxl;
     }
 
     .pt-3xl {
-        padding-top: tokens.$size-application-platform-spacing-m-3xl;
+        padding-top: tokens.$size-application-spacing-m-3xl;
     }
 
     .pb-3xs {
-        padding-bottom: tokens.$size-application-platform-spacing-m-3xs;
+        padding-bottom: tokens.$size-application-spacing-m-3xs;
     }
 
     .pb-xxs {
-        padding-bottom: tokens.$size-application-platform-spacing-m-xxs;
+        padding-bottom: tokens.$size-application-spacing-m-xxs;
     }
 
     .pb-xs {
-        padding-bottom: tokens.$size-application-platform-spacing-m-xs;
+        padding-bottom: tokens.$size-application-spacing-m-xs;
     }
 
     .pb-s {
-        padding-bottom: tokens.$size-application-platform-spacing-m-s;
+        padding-bottom: tokens.$size-application-spacing-m-s;
     }
 
     .pb-m {
-        padding-bottom: tokens.$size-application-platform-spacing-m-m;
+        padding-bottom: tokens.$size-application-spacing-m-m;
     }
 
     .pb-l {
-        padding-bottom: tokens.$size-application-platform-spacing-m-l;
+        padding-bottom: tokens.$size-application-spacing-m-l;
     }
 
     .pb-xl {
-        padding-bottom: tokens.$size-application-platform-spacing-m-xl;
+        padding-bottom: tokens.$size-application-spacing-m-xl;
     }
 
     .pb-xxl {
-        padding-bottom: tokens.$size-application-platform-spacing-m-xxl;
+        padding-bottom: tokens.$size-application-spacing-m-xxl;
     }
 
     .pb-3xl {
-        padding-bottom: tokens.$size-application-platform-spacing-m-3xl;
+        padding-bottom: tokens.$size-application-spacing-m-3xl;
     }
 
     .pl-3xs {
-        padding-left: tokens.$size-application-platform-spacing-m-3xs;
+        padding-left: tokens.$size-application-spacing-m-3xs;
     }
 
     .pl-xxs {
-        padding-left: tokens.$size-application-platform-spacing-m-xxs;
+        padding-left: tokens.$size-application-spacing-m-xxs;
     }
 
     .pl-xs {
-        padding-left: tokens.$size-application-platform-spacing-m-xs;
+        padding-left: tokens.$size-application-spacing-m-xs;
     }
 
     .pl-s {
-        padding-left: tokens.$size-application-platform-spacing-m-s;
+        padding-left: tokens.$size-application-spacing-m-s;
     }
 
     .pl-m {
-        padding-left: tokens.$size-application-platform-spacing-m-m;
+        padding-left: tokens.$size-application-spacing-m-m;
     }
 
     .pl-l {
-        padding-left: tokens.$size-application-platform-spacing-m-l;
+        padding-left: tokens.$size-application-spacing-m-l;
     }
 
     .pl-xl {
-        padding-left: tokens.$size-application-platform-spacing-m-xl;
+        padding-left: tokens.$size-application-spacing-m-xl;
     }
 
     .pl-xxl {
-        padding-left: tokens.$size-application-platform-spacing-m-xxl;
+        padding-left: tokens.$size-application-spacing-m-xxl;
     }
 
     .pl-3xl {
-        padding-left: tokens.$size-application-platform-spacing-m-3xl;
+        padding-left: tokens.$size-application-spacing-m-3xl;
     }
 
     .pr-3xs {
-        padding-right: tokens.$size-application-platform-spacing-m-3xs;
+        padding-right: tokens.$size-application-spacing-m-3xs;
     }
 
     .pr-xxs {
-        padding-right: tokens.$size-application-platform-spacing-m-xxs;
+        padding-right: tokens.$size-application-spacing-m-xxs;
     }
 
     .pr-xs {
-        padding-right: tokens.$size-application-platform-spacing-m-xs;
+        padding-right: tokens.$size-application-spacing-m-xs;
     }
 
     .pr-s {
-        padding-right: tokens.$size-application-platform-spacing-m-s;
+        padding-right: tokens.$size-application-spacing-m-s;
     }
 
     .pr-m {
-        padding-right: tokens.$size-application-platform-spacing-m-m;
+        padding-right: tokens.$size-application-spacing-m-m;
     }
 
     .pr-l {
-        padding-right: tokens.$size-application-platform-spacing-m-l;
+        padding-right: tokens.$size-application-spacing-m-l;
     }
 
     .pr-xl {
-        padding-right: tokens.$size-application-platform-spacing-m-xl;
+        padding-right: tokens.$size-application-spacing-m-xl;
     }
 
     .pr-xxl {
-        padding-right: tokens.$size-application-platform-spacing-m-xxl;
+        padding-right: tokens.$size-application-spacing-m-xxl;
     }
 
     .pr-3xl {
-        padding-right: tokens.$size-application-platform-spacing-m-3xl;
+        padding-right: tokens.$size-application-spacing-m-3xl;
     }
 
     .px-3xs {
-        padding-right: tokens.$size-application-platform-spacing-m-3xs;
-        padding-left: tokens.$size-application-platform-spacing-m-3xs;
+        padding-right: tokens.$size-application-spacing-m-3xs;
+        padding-left: tokens.$size-application-spacing-m-3xs;
     }
 
     .px-xxs {
-        padding-right: tokens.$size-application-platform-spacing-m-xxs;
-        padding-left: tokens.$size-application-platform-spacing-m-xxs;
+        padding-right: tokens.$size-application-spacing-m-xxs;
+        padding-left: tokens.$size-application-spacing-m-xxs;
     }
 
     .px-xs {
-        padding-right: tokens.$size-application-platform-spacing-m-xs;
-        padding-left: tokens.$size-application-platform-spacing-m-xs;
+        padding-right: tokens.$size-application-spacing-m-xs;
+        padding-left: tokens.$size-application-spacing-m-xs;
     }
 
     .px-s {
-        padding-right: tokens.$size-application-platform-spacing-m-s;
-        padding-left: tokens.$size-application-platform-spacing-m-s;
+        padding-right: tokens.$size-application-spacing-m-s;
+        padding-left: tokens.$size-application-spacing-m-s;
     }
 
     .px-m {
-        padding-right: tokens.$size-application-platform-spacing-m-m;
-        padding-left: tokens.$size-application-platform-spacing-m-m;
+        padding-right: tokens.$size-application-spacing-m-m;
+        padding-left: tokens.$size-application-spacing-m-m;
     }
 
     .px-l {
-        padding-right: tokens.$size-application-platform-spacing-m-l;
-        padding-left: tokens.$size-application-platform-spacing-m-l;
+        padding-right: tokens.$size-application-spacing-m-l;
+        padding-left: tokens.$size-application-spacing-m-l;
     }
 
     .px-xl {
-        padding-right: tokens.$size-application-platform-spacing-m-xl;
-        padding-left: tokens.$size-application-platform-spacing-m-xl;
+        padding-right: tokens.$size-application-spacing-m-xl;
+        padding-left: tokens.$size-application-spacing-m-xl;
     }
 
     .px-xxl {
-        padding-right: tokens.$size-application-platform-spacing-m-xxl;
-        padding-left: tokens.$size-application-platform-spacing-m-xxl;
+        padding-right: tokens.$size-application-spacing-m-xxl;
+        padding-left: tokens.$size-application-spacing-m-xxl;
     }
 
     .px-3xl {
-        padding-right: tokens.$size-application-platform-spacing-m-3xl;
-        padding-left: tokens.$size-application-platform-spacing-m-3xl;
+        padding-right: tokens.$size-application-spacing-m-3xl;
+        padding-left: tokens.$size-application-spacing-m-3xl;
     }
 
     .py-3xs {
-        padding-top: tokens.$size-application-platform-spacing-m-3xs;
-        padding-bottom: tokens.$size-application-platform-spacing-m-3xs;
+        padding-top: tokens.$size-application-spacing-m-3xs;
+        padding-bottom: tokens.$size-application-spacing-m-3xs;
     }
 
     .py-xxs {
-        padding-top: tokens.$size-application-platform-spacing-m-xxs;
-        padding-bottom: tokens.$size-application-platform-spacing-m-xxs;
+        padding-top: tokens.$size-application-spacing-m-xxs;
+        padding-bottom: tokens.$size-application-spacing-m-xxs;
     }
 
     .py-xs {
-        padding-top: tokens.$size-application-platform-spacing-m-xs;
-        padding-bottom: tokens.$size-application-platform-spacing-m-xs;
+        padding-top: tokens.$size-application-spacing-m-xs;
+        padding-bottom: tokens.$size-application-spacing-m-xs;
     }
 
     .py-s {
-        padding-top: tokens.$size-application-platform-spacing-m-s;
-        padding-bottom: tokens.$size-application-platform-spacing-m-s;
+        padding-top: tokens.$size-application-spacing-m-s;
+        padding-bottom: tokens.$size-application-spacing-m-s;
     }
 
     .py-m {
-        padding-top: tokens.$size-application-platform-spacing-m-m;
-        padding-bottom: tokens.$size-application-platform-spacing-m-m;
+        padding-top: tokens.$size-application-spacing-m-m;
+        padding-bottom: tokens.$size-application-spacing-m-m;
     }
 
     .py-l {
-        padding-top: tokens.$size-application-platform-spacing-m-l;
-        padding-bottom: tokens.$size-application-platform-spacing-m-l;
+        padding-top: tokens.$size-application-spacing-m-l;
+        padding-bottom: tokens.$size-application-spacing-m-l;
     }
 
     .py-xl {
-        padding-top: tokens.$size-application-platform-spacing-m-xl;
-        padding-bottom: tokens.$size-application-platform-spacing-m-xl;
+        padding-top: tokens.$size-application-spacing-m-xl;
+        padding-bottom: tokens.$size-application-spacing-m-xl;
     }
 
     .py-xxl {
-        padding-top: tokens.$size-application-platform-spacing-m-xxl;
-        padding-bottom: tokens.$size-application-platform-spacing-m-xxl;
+        padding-top: tokens.$size-application-spacing-m-xxl;
+        padding-bottom: tokens.$size-application-spacing-m-xxl;
     }
 
     .py-3xl {
-        padding-top: tokens.$size-application-platform-spacing-m-3xl;
-        padding-bottom: tokens.$size-application-platform-spacing-m-3xl;
+        padding-top: tokens.$size-application-spacing-m-3xl;
+        padding-bottom: tokens.$size-application-spacing-m-3xl;
     }
 }
 
 @media only screen and (min-width: #{map-get($grid-breakpoints, 'lg')}) {
 
     .v-main__wrap {
-        max-width: tokens.$layout-application-platform-compact-l-body-max-size;
+        max-width: tokens.$layout-application-compact-l-body-max-size;
         margin: 0 auto;
     }
 
     .fluid {
         .v-main__wrap {
-            max-width: tokens.$layout-application-platform-wide-l-body-max-size;
+            max-width: tokens.$layout-application-wide-l-body-max-size;
             padding-left: 0;
             padding-right: 0;
             margin-right: auto;
@@ -2185,7 +2185,7 @@ samp {
     }
 
     .row {
-        margin: - tokens.$layout-application-platform-compact-l-gutter-size / 2;
+        margin: - tokens.$layout-application-compact-l-gutter-size / 2;
     }
 
     .col-xl,
@@ -2258,7 +2258,7 @@ samp {
     .col-3,
     .col-2,
     .col-1 {
-        padding: tokens.$layout-application-platform-compact-l-gutter-size / 2;
+        padding: tokens.$layout-application-compact-l-gutter-size / 2;
     }
 
     /* 
@@ -2315,556 +2315,556 @@ samp {
     } */
 
     .ma-3xs {
-        margin: tokens.$size-application-platform-spacing-l-3xs;
+        margin: tokens.$size-application-spacing-l-3xs;
     }
 
     .ma-xxs {
-        margin: tokens.$size-application-platform-spacing-l-xxs;
+        margin: tokens.$size-application-spacing-l-xxs;
     }
 
     .ma-xs {
-        margin: tokens.$size-application-platform-spacing-l-xs;
+        margin: tokens.$size-application-spacing-l-xs;
     }
 
     .ma-s {
-        margin: tokens.$size-application-platform-spacing-l-s;
+        margin: tokens.$size-application-spacing-l-s;
     }
 
     .ma-m {
-        margin: tokens.$size-application-platform-spacing-l-m;
+        margin: tokens.$size-application-spacing-l-m;
     }
 
     .ma-l {
-        margin: tokens.$size-application-platform-spacing-l-l;
+        margin: tokens.$size-application-spacing-l-l;
     }
 
     .ma-xl {
-        margin: tokens.$size-application-platform-spacing-l-xl;
+        margin: tokens.$size-application-spacing-l-xl;
     }
 
     .ma-xxl {
-        margin: tokens.$size-application-platform-spacing-l-xxl;
+        margin: tokens.$size-application-spacing-l-xxl;
     }
 
     .ma-3xl {
-        margin: tokens.$size-application-platform-spacing-l-3xl;
+        margin: tokens.$size-application-spacing-l-3xl;
     }
 
     .mt-3xs {
-        margin-top: tokens.$size-application-platform-spacing-l-3xs;
+        margin-top: tokens.$size-application-spacing-l-3xs;
     }
 
     .mt-xxs {
-        margin-top: tokens.$size-application-platform-spacing-l-xxs;
+        margin-top: tokens.$size-application-spacing-l-xxs;
     }
 
     .mt-xs {
-        margin-top: tokens.$size-application-platform-spacing-l-xs;
+        margin-top: tokens.$size-application-spacing-l-xs;
     }
 
     .mt-s {
-        margin-top: tokens.$size-application-platform-spacing-l-s;
+        margin-top: tokens.$size-application-spacing-l-s;
     }
 
     .mt-m {
-        margin-top: tokens.$size-application-platform-spacing-l-m;
+        margin-top: tokens.$size-application-spacing-l-m;
     }
 
     .mt-l {
-        margin-top: tokens.$size-application-platform-spacing-l-l;
+        margin-top: tokens.$size-application-spacing-l-l;
     }
 
     .mt-xl {
-        margin-top: tokens.$size-application-platform-spacing-l-xl;
+        margin-top: tokens.$size-application-spacing-l-xl;
     }
 
     .mt-xxl {
-        margin-top: tokens.$size-application-platform-spacing-l-xxl;
+        margin-top: tokens.$size-application-spacing-l-xxl;
     }
 
     .mt-3xl {
-        margin-top: tokens.$size-application-platform-spacing-l-3xl;
+        margin-top: tokens.$size-application-spacing-l-3xl;
     }
 
     .mb-3xs {
-        margin-bottom: tokens.$size-application-platform-spacing-l-3xs;
+        margin-bottom: tokens.$size-application-spacing-l-3xs;
     }
 
     .mb-xxs {
-        margin-bottom: tokens.$size-application-platform-spacing-l-xxs;
+        margin-bottom: tokens.$size-application-spacing-l-xxs;
     }
 
     .mb-xs {
-        margin-bottom: tokens.$size-application-platform-spacing-l-xs;
+        margin-bottom: tokens.$size-application-spacing-l-xs;
     }
 
     .mb-s {
-        margin-bottom: tokens.$size-application-platform-spacing-l-s;
+        margin-bottom: tokens.$size-application-spacing-l-s;
     }
 
     .mb-m {
-        margin-bottom: tokens.$size-application-platform-spacing-l-m;
+        margin-bottom: tokens.$size-application-spacing-l-m;
     }
 
     .mb-l {
-        margin-bottom: tokens.$size-application-platform-spacing-l-l;
+        margin-bottom: tokens.$size-application-spacing-l-l;
     }
 
     .mb-xl {
-        margin-bottom: tokens.$size-application-platform-spacing-l-xl;
+        margin-bottom: tokens.$size-application-spacing-l-xl;
     }
 
     .mb-xxl {
-        margin-bottom: tokens.$size-application-platform-spacing-l-xxl;
+        margin-bottom: tokens.$size-application-spacing-l-xxl;
     }
 
     .mb-3xl {
-        margin-bottom: tokens.$size-application-platform-spacing-l-3xl;
+        margin-bottom: tokens.$size-application-spacing-l-3xl;
     }
 
     .ml-3xs {
-        margin-left: tokens.$size-application-platform-spacing-l-3xs;
+        margin-left: tokens.$size-application-spacing-l-3xs;
     }
 
     .ml-xxs {
-        margin-left: tokens.$size-application-platform-spacing-l-xxs;
+        margin-left: tokens.$size-application-spacing-l-xxs;
     }
 
     .ml-xs {
-        margin-left: tokens.$size-application-platform-spacing-l-xs;
+        margin-left: tokens.$size-application-spacing-l-xs;
     }
 
     .ml-s {
-        margin-left: tokens.$size-application-platform-spacing-l-s;
+        margin-left: tokens.$size-application-spacing-l-s;
     }
 
     .ml-m {
-        margin-left: tokens.$size-application-platform-spacing-l-m;
+        margin-left: tokens.$size-application-spacing-l-m;
     }
 
     .ml-l {
-        margin-left: tokens.$size-application-platform-spacing-l-l;
+        margin-left: tokens.$size-application-spacing-l-l;
     }
 
     .ml-xl {
-        margin-left: tokens.$size-application-platform-spacing-l-xl;
+        margin-left: tokens.$size-application-spacing-l-xl;
     }
 
     .ml-xxl {
-        margin-left: tokens.$size-application-platform-spacing-l-xxl;
+        margin-left: tokens.$size-application-spacing-l-xxl;
     }
 
     .ml-3xl {
-        margin-left: tokens.$size-application-platform-spacing-l-3xl;
+        margin-left: tokens.$size-application-spacing-l-3xl;
     }
 
     .mr-3xs {
-        margin-right: tokens.$size-application-platform-spacing-l-3xs;
+        margin-right: tokens.$size-application-spacing-l-3xs;
     }
 
     .mr-xxs {
-        margin-right: tokens.$size-application-platform-spacing-l-xxs;
+        margin-right: tokens.$size-application-spacing-l-xxs;
     }
 
     .mr-xs {
-        margin-right: tokens.$size-application-platform-spacing-l-xs;
+        margin-right: tokens.$size-application-spacing-l-xs;
     }
 
     .mr-s {
-        margin-right: tokens.$size-application-platform-spacing-l-s;
+        margin-right: tokens.$size-application-spacing-l-s;
     }
 
     .mr-m {
-        margin-right: tokens.$size-application-platform-spacing-l-m;
+        margin-right: tokens.$size-application-spacing-l-m;
     }
 
     .mr-l {
-        margin-right: tokens.$size-application-platform-spacing-l-l;
+        margin-right: tokens.$size-application-spacing-l-l;
     }
 
     .mr-xl {
-        margin-right: tokens.$size-application-platform-spacing-l-xl;
+        margin-right: tokens.$size-application-spacing-l-xl;
     }
 
     .mr-xxl {
-        margin-right: tokens.$size-application-platform-spacing-l-xxl;
+        margin-right: tokens.$size-application-spacing-l-xxl;
     }
 
     .mr-3xl {
-        margin-right: tokens.$size-application-platform-spacing-l-3xl;
+        margin-right: tokens.$size-application-spacing-l-3xl;
     }
 
     .mx-3xs {
-        margin-right: tokens.$size-application-platform-spacing-l-3xs;
-        margin-left: tokens.$size-application-platform-spacing-l-3xs;
+        margin-right: tokens.$size-application-spacing-l-3xs;
+        margin-left: tokens.$size-application-spacing-l-3xs;
     }
 
     .mx-xxs {
-        margin-right: tokens.$size-application-platform-spacing-l-xxs;
-        margin-left: tokens.$size-application-platform-spacing-l-xxs;
+        margin-right: tokens.$size-application-spacing-l-xxs;
+        margin-left: tokens.$size-application-spacing-l-xxs;
     }
 
     .mx-xs {
-        margin-right: tokens.$size-application-platform-spacing-l-xs;
-        margin-left: tokens.$size-application-platform-spacing-l-xs;
+        margin-right: tokens.$size-application-spacing-l-xs;
+        margin-left: tokens.$size-application-spacing-l-xs;
     }
 
     .mx-s {
-        margin-right: tokens.$size-application-platform-spacing-l-s;
-        margin-left: tokens.$size-application-platform-spacing-l-s;
+        margin-right: tokens.$size-application-spacing-l-s;
+        margin-left: tokens.$size-application-spacing-l-s;
     }
 
     .mx-m {
-        margin-right: tokens.$size-application-platform-spacing-l-m;
-        margin-left: tokens.$size-application-platform-spacing-l-m;
+        margin-right: tokens.$size-application-spacing-l-m;
+        margin-left: tokens.$size-application-spacing-l-m;
     }
 
     .mx-l {
-        margin-right: tokens.$size-application-platform-spacing-l-l;
-        margin-left: tokens.$size-application-platform-spacing-l-l;
+        margin-right: tokens.$size-application-spacing-l-l;
+        margin-left: tokens.$size-application-spacing-l-l;
     }
 
     .mx-xl {
-        margin-right: tokens.$size-application-platform-spacing-l-xl;
-        margin-left: tokens.$size-application-platform-spacing-l-xl;
+        margin-right: tokens.$size-application-spacing-l-xl;
+        margin-left: tokens.$size-application-spacing-l-xl;
     }
 
     .mx-xxl {
-        margin-right: tokens.$size-application-platform-spacing-l-xxl;
-        margin-left: tokens.$size-application-platform-spacing-l-xxl;
+        margin-right: tokens.$size-application-spacing-l-xxl;
+        margin-left: tokens.$size-application-spacing-l-xxl;
     }
 
     .mx-3xl {
-        margin-right: tokens.$size-application-platform-spacing-l-3xl;
-        margin-left: tokens.$size-application-platform-spacing-l-3xl;
+        margin-right: tokens.$size-application-spacing-l-3xl;
+        margin-left: tokens.$size-application-spacing-l-3xl;
     }
 
     .my-3xs {
-        margin-top: tokens.$size-application-platform-spacing-l-3xs;
-        margin-bottom: tokens.$size-application-platform-spacing-l-3xs;
+        margin-top: tokens.$size-application-spacing-l-3xs;
+        margin-bottom: tokens.$size-application-spacing-l-3xs;
     }
 
     .my-xxs {
-        margin-top: tokens.$size-application-platform-spacing-l-xxs;
-        margin-bottom: tokens.$size-application-platform-spacing-l-xxs;
+        margin-top: tokens.$size-application-spacing-l-xxs;
+        margin-bottom: tokens.$size-application-spacing-l-xxs;
     }
 
     .my-xs {
-        margin-top: tokens.$size-application-platform-spacing-l-xs;
-        margin-bottom: tokens.$size-application-platform-spacing-l-xs;
+        margin-top: tokens.$size-application-spacing-l-xs;
+        margin-bottom: tokens.$size-application-spacing-l-xs;
     }
 
     .my-s {
-        margin-top: tokens.$size-application-platform-spacing-l-s;
-        margin-bottom: tokens.$size-application-platform-spacing-l-s;
+        margin-top: tokens.$size-application-spacing-l-s;
+        margin-bottom: tokens.$size-application-spacing-l-s;
     }
 
     .my-m {
-        margin-top: tokens.$size-application-platform-spacing-l-m;
-        margin-bottom: tokens.$size-application-platform-spacing-l-m;
+        margin-top: tokens.$size-application-spacing-l-m;
+        margin-bottom: tokens.$size-application-spacing-l-m;
     }
 
     .my-l {
-        margin-top: tokens.$size-application-platform-spacing-l-l;
-        margin-bottom: tokens.$size-application-platform-spacing-l-l;
+        margin-top: tokens.$size-application-spacing-l-l;
+        margin-bottom: tokens.$size-application-spacing-l-l;
     }
 
     .my-xl {
-        margin-top: tokens.$size-application-platform-spacing-l-xl;
-        margin-bottom: tokens.$size-application-platform-spacing-l-xl;
+        margin-top: tokens.$size-application-spacing-l-xl;
+        margin-bottom: tokens.$size-application-spacing-l-xl;
     }
 
     .my-xxl {
-        margin-top: tokens.$size-application-platform-spacing-l-xxl;
-        margin-bottom: tokens.$size-application-platform-spacing-l-xxl;
+        margin-top: tokens.$size-application-spacing-l-xxl;
+        margin-bottom: tokens.$size-application-spacing-l-xxl;
     }
 
     .my-3xl {
-        margin-top: tokens.$size-application-platform-spacing-l-3xl;
-        margin-bottom: tokens.$size-application-platform-spacing-l-3xl;
+        margin-top: tokens.$size-application-spacing-l-3xl;
+        margin-bottom: tokens.$size-application-spacing-l-3xl;
     }
 
     .pa-3xs {
-        padding: tokens.$size-application-platform-spacing-l-3xs;
+        padding: tokens.$size-application-spacing-l-3xs;
     }
 
     .pa-xxs {
-        padding: tokens.$size-application-platform-spacing-l-xxs;
+        padding: tokens.$size-application-spacing-l-xxs;
     }
 
     .pa-xs {
-        padding: tokens.$size-application-platform-spacing-l-xs;
+        padding: tokens.$size-application-spacing-l-xs;
     }
 
     .pa-s {
-        padding: tokens.$size-application-platform-spacing-l-s;
+        padding: tokens.$size-application-spacing-l-s;
     }
 
     .pa-m {
-        padding: tokens.$size-application-platform-spacing-l-m;
+        padding: tokens.$size-application-spacing-l-m;
     }
 
     .pa-l {
-        padding: tokens.$size-application-platform-spacing-l-l;
+        padding: tokens.$size-application-spacing-l-l;
     }
 
     .pa-xl {
-        padding: tokens.$size-application-platform-spacing-l-xl;
+        padding: tokens.$size-application-spacing-l-xl;
     }
 
     .pa-xxl {
-        padding: tokens.$size-application-platform-spacing-l-xxl;
+        padding: tokens.$size-application-spacing-l-xxl;
     }
 
     .pa-3xl {
-        padding: tokens.$size-application-platform-spacing-l-3xl;
+        padding: tokens.$size-application-spacing-l-3xl;
     }
 
     .pt-3xs {
-        padding-top: tokens.$size-application-platform-spacing-l-3xs;
+        padding-top: tokens.$size-application-spacing-l-3xs;
     }
 
     .pt-xxs {
-        padding-top: tokens.$size-application-platform-spacing-l-xxs;
+        padding-top: tokens.$size-application-spacing-l-xxs;
     }
 
     .pt-xs {
-        padding-top: tokens.$size-application-platform-spacing-l-xs;
+        padding-top: tokens.$size-application-spacing-l-xs;
     }
 
     .pt-s {
-        padding-top: tokens.$size-application-platform-spacing-l-s;
+        padding-top: tokens.$size-application-spacing-l-s;
     }
 
     .pt-m {
-        padding-top: tokens.$size-application-platform-spacing-l-m;
+        padding-top: tokens.$size-application-spacing-l-m;
     }
 
     .pt-l {
-        padding-top: tokens.$size-application-platform-spacing-l-l;
+        padding-top: tokens.$size-application-spacing-l-l;
     }
 
     .pt-xl {
-        padding-top: tokens.$size-application-platform-spacing-l-xl;
+        padding-top: tokens.$size-application-spacing-l-xl;
     }
 
     .pt-xxl {
-        padding-top: tokens.$size-application-platform-spacing-l-xxl;
+        padding-top: tokens.$size-application-spacing-l-xxl;
     }
 
     .pt-3xl {
-        padding-top: tokens.$size-application-platform-spacing-l-3xl;
+        padding-top: tokens.$size-application-spacing-l-3xl;
     }
 
     .pb-3xs {
-        padding-bottom: tokens.$size-application-platform-spacing-l-3xs;
+        padding-bottom: tokens.$size-application-spacing-l-3xs;
     }
 
     .pb-xxs {
-        padding-bottom: tokens.$size-application-platform-spacing-l-xxs;
+        padding-bottom: tokens.$size-application-spacing-l-xxs;
     }
 
     .pb-xs {
-        padding-bottom: tokens.$size-application-platform-spacing-l-xs;
+        padding-bottom: tokens.$size-application-spacing-l-xs;
     }
 
     .pb-s {
-        padding-bottom: tokens.$size-application-platform-spacing-l-s;
+        padding-bottom: tokens.$size-application-spacing-l-s;
     }
 
     .pb-m {
-        padding-bottom: tokens.$size-application-platform-spacing-l-m;
+        padding-bottom: tokens.$size-application-spacing-l-m;
     }
 
     .pb-l {
-        padding-bottom: tokens.$size-application-platform-spacing-l-l;
+        padding-bottom: tokens.$size-application-spacing-l-l;
     }
 
     .pb-xl {
-        padding-bottom: tokens.$size-application-platform-spacing-l-xl;
+        padding-bottom: tokens.$size-application-spacing-l-xl;
     }
 
     .pb-xxl {
-        padding-bottom: tokens.$size-application-platform-spacing-l-xxl;
+        padding-bottom: tokens.$size-application-spacing-l-xxl;
     }
 
     .pb-3xl {
-        padding-bottom: tokens.$size-application-platform-spacing-l-3xl;
+        padding-bottom: tokens.$size-application-spacing-l-3xl;
     }
 
     .pl-3xs {
-        padding-left: tokens.$size-application-platform-spacing-l-3xs;
+        padding-left: tokens.$size-application-spacing-l-3xs;
     }
 
     .pl-xxs {
-        padding-left: tokens.$size-application-platform-spacing-l-xxs;
+        padding-left: tokens.$size-application-spacing-l-xxs;
     }
 
     .pl-xs {
-        padding-left: tokens.$size-application-platform-spacing-l-xs;
+        padding-left: tokens.$size-application-spacing-l-xs;
     }
 
     .pl-s {
-        padding-left: tokens.$size-application-platform-spacing-l-s;
+        padding-left: tokens.$size-application-spacing-l-s;
     }
 
     .pl-m {
-        padding-left: tokens.$size-application-platform-spacing-l-m;
+        padding-left: tokens.$size-application-spacing-l-m;
     }
 
     .pl-l {
-        padding-left: tokens.$size-application-platform-spacing-l-l;
+        padding-left: tokens.$size-application-spacing-l-l;
     }
 
     .pl-xl {
-        padding-left: tokens.$size-application-platform-spacing-l-xl;
+        padding-left: tokens.$size-application-spacing-l-xl;
     }
 
     .pl-xxl {
-        padding-left: tokens.$size-application-platform-spacing-l-xxl;
+        padding-left: tokens.$size-application-spacing-l-xxl;
     }
 
     .pl-3xl {
-        padding-left: tokens.$size-application-platform-spacing-l-3xl;
+        padding-left: tokens.$size-application-spacing-l-3xl;
     }
 
     .pr-3xs {
-        padding-right: tokens.$size-application-platform-spacing-l-3xs;
+        padding-right: tokens.$size-application-spacing-l-3xs;
     }
 
     .pr-xxs {
-        padding-right: tokens.$size-application-platform-spacing-l-xxs;
+        padding-right: tokens.$size-application-spacing-l-xxs;
     }
 
     .pr-xs {
-        padding-right: tokens.$size-application-platform-spacing-l-xs;
+        padding-right: tokens.$size-application-spacing-l-xs;
     }
 
     .pr-s {
-        padding-right: tokens.$size-application-platform-spacing-l-s;
+        padding-right: tokens.$size-application-spacing-l-s;
     }
 
     .pr-m {
-        padding-right: tokens.$size-application-platform-spacing-l-m;
+        padding-right: tokens.$size-application-spacing-l-m;
     }
 
     .pr-l {
-        padding-right: tokens.$size-application-platform-spacing-l-l;
+        padding-right: tokens.$size-application-spacing-l-l;
     }
 
     .pr-xl {
-        padding-right: tokens.$size-application-platform-spacing-l-xl;
+        padding-right: tokens.$size-application-spacing-l-xl;
     }
 
     .pr-xxl {
-        padding-right: tokens.$size-application-platform-spacing-l-xxl;
+        padding-right: tokens.$size-application-spacing-l-xxl;
     }
 
     .pr-3xl {
-        padding-right: tokens.$size-application-platform-spacing-l-3xl;
+        padding-right: tokens.$size-application-spacing-l-3xl;
     }
 
     .px-3xs {
-        padding-right: tokens.$size-application-platform-spacing-l-3xs;
-        padding-left: tokens.$size-application-platform-spacing-l-3xs;
+        padding-right: tokens.$size-application-spacing-l-3xs;
+        padding-left: tokens.$size-application-spacing-l-3xs;
     }
 
     .px-xxs {
-        padding-right: tokens.$size-application-platform-spacing-l-xxs;
-        padding-left: tokens.$size-application-platform-spacing-l-xxs;
+        padding-right: tokens.$size-application-spacing-l-xxs;
+        padding-left: tokens.$size-application-spacing-l-xxs;
     }
 
     .px-xs {
-        padding-right: tokens.$size-application-platform-spacing-l-xs;
-        padding-left: tokens.$size-application-platform-spacing-l-xs;
+        padding-right: tokens.$size-application-spacing-l-xs;
+        padding-left: tokens.$size-application-spacing-l-xs;
     }
 
     .px-s {
-        padding-right: tokens.$size-application-platform-spacing-l-s;
-        padding-left: tokens.$size-application-platform-spacing-l-s;
+        padding-right: tokens.$size-application-spacing-l-s;
+        padding-left: tokens.$size-application-spacing-l-s;
     }
 
     .px-m {
-        padding-right: tokens.$size-application-platform-spacing-l-m;
-        padding-left: tokens.$size-application-platform-spacing-l-m;
+        padding-right: tokens.$size-application-spacing-l-m;
+        padding-left: tokens.$size-application-spacing-l-m;
     }
 
     .px-l {
-        padding-right: tokens.$size-application-platform-spacing-l-l;
-        padding-left: tokens.$size-application-platform-spacing-l-l;
+        padding-right: tokens.$size-application-spacing-l-l;
+        padding-left: tokens.$size-application-spacing-l-l;
     }
 
     .px-xl {
-        padding-right: tokens.$size-application-platform-spacing-l-xl;
-        padding-left: tokens.$size-application-platform-spacing-l-xl;
+        padding-right: tokens.$size-application-spacing-l-xl;
+        padding-left: tokens.$size-application-spacing-l-xl;
     }
 
     .px-xxl {
-        padding-right: tokens.$size-application-platform-spacing-l-xxl;
-        padding-left: tokens.$size-application-platform-spacing-l-xxl;
+        padding-right: tokens.$size-application-spacing-l-xxl;
+        padding-left: tokens.$size-application-spacing-l-xxl;
     }
 
     .px-3xl {
-        padding-right: tokens.$size-application-platform-spacing-l-3xl;
-        padding-left: tokens.$size-application-platform-spacing-l-3xl;
+        padding-right: tokens.$size-application-spacing-l-3xl;
+        padding-left: tokens.$size-application-spacing-l-3xl;
     }
 
     .py-3xs {
-        padding-top: tokens.$size-application-platform-spacing-l-3xs;
-        padding-bottom: tokens.$size-application-platform-spacing-l-3xs;
+        padding-top: tokens.$size-application-spacing-l-3xs;
+        padding-bottom: tokens.$size-application-spacing-l-3xs;
     }
 
     .py-xxs {
-        padding-top: tokens.$size-application-platform-spacing-l-xxs;
-        padding-bottom: tokens.$size-application-platform-spacing-l-xxs;
+        padding-top: tokens.$size-application-spacing-l-xxs;
+        padding-bottom: tokens.$size-application-spacing-l-xxs;
     }
 
     .py-xs {
-        padding-top: tokens.$size-application-platform-spacing-l-xs;
-        padding-bottom: tokens.$size-application-platform-spacing-l-xs;
+        padding-top: tokens.$size-application-spacing-l-xs;
+        padding-bottom: tokens.$size-application-spacing-l-xs;
     }
 
     .py-s {
-        padding-top: tokens.$size-application-platform-spacing-l-s;
-        padding-bottom: tokens.$size-application-platform-spacing-l-s;
+        padding-top: tokens.$size-application-spacing-l-s;
+        padding-bottom: tokens.$size-application-spacing-l-s;
     }
 
     .py-m {
-        padding-top: tokens.$size-application-platform-spacing-l-m;
-        padding-bottom: tokens.$size-application-platform-spacing-l-m;
+        padding-top: tokens.$size-application-spacing-l-m;
+        padding-bottom: tokens.$size-application-spacing-l-m;
     }
 
     .py-l {
-        padding-top: tokens.$size-application-platform-spacing-l-l;
-        padding-bottom: tokens.$size-application-platform-spacing-l-l;
+        padding-top: tokens.$size-application-spacing-l-l;
+        padding-bottom: tokens.$size-application-spacing-l-l;
     }
 
     .py-xl {
-        padding-top: tokens.$size-application-platform-spacing-l-xl;
-        padding-bottom: tokens.$size-application-platform-spacing-l-xl;
+        padding-top: tokens.$size-application-spacing-l-xl;
+        padding-bottom: tokens.$size-application-spacing-l-xl;
     }
 
     .py-xxl {
-        padding-top: tokens.$size-application-platform-spacing-l-xxl;
-        padding-bottom: tokens.$size-application-platform-spacing-l-xxl;
+        padding-top: tokens.$size-application-spacing-l-xxl;
+        padding-bottom: tokens.$size-application-spacing-l-xxl;
     }
 
     .py-3xl {
-        padding-top: tokens.$size-application-platform-spacing-l-3xl;
-        padding-bottom: tokens.$size-application-platform-spacing-l-3xl;
+        padding-top: tokens.$size-application-spacing-l-3xl;
+        padding-bottom: tokens.$size-application-spacing-l-3xl;
     }
 }
 
 @media only screen and (min-width: #{map-get($grid-breakpoints, 'xl')}) {
 
     .v-main__wrap {
-        max-width: tokens.$layout-application-platform-compact-l-body-max-size;
+        max-width: tokens.$layout-application-compact-l-body-max-size;
         margin: 0 auto;
     }
 
     .fluid {
         .v-main__wrap {
-            max-width: tokens.$layout-application-platform-wide-l-body-max-size;
+            max-width: tokens.$layout-application-wide-l-body-max-size;
             padding-left: 0;
             padding-right: 0;
             margin-right: auto;
@@ -2873,7 +2873,7 @@ samp {
     }
 
     .row {
-        margin: - tokens.$layout-application-platform-compact-xl-gutter-size / 2;
+        margin: - tokens.$layout-application-compact-xl-gutter-size / 2;
     }
 
     .col-xl,
@@ -2946,547 +2946,547 @@ samp {
     .col-3,
     .col-2,
     .col-1 {
-        padding: tokens.$layout-application-platform-compact-xl-gutter-size / 2;
+        padding: tokens.$layout-application-compact-xl-gutter-size / 2;
     }
 
     .ma-3xs {
-        margin: tokens.$size-application-platform-spacing-xl-3xs;
+        margin: tokens.$size-application-spacing-xl-3xs;
     }
 
     .ma-xxs {
-        margin: tokens.$size-application-platform-spacing-xl-xxs;
+        margin: tokens.$size-application-spacing-xl-xxs;
     }
 
     .ma-xs {
-        margin: tokens.$size-application-platform-spacing-xl-xs;
+        margin: tokens.$size-application-spacing-xl-xs;
     }
 
     .ma-s {
-        margin: tokens.$size-application-platform-spacing-xl-s;
+        margin: tokens.$size-application-spacing-xl-s;
     }
 
     .ma-m {
-        margin: tokens.$size-application-platform-spacing-xl-m;
+        margin: tokens.$size-application-spacing-xl-m;
     }
 
     .ma-l {
-        margin: tokens.$size-application-platform-spacing-xl-l;
+        margin: tokens.$size-application-spacing-xl-l;
     }
 
     .ma-xl {
-        margin: tokens.$size-application-platform-spacing-xl-xl;
+        margin: tokens.$size-application-spacing-xl-xl;
     }
 
     .ma-xxl {
-        margin: tokens.$size-application-platform-spacing-xl-xxl;
+        margin: tokens.$size-application-spacing-xl-xxl;
     }
 
     .ma-3xl {
-        margin: tokens.$size-application-platform-spacing-xl-3xl;
+        margin: tokens.$size-application-spacing-xl-3xl;
     }
 
     .mt-3xs {
-        margin-top: tokens.$size-application-platform-spacing-xl-3xs;
+        margin-top: tokens.$size-application-spacing-xl-3xs;
     }
 
     .mt-xxs {
-        margin-top: tokens.$size-application-platform-spacing-xl-xxs;
+        margin-top: tokens.$size-application-spacing-xl-xxs;
     }
 
     .mt-xs {
-        margin-top: tokens.$size-application-platform-spacing-xl-xs;
+        margin-top: tokens.$size-application-spacing-xl-xs;
     }
 
     .mt-s {
-        margin-top: tokens.$size-application-platform-spacing-xl-s;
+        margin-top: tokens.$size-application-spacing-xl-s;
     }
 
     .mt-m {
-        margin-top: tokens.$size-application-platform-spacing-xl-m;
+        margin-top: tokens.$size-application-spacing-xl-m;
     }
 
     .mt-l {
-        margin-top: tokens.$size-application-platform-spacing-xl-l;
+        margin-top: tokens.$size-application-spacing-xl-l;
     }
 
     .mt-xl {
-        margin-top: tokens.$size-application-platform-spacing-xl-xl;
+        margin-top: tokens.$size-application-spacing-xl-xl;
     }
 
     .mt-xxl {
-        margin-top: tokens.$size-application-platform-spacing-xl-xxl;
+        margin-top: tokens.$size-application-spacing-xl-xxl;
     }
 
     .mt-3xl {
-        margin-top: tokens.$size-application-platform-spacing-xl-3xl;
+        margin-top: tokens.$size-application-spacing-xl-3xl;
     }
 
     .mb-3xs {
-        margin-bottom: tokens.$size-application-platform-spacing-xl-3xs;
+        margin-bottom: tokens.$size-application-spacing-xl-3xs;
     }
 
     .mb-xxs {
-        margin-bottom: tokens.$size-application-platform-spacing-xl-xxs;
+        margin-bottom: tokens.$size-application-spacing-xl-xxs;
     }
 
     .mb-xs {
-        margin-bottom: tokens.$size-application-platform-spacing-xl-xs;
+        margin-bottom: tokens.$size-application-spacing-xl-xs;
     }
 
     .mb-s {
-        margin-bottom: tokens.$size-application-platform-spacing-xl-s;
+        margin-bottom: tokens.$size-application-spacing-xl-s;
     }
 
     .mb-m {
-        margin-bottom: tokens.$size-application-platform-spacing-xl-m;
+        margin-bottom: tokens.$size-application-spacing-xl-m;
     }
 
     .mb-l {
-        margin-bottom: tokens.$size-application-platform-spacing-xl-l;
+        margin-bottom: tokens.$size-application-spacing-xl-l;
     }
 
     .mb-xl {
-        margin-bottom: tokens.$size-application-platform-spacing-xl-xl;
+        margin-bottom: tokens.$size-application-spacing-xl-xl;
     }
 
     .mb-xxl {
-        margin-bottom: tokens.$size-application-platform-spacing-xl-xxl;
+        margin-bottom: tokens.$size-application-spacing-xl-xxl;
     }
 
     .mb-3xl {
-        margin-bottom: tokens.$size-application-platform-spacing-xl-3xl;
+        margin-bottom: tokens.$size-application-spacing-xl-3xl;
     }
 
     .ml-3xs {
-        margin-left: tokens.$size-application-platform-spacing-xl-3xs;
+        margin-left: tokens.$size-application-spacing-xl-3xs;
     }
 
     .ml-xxs {
-        margin-left: tokens.$size-application-platform-spacing-xl-xxs;
+        margin-left: tokens.$size-application-spacing-xl-xxs;
     }
 
     .ml-xs {
-        margin-left: tokens.$size-application-platform-spacing-xl-xs;
+        margin-left: tokens.$size-application-spacing-xl-xs;
     }
 
     .ml-s {
-        margin-left: tokens.$size-application-platform-spacing-xl-s;
+        margin-left: tokens.$size-application-spacing-xl-s;
     }
 
     .ml-m {
-        margin-left: tokens.$size-application-platform-spacing-xl-m;
+        margin-left: tokens.$size-application-spacing-xl-m;
     }
 
     .ml-l {
-        margin-left: tokens.$size-application-platform-spacing-xl-l;
+        margin-left: tokens.$size-application-spacing-xl-l;
     }
 
     .ml-xl {
-        margin-left: tokens.$size-application-platform-spacing-xl-xl;
+        margin-left: tokens.$size-application-spacing-xl-xl;
     }
 
     .ml-xxl {
-        margin-left: tokens.$size-application-platform-spacing-xl-xxl;
+        margin-left: tokens.$size-application-spacing-xl-xxl;
     }
 
     .ml-3xl {
-        margin-left: tokens.$size-application-platform-spacing-xl-3xl;
+        margin-left: tokens.$size-application-spacing-xl-3xl;
     }
 
     .mr-3xs {
-        margin-right: tokens.$size-application-platform-spacing-xl-3xs;
+        margin-right: tokens.$size-application-spacing-xl-3xs;
     }
 
     .mr-xxs {
-        margin-right: tokens.$size-application-platform-spacing-xl-xxs;
+        margin-right: tokens.$size-application-spacing-xl-xxs;
     }
 
     .mr-xs {
-        margin-right: tokens.$size-application-platform-spacing-xl-xs;
+        margin-right: tokens.$size-application-spacing-xl-xs;
     }
 
     .mr-s {
-        margin-right: tokens.$size-application-platform-spacing-xl-s;
+        margin-right: tokens.$size-application-spacing-xl-s;
     }
 
     .mr-m {
-        margin-right: tokens.$size-application-platform-spacing-xl-m;
+        margin-right: tokens.$size-application-spacing-xl-m;
     }
 
     .mr-l {
-        margin-right: tokens.$size-application-platform-spacing-xl-l;
+        margin-right: tokens.$size-application-spacing-xl-l;
     }
 
     .mr-xl {
-        margin-right: tokens.$size-application-platform-spacing-xl-xl;
+        margin-right: tokens.$size-application-spacing-xl-xl;
     }
 
     .mr-xxl {
-        margin-right: tokens.$size-application-platform-spacing-xl-xxl;
+        margin-right: tokens.$size-application-spacing-xl-xxl;
     }
 
     .mr-3xl {
-        margin-right: tokens.$size-application-platform-spacing-xl-3xl;
+        margin-right: tokens.$size-application-spacing-xl-3xl;
     }
 
     .mx-3xs {
-        margin-right: tokens.$size-application-platform-spacing-xl-3xs;
-        margin-left: tokens.$size-application-platform-spacing-xl-3xs;
+        margin-right: tokens.$size-application-spacing-xl-3xs;
+        margin-left: tokens.$size-application-spacing-xl-3xs;
     }
 
     .mx-xxs {
-        margin-right: tokens.$size-application-platform-spacing-xl-xxs;
-        margin-left: tokens.$size-application-platform-spacing-xl-xxs;
+        margin-right: tokens.$size-application-spacing-xl-xxs;
+        margin-left: tokens.$size-application-spacing-xl-xxs;
     }
 
     .mx-xs {
-        margin-right: tokens.$size-application-platform-spacing-xl-xs;
-        margin-left: tokens.$size-application-platform-spacing-xl-xs;
+        margin-right: tokens.$size-application-spacing-xl-xs;
+        margin-left: tokens.$size-application-spacing-xl-xs;
     }
 
     .mx-s {
-        margin-right: tokens.$size-application-platform-spacing-xl-s;
-        margin-left: tokens.$size-application-platform-spacing-xl-s;
+        margin-right: tokens.$size-application-spacing-xl-s;
+        margin-left: tokens.$size-application-spacing-xl-s;
     }
 
     .mx-m {
-        margin-right: tokens.$size-application-platform-spacing-xl-m;
-        margin-left: tokens.$size-application-platform-spacing-xl-m;
+        margin-right: tokens.$size-application-spacing-xl-m;
+        margin-left: tokens.$size-application-spacing-xl-m;
     }
 
     .mx-l {
-        margin-right: tokens.$size-application-platform-spacing-xl-l;
-        margin-left: tokens.$size-application-platform-spacing-xl-l;
+        margin-right: tokens.$size-application-spacing-xl-l;
+        margin-left: tokens.$size-application-spacing-xl-l;
     }
 
     .mx-xl {
-        margin-right: tokens.$size-application-platform-spacing-xl-xl;
-        margin-left: tokens.$size-application-platform-spacing-xl-xl;
+        margin-right: tokens.$size-application-spacing-xl-xl;
+        margin-left: tokens.$size-application-spacing-xl-xl;
     }
 
     .mx-xxl {
-        margin-right: tokens.$size-application-platform-spacing-xl-xxl;
-        margin-left: tokens.$size-application-platform-spacing-xl-xxl;
+        margin-right: tokens.$size-application-spacing-xl-xxl;
+        margin-left: tokens.$size-application-spacing-xl-xxl;
     }
 
     .mx-3xl {
-        margin-right: tokens.$size-application-platform-spacing-xl-3xl;
-        margin-left: tokens.$size-application-platform-spacing-xl-3xl;
+        margin-right: tokens.$size-application-spacing-xl-3xl;
+        margin-left: tokens.$size-application-spacing-xl-3xl;
     }
 
     .my-3xs {
-        margin-top: tokens.$size-application-platform-spacing-xl-3xs;
-        margin-bottom: tokens.$size-application-platform-spacing-xl-3xs;
+        margin-top: tokens.$size-application-spacing-xl-3xs;
+        margin-bottom: tokens.$size-application-spacing-xl-3xs;
     }
 
     .my-xxs {
-        margin-top: tokens.$size-application-platform-spacing-xl-xxs;
-        margin-bottom: tokens.$size-application-platform-spacing-xl-xxs;
+        margin-top: tokens.$size-application-spacing-xl-xxs;
+        margin-bottom: tokens.$size-application-spacing-xl-xxs;
     }
 
     .my-xs {
-        margin-top: tokens.$size-application-platform-spacing-xl-xs;
-        margin-bottom: tokens.$size-application-platform-spacing-xl-xs;
+        margin-top: tokens.$size-application-spacing-xl-xs;
+        margin-bottom: tokens.$size-application-spacing-xl-xs;
     }
 
     .my-s {
-        margin-top: tokens.$size-application-platform-spacing-xl-s;
-        margin-bottom: tokens.$size-application-platform-spacing-xl-s;
+        margin-top: tokens.$size-application-spacing-xl-s;
+        margin-bottom: tokens.$size-application-spacing-xl-s;
     }
 
     .my-m {
-        margin-top: tokens.$size-application-platform-spacing-xl-m;
-        margin-bottom: tokens.$size-application-platform-spacing-xl-m;
+        margin-top: tokens.$size-application-spacing-xl-m;
+        margin-bottom: tokens.$size-application-spacing-xl-m;
     }
 
     .my-l {
-        margin-top: tokens.$size-application-platform-spacing-xl-l;
-        margin-bottom: tokens.$size-application-platform-spacing-xl-l;
+        margin-top: tokens.$size-application-spacing-xl-l;
+        margin-bottom: tokens.$size-application-spacing-xl-l;
     }
 
     .my-xl {
-        margin-top: tokens.$size-application-platform-spacing-xl-xl;
-        margin-bottom: tokens.$size-application-platform-spacing-xl-xl;
+        margin-top: tokens.$size-application-spacing-xl-xl;
+        margin-bottom: tokens.$size-application-spacing-xl-xl;
     }
 
     .my-xxl {
-        margin-top: tokens.$size-application-platform-spacing-xl-xxl;
-        margin-bottom: tokens.$size-application-platform-spacing-xl-xxl;
+        margin-top: tokens.$size-application-spacing-xl-xxl;
+        margin-bottom: tokens.$size-application-spacing-xl-xxl;
     }
 
     .my-3xl {
-        margin-top: tokens.$size-application-platform-spacing-xl-3xl;
-        margin-bottom: tokens.$size-application-platform-spacing-xl-3xl;
+        margin-top: tokens.$size-application-spacing-xl-3xl;
+        margin-bottom: tokens.$size-application-spacing-xl-3xl;
     }
 
     .pa-3xs {
-        padding: tokens.$size-application-platform-spacing-xl-3xs;
+        padding: tokens.$size-application-spacing-xl-3xs;
     }
 
     .pa-xxs {
-        padding: tokens.$size-application-platform-spacing-xl-xxs;
+        padding: tokens.$size-application-spacing-xl-xxs;
     }
 
     .pa-xs {
-        padding: tokens.$size-application-platform-spacing-xl-xs;
+        padding: tokens.$size-application-spacing-xl-xs;
     }
 
     .pa-s {
-        padding: tokens.$size-application-platform-spacing-xl-s;
+        padding: tokens.$size-application-spacing-xl-s;
     }
 
     .pa-m {
-        padding: tokens.$size-application-platform-spacing-xl-m;
+        padding: tokens.$size-application-spacing-xl-m;
     }
 
     .pa-l {
-        padding: tokens.$size-application-platform-spacing-xl-l;
+        padding: tokens.$size-application-spacing-xl-l;
     }
 
     .pa-xl {
-        padding: tokens.$size-application-platform-spacing-xl-xl;
+        padding: tokens.$size-application-spacing-xl-xl;
     }
 
     .pa-xxl {
-        padding: tokens.$size-application-platform-spacing-xl-xxl;
+        padding: tokens.$size-application-spacing-xl-xxl;
     }
 
     .pa-3xl {
-        padding: tokens.$size-application-platform-spacing-xl-3xl;
+        padding: tokens.$size-application-spacing-xl-3xl;
     }
 
     .pt-3xs {
-        padding-top: tokens.$size-application-platform-spacing-xl-3xs;
+        padding-top: tokens.$size-application-spacing-xl-3xs;
     }
 
     .pt-xxs {
-        padding-top: tokens.$size-application-platform-spacing-xl-xxs;
+        padding-top: tokens.$size-application-spacing-xl-xxs;
     }
 
     .pt-xs {
-        padding-top: tokens.$size-application-platform-spacing-xl-xs;
+        padding-top: tokens.$size-application-spacing-xl-xs;
     }
 
     .pt-s {
-        padding-top: tokens.$size-application-platform-spacing-xl-s;
+        padding-top: tokens.$size-application-spacing-xl-s;
     }
 
     .pt-m {
-        padding-top: tokens.$size-application-platform-spacing-xl-m;
+        padding-top: tokens.$size-application-spacing-xl-m;
     }
 
     .pt-l {
-        padding-top: tokens.$size-application-platform-spacing-xl-l;
+        padding-top: tokens.$size-application-spacing-xl-l;
     }
 
     .pt-xl {
-        padding-top: tokens.$size-application-platform-spacing-xl-xl;
+        padding-top: tokens.$size-application-spacing-xl-xl;
     }
 
     .pt-xxl {
-        padding-top: tokens.$size-application-platform-spacing-xl-xxl;
+        padding-top: tokens.$size-application-spacing-xl-xxl;
     }
 
     .pt-3xl {
-        padding-top: tokens.$size-application-platform-spacing-xl-3xl;
+        padding-top: tokens.$size-application-spacing-xl-3xl;
     }
 
     .pb-3xs {
-        padding-bottom: tokens.$size-application-platform-spacing-xl-3xs;
+        padding-bottom: tokens.$size-application-spacing-xl-3xs;
     }
 
     .pb-xxs {
-        padding-bottom: tokens.$size-application-platform-spacing-xl-xxs;
+        padding-bottom: tokens.$size-application-spacing-xl-xxs;
     }
 
     .pb-xs {
-        padding-bottom: tokens.$size-application-platform-spacing-xl-xs;
+        padding-bottom: tokens.$size-application-spacing-xl-xs;
     }
 
     .pb-s {
-        padding-bottom: tokens.$size-application-platform-spacing-xl-s;
+        padding-bottom: tokens.$size-application-spacing-xl-s;
     }
 
     .pb-m {
-        padding-bottom: tokens.$size-application-platform-spacing-xl-m;
+        padding-bottom: tokens.$size-application-spacing-xl-m;
     }
 
     .pb-l {
-        padding-bottom: tokens.$size-application-platform-spacing-xl-l;
+        padding-bottom: tokens.$size-application-spacing-xl-l;
     }
 
     .pb-xl {
-        padding-bottom: tokens.$size-application-platform-spacing-xl-xl;
+        padding-bottom: tokens.$size-application-spacing-xl-xl;
     }
 
     .pb-xxl {
-        padding-bottom: tokens.$size-application-platform-spacing-xl-xxl;
+        padding-bottom: tokens.$size-application-spacing-xl-xxl;
     }
 
     .pb-3xl {
-        padding-bottom: tokens.$size-application-platform-spacing-xl-3xl;
+        padding-bottom: tokens.$size-application-spacing-xl-3xl;
     }
 
     .pl-3xs {
-        padding-left: tokens.$size-application-platform-spacing-xl-3xs;
+        padding-left: tokens.$size-application-spacing-xl-3xs;
     }
 
     .pl-xxs {
-        padding-left: tokens.$size-application-platform-spacing-xl-xxs;
+        padding-left: tokens.$size-application-spacing-xl-xxs;
     }
 
     .pl-xs {
-        padding-left: tokens.$size-application-platform-spacing-xl-xs;
+        padding-left: tokens.$size-application-spacing-xl-xs;
     }
 
     .pl-s {
-        padding-left: tokens.$size-application-platform-spacing-xl-s;
+        padding-left: tokens.$size-application-spacing-xl-s;
     }
 
     .pl-m {
-        padding-left: tokens.$size-application-platform-spacing-xl-m;
+        padding-left: tokens.$size-application-spacing-xl-m;
     }
 
     .pl-l {
-        padding-left: tokens.$size-application-platform-spacing-xl-l;
+        padding-left: tokens.$size-application-spacing-xl-l;
     }
 
     .pl-xl {
-        padding-left: tokens.$size-application-platform-spacing-xl-xl;
+        padding-left: tokens.$size-application-spacing-xl-xl;
     }
 
     .pl-xxl {
-        padding-left: tokens.$size-application-platform-spacing-xl-xxl;
+        padding-left: tokens.$size-application-spacing-xl-xxl;
     }
 
     .pl-3xl {
-        padding-left: tokens.$size-application-platform-spacing-xl-3xl;
+        padding-left: tokens.$size-application-spacing-xl-3xl;
     }
 
     .pr-3xs {
-        padding-right: tokens.$size-application-platform-spacing-xl-3xs;
+        padding-right: tokens.$size-application-spacing-xl-3xs;
     }
 
     .pr-xxs {
-        padding-right: tokens.$size-application-platform-spacing-xl-xxs;
+        padding-right: tokens.$size-application-spacing-xl-xxs;
     }
 
     .pr-xs {
-        padding-right: tokens.$size-application-platform-spacing-xl-xs;
+        padding-right: tokens.$size-application-spacing-xl-xs;
     }
 
     .pr-s {
-        padding-right: tokens.$size-application-platform-spacing-xl-s;
+        padding-right: tokens.$size-application-spacing-xl-s;
     }
 
     .pr-m {
-        padding-right: tokens.$size-application-platform-spacing-xl-m;
+        padding-right: tokens.$size-application-spacing-xl-m;
     }
 
     .pr-l {
-        padding-right: tokens.$size-application-platform-spacing-xl-l;
+        padding-right: tokens.$size-application-spacing-xl-l;
     }
 
     .pr-xl {
-        padding-right: tokens.$size-application-platform-spacing-xl-xl;
+        padding-right: tokens.$size-application-spacing-xl-xl;
     }
 
     .pr-xxl {
-        padding-right: tokens.$size-application-platform-spacing-xl-xxl;
+        padding-right: tokens.$size-application-spacing-xl-xxl;
     }
 
     .pr-3xl {
-        padding-right: tokens.$size-application-platform-spacing-xl-3xl;
+        padding-right: tokens.$size-application-spacing-xl-3xl;
     }
 
     .px-3xs {
-        padding-right: tokens.$size-application-platform-spacing-xl-3xs;
-        padding-left: tokens.$size-application-platform-spacing-xl-3xs;
+        padding-right: tokens.$size-application-spacing-xl-3xs;
+        padding-left: tokens.$size-application-spacing-xl-3xs;
     }
 
     .px-xxs {
-        padding-right: tokens.$size-application-platform-spacing-xl-xxs;
-        padding-left: tokens.$size-application-platform-spacing-xl-xxs;
+        padding-right: tokens.$size-application-spacing-xl-xxs;
+        padding-left: tokens.$size-application-spacing-xl-xxs;
     }
 
     .px-xs {
-        padding-right: tokens.$size-application-platform-spacing-xl-xs;
-        padding-left: tokens.$size-application-platform-spacing-xl-xs;
+        padding-right: tokens.$size-application-spacing-xl-xs;
+        padding-left: tokens.$size-application-spacing-xl-xs;
     }
 
     .px-s {
-        padding-right: tokens.$size-application-platform-spacing-xl-s;
-        padding-left: tokens.$size-application-platform-spacing-xl-s;
+        padding-right: tokens.$size-application-spacing-xl-s;
+        padding-left: tokens.$size-application-spacing-xl-s;
     }
 
     .px-m {
-        padding-right: tokens.$size-application-platform-spacing-xl-m;
-        padding-left: tokens.$size-application-platform-spacing-xl-m;
+        padding-right: tokens.$size-application-spacing-xl-m;
+        padding-left: tokens.$size-application-spacing-xl-m;
     }
 
     .px-l {
-        padding-right: tokens.$size-application-platform-spacing-xl-l;
-        padding-left: tokens.$size-application-platform-spacing-xl-l;
+        padding-right: tokens.$size-application-spacing-xl-l;
+        padding-left: tokens.$size-application-spacing-xl-l;
     }
 
     .px-xl {
-        padding-right: tokens.$size-application-platform-spacing-xl-xl;
-        padding-left: tokens.$size-application-platform-spacing-xl-xl;
+        padding-right: tokens.$size-application-spacing-xl-xl;
+        padding-left: tokens.$size-application-spacing-xl-xl;
     }
 
     .px-xxl {
-        padding-right: tokens.$size-application-platform-spacing-xl-xxl;
-        padding-left: tokens.$size-application-platform-spacing-xl-xxl;
+        padding-right: tokens.$size-application-spacing-xl-xxl;
+        padding-left: tokens.$size-application-spacing-xl-xxl;
     }
 
     .px-3xl {
-        padding-right: tokens.$size-application-platform-spacing-xl-3xl;
-        padding-left: tokens.$size-application-platform-spacing-xl-3xl;
+        padding-right: tokens.$size-application-spacing-xl-3xl;
+        padding-left: tokens.$size-application-spacing-xl-3xl;
     }
 
     .py-3xs {
-        padding-top: tokens.$size-application-platform-spacing-xl-3xs;
-        padding-bottom: tokens.$size-application-platform-spacing-xl-3xs;
+        padding-top: tokens.$size-application-spacing-xl-3xs;
+        padding-bottom: tokens.$size-application-spacing-xl-3xs;
     }
 
     .py-xxs {
-        padding-top: tokens.$size-application-platform-spacing-xl-xxs;
-        padding-bottom: tokens.$size-application-platform-spacing-xl-xxs;
+        padding-top: tokens.$size-application-spacing-xl-xxs;
+        padding-bottom: tokens.$size-application-spacing-xl-xxs;
     }
 
     .py-xs {
-        padding-top: tokens.$size-application-platform-spacing-xl-xs;
-        padding-bottom: tokens.$size-application-platform-spacing-xl-xs;
+        padding-top: tokens.$size-application-spacing-xl-xs;
+        padding-bottom: tokens.$size-application-spacing-xl-xs;
     }
 
     .py-s {
-        padding-top: tokens.$size-application-platform-spacing-xl-s;
-        padding-bottom: tokens.$size-application-platform-spacing-xl-s;
+        padding-top: tokens.$size-application-spacing-xl-s;
+        padding-bottom: tokens.$size-application-spacing-xl-s;
     }
 
     .py-m {
-        padding-top: tokens.$size-application-platform-spacing-xl-m;
-        padding-bottom: tokens.$size-application-platform-spacing-xl-m;
+        padding-top: tokens.$size-application-spacing-xl-m;
+        padding-bottom: tokens.$size-application-spacing-xl-m;
     }
 
     .py-l {
-        padding-top: tokens.$size-application-platform-spacing-xl-l;
-        padding-bottom: tokens.$size-application-platform-spacing-xl-l;
+        padding-top: tokens.$size-application-spacing-xl-l;
+        padding-bottom: tokens.$size-application-spacing-xl-l;
     }
 
     .py-xl {
-        padding-top: tokens.$size-application-platform-spacing-xl-xl;
-        padding-bottom: tokens.$size-application-platform-spacing-xl-xl;
+        padding-top: tokens.$size-application-spacing-xl-xl;
+        padding-bottom: tokens.$size-application-spacing-xl-xl;
     }
 
     .py-xxl {
-        padding-top: tokens.$size-application-platform-spacing-xl-xxl;
-        padding-bottom: tokens.$size-application-platform-spacing-xl-xxl;
+        padding-top: tokens.$size-application-spacing-xl-xxl;
+        padding-bottom: tokens.$size-application-spacing-xl-xxl;
     }
 
     .py-3xl {
-        padding-top: tokens.$size-application-platform-spacing-xl-3xl;
-        padding-bottom: tokens.$size-application-platform-spacing-xl-3xl;
+        padding-top: tokens.$size-application-spacing-xl-3xl;
+        padding-bottom: tokens.$size-application-spacing-xl-3xl;
     }
 }
 
