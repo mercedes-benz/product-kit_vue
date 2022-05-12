@@ -59,6 +59,11 @@
                 <v-subheader>Controls</v-subheader>
                 <v-checkbox label="This is a checkbox" hide-details />
                 <v-checkbox
+                    label="This is a checkbox"
+                    hide-details
+                    indeterminate
+                />
+                <v-checkbox
                     v-model="checked"
                     label="This is a checkbox"
                     hide-details
