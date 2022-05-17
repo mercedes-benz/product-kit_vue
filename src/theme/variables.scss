@@ -84,10 +84,11 @@ $code-kbd-border-radius: 0px !default;
 $text-field-enclosed-details-padding: 0 12px !default;
 $grid-breakpoints: (
   'xs': 0,
-  'sm': 600px,
-  'md': 905px,
-  'lg': 1240px,
-  'xl': 1440px
+  'sm': 480px,
+  'md': 768px,
+  'lg': 1024px,
+  'xl': 1280px,
+  'xxl': 1440px
 );
 $container-padding-x: $grid-gutter / 2 !default;
 $grid-columns: 12 !default;
@@ -97,6 +98,7 @@ $grid-gutters: (
   "md": $grid-gutter,
   "lg": $grid-gutter,
   "xl": $grid-gutter * 4/3,
+  "xxl": $grid-gutter * 4/3,
 );
 $display-breakpoints: (
   'print-only': 'only print',

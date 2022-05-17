@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 
-import * as tokens from "../../../core/exports/web/styles/mbti/js/variables";
-import * as tokensDark from "../../../core/exports/web/styles/mbti/js/variables-dark";
+import * as tokens from "../../../core/dist/web/styles/mbti/js/variables";
+import * as tokensDark from "../../../core/dist/web/styles/mbti/js/variables-dark";
 
 require('./overrides.scss')
 
@@ -10,7 +10,7 @@ var application = {}
 application["light"] = { anchor: tokens.colorApplicationPrimaryVariant }
 application["dark"] = { anchor: tokensDark.colorApplicationPrimaryVariant }
 
-const colorNames = ["neutral", "goldentainoi", "deepblue", "deluge", "xanadu", "lividbrown", "red", "green"]
+const colorNames = ["neutral", "goldentainoi", "deepblue", "deluge", "xanadu", "lividbrown", "red", "green", "yellow"]
 const baseColorNames = ["neutral", "blue", "red", "green", "yellow", "blackcurrant", "lividbrown", "nandor"]
 const applicationColors = ["primary", "primary-variant", "secondary", "tertiary", "quaternary", "background", "surface", "outline", "error", "success"]
 
@@ -55,6 +55,9 @@ baseColorNames.forEach(color => {
     Object.assign(colorObject, colorPiece)
 });
 
+console.log("BASE")
+console.log(colorObject)
+
 /* 
  * BRAND COLORS 
 */
@@ -82,6 +85,9 @@ colorNames.forEach(color => {
     });
     Object.assign(colorObject, colorPiece)
 });
+
+console.log("BRAND")
+console.log(colorObject)
 
 /* 
  * APPLICATION COLORS 
