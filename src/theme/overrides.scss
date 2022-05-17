@@ -1,5 +1,37 @@
 // SPDX-License-Identifier: MIT
 
+:root {
+    --headings-size-h1: #{tokens.$font-application-s-headline1-font-size};
+    --headings-size-h2: #{tokens.$font-application-s-headline2-font-size};
+    --headings-size-h3: #{tokens.$font-application-s-headline3-font-size};
+    --headings-size-h4: #{tokens.$font-application-s-headline4-font-size};
+    --headings-size-h5: #{tokens.$font-application-s-headline5-font-size};
+    --headings-size-h6: #{tokens.$font-application-s-headline6-font-size};
+    --subtitle1-size: #{tokens.$font-application-s-subtitle1-font-size};
+    --subtitle2-size: #{tokens.$font-application-s-subtitle2-font-size};
+    --body1-size: #{tokens.$font-application-s-body1-font-size};
+    --body2-size: #{tokens.$font-application-s-body2-font-size};
+    --button-size: #{tokens.$font-application-s-button-font-size};
+    --caption-size: #{tokens.$font-application-s-caption-font-size};
+    --overline-size: #{tokens.$font-application-s-overline-font-size};
+
+    @media only screen and (min-width: 1240px) {
+        --headings-size-h1: #{tokens.$font-application-l-headline1-font-size};
+        --headings-size-h2: #{tokens.$font-application-l-headline2-font-size};
+        --headings-size-h3: #{tokens.$font-application-l-headline3-font-size};
+        --headings-size-h4: #{tokens.$font-application-l-headline4-font-size};
+        --headings-size-h5: #{tokens.$font-application-l-headline5-font-size};
+        --headings-size-h6: #{tokens.$font-application-l-headline6-font-size};
+        --subtitle1-size: #{tokens.$font-application-l-subtitle1-font-size};
+        --subtitle2-size: #{tokens.$font-application-l-subtitle2-font-size};
+        --body1-size: #{tokens.$font-application-l-body1-font-size};
+        --body2-size: #{tokens.$font-application-l-body2-font-size};
+        --button-size: #{tokens.$font-application-l-button-font-size};
+        --caption-size: #{tokens.$font-application-l-caption-font-size};
+        --overline-size: #{tokens.$font-application-l-overline-font-size};
+    }
+}
+
 .theme--dark {
     &.v-sheet {
         background-color: black;
@@ -99,56 +131,6 @@
 
     &.elevation-24 {
         background-color: rgba($color: #ffffff, $alpha: 0.16);
-    }
-}
-
-.neutral {
-    color: tokens.$color-brand-neutral-contrast-500  !important;
-    opacity: tokens.$opacity-application-text-high  !important;
-
-    &.lighten-1 {
-        color: tokens.$color-brand-neutral-contrast-400  !important;
-        opacity: tokens.$opacity-application-text-high  !important;
-    }
-
-    &.lighten-2 {
-        color: tokens.$color-brand-neutral-contrast-300  !important;
-        opacity: tokens.$opacity-application-text-high  !important;
-    }
-
-    &.lighten-3 {
-        color: tokens.$color-brand-neutral-contrast-200  !important;
-        opacity: tokens.$opacity-application-text-high  !important;
-    }
-
-    &.lighten-4 {
-        color: tokens.$color-brand-neutral-contrast-100  !important;
-        opacity: tokens.$opacity-application-text-high  !important;
-    }
-
-    &.lighten-5 {
-        color: tokens.$color-brand-neutral-contrast-50  !important;
-        opacity: tokens.$opacity-application-text-high  !important;
-    }
-
-    &.darken-1 {
-        color: tokens.$color-brand-neutral-contrast-600  !important;
-        opacity: tokens.$opacity-application-text-contrast-high  !important;
-    }
-
-    &.darken-2 {
-        color: tokens.$color-brand-neutral-contrast-700  !important;
-        opacity: tokens.$opacity-application-text-contrast-high  !important;
-    }
-
-    &.darken-3 {
-        color: tokens.$color-brand-neutral-contrast-800  !important;
-        opacity: tokens.$opacity-application-text-contrast-high  !important;
-    }
-
-    &.darken-4 {
-        color: tokens.$color-brand-neutral-contrast-900  !important;
-        opacity: tokens.$opacity-application-text-contrast-high  !important;
     }
 }
 
@@ -894,10 +876,6 @@ samp {
 }
 
 @media only screen and (min-width: #{map-get($grid-breakpoints, 'sm')}) {
-    /*.container:not(.container--fluid) {
-      padding-left: tokens.$layout-application-compact-s-margin-size;
-      padding-right: tokens.$layout-application-compact-s-margin-size;
-    }*/
 
     .v-main__wrap {
         max-width: tokens.$layout-application-compact-s-body-max-size;
@@ -2261,59 +2239,6 @@ samp {
         padding: tokens.$layout-application-compact-l-gutter-size / 2;
     }
 
-    /* 
-    .text-h1 {
-        line-height: tokens.$font-application-l-headline1-line-height !important;
-    }
-
-    .text-h2 {
-        line-height: tokens.$font-application-l-headline2-line-height !important;
-    }
-
-    .text-h3 {
-        line-height: tokens.$font-application-l-headline3-line-height !important;
-    }
-
-    .text-h4 {
-        line-height: tokens.$font-application-l-headline4-line-height !important;
-    }
-
-    .text-h5 {
-        line-height: tokens.$font-application-l-headline5-line-height !important;
-    }
-
-    .text-h6 {
-        line-height: tokens.$font-application-l-headline6-line-height !important;
-    }
-
-    .text-subtitle-1 {
-        line-height: tokens.$font-application-l-subtitle1-line-height !important;
-    }
-
-    .text-subtitle-2 {
-        line-height: tokens.$font-application-l-subtitle2-line-height !important;
-    }
-
-    .text-body-1 {
-        line-height: tokens.$font-application-l-body1-line-height !important;
-    }
-
-    .text-body-2 {
-        line-height: tokens.$font-application-l-body1-line-height !important;
-    }
-
-    .text-button {
-        line-height: tokens.$font-application-l-button-line-height !important;
-    }
-
-    .text-caption {
-        line-height: tokens.$font-application-l-caption-line-height !important;
-    }
-
-    .text-overline {
-        line-height: tokens.$font-application-l-overline-line-height !important;
-    } */
-
     .ma-3xs {
         margin: tokens.$size-application-spacing-l-3xs;
     }
@@ -3514,6 +3439,571 @@ samp {
     & .quaternary {
         color: var(--v-quaternary-contrast-base) !important;
         caret-color: var(--v-quaternary-contrast-base) !important
+    }
+
+    & .background {
+        color: var(--v-background-contrast-base) !important;
+        caret-color: var(--v-background-contrast-base) !important
+    }
+
+    & .surface {
+        color: var(--v-surface-contrast-base) !important;
+        caret-color: var(--v-surface-contrast-base) !important
+    }
+
+    & .outline {
+        color: var(--v-outline-contrast-base) !important;
+        caret-color: var(--v-outline-contrast-base) !important
+    }
+
+    & .error {
+        color: var(--v-error-contrast-base) !important;
+        caret-color: var(--v-error-contrast-base) !important
+    }
+
+    & .success {
+        color: var(--v-success-contrast-base) !important;
+        caret-color: var(--v-success-contrast-base) !important
+    }
+
+    .neutral {
+        color: var(--v-neutral-contrast-base) !important;
+        caret-color: var(--v-neutral-contrast-base) !important;
+        opacity: tokens.$opacity-application-text-high  !important;
+
+        &.lighten-1 {
+            color: var(--v-neutral-contrast-lighten1) !important;
+            caret-color: var(--v-neutral-contrast-lighten1) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-2 {
+            color: var(--v-neutral-contrast-lighten2) !important;
+            caret-color: var(--v-neutral-contrast-lighten2) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-3 {
+            color: var(--v-neutral-contrast-lighten3) !important;
+            caret-color: var(--v-neutral-contrast-lighten3) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-4 {
+            color: var(--v-neutral-contrast-lighten4) !important;
+            caret-color: var(--v-neutral-contrast-lighten4) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-5 {
+            color: var(--v-neutral-contrast-lighten5) !important;
+            caret-color: var(--v-neutral-contrast-lighten5) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.darken-1 {
+            color: var(--v-neutral-contrast-darken1) !important;
+            caret-color: var(--v-neutral-contrast-darken1) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+
+        &.darken-2 {
+            color: var(--v-neutral-contrast-darken2) !important;
+            caret-color: var(--v-neutral-contrast-darken2) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+
+        &.darken-3 {
+            color: var(--v-neutral-contrast-darken3) !important;
+            caret-color: var(--v-neutral-contrast-darken3) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+
+        &.darken-4 {
+            color: var(--v-neutral-contrast-darken4) !important;
+            caret-color: var(--v-neutral-contrast-darken4) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+    }
+
+    .goldentainoi {
+        color: var(--v-goldentainoi-contrast-base) !important;
+        caret-color: var(--v-goldentainoi-contrast-base) !important;
+        opacity: tokens.$opacity-application-text-high  !important;
+
+        &.lighten-1 {
+            color: var(--v-goldentainoi-contrast-lighten1) !important;
+            caret-color: var(--v-goldentainoi-contrast-lighten1) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-2 {
+            color: var(--v-goldentainoi-contrast-lighten2) !important;
+            caret-color: var(--v-goldentainoi-contrast-lighten2) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-3 {
+            color: var(--v-goldentainoi-contrast-lighten3) !important;
+            caret-color: var(--v-goldentainoi-contrast-lighten3) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-4 {
+            color: var(--v-goldentainoi-contrast-lighten4) !important;
+            caret-color: var(--v-goldentainoi-contrast-lighten4) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-5 {
+            color: var(--v-goldentainoi-contrast-lighten5) !important;
+            caret-color: var(--v-goldentainoi-contrast-lighten5) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.darken-1 {
+            color: var(--v-goldentainoi-contrast-darken1) !important;
+            caret-color: var(--v-goldentainoi-contrast-darken1) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+
+        &.darken-2 {
+            color: var(--v-goldentainoi-contrast-darken2) !important;
+            caret-color: var(--v-goldentainoi-contrast-darken2) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+
+        &.darken-3 {
+            color: var(--v-goldentainoi-contrast-darken3) !important;
+            caret-color: var(--v-goldentainoi-contrast-darken3) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+
+        &.darken-4 {
+            color: var(--v-goldentainoi-contrast-darken4) !important;
+            caret-color: var(--v-goldentainoi-contrast-darken4) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+    }
+
+    .deepblue {
+        color: var(--v-deepblue-contrast-base) !important;
+        caret-color: var(--v-deepblue-contrast-base) !important;
+        opacity: tokens.$opacity-application-text-high  !important;
+
+        &.lighten-1 {
+            color: var(--v-deepblue-contrast-lighten1) !important;
+            caret-color: var(--v-deepblue-contrast-lighten1) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-2 {
+            color: var(--v-deepblue-contrast-lighten2) !important;
+            caret-color: var(--v-deepblue-contrast-lighten2) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-3 {
+            color: var(--v-deepblue-contrast-lighten3) !important;
+            caret-color: var(--v-deepblue-contrast-lighten3) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-4 {
+            color: var(--v-deepblue-contrast-lighten4) !important;
+            caret-color: var(--v-deepblue-contrast-lighten4) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-5 {
+            color: var(--v-deepblue-contrast-lighten5) !important;
+            caret-color: var(--v-deepblue-contrast-lighten5) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.darken-1 {
+            color: var(--v-deepblue-contrast-darken1) !important;
+            caret-color: var(--v-deepblue-contrast-darken1) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+
+        &.darken-2 {
+            color: var(--v-deepblue-contrast-darken2) !important;
+            caret-color: var(--v-deepblue-contrast-darken2) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+
+        &.darken-3 {
+            color: var(--v-deepblue-contrast-darken3) !important;
+            caret-color: var(--v-deepblue-contrast-darken3) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+
+        &.darken-4 {
+            color: var(--v-deepblue-contrast-darken4) !important;
+            caret-color: var(--v-deepblue-contrast-darken4) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+    }
+
+    .deluge {
+        color: var(--v-deluge-contrast-base) !important;
+        caret-color: var(--v-deluge-contrast-base) !important;
+        opacity: tokens.$opacity-application-text-high  !important;
+
+        &.lighten-1 {
+            color: var(--v-deluge-contrast-lighten1) !important;
+            caret-color: var(--v-deluge-contrast-lighten1) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-2 {
+            color: var(--v-deluge-contrast-lighten2) !important;
+            caret-color: var(--v-deluge-contrast-lighten2) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-3 {
+            color: var(--v-deluge-contrast-lighten3) !important;
+            caret-color: var(--v-deluge-contrast-lighten3) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-4 {
+            color: var(--v-deluge-contrast-lighten4) !important;
+            caret-color: var(--v-deluge-contrast-lighten4) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-5 {
+            color: var(--v-deluge-contrast-lighten5) !important;
+            caret-color: var(--v-deluge-contrast-lighten5) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.darken-1 {
+            color: var(--v-deluge-contrast-darken1) !important;
+            caret-color: var(--v-deluge-contrast-darken1) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+
+        &.darken-2 {
+            color: var(--v-deluge-contrast-darken2) !important;
+            caret-color: var(--v-deluge-contrast-darken2) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+
+        &.darken-3 {
+            color: var(--v-deluge-contrast-darken3) !important;
+            caret-color: var(--v-deluge-contrast-darken3) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+
+        &.darken-4 {
+            color: var(--v-deluge-contrast-darken4) !important;
+            caret-color: var(--v-deluge-contrast-darken4) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+    }
+
+    .xanadu {
+        color: var(--v-xanadu-contrast-base) !important;
+        caret-color: var(--v-xanadu-contrast-base) !important;
+        opacity: tokens.$opacity-application-text-high  !important;
+
+        &.lighten-1 {
+            color: var(--v-xanadu-contrast-lighten1) !important;
+            caret-color: var(--v-xanadu-contrast-lighten1) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-2 {
+            color: var(--v-xanadu-contrast-lighten2) !important;
+            caret-color: var(--v-xanadu-contrast-lighten2) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-3 {
+            color: var(--v-xanadu-contrast-lighten3) !important;
+            caret-color: var(--v-xanadu-contrast-lighten3) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-4 {
+            color: var(--v-xanadu-contrast-lighten4) !important;
+            caret-color: var(--v-xanadu-contrast-lighten4) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-5 {
+            color: var(--v-xanadu-contrast-lighten5) !important;
+            caret-color: var(--v-xanadu-contrast-lighten5) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.darken-1 {
+            color: var(--v-xanadu-contrast-darken1) !important;
+            caret-color: var(--v-xanadu-contrast-darken1) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+
+        &.darken-2 {
+            color: var(--v-xanadu-contrast-darken2) !important;
+            caret-color: var(--v-xanadu-contrast-darken2) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+
+        &.darken-3 {
+            color: var(--v-xanadu-contrast-darken3) !important;
+            caret-color: var(--v-xanadu-contrast-darken3) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+
+        &.darken-4 {
+            color: var(--v-xanadu-contrast-darken4) !important;
+            caret-color: var(--v-xanadu-contrast-darken4) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+    }
+
+    .lividbrown {
+        color: var(--v-lividbrown-contrast-base) !important;
+        caret-color: var(--v-lividbrown-contrast-base) !important;
+        opacity: tokens.$opacity-application-text-high  !important;
+
+        &.lighten-1 {
+            color: var(--v-lividbrown-contrast-lighten1) !important;
+            caret-color: var(--v-lividbrown-contrast-lighten1) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-2 {
+            color: var(--v-lividbrown-contrast-lighten2) !important;
+            caret-color: var(--v-lividbrown-contrast-lighten2) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-3 {
+            color: var(--v-lividbrown-contrast-lighten3) !important;
+            caret-color: var(--v-lividbrown-contrast-lighten3) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-4 {
+            color: var(--v-lividbrown-contrast-lighten4) !important;
+            caret-color: var(--v-lividbrown-contrast-lighten4) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-5 {
+            color: var(--v-lividbrown-contrast-lighten5) !important;
+            caret-color: var(--v-lividbrown-contrast-lighten5) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.darken-1 {
+            color: var(--v-lividbrown-contrast-darken1) !important;
+            caret-color: var(--v-lividbrown-contrast-darken1) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+
+        &.darken-2 {
+            color: var(--v-lividbrown-contrast-darken2) !important;
+            caret-color: var(--v-lividbrown-contrast-darken2) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+
+        &.darken-3 {
+            color: var(--v-lividbrown-contrast-darken3) !important;
+            caret-color: var(--v-lividbrown-contrast-darken3) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+
+        &.darken-4 {
+            color: var(--v-lividbrown-contrast-darken4) !important;
+            caret-color: var(--v-lividbrown-contrast-darken4) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+    }
+
+    .red {
+        color: var(--v-red-contrast-base) !important;
+        caret-color: var(--v-red-contrast-base) !important;
+        opacity: tokens.$opacity-application-text-high  !important;
+
+        &.lighten-1 {
+            color: var(--v-red-contrast-lighten1) !important;
+            caret-color: var(--v-red-contrast-lighten1) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-2 {
+            color: var(--v-red-contrast-lighten2) !important;
+            caret-color: var(--v-red-contrast-lighten2) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-3 {
+            color: var(--v-red-contrast-lighten3) !important;
+            caret-color: var(--v-red-contrast-lighten3) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-4 {
+            color: var(--v-red-contrast-lighten4) !important;
+            caret-color: var(--v-red-contrast-lighten4) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-5 {
+            color: var(--v-red-contrast-lighten5) !important;
+            caret-color: var(--v-red-contrast-lighten5) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.darken-1 {
+            color: var(--v-red-contrast-darken1) !important;
+            caret-color: var(--v-red-contrast-darken1) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+
+        &.darken-2 {
+            color: var(--v-red-contrast-darken2) !important;
+            caret-color: var(--v-red-contrast-darken2) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+
+        &.darken-3 {
+            color: var(--v-red-contrast-darken3) !important;
+            caret-color: var(--v-red-contrast-darken3) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+
+        &.darken-4 {
+            color: var(--v-red-contrast-darken4) !important;
+            caret-color: var(--v-red-contrast-darken4) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+    }
+
+    .green {
+        color: var(--v-green-contrast-base) !important;
+        caret-color: var(--v-green-contrast-base) !important;
+        opacity: tokens.$opacity-application-text-high  !important;
+
+        &.lighten-1 {
+            color: var(--v-green-contrast-lighten1) !important;
+            caret-color: var(--v-green-contrast-lighten1) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-2 {
+            color: var(--v-green-contrast-lighten2) !important;
+            caret-color: var(--v-green-contrast-lighten2) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-3 {
+            color: var(--v-green-contrast-lighten3) !important;
+            caret-color: var(--v-green-contrast-lighten3) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-4 {
+            color: var(--v-green-contrast-lighten4) !important;
+            caret-color: var(--v-green-contrast-lighten4) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-5 {
+            color: var(--v-green-contrast-lighten5) !important;
+            caret-color: var(--v-green-contrast-lighten5) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.darken-1 {
+            color: var(--v-green-contrast-darken1) !important;
+            caret-color: var(--v-green-contrast-darken1) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+
+        &.darken-2 {
+            color: var(--v-green-contrast-darken2) !important;
+            caret-color: var(--v-green-contrast-darken2) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+
+        &.darken-3 {
+            color: var(--v-green-contrast-darken3) !important;
+            caret-color: var(--v-green-contrast-darken3) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+
+        &.darken-4 {
+            color: var(--v-green-contrast-darken4) !important;
+            caret-color: var(--v-green-contrast-darken4) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+    }
+
+    .yellow {
+        color: var(--v-yellow-contrast-base) !important;
+        caret-color: var(--v-yellow-contrast-base) !important;
+        opacity: tokens.$opacity-application-text-high  !important;
+
+        &.lighten-1 {
+            color: var(--v-yellow-contrast-lighten1) !important;
+            caret-color: var(--v-yellow-contrast-lighten1) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-2 {
+            color: var(--v-yellow-contrast-lighten2) !important;
+            caret-color: var(--v-yellow-contrast-lighten2) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-3 {
+            color: var(--v-yellow-contrast-lighten3) !important;
+            caret-color: var(--v-yellow-contrast-lighten3) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-4 {
+            color: var(--v-yellow-contrast-lighten4) !important;
+            caret-color: var(--v-yellow-contrast-lighten4) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.lighten-5 {
+            color: var(--v-yellow-contrast-lighten5) !important;
+            caret-color: var(--v-yellow-contrast-lighten5) !important;
+            opacity: tokens.$opacity-application-text-high  !important;
+        }
+
+        &.darken-1 {
+            color: var(--v-yellow-contrast-darken1) !important;
+            caret-color: var(--v-yellow-contrast-darken1) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+
+        &.darken-2 {
+            color: var(--v-yellow-contrast-darken2) !important;
+            caret-color: var(--v-yellow-contrast-darken2) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+
+        &.darken-3 {
+            color: var(--v-yellow-contrast-darken3) !important;
+            caret-color: var(--v-yellow-contrast-darken3) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
+
+        &.darken-4 {
+            color: var(--v-yellow-contrast-darken4) !important;
+            caret-color: var(--v-yellow-contrast-darken4) !important;
+            opacity: tokens.$opacity-application-text-contrast-high  !important;
+        }
     }
 
     & .v-tabs {

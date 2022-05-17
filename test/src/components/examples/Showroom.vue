@@ -104,9 +104,17 @@
                     <v-icon left> mdi-home </v-icon>
                     Normal Chip
                 </v-chip>
-                <v-chip outlined color="primary">
+                <v-chip outlined color="primary" class="mr-2">
                     <v-icon left> mdi-home </v-icon>
                     Outlined Chip
+                </v-chip>
+                <v-chip outlined close color="primary" class="mr-2">
+                    <v-icon left> mdi-home </v-icon>
+                    Closeable Chip
+                </v-chip>
+                <v-chip close color="primary">
+                    <v-icon left> mdi-home </v-icon>
+                    Closeable Chip
                 </v-chip>
                 <v-subheader>Card</v-subheader>
                 <OutlinedCards />

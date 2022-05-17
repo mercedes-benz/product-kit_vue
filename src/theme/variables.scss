@@ -2,7 +2,8 @@
 
 
 ///--- COLORS ---///
-$neutral: ("base": tokens.$color-brand-neutral-500,
+$neutral: (
+  "base": tokens.$color-brand-neutral-500,
   "lighten-5": tokens.$color-brand-neutral-50,
   "lighten-4": tokens.$color-brand-neutral-100,
   "lighten-3": tokens.$color-brand-neutral-200,
@@ -13,7 +14,8 @@ $neutral: ("base": tokens.$color-brand-neutral-500,
   "darken-3": tokens.$color-brand-neutral-800,
   "darken-4": tokens.$color-brand-neutral-900,
 );
-$grey: ("base": #9e9e9e,
+$grey: (
+  "base": #9e9e9e,
   "lighten-5": #fafafa,
   "lighten-4": #f5f5f5,
   "lighten-3": #eeeeee,
@@ -24,7 +26,8 @@ $grey: ("base": #9e9e9e,
   "darken-3": #424242,
   "darken-4": #212121,
 );
-$blue: ('base': #2196F3,
+$blue: (
+  'base': #2196F3,
   'lighten-5': #E3F2FD,
   'lighten-4': #BBDEFB,
   'lighten-3': #90CAF9,
@@ -37,8 +40,10 @@ $blue: ('base': #2196F3,
   'accent-1': #82B1FF,
   'accent-2': #448AFF,
   'accent-3': #2979FF,
-  'accent-4': #2962FF);
-$red: ("base": tokens.$color-brand-red-500,
+  'accent-4': #2962FF
+);
+$red: (
+  "base": tokens.$color-brand-red-500,
   "lighten-5": tokens.$color-brand-red-50,
   "lighten-4": tokens.$color-brand-red-100,
   "lighten-3": tokens.$color-brand-red-200,
@@ -49,7 +54,8 @@ $red: ("base": tokens.$color-brand-red-500,
   "darken-3": tokens.$color-brand-red-800,
   "darken-4": tokens.$color-brand-red-900,
 );
-$green: ("base": tokens.$color-brand-green-500,
+$green: (
+  "base": tokens.$color-brand-green-500,
   "lighten-5": tokens.$color-brand-green-50,
   "lighten-4": tokens.$color-brand-green-100,
   "lighten-3": tokens.$color-brand-green-200,
@@ -60,7 +66,8 @@ $green: ("base": tokens.$color-brand-green-500,
   "darken-3": tokens.$color-brand-green-800,
   "darken-4": tokens.$color-brand-green-900,
 );
-$shades: ("black": #000000,
+$shades: (
+  "black": #000000,
   "white": #ffffff,
   "transparent": transparent,
 );
@@ -75,32 +82,36 @@ $spacers-steps: 16 !default;
 $border-radius-root: 0px !default;
 $code-kbd-border-radius: 0px !default;
 $text-field-enclosed-details-padding: 0 12px !default;
-$grid-breakpoints: ('xs': 0,
+$grid-breakpoints: (
+  'xs': 0,
   'sm': 600px,
   'md': 905px,
   'lg': 1240px,
-  'xl': 1440px);
+  'xl': 1440px
+);
 $container-padding-x: $grid-gutter / 2 !default;
 $grid-columns: 12 !default;
-$grid-gutters: ("xs": $grid-gutter * 2/3,
+$grid-gutters: (
+  "xs": $grid-gutter * 2/3,
   "sm": $grid-gutter * 2/3,
   "md": $grid-gutter,
   "lg": $grid-gutter,
   "xl": $grid-gutter * 4/3,
 );
-$display-breakpoints: ('print-only': 'only print',
+$display-breakpoints: (
+  'print-only': 'only print',
   'screen-only': 'only screen',
-  'xs-only': 'only screen and (max-width: #{map-get($grid-breakpoints, 'sm') - 0.02})',
-  'sm-only': 'only screen and (min-width: #{map-get($grid-breakpoints, 'sm')}) and (max-width: #{map-get($grid-breakpoints, 'md') - 0.02})',
-  'sm-and-down': 'only screen and (max-width: #{map-get($grid-breakpoints, 'md') - 0.02})',
-  'sm-and-up': 'only screen and (min-width: #{map-get($grid-breakpoints, 'sm')})',
-  'md-only': 'only screen and (min-width: #{map-get($grid-breakpoints, 'md')}) and (max-width: #{map-get($grid-breakpoints, 'lg') - 0.02})',
-  'md-and-down': 'only screen and (max-width: #{map-get($grid-breakpoints, 'lg') - 0.02})',
-  'md-and-up': 'only screen and (min-width: #{map-get($grid-breakpoints, 'md')})',
-  'lg-only': 'only screen and (min-width: #{map-get($grid-breakpoints, 'lg')}) and (max-width: #{map-get($grid-breakpoints, 'xl') - 0.02})',
-  'lg-and-down': 'only screen and (max-width: #{map-get($grid-breakpoints, 'xl') - 0.02})',
-  'lg-and-up': 'only screen and (min-width: #{map-get($grid-breakpoints, 'lg')})',
-  'xl-only': 'only screen and (min-width: #{map-get($grid-breakpoints, 'xl')})'
+  'xs-only': 'only screen and (max-width: #{map-get($grid-breakpoints, ' sm') - 0.02})',
+  'sm-only': 'only screen and (min-width: #{map-get($grid-breakpoints, ' sm')}) and (max-width: #{map-get($grid-breakpoints, ' md') - 0.02})',
+  'sm-and-down': 'only screen and (max-width: #{map-get($grid-breakpoints, ' md') - 0.02})',
+  'sm-and-up': 'only screen and (min-width: #{map-get($grid-breakpoints, ' sm')})',
+  'md-only': 'only screen and (min-width: #{map-get($grid-breakpoints, ' md')}) and (max-width: #{map-get($grid-breakpoints, ' lg') - 0.02})',
+  'md-and-down': 'only screen and (max-width: #{map-get($grid-breakpoints, ' lg') - 0.02})',
+  'md-and-up': 'only screen and (min-width: #{map-get($grid-breakpoints, ' md')})',
+  'lg-only': 'only screen and (min-width: #{map-get($grid-breakpoints, ' lg')}) and (max-width: #{map-get($grid-breakpoints, ' xl') - 0.02})',
+  'lg-and-down': 'only screen and (max-width: #{map-get($grid-breakpoints, ' xl') - 0.02})',
+  'lg-and-up': 'only screen and (min-width: #{map-get($grid-breakpoints, ' lg')})',
+  'xl-only': 'only screen and (min-width: #{map-get($grid-breakpoints, ' xl')})'
 );
 
 //$body-font-family: tokens.$font-family-text;
@@ -109,39 +120,8 @@ $display-breakpoints: ('print-only': 'only print',
 $body-font-family: "MB Corpo S Text Office";
 $heading-font-family: "MB Corpo A Title Cond Office" !default;
 
-:root {
-  --headings-size-h1: #{tokens.$font-application-s-headline1-font-size};
-  --headings-size-h2: #{tokens.$font-application-s-headline2-font-size};
-  --headings-size-h3: #{tokens.$font-application-s-headline3-font-size};
-  --headings-size-h4: #{tokens.$font-application-s-headline4-font-size};
-  --headings-size-h5: #{tokens.$font-application-s-headline5-font-size};
-  --headings-size-h6: #{tokens.$font-application-s-headline6-font-size};
-  --subtitle1-size: #{tokens.$font-application-s-subtitle1-font-size};
-  --subtitle2-size: #{tokens.$font-application-s-subtitle2-font-size};
-  --body1-size: #{tokens.$font-application-s-body1-font-size};
-  --body2-size: #{tokens.$font-application-s-body2-font-size};
-  --button-size: #{tokens.$font-application-s-button-font-size};
-  --caption-size: #{tokens.$font-application-s-caption-font-size};
-  --overline-size: #{tokens.$font-application-s-overline-font-size};
-
-  @media #{map-get($display-breakpoints, 'lg-and-up')} {
-    --headings-size-h1: #{tokens.$font-application-l-headline1-font-size};
-    --headings-size-h2: #{tokens.$font-application-l-headline2-font-size};
-    --headings-size-h3: #{tokens.$font-application-l-headline3-font-size};
-    --headings-size-h4: #{tokens.$font-application-l-headline4-font-size};
-    --headings-size-h5: #{tokens.$font-application-l-headline5-font-size};
-    --headings-size-h6: #{tokens.$font-application-l-headline6-font-size};
-    --subtitle1-size: #{tokens.$font-application-l-subtitle1-font-size};
-    --subtitle2-size: #{tokens.$font-application-l-subtitle2-font-size};
-    --body1-size: #{tokens.$font-application-l-body1-font-size};
-    --body2-size: #{tokens.$font-application-l-body2-font-size};
-    --button-size: #{tokens.$font-application-l-button-font-size};
-    --caption-size: #{tokens.$font-application-l-caption-font-size};
-    --overline-size: #{tokens.$font-application-l-overline-font-size};
-  }
-}
-
-$headings: ("h1": ("size": var(--headings-size-h1, tokens.$font-application-l-headline1-font-size),
+$headings: (
+  "h1": ("size": var(--headings-size-h1, tokens.$font-application-l-headline1-font-size),
     "weight": 300,
     "line-height": var(--headings-size-h1, tokens.$font-application-l-headline1-font-size),
     "letter-spacing": tokens.$font-application-s-headline1-letter-spacing,
@@ -241,9 +221,11 @@ $values in $headings {
 
 ;
 
-$font-weights: (("regular": tokens.$font-weight-regular,
+$font-weights: (
+  ("regular": tokens.$font-weight-regular,
     "bold": tokens.$font-weight-bold,
-  ));
+  )
+);
 
 
 
@@ -251,8 +233,10 @@ $font-weights: (("regular": tokens.$font-weight-regular,
 
 
 ///--- THEME SPECIFIC ---///
-$material-dark-elevation-colors: () !default;
-$material-dark: ("status-bar": ("regular": map-get($shades, "black"),
+$material-dark-elevation-colors: (
+  ) !default;
+$material-dark: (
+  "status-bar": ("regular": map-get($shades, "black"),
     "lights-out": rgba(map-get($shades, "black"), 0.2),
   ),
   "app-bar": map-get($material-dark-elevation-colors, "4"),
@@ -362,7 +346,8 @@ $material-dark: ("status-bar": ("regular": map-get($shades, "black"),
   "active-icon-percent": 1,
   "inactive-icon-percent": 0.5,
 );
-$material-light: ("status-bar": ("regular": map-get($grey, "lighten-2"),
+$material-light: (
+  "status-bar": ("regular": map-get($grey, "lighten-2"),
     "lights-out": rgba(map-get($shades, "white"), 0.7),
   ),
   "app-bar": map-get($grey, "lighten-4"),

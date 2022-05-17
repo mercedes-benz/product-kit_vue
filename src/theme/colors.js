@@ -7,10 +7,11 @@ require('./overrides.scss')
 
 var colorObject = {}
 var application = {}
-application["light"] = {anchor: tokens.colorApplicationPrimaryVariant}
-application["dark"] = {anchor: tokensDark.colorApplicationPrimaryVariant}
+application["light"] = { anchor: tokens.colorApplicationPrimaryVariant }
+application["dark"] = { anchor: tokensDark.colorApplicationPrimaryVariant }
 
-const colorNames = ["neutral", "goldentanoi", "deepblue", "deluge", "xanadu", "lividbrown", "red", "green"]
+const colorNames = ["neutral", "goldentainoi", "deepblue", "deluge", "xanadu", "lividbrown", "red", "green"]
+const baseColorNames = ["neutral", "blue", "red", "green", "yellow", "blackcurrant", "lividbrown", "nandor"]
 const applicationColors = ["primary", "primary-variant", "secondary", "tertiary", "quaternary", "background", "surface", "outline", "error", "success"]
 
 const shades = [
@@ -26,7 +27,37 @@ const shades = [
     { shade: "900", vueShade: "darken4" },
 ]
 
+/* 
+ * BASE COLORS 
+*/
+baseColorNames.forEach(color => {
+    var colorPiece = {}
+    colorPiece[color] = {}
+    shades.forEach(shade => {
+        var name = "colorBase" + color.charAt(0).toUpperCase() + color.slice(1) + shade.shade
+        var temp = tokens[name]
+        colorPiece[color][shade.vueShade] = temp
+    });
+    Object.assign(colorObject, colorPiece)
+});
 
+/* 
+ * BASE CONTRAST COLORS 
+*/
+baseColorNames.forEach(color => {
+    var colorPiece = {}
+    colorPiece[color + "-contrast"] = {}
+    shades.forEach(shade => {
+        var name = "colorBase" + color.charAt(0).toUpperCase() + color.slice(1) + "Contrast" + shade.shade
+        var temp = tokens[name]
+        colorPiece[color + "-contrast"][shade.vueShade] = temp
+    });
+    Object.assign(colorObject, colorPiece)
+});
+
+/* 
+ * BRAND COLORS 
+*/
 colorNames.forEach(color => {
     var colorPiece = {}
     colorPiece[color] = {}
@@ -38,6 +69,9 @@ colorNames.forEach(color => {
     Object.assign(colorObject, colorPiece)
 });
 
+/* 
+ * BRAND CONTRAST COLORS 
+*/
 colorNames.forEach(color => {
     var colorPiece = {}
     colorPiece[color + "-contrast"] = {}
@@ -49,28 +83,9 @@ colorNames.forEach(color => {
     Object.assign(colorObject, colorPiece)
 });
 
-colorNames.forEach(color => {
-    shades.forEach(shade => {
-        var name = "colorBrand" + color.charAt(0).toUpperCase() + color.slice(1) + shade.shade
-        var name2 = color + "-" + shade.shade
-        var temp = tokens[name]
-        var variable = {}
-        variable[name2] = temp
-        Object.assign(colorObject, variable)
-    });
-});
-
-colorNames.forEach(color => {
-    shades.forEach(shade => {
-        var name = "colorBrand" + color.charAt(0).toUpperCase() + color.slice(1) + "Contrast" + shade.shade
-        var name2 = color + "-contrast-" + shade.shade
-        var temp = tokens[name]
-        var variable = {}
-        variable[name2] = temp
-        Object.assign(colorObject, variable)
-    });
-});
-
+/* 
+ * APPLICATION COLORS 
+*/
 applicationColors.forEach(color => {
     var name = "colorApplication" + (color === "primary-variant" ? "PrimaryVariant" : color.charAt(0).toUpperCase() + color.slice(1))
     var nameContrast = "colorApplicationContrast" + (color === "primary-variant" ? "PrimaryVariant" : color.charAt(0).toUpperCase() + color.slice(1))
@@ -84,7 +99,7 @@ const colors = {
     theme: {
         themes: {
             light: {
-                
+
             },
             dark: {
 
