@@ -15,15 +15,15 @@ module.exports = {
     loaderOptions: {
       scss: { // 9.0.0
         additionalData: `
-          @use "../../core/exports/web/styles/mbti/scss/variables" as tokens;
-          @use "../../core/exports/web/styles/mbti/scss/variables-dark" as tokensDark;
+          @use "../../core/dist/web/styles/mbti/scss/variables" as tokens;
+          @use "../../core/dist/web/styles/mbti/scss/variables-dark" as tokensDark;
           @import "../src/theme/variables.scss";
         `,
       },
       sass: { // 9.0.0
         additionalData: `
-          @use "../../core/exports/web/styles/mbti/scss/variables" as tokens
-          @use "../../core/exports/web/styles/mbti/scss/variables-dark" as tokensDark
+          @use "../../core/dist/web/styles/mbti/scss/variables" as tokens
+          @use "../../core/dist/web/styles/mbti/scss/variables-dark" as tokensDark
           @import "../src/theme/variables.scss"
         `,
       },
