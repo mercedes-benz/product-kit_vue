@@ -3301,22 +3301,12 @@ samp {
 
 @media only screen and (min-width: #{map-get($grid-breakpoints, 'xxl')}) {
 
-    .v-application {
-        padding-left: 7%;
-        padding-right: 7%;
-    }
 
     .v-application--wrap {
+        width: tokens.$layout-application-compact-xxl-content-width;
         max-width: tokens.$layout-application-compact-xxl-content-max-width;
         margin-right: auto;
         margin-left: auto;
-    }
-
-    .v-application {
-        &.fluid {
-            padding-left: 0;
-            padding-right: 0;
-        }
     }
 
     .fluid {
@@ -3947,52 +3937,102 @@ samp {
 .v-application {
     & .primary {
         color: var(--v-primary-contrast-base) !important;
-        caret-color: var(--v-primary-contrast-base) !important
+        caret-color: var(--v-primary-contrast-base) !important;
+
+        & .v-btn--icon {
+            color: var(--v-primary-contrast-base);
+            opacity: tokens.$opacity-application-icon-contrast-medium;
+        }
     }
 
     & .primary-variant {
         color: var(--v-primary-variant-contrast-base) !important;
-        caret-color: var(--v-primary-variant-contrast-base) !important
+        caret-color: var(--v-primary-variant-contrast-base) !important;
+
+        & .v-btn--icon {
+            color: var(--v-primary-variant-contrast-base);
+            opacity: tokens.$opacity-application-icon-contrast-medium;
+        }
     }
 
     & .secondary {
         color: var(--v-secondary-contrast-base) !important;
-        caret-color: var(--v-secondary-contrast-base) !important
+        caret-color: var(--v-secondary-contrast-base) !important;
+
+        & .v-btn--icon {
+            color: var(--v-secondary-contrast-base);
+            opacity: tokens.$opacity-application-icon-contrast-medium;
+        }
     }
 
     & .tertiary {
         color: var(--v-tertiary-contrast-base) !important;
-        caret-color: var(--v-tertiary-contrast-base) !important
+        caret-color: var(--v-tertiary-contrast-base) !important;
+
+        & .v-btn--icon {
+            color: var(--v-tertiary-contrast-base);
+            opacity: tokens.$opacity-application-icon-contrast-medium;
+        }
     }
 
     & .quaternary {
         color: var(--v-quaternary-contrast-base) !important;
-        caret-color: var(--v-quaternary-contrast-base) !important
+        caret-color: var(--v-quaternary-contrast-base) !important;
+
+        & .v-btn--icon {
+            color: var(--v-quaternary-contrast-base);
+            opacity: tokens.$opacity-application-icon-contrast-medium;
+        }
     }
 
     & .background {
         color: var(--v-background-contrast-base) !important;
-        caret-color: var(--v-background-contrast-base) !important
+        caret-color: var(--v-background-contrast-base) !important;
+
+        & .v-btn--icon {
+            color: var(--v-background-contrast-base);
+            opacity: tokens.$opacity-application-icon-contrast-medium;
+        }
     }
 
     & .surface {
         color: var(--v-surface-contrast-base) !important;
-        caret-color: var(--v-surface-contrast-base) !important
+        caret-color: var(--v-surface-contrast-base) !important;
+
+        & .v-btn--icon {
+            color: var(--v-surface-contrast-base);
+            opacity: tokens.$opacity-application-icon-contrast-medium;
+        }
     }
 
     & .outline {
         color: var(--v-outline-contrast-base) !important;
-        caret-color: var(--v-outline-contrast-base) !important
+        caret-color: var(--v-outline-contrast-base) !important;
+
+        & .v-btn--icon {
+            color: var(--v-outline-contrast-base);
+            opacity: tokens.$opacity-application-icon-contrast-medium;
+        }
     }
 
     & .error {
         color: var(--v-error-contrast-base) !important;
-        caret-color: var(--v-error-contrast-base) !important
+        caret-color: var(--v-error-contrast-base) !important;
+
+        & .v-btn--icon {
+            color: var(--v-error-contrast-base);
+            opacity: tokens.$opacity-application-icon-contrast-medium;
+        }
     }
 
     & .success {
         color: var(--v-success-contrast-base) !important;
-        caret-color: var(--v-success-contrast-base) !important
+        caret-color: var(--v-success-contrast-base) !important;
+
+        & .v-btn--icon {
+            color: var(--v-success-contrast-base);
+            opacity: tokens.$opacity-application-icon-contrast-medium;
+        }
     }
 
     .neutral {
@@ -4570,6 +4610,16 @@ samp {
                 color: var(--v-primary-variant-base) !important;
                 caret-color: var(--v-primary-variant-base) !important
             }
+
+            &.v-btn--active {
+                color: var(--v-background-contrast-base) !important;
+                caret-color: var(--v-background-contrast-base) !important;
+
+                &::before {
+                    background-color: var(--v-primary-variant-base) !important;
+                    border: 2px solid var(--v-background-contrast-base);
+                }
+            }
         }
 
         &.v-btn--outlined {
@@ -4590,6 +4640,12 @@ samp {
             &.primary--text {
                 color: var(--v-primary-variant-base) !important;
                 caret-color: var(--v-primary-variant-base) !important
+            }
+        }
+
+        &.v-btn--has-bg {
+            &::before {
+                border: 2px solid var(--v-background-contrast-base);
             }
         }
     }
@@ -4616,9 +4672,17 @@ samp {
 
     & .v-chip {
         &.v-chip--outlined {
+            &.primary {
+                color: var(--v-primary-variant-base) !important;
+                border-color: var(--v-primary-variant-base) !important;
+                caret-color: var(--v-primary-variant-base) !important
+            }
+        }
+
+        &.primary--text {
             color: var(--v-primary-variant-base) !important;
-            border-color: var(--v-primary-variant-base) !important;
-            caret-color: var(--v-primary-variant-base) !important
+            caret-color: var(--v-primary-variant-base) !important;
+            border: 1px solid var(--v-background-contrast-base)
         }
     }
 
@@ -4670,6 +4734,90 @@ samp {
             &.primary--text {
                 color: var(--v-primary-variant-base) !important;
                 caret-color: var(--v-primary-variant-base) !important
+            }
+        }
+
+        & .v-input__slot {
+            &.primary {
+                & textarea {
+                    color: var(--v-primary-contrast-base) !important;
+                    caret-color: var(--v-primary-contrast-base) !important
+                }
+            }
+
+            &.secondary {
+                & textarea {
+                    color: var(--v-secondary-contrast-base) !important;
+                    caret-color: var(--v-secondary-contrast-base) !important
+                }
+            }
+
+            &.tertiary {
+                & textarea {
+                    color: var(--v-tertiary-contrast-base) !important;
+                    caret-color: var(--v-tertiary-contrast-base) !important
+                }
+            }
+
+            &.quaternary {
+                & textarea {
+                    color: var(--v-quaternary-contrast-base) !important;
+                    caret-color: var(--v-quaternary-contrast-base) !important
+                }
+            }
+
+            &.background {
+                & textarea {
+                    color: var(--v-background-contrast-base) !important;
+                    caret-color: var(--v-background-contrast-base) !important
+                }
+            }
+
+            &.surface {
+                & textarea {
+                    color: var(--v-surface-contrast-base) !important;
+                    caret-color: var(--v-surface-contrast-base) !important
+                }
+            }
+
+            &.error {
+                & textarea {
+                    color: var(--v-error-contrast-base) !important;
+                    caret-color: var(--v-error-contrast-base) !important
+                }
+            }
+
+            &.outline {
+                & textarea {
+                    color: var(--v-outline-contrast-base) !important;
+                    caret-color: var(--v-outline-contrast-base) !important
+                }
+            }
+
+            &.success {
+                & textarea {
+                    color: var(--v-success-contrast-base) !important;
+                    caret-color: var(--v-success-contrast-base) !important
+                }
+            }
+        }
+    }
+
+    & .v-list {
+        & .v-list-item {
+            &.primary--text {
+                color: var(--v-background-contrast-base) !important;
+                caret-color: var(--v-background-contrast-base) !important
+            }
+
+            &.v-list-item--active {
+                color: var(--v-background-contrast-base) !important;
+                caret-color: var(--v-background-contrast-base) !important
+            }
+
+            &::before {
+                background-color: var(--v-primary-variant-base);
+                border: 2px solid var(--v-background-contrast-base);
             }
         }
     }
