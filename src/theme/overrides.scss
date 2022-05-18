@@ -15,7 +15,7 @@
     --caption-size: #{tokens.$font-application-s-caption-font-size};
     --overline-size: #{tokens.$font-application-s-overline-font-size};
 
-    @media only screen and (min-width: 1240px) {
+    @media only screen and (min-width: 1024px) {
         --headings-size-h1: #{tokens.$font-application-l-headline1-font-size};
         --headings-size-h2: #{tokens.$font-application-l-headline2-font-size};
         --headings-size-h3: #{tokens.$font-application-l-headline3-font-size};
@@ -134,107 +134,6 @@
     }
 }
 
-.red {
-    color: tokens.$color-brand-red-contrast-500  !important;
-    opacity: tokens.$opacity-application-text-contrast-high  !important;
-
-    &.lighten-1 {
-        color: tokens.$color-brand-red-contrast-400  !important;
-        opacity: tokens.$opacity-application-text-contrast-high  !important;
-    }
-
-    &.lighten-2 {
-        color: tokens.$color-brand-red-contrast-300  !important;
-        opacity: tokens.$opacity-application-text-contrast-high  !important;
-    }
-
-    &.lighten-3 {
-        color: tokens.$color-brand-red-contrast-200  !important;
-        opacity: tokens.$opacity-application-text-high  !important;
-    }
-
-    &.lighten-4 {
-        color: tokens.$color-brand-red-contrast-100  !important;
-        opacity: tokens.$opacity-application-text-high  !important;
-    }
-
-    &.lighten-5 {
-        color: tokens.$color-brand-red-contrast-50  !important;
-        opacity: tokens.$opacity-application-text-high  !important;
-    }
-
-    &.darken-1 {
-        color: tokens.$color-brand-red-contrast-600  !important;
-        opacity: tokens.$opacity-application-text-contrast-high  !important;
-    }
-
-    &.darken-2 {
-        color: tokens.$color-brand-red-contrast-700  !important;
-        opacity: tokens.$opacity-application-text-contrast-high  !important;
-    }
-
-    &.darken-3 {
-        color: tokens.$color-brand-red-contrast-800  !important;
-        opacity: tokens.$opacity-application-text-contrast-high  !important;
-    }
-
-    &.darken-4 {
-        color: tokens.$color-brand-red-contrast-900  !important;
-        opacity: tokens.$opacity-application-text-contrast-high  !important;
-    }
-}
-
-.green {
-    color: tokens.$color-brand-green-contrast-500  !important;
-    opacity: tokens.$opacity-application-text-contrast-high  !important;
-
-    &.lighten-1 {
-        color: tokens.$color-brand-green-contrast-400  !important;
-        opacity: tokens.$opacity-application-text-contrast-high  !important;
-    }
-
-    &.lighten-2 {
-        color: tokens.$color-brand-green-contrast-300  !important;
-        opacity: tokens.$opacity-application-text-high  !important;
-    }
-
-    &.lighten-3 {
-        color: tokens.$color-brand-green-contrast-200  !important;
-        opacity: tokens.$opacity-application-text-high  !important;
-    }
-
-    &.lighten-4 {
-        color: tokens.$color-brand-green-contrast-100  !important;
-        opacity: tokens.$opacity-application-text-high  !important;
-    }
-
-    &.lighten-5 {
-        color: tokens.$color-brand-green-contrast-50  !important;
-        opacity: tokens.$opacity-application-text-high  !important;
-    }
-
-    &.darken-1 {
-        color: tokens.$color-brand-green-contrast-600  !important;
-        opacity: tokens.$opacity-application-text-contrast-high  !important;
-    }
-
-    &.darken-2 {
-        color: tokens.$color-brand-green-contrast-700  !important;
-        opacity: tokens.$opacity-application-text-contrast-high  !important;
-    }
-
-    &.darken-3 {
-        color: tokens.$color-brand-green-contrast-800  !important;
-        opacity: tokens.$opacity-application-text-contrast-high  !important;
-    }
-
-    &.darken-4 {
-        color: tokens.$color-brand-green-contrast-900  !important;
-        opacity: tokens.$opacity-application-text-contrast-high  !important;
-    }
-}
-
-
 code,
 kbd,
 pre,
@@ -243,18 +142,15 @@ samp {
 }
 
 /*** GRID ***/
-.v-main__wrap {
-    max-width: tokens.$layout-application-compact-xs-body-max-size;
-    margin: 0 auto;
+.v-application--wrap {
+    width: tokens.$layout-application-compact-xs-content-width;
+    margin: 0 5%;
 }
 
 .fluid {
-    .v-main__wrap {
-        max-width: tokens.$layout-application-wide-xs-body-max-size;
-        padding-left: 0;
-        padding-right: 0;
-        margin-right: auto;
-        margin-left: auto;
+    .v-application--wrap {
+        max-width: tokens.$layout-application-wide-xs-content-width;
+        margin: 0 5%;
     }
 }
 
@@ -877,18 +773,15 @@ samp {
 
 @media only screen and (min-width: #{map-get($grid-breakpoints, 'sm')}) {
 
-    .v-main__wrap {
-        max-width: tokens.$layout-application-compact-s-body-max-size;
-        margin: 0 auto;
+    .v-application--wrap {
+        width: tokens.$layout-application-compact-s-content-width;
+        margin: 0 5%;
     }
 
     .fluid {
-        .v-main__wrap {
-            max-width: tokens.$layout-application-wide-s-body-max-size;
-            padding-left: 0;
-            padding-right: 0;
-            margin-right: auto;
-            margin-left: auto;
+        .v-application--wrap {
+            max-width: tokens.$layout-application-wide-s-content-width;
+            margin: 0 5%;
         }
     }
 
@@ -1512,18 +1405,15 @@ samp {
 
 @media only screen and (min-width: #{map-get($grid-breakpoints, 'md')}) {
 
-    .v-main__wrap {
-        max-width: tokens.$layout-application-compact-m-body-max-size;
-        margin: 0 auto;
+    .v-application--wrap {
+        width: tokens.$layout-application-compact-m-content-width;
+        margin: 0 7%;
     }
 
     .fluid {
-        .v-main__wrap {
-            max-width: tokens.$layout-application-wide-m-body-max-size;
-            padding-left: 0;
-            padding-right: 0;
-            margin-right: auto;
-            margin-left: auto;
+        .v-application--wrap {
+            max-width: tokens.$layout-application-wide-m-content-width;
+            margin: 0 7%;
         }
     }
 
@@ -2147,18 +2037,15 @@ samp {
 
 @media only screen and (min-width: #{map-get($grid-breakpoints, 'lg')}) {
 
-    .v-main__wrap {
-        max-width: tokens.$layout-application-compact-l-body-max-size;
-        margin: 0 auto;
+    .v-application--wrap {
+        width: tokens.$layout-application-compact-l-content-width;
+        margin: 0 7%;
     }
 
     .fluid {
-        .v-main__wrap {
-            max-width: tokens.$layout-application-wide-l-body-max-size;
-            padding-left: 0;
-            padding-right: 0;
-            margin-right: auto;
-            margin-left: auto;
+        .v-application--wrap {
+            max-width: tokens.$layout-application-wide-l-content-width;
+            margin: 0 7%;
         }
     }
 
@@ -2782,18 +2669,15 @@ samp {
 
 @media only screen and (min-width: #{map-get($grid-breakpoints, 'xl')}) {
 
-    .v-main__wrap {
-        max-width: tokens.$layout-application-compact-l-body-max-size;
-        margin: 0 auto;
+    .v-application--wrap {
+        width: tokens.$layout-application-compact-xl-content-width;
+        margin: 0 7%;
     }
 
     .fluid {
-        .v-main__wrap {
-            max-width: tokens.$layout-application-wide-l-body-max-size;
-            padding-left: 0;
-            padding-right: 0;
-            margin-right: auto;
-            margin-left: auto;
+        .v-application--wrap {
+            max-width: tokens.$layout-application-wide-xl-content-width;
+            margin: 0 7%;
         }
     }
 
@@ -3415,6 +3299,651 @@ samp {
     }
 }
 
+@media only screen and (min-width: #{map-get($grid-breakpoints, 'xxl')}) {
+
+    .v-application {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .v-application--wrap {
+        max-width: tokens.$layout-application-compact-xxl-content-max-width;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .v-application {
+        &.fluid {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .fluid {
+        .v-application--wrap {
+            max-width: tokens.$layout-application-wide-xxl-content-width;
+            margin: 0 auto;
+        }
+    }
+
+    .row {
+        margin: - tokens.$layout-application-compact-xxl-gutter-size / 2;
+    }
+
+    .col-xl,
+    .col-xl-auto,
+    .col-xl-12,
+    .col-xl-11,
+    .col-xl-10,
+    .col-xl-9,
+    .col-xl-8,
+    .col-xl-7,
+    .col-xl-6,
+    .col-xl-5,
+    .col-xl-4,
+    .col-xl-3,
+    .col-xl-2,
+    .col-xl-1,
+    .col-lg,
+    .col-lg-auto,
+    .col-lg-12,
+    .col-lg-11,
+    .col-lg-10,
+    .col-lg-9,
+    .col-lg-8,
+    .col-lg-7,
+    .col-lg-6,
+    .col-lg-5,
+    .col-lg-4,
+    .col-lg-3,
+    .col-lg-2,
+    .col-lg-1,
+    .col-md,
+    .col-md-auto,
+    .col-md-12,
+    .col-md-11,
+    .col-md-10,
+    .col-md-9,
+    .col-md-8,
+    .col-md-7,
+    .col-md-6,
+    .col-md-5,
+    .col-md-4,
+    .col-md-3,
+    .col-md-2,
+    .col-md-1,
+    .col-sm,
+    .col-sm-auto,
+    .col-sm-12,
+    .col-sm-11,
+    .col-sm-10,
+    .col-sm-9,
+    .col-sm-8,
+    .col-sm-7,
+    .col-sm-6,
+    .col-sm-5,
+    .col-sm-4,
+    .col-sm-3,
+    .col-sm-2,
+    .col-sm-1,
+    .col,
+    .col-auto,
+    .col-12,
+    .col-11,
+    .col-10,
+    .col-9,
+    .col-8,
+    .col-7,
+    .col-6,
+    .col-5,
+    .col-4,
+    .col-3,
+    .col-2,
+    .col-1 {
+        padding: tokens.$layout-application-compact-xxl-gutter-size / 2;
+    }
+
+    .ma-3xs {
+        margin: tokens.$size-application-spacing-xxl-3xs;
+    }
+
+    .ma-xxs {
+        margin: tokens.$size-application-spacing-xxl-xxs;
+    }
+
+    .ma-xs {
+        margin: tokens.$size-application-spacing-xxl-xs;
+    }
+
+    .ma-s {
+        margin: tokens.$size-application-spacing-xxl-s;
+    }
+
+    .ma-m {
+        margin: tokens.$size-application-spacing-xxl-m;
+    }
+
+    .ma-l {
+        margin: tokens.$size-application-spacing-xxl-l;
+    }
+
+    .ma-xl {
+        margin: tokens.$size-application-spacing-xxl-xl;
+    }
+
+    .ma-xxl {
+        margin: tokens.$size-application-spacing-xxl-xxl;
+    }
+
+    .ma-3xl {
+        margin: tokens.$size-application-spacing-xxl-3xl;
+    }
+
+    .mt-3xs {
+        margin-top: tokens.$size-application-spacing-xxl-3xs;
+    }
+
+    .mt-xxs {
+        margin-top: tokens.$size-application-spacing-xxl-xxs;
+    }
+
+    .mt-xs {
+        margin-top: tokens.$size-application-spacing-xxl-xs;
+    }
+
+    .mt-s {
+        margin-top: tokens.$size-application-spacing-xxl-s;
+    }
+
+    .mt-m {
+        margin-top: tokens.$size-application-spacing-xxl-m;
+    }
+
+    .mt-l {
+        margin-top: tokens.$size-application-spacing-xxl-l;
+    }
+
+    .mt-xl {
+        margin-top: tokens.$size-application-spacing-xxl-xl;
+    }
+
+    .mt-xxl {
+        margin-top: tokens.$size-application-spacing-xxl-xxl;
+    }
+
+    .mt-3xl {
+        margin-top: tokens.$size-application-spacing-xxl-3xl;
+    }
+
+    .mb-3xs {
+        margin-bottom: tokens.$size-application-spacing-xxl-3xs;
+    }
+
+    .mb-xxs {
+        margin-bottom: tokens.$size-application-spacing-xxl-xxs;
+    }
+
+    .mb-xs {
+        margin-bottom: tokens.$size-application-spacing-xxl-xs;
+    }
+
+    .mb-s {
+        margin-bottom: tokens.$size-application-spacing-xxl-s;
+    }
+
+    .mb-m {
+        margin-bottom: tokens.$size-application-spacing-xxl-m;
+    }
+
+    .mb-l {
+        margin-bottom: tokens.$size-application-spacing-xxl-l;
+    }
+
+    .mb-xl {
+        margin-bottom: tokens.$size-application-spacing-xxl-xl;
+    }
+
+    .mb-xxl {
+        margin-bottom: tokens.$size-application-spacing-xxl-xxl;
+    }
+
+    .mb-3xl {
+        margin-bottom: tokens.$size-application-spacing-xxl-3xl;
+    }
+
+    .ml-3xs {
+        margin-left: tokens.$size-application-spacing-xxl-3xs;
+    }
+
+    .ml-xxs {
+        margin-left: tokens.$size-application-spacing-xxl-xxs;
+    }
+
+    .ml-xs {
+        margin-left: tokens.$size-application-spacing-xxl-xs;
+    }
+
+    .ml-s {
+        margin-left: tokens.$size-application-spacing-xxl-s;
+    }
+
+    .ml-m {
+        margin-left: tokens.$size-application-spacing-xxl-m;
+    }
+
+    .ml-l {
+        margin-left: tokens.$size-application-spacing-xxl-l;
+    }
+
+    .ml-xl {
+        margin-left: tokens.$size-application-spacing-xxl-xl;
+    }
+
+    .ml-xxl {
+        margin-left: tokens.$size-application-spacing-xxl-xxl;
+    }
+
+    .ml-3xl {
+        margin-left: tokens.$size-application-spacing-xxl-3xl;
+    }
+
+    .mr-3xs {
+        margin-right: tokens.$size-application-spacing-xxl-3xs;
+    }
+
+    .mr-xxs {
+        margin-right: tokens.$size-application-spacing-xxl-xxs;
+    }
+
+    .mr-xs {
+        margin-right: tokens.$size-application-spacing-xxl-xs;
+    }
+
+    .mr-s {
+        margin-right: tokens.$size-application-spacing-xxl-s;
+    }
+
+    .mr-m {
+        margin-right: tokens.$size-application-spacing-xxl-m;
+    }
+
+    .mr-l {
+        margin-right: tokens.$size-application-spacing-xxl-l;
+    }
+
+    .mr-xl {
+        margin-right: tokens.$size-application-spacing-xxl-xl;
+    }
+
+    .mr-xxl {
+        margin-right: tokens.$size-application-spacing-xxl-xxl;
+    }
+
+    .mr-3xl {
+        margin-right: tokens.$size-application-spacing-xxl-3xl;
+    }
+
+    .mx-3xs {
+        margin-right: tokens.$size-application-spacing-xxl-3xs;
+        margin-left: tokens.$size-application-spacing-xxl-3xs;
+    }
+
+    .mx-xxs {
+        margin-right: tokens.$size-application-spacing-xxl-xxs;
+        margin-left: tokens.$size-application-spacing-xxl-xxs;
+    }
+
+    .mx-xs {
+        margin-right: tokens.$size-application-spacing-xxl-xs;
+        margin-left: tokens.$size-application-spacing-xxl-xs;
+    }
+
+    .mx-s {
+        margin-right: tokens.$size-application-spacing-xxl-s;
+        margin-left: tokens.$size-application-spacing-xxl-s;
+    }
+
+    .mx-m {
+        margin-right: tokens.$size-application-spacing-xxl-m;
+        margin-left: tokens.$size-application-spacing-xxl-m;
+    }
+
+    .mx-l {
+        margin-right: tokens.$size-application-spacing-xxl-l;
+        margin-left: tokens.$size-application-spacing-xxl-l;
+    }
+
+    .mx-xl {
+        margin-right: tokens.$size-application-spacing-xxl-xl;
+        margin-left: tokens.$size-application-spacing-xxl-xl;
+    }
+
+    .mx-xxl {
+        margin-right: tokens.$size-application-spacing-xxl-xxl;
+        margin-left: tokens.$size-application-spacing-xxl-xxl;
+    }
+
+    .mx-3xl {
+        margin-right: tokens.$size-application-spacing-xxl-3xl;
+        margin-left: tokens.$size-application-spacing-xxl-3xl;
+    }
+
+    .my-3xs {
+        margin-top: tokens.$size-application-spacing-xxl-3xs;
+        margin-bottom: tokens.$size-application-spacing-xxl-3xs;
+    }
+
+    .my-xxs {
+        margin-top: tokens.$size-application-spacing-xxl-xxs;
+        margin-bottom: tokens.$size-application-spacing-xxl-xxs;
+    }
+
+    .my-xs {
+        margin-top: tokens.$size-application-spacing-xxl-xs;
+        margin-bottom: tokens.$size-application-spacing-xxl-xs;
+    }
+
+    .my-s {
+        margin-top: tokens.$size-application-spacing-xxl-s;
+        margin-bottom: tokens.$size-application-spacing-xxl-s;
+    }
+
+    .my-m {
+        margin-top: tokens.$size-application-spacing-xxl-m;
+        margin-bottom: tokens.$size-application-spacing-xxl-m;
+    }
+
+    .my-l {
+        margin-top: tokens.$size-application-spacing-xxl-l;
+        margin-bottom: tokens.$size-application-spacing-xxl-l;
+    }
+
+    .my-xl {
+        margin-top: tokens.$size-application-spacing-xxl-xl;
+        margin-bottom: tokens.$size-application-spacing-xxl-xl;
+    }
+
+    .my-xxl {
+        margin-top: tokens.$size-application-spacing-xxl-xxl;
+        margin-bottom: tokens.$size-application-spacing-xxl-xxl;
+    }
+
+    .my-3xl {
+        margin-top: tokens.$size-application-spacing-xxl-3xl;
+        margin-bottom: tokens.$size-application-spacing-xxl-3xl;
+    }
+
+    .pa-3xs {
+        padding: tokens.$size-application-spacing-xxl-3xs;
+    }
+
+    .pa-xxs {
+        padding: tokens.$size-application-spacing-xxl-xxs;
+    }
+
+    .pa-xs {
+        padding: tokens.$size-application-spacing-xxl-xs;
+    }
+
+    .pa-s {
+        padding: tokens.$size-application-spacing-xxl-s;
+    }
+
+    .pa-m {
+        padding: tokens.$size-application-spacing-xxl-m;
+    }
+
+    .pa-l {
+        padding: tokens.$size-application-spacing-xxl-l;
+    }
+
+    .pa-xl {
+        padding: tokens.$size-application-spacing-xxl-xl;
+    }
+
+    .pa-xxl {
+        padding: tokens.$size-application-spacing-xxl-xxl;
+    }
+
+    .pa-3xl {
+        padding: tokens.$size-application-spacing-xxl-3xl;
+    }
+
+    .pt-3xs {
+        padding-top: tokens.$size-application-spacing-xxl-3xs;
+    }
+
+    .pt-xxs {
+        padding-top: tokens.$size-application-spacing-xxl-xxs;
+    }
+
+    .pt-xs {
+        padding-top: tokens.$size-application-spacing-xxl-xs;
+    }
+
+    .pt-s {
+        padding-top: tokens.$size-application-spacing-xxl-s;
+    }
+
+    .pt-m {
+        padding-top: tokens.$size-application-spacing-xxl-m;
+    }
+
+    .pt-l {
+        padding-top: tokens.$size-application-spacing-xxl-l;
+    }
+
+    .pt-xl {
+        padding-top: tokens.$size-application-spacing-xxl-xl;
+    }
+
+    .pt-xxl {
+        padding-top: tokens.$size-application-spacing-xxl-xxl;
+    }
+
+    .pt-3xl {
+        padding-top: tokens.$size-application-spacing-xxl-3xl;
+    }
+
+    .pb-3xs {
+        padding-bottom: tokens.$size-application-spacing-xxl-3xs;
+    }
+
+    .pb-xxs {
+        padding-bottom: tokens.$size-application-spacing-xxl-xxs;
+    }
+
+    .pb-xs {
+        padding-bottom: tokens.$size-application-spacing-xxl-xs;
+    }
+
+    .pb-s {
+        padding-bottom: tokens.$size-application-spacing-xxl-s;
+    }
+
+    .pb-m {
+        padding-bottom: tokens.$size-application-spacing-xxl-m;
+    }
+
+    .pb-l {
+        padding-bottom: tokens.$size-application-spacing-xxl-l;
+    }
+
+    .pb-xl {
+        padding-bottom: tokens.$size-application-spacing-xxl-xl;
+    }
+
+    .pb-xxl {
+        padding-bottom: tokens.$size-application-spacing-xxl-xxl;
+    }
+
+    .pb-3xl {
+        padding-bottom: tokens.$size-application-spacing-xxl-3xl;
+    }
+
+    .pl-3xs {
+        padding-left: tokens.$size-application-spacing-xxl-3xs;
+    }
+
+    .pl-xxs {
+        padding-left: tokens.$size-application-spacing-xxl-xxs;
+    }
+
+    .pl-xs {
+        padding-left: tokens.$size-application-spacing-xxl-xs;
+    }
+
+    .pl-s {
+        padding-left: tokens.$size-application-spacing-xxl-s;
+    }
+
+    .pl-m {
+        padding-left: tokens.$size-application-spacing-xxl-m;
+    }
+
+    .pl-l {
+        padding-left: tokens.$size-application-spacing-xxl-l;
+    }
+
+    .pl-xl {
+        padding-left: tokens.$size-application-spacing-xxl-xl;
+    }
+
+    .pl-xxl {
+        padding-left: tokens.$size-application-spacing-xxl-xxl;
+    }
+
+    .pl-3xl {
+        padding-left: tokens.$size-application-spacing-xxl-3xl;
+    }
+
+    .pr-3xs {
+        padding-right: tokens.$size-application-spacing-xxl-3xs;
+    }
+
+    .pr-xxs {
+        padding-right: tokens.$size-application-spacing-xxl-xxs;
+    }
+
+    .pr-xs {
+        padding-right: tokens.$size-application-spacing-xxl-xs;
+    }
+
+    .pr-s {
+        padding-right: tokens.$size-application-spacing-xxl-s;
+    }
+
+    .pr-m {
+        padding-right: tokens.$size-application-spacing-xxl-m;
+    }
+
+    .pr-l {
+        padding-right: tokens.$size-application-spacing-xxl-l;
+    }
+
+    .pr-xl {
+        padding-right: tokens.$size-application-spacing-xxl-xl;
+    }
+
+    .pr-xxl {
+        padding-right: tokens.$size-application-spacing-xxl-xxl;
+    }
+
+    .pr-3xl {
+        padding-right: tokens.$size-application-spacing-xxl-3xl;
+    }
+
+    .px-3xs {
+        padding-right: tokens.$size-application-spacing-xxl-3xs;
+        padding-left: tokens.$size-application-spacing-xxl-3xs;
+    }
+
+    .px-xxs {
+        padding-right: tokens.$size-application-spacing-xxl-xxs;
+        padding-left: tokens.$size-application-spacing-xxl-xxs;
+    }
+
+    .px-xs {
+        padding-right: tokens.$size-application-spacing-xxl-xs;
+        padding-left: tokens.$size-application-spacing-xxl-xs;
+    }
+
+    .px-s {
+        padding-right: tokens.$size-application-spacing-xxl-s;
+        padding-left: tokens.$size-application-spacing-xxl-s;
+    }
+
+    .px-m {
+        padding-right: tokens.$size-application-spacing-xxl-m;
+        padding-left: tokens.$size-application-spacing-xxl-m;
+    }
+
+    .px-l {
+        padding-right: tokens.$size-application-spacing-xxl-l;
+        padding-left: tokens.$size-application-spacing-xxl-l;
+    }
+
+    .px-xl {
+        padding-right: tokens.$size-application-spacing-xxl-xl;
+        padding-left: tokens.$size-application-spacing-xxl-xl;
+    }
+
+    .px-xxl {
+        padding-right: tokens.$size-application-spacing-xxl-xxl;
+        padding-left: tokens.$size-application-spacing-xxl-xxl;
+    }
+
+    .px-3xl {
+        padding-right: tokens.$size-application-spacing-xxl-3xl;
+        padding-left: tokens.$size-application-spacing-xxl-3xl;
+    }
+
+    .py-3xs {
+        padding-top: tokens.$size-application-spacing-xxl-3xs;
+        padding-bottom: tokens.$size-application-spacing-xxl-3xs;
+    }
+
+    .py-xxs {
+        padding-top: tokens.$size-application-spacing-xxl-xxs;
+        padding-bottom: tokens.$size-application-spacing-xxl-xxs;
+    }
+
+    .py-xs {
+        padding-top: tokens.$size-application-spacing-xxl-xs;
+        padding-bottom: tokens.$size-application-spacing-xxl-xs;
+    }
+
+    .py-s {
+        padding-top: tokens.$size-application-spacing-xxl-s;
+        padding-bottom: tokens.$size-application-spacing-xxl-s;
+    }
+
+    .py-m {
+        padding-top: tokens.$size-application-spacing-xxl-m;
+        padding-bottom: tokens.$size-application-spacing-xxl-m;
+    }
+
+    .py-l {
+        padding-top: tokens.$size-application-spacing-xxl-l;
+        padding-bottom: tokens.$size-application-spacing-xxl-l;
+    }
+
+    .py-xl {
+        padding-top: tokens.$size-application-spacing-xxl-xl;
+        padding-bottom: tokens.$size-application-spacing-xxl-xl;
+    }
+
+    .py-xxl {
+        padding-top: tokens.$size-application-spacing-xxl-xxl;
+        padding-bottom: tokens.$size-application-spacing-xxl-xxl;
+    }
+
+    .py-3xl {
+        padding-top: tokens.$size-application-spacing-xxl-3xl;
+        padding-bottom: tokens.$size-application-spacing-xxl-3xl;
+    }
+}
+
 .v-application {
     & .primary {
         color: var(--v-primary-contrast-base) !important;
@@ -4023,6 +4552,15 @@ samp {
         &.primary--text {
             color: var(--v-primary-variant-base) !important;
             caret-color: var(--v-primary-variant-base) !important
+        }
+    }
+
+    & .v-input--indeterminate {
+        & .v-icon {
+            &.mdi-minus-box {
+                color: var(--v-primary-variant-base) !important;
+                caret-color: var(--v-primary-variant-base) !important
+            }
         }
     }
 
