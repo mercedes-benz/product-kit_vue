@@ -142,15 +142,12 @@ samp {
 }
 
 /*** GRID ***/
-.v-application--wrap {
+.container {
     width: tokens.$layout-application-compact-xs-content-width;
-    margin: 0 5%;
-}
+    padding: 0 !important;
 
-.fluid {
-    .v-application--wrap {
-        max-width: tokens.$layout-application-wide-xs-content-width;
-        margin: 0 5%;
+    &.wide {
+        width: tokens.$layout-application-wide-xs-content-width;
     }
 }
 
@@ -773,15 +770,11 @@ samp {
 
 @media only screen and (min-width: #{map-get($grid-breakpoints, 'sm')}) {
 
-    .v-application--wrap {
+    .container {
         width: tokens.$layout-application-compact-s-content-width;
-        margin: 0 5%;
-    }
 
-    .fluid {
-        .v-application--wrap {
-            max-width: tokens.$layout-application-wide-s-content-width;
-            margin: 0 5%;
+        &.wide {
+            width: tokens.$layout-application-wide-s-content-width;
         }
     }
 
@@ -1405,15 +1398,11 @@ samp {
 
 @media only screen and (min-width: #{map-get($grid-breakpoints, 'md')}) {
 
-    .v-application--wrap {
+    .container {
         width: tokens.$layout-application-compact-m-content-width;
-        margin: 0 7%;
-    }
 
-    .fluid {
-        .v-application--wrap {
-            max-width: tokens.$layout-application-wide-m-content-width;
-            margin: 0 7%;
+        &.wide {
+            width: tokens.$layout-application-wide-m-content-width;
         }
     }
 
@@ -2037,15 +2026,11 @@ samp {
 
 @media only screen and (min-width: #{map-get($grid-breakpoints, 'lg')}) {
 
-    .v-application--wrap {
+    .container {
         width: tokens.$layout-application-compact-l-content-width;
-        margin: 0 7%;
-    }
 
-    .fluid {
-        .v-application--wrap {
-            max-width: tokens.$layout-application-wide-l-content-width;
-            margin: 0 7%;
+        &.wide {
+            width: tokens.$layout-application-wide-l-content-width;
         }
     }
 
@@ -2669,15 +2654,11 @@ samp {
 
 @media only screen and (min-width: #{map-get($grid-breakpoints, 'xl')}) {
 
-    .v-application--wrap {
+    .container {
         width: tokens.$layout-application-compact-xl-content-width;
-        margin: 0 7%;
-    }
 
-    .fluid {
-        .v-application--wrap {
-            max-width: tokens.$layout-application-wide-xl-content-width;
-            margin: 0 7%;
+        &.wide {
+            width: tokens.$layout-application-wide-xl-content-width;
         }
     }
 
@@ -3302,17 +3283,13 @@ samp {
 @media only screen and (min-width: #{map-get($grid-breakpoints, 'xxl')}) {
 
 
-    .v-application--wrap {
+    .container {
         width: tokens.$layout-application-compact-xxl-content-width;
         max-width: tokens.$layout-application-compact-xxl-content-max-width;
-        margin-right: auto;
-        margin-left: auto;
-    }
 
-    .fluid {
-        .v-application--wrap {
+        &.wide {
+            width: tokens.$layout-application-wide-xxl-content-width;
             max-width: tokens.$layout-application-wide-xxl-content-width;
-            margin: 0 auto;
         }
     }
 
