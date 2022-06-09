@@ -1,6 +1,6 @@
 <template>
     <nav>
-        <div class="container d-flex align-center pt-0" style="height: 100%">
+        <div class="d-flex align-center pt-0" style="height: 100%">
             <!-- <slot>
             </slot> -->
             <!-- <div
@@ -82,7 +82,7 @@ export default {
     },
 
     mounted() {
-        console.log(this.$router.currentRoute.path)
+        console.log(this.$router.currentRoute.path);
     },
 };
 </script>

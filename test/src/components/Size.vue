@@ -10,10 +10,10 @@
                 </v-btn>
             </v-col>
         </v-row>
-        <v-container>
+        <div>
             <v-row no-gutters>
                 <v-col v-for="size in standardSizes" :key="size.name" cols="4">
-                    <v-container class="containerBG pa-0">
+                    <div class="containerBG pa-0">
                         <v-sheet
                             :id="size.name"
                             :class="size.name"
@@ -21,12 +21,14 @@
                             color="secondary"
                             height="200px"
                         >
-                            {{ size.name }}<br><span v-if="size.pixels != ''">({{ size.pixels }})</span>
+                            {{ size.name }}<br /><span v-if="size.pixels != ''"
+                                >({{ size.pixels }})</span
+                            >
                         </v-sheet>
-                    </v-container>
+                    </div>
                 </v-col>
             </v-row>
-        </v-container>
+        </div>
         <v-subheader>Custom T-Shirt Spacings A (responsive)</v-subheader>
         <v-row justify="center">
             <v-col cols="auto">
@@ -35,10 +37,10 @@
                 </v-btn>
             </v-col>
         </v-row>
-        <v-container>
+        <div>
             <v-row no-gutters justify="center">
                 <v-col v-for="size in tShirtSizes" :key="size.name" cols="auto">
-                    <v-container class="containerBG pa-0">
+                    <div class="containerBG pa-0">
                         <v-sheet
                             :id="size.name"
                             :class="size.name"
@@ -47,12 +49,14 @@
                             color="secondary"
                             height="200px"
                         >
-                            {{ size.name }}<br><span v-if="size.pixels != ''">({{ size.pixels }})</span>
+                            {{ size.name }}<br /><span v-if="size.pixels != ''"
+                                >({{ size.pixels }})</span
+                            >
                         </v-sheet>
-                    </v-container>
+                    </div>
                 </v-col>
             </v-row>
-        </v-container>
+        </div>
         <v-subheader>Custom T-Shirt Spacings X (responsive)</v-subheader>
         <v-row justify="center">
             <v-col cols="auto">
@@ -61,10 +65,14 @@
                 </v-btn>
             </v-col>
         </v-row>
-        <v-container>
+        <div>
             <v-row no-gutters justify="center">
-                <v-col v-for="size in tShirtSizesX" :key="size.name" cols="auto">
-                    <v-container class="containerBG pa-0">
+                <v-col
+                    v-for="size in tShirtSizesX"
+                    :key="size.name"
+                    cols="auto"
+                >
+                    <div class="containerBG pa-0">
                         <v-sheet
                             :id="size.name"
                             :class="size.name"
@@ -73,12 +81,14 @@
                             color="secondary"
                             height="200px"
                         >
-                            {{ size.name }}<br><span v-if="size.pixels != ''">({{ size.pixels }})</span>
+                            {{ size.name }}<br /><span v-if="size.pixels != ''"
+                                >({{ size.pixels }})</span
+                            >
                         </v-sheet>
-                    </v-container>
+                    </div>
                 </v-col>
             </v-row>
-        </v-container>
+        </div>
         <v-subheader>Custom T-Shirt Spacings Y (responsive)</v-subheader>
         <v-row justify="center">
             <v-col cols="auto">
@@ -87,10 +97,14 @@
                 </v-btn>
             </v-col>
         </v-row>
-        <v-container>
+        <div>
             <v-row no-gutters justify="center">
-                <v-col v-for="size in tShirtSizesY" :key="size.name" cols="auto">
-                    <v-container class="containerBG pa-0">
+                <v-col
+                    v-for="size in tShirtSizesY"
+                    :key="size.name"
+                    cols="auto"
+                >
+                    <div class="containerBG pa-0">
                         <v-sheet
                             :id="size.name"
                             :class="size.name"
@@ -99,12 +113,14 @@
                             color="secondary"
                             height="200px"
                         >
-                            {{ size.name }}<br><span v-if="size.pixels != ''">({{ size.pixels }})</span>
+                            {{ size.name }}<br /><span v-if="size.pixels != ''"
+                                >({{ size.pixels }})</span
+                            >
                         </v-sheet>
-                    </v-container>
+                    </div>
                 </v-col>
             </v-row>
-        </v-container>
+        </div>
     </div>
 </template>
 
@@ -160,23 +176,23 @@ export default {
 
     methods: {
         getAbs() {
-            this.standardSizes.forEach(element => {
-                element.pixels = this.absolute(element.name)
+            this.standardSizes.forEach((element) => {
+                element.pixels = this.absolute(element.name);
             });
         },
         getAbsTShirt() {
-            this.tShirtSizes.forEach(element => {
-                element.pixels = this.absolute(element.name)
+            this.tShirtSizes.forEach((element) => {
+                element.pixels = this.absolute(element.name);
             });
         },
         getAbsTShirtX() {
-            this.tShirtSizesX.forEach(element => {
-                element.pixels = this.absolute(element.name)
+            this.tShirtSizesX.forEach((element) => {
+                element.pixels = this.absolute(element.name);
             });
         },
         getAbsTShirtY() {
-            this.tShirtSizesY.forEach(element => {
-                element.pixels = this.absolute(element.name)
+            this.tShirtSizesY.forEach((element) => {
+                element.pixels = this.absolute(element.name);
             });
         },
         absolute(iden) {
@@ -184,20 +200,24 @@ export default {
                 case "l":
                 case "x":
                 case "a":
-                    return getComputedStyle(document.getElementById(iden)).marginLeft;
+                    return getComputedStyle(document.getElementById(iden))
+                        .marginLeft;
                     break;
                 case "t":
                 case "y":
-                    return getComputedStyle(document.getElementById(iden)).marginTop;
+                    return getComputedStyle(document.getElementById(iden))
+                        .marginTop;
                     break;
                 case "b":
-                    return getComputedStyle(document.getElementById(iden)).marginBottom;
+                    return getComputedStyle(document.getElementById(iden))
+                        .marginBottom;
                     break;
                 case "r":
-                    return getComputedStyle(document.getElementById(iden)).marginRight;
+                    return getComputedStyle(document.getElementById(iden))
+                        .marginRight;
                     break;
                 default:
-                    return "?"
+                    return "?";
                     break;
             }
         },

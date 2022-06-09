@@ -95,7 +95,7 @@
             <v-col cols="6">
                 <v-subheader>Alert</v-subheader>
                 <v-alert color="primary"> This is an alert </v-alert>
-                <v-alert outlined color="primary">
+                <v-alert outlined color="primary" icon="mdi-firework">
                     This is an outlined alert
                 </v-alert>
                 <v-alert text color="primary"> This is a text alert </v-alert>

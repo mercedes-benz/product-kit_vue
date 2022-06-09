@@ -17,6 +17,7 @@ module.exports = {
         additionalData: `
           @use "../../core/dist/web/styles/mbti/scss/variables" as tokens;
           @use "../../core/dist/web/styles/mbti/scss/variables-dark" as tokensDark;
+          @use "sass:meta";
           @import "../src/theme/variables.scss";
         `,
       },
@@ -24,6 +25,7 @@ module.exports = {
         additionalData: `
           @use "../../core/dist/web/styles/mbti/scss/variables" as tokens
           @use "../../core/dist/web/styles/mbti/scss/variables-dark" as tokensDark
+          @use "sass:meta"
           @import "../src/theme/variables.scss"
         `,
       },

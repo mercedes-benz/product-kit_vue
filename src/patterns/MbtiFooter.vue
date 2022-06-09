@@ -1,22 +1,24 @@
 <template>
     <footer>
-        <div class="container d-flex align-center" style="height: 100%; border-top: 1px solid var(--v-outline-base)">
+        <div
+            class="d-flex align-center"
+            style="height: 100%; border-top: 1px solid var(--v-outline-base)"
+        >
             <v-toolbar-title @click="$router.push('/')" style="cursor: pointer">
                 <p class="text-subtitle-2 my-0">
-                    &copy; 2022 Mercedes-Benz Tech Innovation | All rights reserved
+                    &copy; 2022 Mercedes-Benz Tech Innovation | All rights
+                    reserved
                 </p>
             </v-toolbar-title>
 
-            <slot>
-                
-            </slot>
+            <slot> </slot>
         </div>
     </footer>
 </template>
 
 <script>
 export default {
-    name: 'MbtiFooter',
+    name: "MbtiFooter",
 
     components: {},
 
@@ -40,8 +42,8 @@ footer {
     width: 100%;
 }
 .v-application--wrap:after {
-  content: '';
-  display: block;
-  height: 100px; /* Set same as footer's height */
+    content: "";
+    display: block;
+    height: 100px; /* Set same as footer's height */
 }
 </style>

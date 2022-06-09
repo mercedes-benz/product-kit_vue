@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 
-import * as tokens from "../../../core/dist/web/styles/mbti/js/variables";
-import * as tokensDark from "../../../core/dist/web/styles/mbti/js/variables-dark";
+import * as tokens from "../../../../core/dist/web/styles/mbti/js/variables";
+import * as tokensDark from "../../../../core/dist/web/styles/mbti/js/variables-dark";
 
-require('./overrides.scss')
+require('./../overrides.scss')
 
 var colorObject = {}
 var application = {}
@@ -55,9 +55,6 @@ baseColorNames.forEach(color => {
     Object.assign(colorObject, colorPiece)
 });
 
-console.log("BASE")
-console.log(colorObject)
-
 /* 
  * BRAND COLORS 
 */
@@ -85,9 +82,6 @@ colorNames.forEach(color => {
     });
     Object.assign(colorObject, colorPiece)
 });
-
-console.log("BRAND")
-console.log(colorObject)
 
 /* 
  * APPLICATION COLORS 

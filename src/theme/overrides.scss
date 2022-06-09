@@ -32,6 +32,45 @@
     }
 }
 
+$componentsLight: map-get(tokens.$tokens, "component");
+$componentsDark: map-get(tokensDark.$tokens, "component");
+
+// create mixin
+@mixin map-vars($map, $prefix, $key: "") {
+
+    @each $name,
+    $value in $map {
+
+        // copy the map key
+        $key-copy: $key;
+        // create name for CSS custom property that contains:
+        // current key + child key from nested map
+        $key: #{$key}-#{$name};
+
+        @if meta.type-of($value)=="map" {
+            // if value is a map, invoke it once more
+            @include map-vars($value, $prefix, $key);
+        }
+
+        @else {
+            --#{$prefix}#{$key}: #{$value};
+        }
+
+        // next iteration of loop should go with unchanged key
+        $key: $key-copy;
+    }
+}
+
+.v-application {
+    &.theme--light {
+        @include map-vars($componentsLight, "component");
+    }
+
+    &.theme--dark {
+        @include map-vars($componentsDark, "component");
+    }
+}
+
 .theme--dark {
     &.v-sheet {
         background-color: black;
@@ -4551,32 +4590,81 @@ samp {
             opacity: tokens.$opacity-application-text-contrast-high  !important;
         }
     }
+}
 
+
+
+@mixin components() {
     & .v-tabs {
         & .v-tabs-bar {
-            color: var(--v-primary-variant-base) !important;
-            caret-color: var(--v-primary-variant-base) !important
-        }
+            &.primary--text {
+                & .v-tabs-slider {
+                    background-color: var(--component-tabs-item-primary-selected-indicator-color);
+                }
 
-        & .v-tab {
-            &:hover {
-                color: var(--v-primary-variant-base) !important;
+                & .v-tab {
+
+                    &.v-tab--active {
+                        color: var(--component-tabs-item-primary-selected-text-color) !important;
+
+                        & .v-icon {
+                            color: var(--component-tabs-item-primary-selected-icon-color) !important;
+                        }
+                    }
+
+                    &:hover {
+                        color: var(--component-tabs-item-primary-hover-text-color) !important;
+
+                        & .v-icon {
+                            color: var(--component-tabs-item-primary-hover-text-color) !important;
+                        }
+                    }
+                }
             }
         }
     }
 
     & .v-icon {
         &.primary--text {
-            color: var(--v-primary-variant-base) !important;
-            caret-color: var(--v-primary-variant-base) !important
+            color: var(--component-icon-primary-color) !important;
         }
     }
 
-    & .v-input--indeterminate {
-        & .v-icon {
-            &.mdi-minus-box {
-                color: var(--v-primary-variant-base) !important;
-                caret-color: var(--v-primary-variant-base) !important
+    & .v-input {
+        &.v-input--checkbox {
+            &.v-input--indeterminate {
+                & .v-icon {
+                    color: var(--component-checkbox-primary-indeterminate-color) !important;
+                }
+            }
+
+            &.v-input--checked {
+                & .v-icon {
+                    color: var(--component-checkbox-primary-checked-color) !important;
+                }
+            }
+        }
+    }
+
+    & .v-item-group {
+
+        & .v-btn--active,
+        .v-chip--active {
+            color: var(--component-toggle-button-primary-selected-text-color) !important;
+
+            & .v-icon {
+                color: var(--component-toggle-button-primary-selected-icon-color)
+            }
+
+            &::before {
+                background-color: var(--component-toggle-button-primary-selected-background-color) //border: 2px solid var(--v-background-contrast-base);
+            }
+        }
+
+        & .v-btn,
+        .v-chip {
+            &:hover {
+                background-color: var(--component-toggle-button-primary-hover-background-color)
             }
         }
     }
@@ -4584,65 +4672,75 @@ samp {
     & .v-btn {
         &.v-btn--text {
             &.primary--text {
-                color: var(--v-primary-variant-base) !important;
-                caret-color: var(--v-primary-variant-base) !important
-            }
+                color: var(--component-button-text-primary-default-text-color) !important;
 
-            &.v-btn--active {
-                color: var(--v-background-contrast-base) !important;
-                caret-color: var(--v-background-contrast-base) !important;
-
-                &::before {
-                    background-color: var(--v-primary-variant-base) !important;
-                    border: 2px solid var(--v-background-contrast-base);
+                & .v-icon {
+                    color: var(--component-button-text-primary-default-icon-color) !important;
                 }
             }
         }
 
         &.v-btn--outlined {
             &.primary--text {
-                color: var(--v-primary-variant-base) !important;
-                caret-color: var(--v-primary-variant-base) !important
+                color: var(--component-button-outlined-primary-default-text-color) !important;
+
+                & .v-icon {
+                    color: var(--component-button-outlined-primary-default-icon-color) !important;
+                }
             }
         }
 
         &.v-btn--plain {
             &.primary--text {
-                color: var(--v-primary-variant-base) !important;
-                caret-color: var(--v-primary-variant-base) !important
+                color: var(--component-button-plain-primary-default-text-color) !important;
+
+                & .v-icon {
+                    color: var(--component-button-plain-primary-default-icon-color) !important;
+                }
             }
         }
 
         &.v-btn--icon {
             &.primary--text {
-                color: var(--v-primary-variant-base) !important;
-                caret-color: var(--v-primary-variant-base) !important
+                color: var(--component-button-icon-primary-default-text-color) !important;
+
+                & .v-icon {
+                    color: var(--component-button-icon-primary-default-icon-color) !important;
+                }
             }
         }
 
-        &.v-btn--has-bg {
+        /* &.v-btn--has-bg {
             &::before {
                 border: 2px solid var(--v-background-contrast-base);
             }
-        }
+        } */
     }
 
     & .v-alert {
         &.v-alert--outlined {
             &.primary--text {
-                color: var(--v-primary-variant-base) !important;
-                caret-color: var(--v-primary-variant-base) !important
+                color: var(--component-alert-outlined-primary-default-text-color) !important;
+                border-color: var(--component-alert-outlined-primary-default-outline-color) !important;
+                border-width: var(--component-alert-outlined-primary-default-outline-border-width) !important;
+
+                & .v-icon {
+                    color: var(--component-alert-outlined-primary-default-icon-color) !important;
+                }
             }
         }
 
         &.v-alert--text {
             &.primary--text {
-                color: var(--v-primary-variant-base) !important;
-                caret-color: var(--v-primary-variant-base) !important
+                color: var(--component-alert-text-primary-default-text-color) !important;
+
+                & .v-icon {
+                    color: var(--component-alert-text-primary-default-icon-color) !important;
+                }
             }
 
             &:before {
-                background-color: var(--v-primary-base);
+                background-color: var(--component-alert-text-primary-default-background-color);
             }
         }
     }
@@ -4650,47 +4748,59 @@ samp {
     & .v-chip {
         &.v-chip--outlined {
             &.primary {
-                color: var(--v-primary-variant-base) !important;
-                border-color: var(--v-primary-variant-base) !important;
-                caret-color: var(--v-primary-variant-base) !important
+                color: var(--component-chip-outlined-primary-text-color) !important;
+
+                & .v-icon {
+                    color: var(--component-chip-outlined-primary-icon-color) !important;
+
+                    &.v-chip__close {
+                        color: var(--component-chip-outlined-primary-delete-icon-default-color) !important;
+
+                        &:hover {
+                            color: var(--component-chip-outlined-primary-delete-icon-hover-color) !important;
+                        }
+                    }
+                }
+
+                /* border-color: var(--v-primary-variant-base) !important; */
             }
         }
 
-        &.primary--text {
+        /* &.primary--text {
             color: var(--v-primary-variant-base) !important;
-            caret-color: var(--v-primary-variant-base) !important;
-            border: 1px solid var(--v-background-contrast-base)
-        }
+            border: 1px solid var(--v-background-contrast-base);
+        } */
     }
 
-    & .v-slider__thumb {
-        &.primary {
-            background-color: var(--v-primary-variant-base) !important;
-            border-color: var(--v-primary-variant-base) !important
-        }
-    }
-
-    & .v-slider__track-fill {
-        &.primary {
-            background-color: var(--v-primary-variant-base) !important;
-            border-color: var(--v-primary-variant-base) !important
-        }
-    }
-
-    & .v-slider__track-background {
-        &.primary {
-            &.lighten-3 {
-                background-color: var(--v-primary-base) !important;
-                border-color: var(--v-primary-base) !important
+    & .v-slider {
+        & .v-slider__thumb {
+            &.primary {
+                background-color: var(--component-slider-primary-thumb-color) !important;
+                border-color: var(--component-slider-primary-thumb-color) !important
             }
         }
-    }
 
-    & .v-slider__thumb-label {
-        &.primary {
-            background-color: var(--v-primary-variant-base) !important;
-            border-color: var(--v-primary-variant-base) !important;
-            color: var(--v-primary-variant-contrast-base) !important
+        & .v-slider__track-fill {
+            &.primary {
+                background-color: var(--component-slider-primary-main-color) !important;
+                border-color: var(--component-slider-primary-main-color) !important
+            }
+        }
+
+        & .v-slider__track-background {
+            &.primary {
+                &.lighten-3 {
+                    background-color: var(--component-slider-primary-background-color) !important;
+                    border-color: var(--component-slider-primary-background-color) !important
+                }
+            }
+        }
+
+        & .v-slider__thumb-label {
+            &.primary {
+                background-color: var(--component-slider-primary-label-background) !important;
+                color: var(--component-slider-primary-label-color) !important
+            }
         }
     }
 
@@ -4885,4 +4995,8 @@ samp {
             }
         }
     }
+}
+
+.v-application {
+    @include components()
 }

@@ -1,6 +1,8 @@
 <template>
     <div>
-        <p v-if="overline" class="text-overline primary-variant--text mb-xs">{{ overline }}</p>
+        <p v-if="overline" class="text-overline primary-variant--text mb-xs">
+            {{ overline }}
+        </p>
         <div v-if="size === 'h1'">
             <h1
                 :class="`text-${size}`"
@@ -71,29 +73,23 @@
             </h3>
         </div>
         <div v-if="size === 'h4'">
-            <h4
-                :class="`text-${size}`"
-            >
+            <h4 :class="`text-${size}`">
                 {{ titleRow1 }}
             </h4>
-            <h4
-                v-if="titleRow2"
-                :class="`text-${size}`"
-            >
+            <h4 v-if="titleRow2" :class="`text-${size}`">
                 {{ titleRow2 }}
             </h4>
         </div>
         <div
             v-if="divider"
             :style="`
-                background-color: var(--v-primary-base);
+                background-color: var(--v-primary-variant-base);
                 border: 0px;
                 width: ${hrWidth};
                 height: ${hrHeight};
             `"
             class="mt-xxs"
-        >
-        </div>
+        ></div>
     </div>
 </template>
 
