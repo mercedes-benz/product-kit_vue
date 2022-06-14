@@ -6,7 +6,7 @@
 ![vue](https://img.shields.io/badge/vue-2.6.11-49B684.svg)
 ![vuetify](https://img.shields.io/badge/vuetify-2.6.4-80C6FC.svg)
 
-Product Kit Vue provides a theme for Daimler TSS web frontends based on the material design framework Vuetify.
+Product Kit Vue provides a theme for Mercedes-Benz Tech Innovation web frontends based on the material design framework Vuetify.
 
 Feel free to open an [issue](https://github.com/mercedes-benz/product-kit_vue/issues) or provide a pull request with the desired modifications.
 
@@ -76,15 +76,15 @@ css: {
 },
 ```
 
-Your Vuetify components should now be styled accordingly to the styleguide of Daimler TSS!
+Your Vuetify components should now be styled accordingly to the styleguide of Mercedes-Benz Tech Innovation!
 
 ## Usage
 
 ### Colors
 
-Product Kit Vue comes with all custom Daimler TSS colors like `primary` (corporate blue) or `secondary` (corporate pink) and their shades (`lighten-1` to `lighten 5` and `darken-1` to `darken-4`). It furthermore supports the standard Vuetify color palette, including colors like `green` or `blue-grey`.
+Product Kit Vue comes with all custom Mercedes-Benz Tech Innovation colors like `primary` (corporate blue) or `secondary` (corporate pink) and their shades (`lighten-1` to `lighten 5` and `darken-1` to `darken-4`). It furthermore supports the standard Vuetify color palette, including colors like `green` or `blue-grey`.
 
-You can use the custom Daimler TSS colors in different ways:
+You can use the custom Mercedes-Benz Tech Innovation colors in different ways:
 
 - In the `color` attribute of supporting elements like `v-btn` or `v-sheet`
 - Adding `class="primary"` to an element will change the background color of it. Adding for example `class="primary darken-3"` will apply a darker blue
@@ -105,7 +105,7 @@ You can use the custom Daimler TSS colors in different ways:
 <span class="primary--text">Hello World!</span>
 ```
 
-> For further information on colors visit the [Vuetify Colors Documentation](https://vuetifyjs.com/en/styles/colors/). All custom colors of Daimler TSS are mentioned in [Product Kit Core](https://github.com/mercedes-benz/product-kit_core). Note: Contrast colors are used as text colors. If text is displayed on the background color `primary` the text color should be `contrast-primary`.
+> For further information on colors visit the [Vuetify Colors Documentation](https://vuetifyjs.com/en/styles/colors/). All custom colors of Mercedes-Benz Tech Innovation are mentioned in [Product Kit Core](https://github.com/mercedes-benz/product-kit_core). Note: Contrast colors are used as text colors. If text is displayed on the background color `primary` the text color should be `contrast-primary`.
 
 ### Spacing
 
@@ -126,7 +126,8 @@ When building applications with Vuetify and Product Kit Vue, you should use `v-m
 ```html
 <v-app>
   <v-main>
-    <router-view /> <!--for example-->
+    <router-view />
+    <!--for example-->
   </v-main>
 </v-app>
 ```
@@ -141,7 +142,7 @@ When you don't wish to use responsive margins, you can add `class="fluid"` to th
 
 ### Typography
 
-You can use typography as you are used to from Vuetify. Custom Daimler TSS responsive tokens are applied automatically. For accessibility reasons it is recommended to always use the referring `html` tag to display a typography-class:
+You can use typography as you are used to from Vuetify. Custom Mercedes-Benz Tech Innovation responsive tokens are applied automatically. For accessibility reasons it is recommended to always use the referring `html` tag to display a typography-class:
 
 ```html
 <h1 class="text-h1">I'm a h1</h1>
@@ -153,7 +154,7 @@ You can use typography as you are used to from Vuetify. Custom Daimler TSS respo
 <span class="text-overline">I'm an overline</span>
 ```
 
-> Information on the custom Daimler TSS typography can be found in [Product Kit Core](https://github.com/mercedes-benz/product-kit_core)
+> Information on the custom Mercedes-Benz Tech Innovation typography can be found in [Product Kit Core](https://github.com/mercedes-benz/product-kit_core)
 
 ### Darkmode
 
@@ -177,7 +178,7 @@ This will change the theme from light to dark and vice versa on every call. For 
 ></v-switch>
 ```
 
-The Daimler TSS application colors like `primary` are also automatically changed when switching to dark mode (see examples).
+The Mercedes-Benz Tech Innovation application colors like `primary` are also automatically changed when switching to dark mode (see examples).
 
 ### Elevation
 
@@ -190,7 +191,7 @@ If you want to contribute to this project, please read the [contributing guide](
 
 ## Code of Conduct
 
-Please read our [Code of Conduct](https://github.com/Daimler/daimler-foss/blob/master/CODE_OF_CONDUCT.md) as it is our base for interaction.
+Please read our [Code of Conduct](https://github.com/mercedes-benz/foss/blob/master/CODE_OF_CONDUCT.md) as it is our base for interaction.
 
 ## License
 
@@ -198,7 +199,7 @@ This project is licensed under the [MIT LICENSE](LICENSE).
 
 ## Provider Information
 
-Please visit <https://www.daimler-tss.com/en/imprint/> for information on the provider.
+Please visit <https://www.mercedes-benz-techinnovation.com/en/imprint/> for information on the provider.
 
 Notice: Before you use the program in productive use, please take all necessary precautions,
 e.g. testing and verifying the program with regard to your specific use.
