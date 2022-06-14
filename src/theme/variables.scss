@@ -119,8 +119,8 @@ $display-breakpoints: (
 //$body-font-family: tokens.$font-family-text;
 //$heading-font-family: tokens.$font-family-title !default;
 
-$body-font-family: "MB Corpo S Text Office";
-$heading-font-family: "MB Corpo A Title Cond Office" !default;
+$body-font-family: "MB Corpo S Text Office", "Arial";
+$heading-font-family: "MB Corpo A Title Cond Office", "Arial" !default;
 
 $headings: (
   "h1": ("size": var(--headings-size-h1, tokens.$font-application-l-headline1-font-size),

@@ -90,6 +90,18 @@
                     label="Switch"
                     hide-details
                 ></v-switch>
+                <v-switch
+                    v-model="checked"
+                    disabled
+                    label="Switch"
+                    hide-details
+                ></v-switch>
+                <v-switch
+                    v-model="checked"
+                    color="secondary"
+                    label="Switch"
+                    hide-details
+                ></v-switch>
                 <v-otp-input style="max-width: 400px" length="6"></v-otp-input>
             </v-col>
             <v-col cols="6">
