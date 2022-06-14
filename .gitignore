@@ -13,6 +13,9 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+/mbtm/colors.js
+/hot/colors.js
+
 # Editor directories and files
 .idea
 .vscode
