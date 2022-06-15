@@ -71,45 +71,6 @@
                 <router-view />
             </v-main>
 
-            <div
-                style="
-                    position: relative;
-                    width: 100%;
-                    height: 300px;
-                    overflow-x: scroll;
-                    overflow-y: scroll;
-                    background-color: green;
-                "
-            >
-                <div
-                    style="
-                        margin: 0 7%;
-                        width: 200vw;
-                        height: 500px;
-                        background-color: black;
-                        margin-bottom: 20px;
-                        color: white;
-                    "
-                >
-                    Ich bin eine Tabelle :)
-                </div>
-                <div
-                    style="
-                        position: sticky;
-                        top: 0;
-                        left: 0;
-                        right: 0;
-                        width: 100%;
-                        background-color: blue;
-                        height: 50px;
-                        margin: 0 auto;
-                        text-align: center;
-                        color: white;
-                    "
-                >
-                    Ich bin eine zentrierte Pagination :)
-                </div>
-            </div>
             <mbti-footer>
                 <v-spacer></v-spacer>
                 <v-btn text> Imprint </v-btn>
@@ -180,4 +141,15 @@ export default {
 </script>
 
 <style>
+@font-face {
+    font-family: "MB Corpo S Text Web";
+    src: local("MB Corpo S Text Web"),
+        url("./fonts/MBCorpoSWeb.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "MB Corpo A Title Cond Web";
+    src: local("MB Corpo A Title Cond Web"),
+        url("./fonts/MBCorpoAWeb.woff2") format("woff2");
+}
 </style>

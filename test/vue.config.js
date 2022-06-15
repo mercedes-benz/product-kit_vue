@@ -15,16 +15,16 @@ module.exports = {
     loaderOptions: {
       scss: { // 9.0.0
         additionalData: `
-          @use "../../core/dist/web/styles/mbti/scss/variables" as tokens;
-          @use "../../core/dist/web/styles/mbti/scss/variables-dark" as tokensDark;
+          @use "@daimler/productkit-core/dist/web/styles/mbti/scss/variables" as tokens;
+          @use "@daimler/productkit-core/dist/web/styles/mbti/scss/variables-dark" as tokensDark;
           @use "sass:meta";
           @import "../src/theme/variables.scss";
         `,
       },
       sass: { // 9.0.0
         additionalData: `
-          @use "../../core/dist/web/styles/mbti/scss/variables" as tokens
-          @use "../../core/dist/web/styles/mbti/scss/variables-dark" as tokensDark
+          @use "@daimler/productkit-core/dist/web/styles/mbti/scss/variables" as tokens
+          @use "@daimler/productkit-core/dist/web/styles/mbti/scss/variables-dark" as tokensDark
           @use "sass:meta"
           @import "../src/theme/variables.scss"
         `,
