@@ -141,15 +141,4 @@ export default {
 </script>
 
 <style>
-@font-face {
-    font-family: "MB Corpo S Text Web";
-    src: local("MB Corpo S Text Web"),
-        url("./fonts/MBCorpoSWeb.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: "MB Corpo A Title Cond Web";
-    src: local("MB Corpo A Title Cond Web"),
-        url("./fonts/MBCorpoAWeb.woff2") format("woff2");
-}
 </style>
