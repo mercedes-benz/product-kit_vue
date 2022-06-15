@@ -42,7 +42,7 @@ npm install @daimler/productkit-vue
 Include the following line in the `src/plugins/vuetify.js` file:
 
 ```javascript
-import colors from "@daimler/productkit-vue/src/theme/colors.js";
+import colors from "@daimler/productkit-vue/src/theme/mbti/colors.js";
 ```
 
 Add the imported preset in the existing `export` statement as
@@ -60,15 +60,17 @@ css: {
   loaderOptions: {
     scss: { // 9.0.0
       additionalData: `
-        @use "@daimler/productkit-core/exports/web/styles/scss/variables" as tokens;
-        @use "@daimler/productkit-core/exports/web/styles/scss/variables-dark" as tokensDark;
+        @use "@daimler/productkit-core/dist/web/styles/mbti/scss/variables" as tokens;
+        @use "@daimler/productkit-core/dist/web/styles/mbti/scss/variables-dark" as tokensDark;
+        @use "sass:meta";
         @import "@daimler/productkit-vue/src/theme/variables.scss";
       `,
     },
     sass: { // 9.0.0
       additionalData: `
-        @use "@daimler/productkit-core/exports/web/styles/scss/variables" as tokens
-        @use "@daimler/productkit-core/exports/web/styles/scss/variables-dark" as tokensDark
+        @use "@daimler/productkit-core/dist/web/styles/mbti/scss/variables" as tokens
+        @use "@daimler/productkit-core/dist/web/styles/mbti/scss/variables-dark" as tokensDark
+        @use "sass:meta"
         @import "@daimler/productkit-vue/src/theme/variables.scss"
       `,
     },
@@ -121,28 +123,54 @@ The standard way of applying spacing in Vuetify is adding for example `class="pa
 
 ### Container
 
-When building applications with Vuetify and Product Kit Vue, you should use `v-main` as a wrapper container after `v-app`, as it includes responsive margins and max-widths that limits the content-width on large screens.
+When building applications with Vuetify and Product Kit Vue, you should use `v-container` as a wrapper container after `v-app`, as it includes max-widths that limits the content-width on large screens.
 
 ```html
 <v-app>
-  <v-main>
-    <router-view />
-    <!--for example-->
-  </v-main>
+  <v-container>
+    <v-main>
+      <router-view />
+      <!--for example-->
+    </v-main>
+  </v-container>
 </v-app>
 ```
 
-When you don't wish to use responsive margins, you can add `class="fluid"` to the `v-main` tag. Your main-content will now always stretch to the defined value in [Product Kit Core](https://github.com/mercedes-benz/product-kit_core). This could come in handy for layouts like dashboards where the content-width should not be limited on large screens.
+When you don't wish to use responsive margins, you can add `class="fluid"` to the `v-container` tag. Your main-content will now always stretch to the defined value in [Product Kit Core](https://github.com/mercedes-benz/product-kit_core). This could come in handy for layouts like dashboards where the content-width should not be limited on large screens.
 
 ```html
 <v-app>
-  <v-main class="fluid"> ... </v-main>
+  <v-container class="fluid"> ... </v-container>
 </v-app>
 ```
 
 ### Typography
 
-You can use typography as you are used to from Vuetify. Custom Mercedes-Benz Tech Innovation responsive tokens are applied automatically. For accessibility reasons it is recommended to always use the referring `html` tag to display a typography-class:
+In order to use the proprietary Mercedes-Benz font, you have to download the web font and include it in your project.
+
+1. In your `src` directory, create a new folder. You could name it `fonts` for example.
+2. Copy the `woff2` version of both the **MB Corpo S Text Web** and **MB Corpo A Title Cond Web** font into the newly created `fonts` directory.
+3. Now you have to register both fonts as a css `font-face` in a root stylesheet, for example in the `<style>` tag of `App.vue` like this
+
+```css
+<style>
+@font-face {
+    font-family: "MB Corpo S Text Web";
+    src: local("MB Corpo S Text Web"),
+        url("./fonts/<NAME_OF_THE_FILE>.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "MB Corpo A Title Cond Web";
+    src: local("MB Corpo A Title Cond Web"),
+        url("./fonts/<NAME_OF_THE_FILE>.woff2") format("woff2");
+}
+</style>
+```
+
+Be sure to not change the values for `font-family` and `src: local()`. Replace `<NAME_OF_THE_FILE>` with the filename.
+
+You can now use typography as you are used to from Vuetify. Custom Mercedes-Benz Tech Innovation font and responsive tokens are applied automatically. For accessibility reasons it is recommended to always use the referring `html` tag to display a typography-class:
 
 ```html
 <h1 class="text-h1">I'm a h1</h1>
