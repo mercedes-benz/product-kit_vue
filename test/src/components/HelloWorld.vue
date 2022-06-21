@@ -11,15 +11,7 @@
                     height="200"
                 />
             </v-col>
-            <v-col cols="auto" class="ml-s">
-                <mbti-headline
-                    overline="This is an overline"
-                    size="h1"
-                    divider
-                    titleRow1="Welcome to the"
-                    titleRow2="Vuetify Playground"
-                />
-            </v-col>
+            <v-col cols="auto" class="ml-s"> </v-col>
         </v-row>
         <v-row align="center" no-gutters justify="center">
             <v-col cols="auto">
@@ -38,7 +30,7 @@
         </v-row>
         <h2 class="text-h6 mt-s text-center">MIT License</h2>
         <p class="text-caption text-center">
-            Copyright (c) 2019 John Chou <br>
+            Copyright (c) 2019 John Chou <br />
             Permission is hereby granted, free of charge, to any person
             obtaining a copy of this software and associated documentation files
             (the "Software"), to deal in the Software without restriction,
@@ -63,13 +55,10 @@
 </template>
 
 <script>
-import MbtiHeadline from "../../../src/patterns/MbtiHeadline.vue";
 export default {
     name: "HelloWorld",
 
-    components: {
-        MbtiHeadline,
-    },
+    components: {},
 
     data: () => ({
         ecosystem: [

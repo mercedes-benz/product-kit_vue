@@ -12,13 +12,7 @@
                 />
             </v-col>
             <v-col cols="auto" class="ml-s">
-                <mbti-headline
-                    overline="Oh dear..."
-                    size="h1"
-                    divider
-                    titleRow1="Couldn't find"
-                    titleRow2="this component"
-                />
+
             </v-col>
         </v-row>
         <v-row align="center" no-gutters justify="center">
@@ -38,10 +32,7 @@
 </template>
 
 <script>
-import MbtiHeadline from "../../../src/patterns/MbtiHeadline.vue";
 export default {
-    components: {
-        MbtiHeadline,
-    },
+    components: {},
 };
 </script>

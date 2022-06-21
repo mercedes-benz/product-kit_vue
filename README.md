@@ -12,14 +12,12 @@ Feel free to open an [issue](https://github.com/mercedes-benz/product-kit_vue/is
 
 ## Examples
 
-<figure>
-<img src="./docs/images/example_pk_vue_light.png" alt="Examples of UI Components light" style="width:100vw">
-<figcaption align = "center"><b>Fig. 1 - Product Kit Vue Light Theme</b></figcaption>
-</figure>
-<figure>
-<img src="./docs/images/example_pk_vue_dark.png" alt="Examples of UI Components dark" style="width:100vw">
-<figcaption align = "center"><b>Fig. 2 - Product Kit Vue Dark Theme</b></figcaption>
-</figure>
+<p float="left">
+  <img src="./docs/images/example_pk_vue_light.png" width="350" />
+  <img src="./docs/images/example_pk_vue_light2.png" width="350" /> 
+  <img src="./docs/images/example_pk_vue_dark.png" width="350" />
+  <img src="./docs/images/example_pk_vue_dark2.png" width="350" />
+</p>
 
 ## Installation
 
@@ -136,11 +134,11 @@ When building applications with Vuetify and Product Kit Vue, you should use `v-c
 </v-app>
 ```
 
-When you don't wish to use responsive margins, you can add `class="fluid"` to the `v-container` tag. Your main-content will now always stretch to the defined value in [Product Kit Core](https://github.com/mercedes-benz/product-kit_core). This could come in handy for layouts like dashboards where the content-width should not be limited on large screens.
+When you don't wish to use responsive margins, you can add `class="wide"` to the `v-container` tag. Your main-content will now always stretch to the defined value in [Product Kit Core](https://github.com/mercedes-benz/product-kit_core). This could come in handy for layouts like dashboards where the content-width should not be limited on large screens.
 
 ```html
 <v-app>
-  <v-container class="fluid"> ... </v-container>
+  <v-container class="wide"> ... </v-container>
 </v-app>
 ```
 
