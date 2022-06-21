@@ -4,22 +4,20 @@
 
 [![license](https://img.shields.io/badge/license-MIT-38de03e?style=flat)](LICENSE)
 ![vue](https://img.shields.io/badge/vue-2.6.11-49B684.svg)
-![vuetify](https://img.shields.io/badge/vuetify-2.6.4-80C6FC.svg)
+![vuetify](https://img.shields.io/badge/vuetify-2.6.6-80C6FC.svg)
 
-Product Kit Vue provides a theme for Daimler TSS web frontends based on the material design framework Vuetify.
+Product Kit Vue provides a theme for Mercedes-Benz Tech Innovation web frontends based on the material design framework Vuetify.
 
 Feel free to open an [issue](https://github.com/mercedes-benz/product-kit_vue/issues) or provide a pull request with the desired modifications.
 
 ## Examples
 
-<figure>
-<img src="./docs/images/example_pk_vue_light.png" alt="Examples of UI Components light" style="width:100vw">
-<figcaption align = "center"><b>Fig. 1 - Product Kit Vue Light Theme</b></figcaption>
-</figure>
-<figure>
-<img src="./docs/images/example_pk_vue_dark.png" alt="Examples of UI Components dark" style="width:100vw">
-<figcaption align = "center"><b>Fig. 2 - Product Kit Vue Dark Theme</b></figcaption>
-</figure>
+<p float="left">
+  <img src="./docs/images/example_pk_vue_light.png" width="350" />
+  <img src="./docs/images/example_pk_vue_light2.png" width="350" /> 
+  <img src="./docs/images/example_pk_vue_dark.png" width="350" />
+  <img src="./docs/images/example_pk_vue_dark2.png" width="350" />
+</p>
 
 ## Installation
 
@@ -42,7 +40,7 @@ npm install @daimler/productkit-vue
 Include the following line in the `src/plugins/vuetify.js` file:
 
 ```javascript
-import colors from "@daimler/productkit-vue/src/theme/colors.js";
+import colors from "@daimler/productkit-vue/src/theme/mbti/colors.js";
 ```
 
 Add the imported preset in the existing `export` statement as
@@ -60,15 +58,17 @@ css: {
   loaderOptions: {
     scss: { // 9.0.0
       additionalData: `
-        @use "@daimler/productkit-core/exports/web/styles/scss/variables" as tokens;
-        @use "@daimler/productkit-core/exports/web/styles/scss/variables-dark" as tokensDark;
+        @use "@daimler/productkit-core/dist/web/styles/mbti/scss/variables" as tokens;
+        @use "@daimler/productkit-core/dist/web/styles/mbti/scss/variables-dark" as tokensDark;
+        @use "sass:meta";
         @import "@daimler/productkit-vue/src/theme/variables.scss";
       `,
     },
     sass: { // 9.0.0
       additionalData: `
-        @use "@daimler/productkit-core/exports/web/styles/scss/variables" as tokens
-        @use "@daimler/productkit-core/exports/web/styles/scss/variables-dark" as tokensDark
+        @use "@daimler/productkit-core/dist/web/styles/mbti/scss/variables" as tokens
+        @use "@daimler/productkit-core/dist/web/styles/mbti/scss/variables-dark" as tokensDark
+        @use "sass:meta"
         @import "@daimler/productkit-vue/src/theme/variables.scss"
       `,
     },
@@ -76,15 +76,15 @@ css: {
 },
 ```
 
-Your Vuetify components should now be styled accordingly to the styleguide of Daimler TSS!
+Your Vuetify components should now be styled accordingly to the styleguide of Mercedes-Benz Tech Innovation!
 
 ## Usage
 
 ### Colors
 
-Product Kit Vue comes with all custom Daimler TSS colors like `primary` (corporate blue) or `secondary` (corporate pink) and their shades (`lighten-1` to `lighten 5` and `darken-1` to `darken-4`). It furthermore supports the standard Vuetify color palette, including colors like `green` or `blue-grey`.
+Product Kit Vue comes with all custom Mercedes-Benz Tech Innovation colors like `primary` (corporate blue) or `secondary` (corporate pink) and their shades (`lighten-1` to `lighten 5` and `darken-1` to `darken-4`). It furthermore supports the standard Vuetify color palette, including colors like `green` or `blue-grey`.
 
-You can use the custom Daimler TSS colors in different ways:
+You can use the custom Mercedes-Benz Tech Innovation colors in different ways:
 
 - In the `color` attribute of supporting elements like `v-btn` or `v-sheet`
 - Adding `class="primary"` to an element will change the background color of it. Adding for example `class="primary darken-3"` will apply a darker blue
@@ -105,7 +105,7 @@ You can use the custom Daimler TSS colors in different ways:
 <span class="primary--text">Hello World!</span>
 ```
 
-> For further information on colors visit the [Vuetify Colors Documentation](https://vuetifyjs.com/en/styles/colors/). All custom colors of Daimler TSS are mentioned in [Product Kit Core](https://github.com/mercedes-benz/product-kit_core). Note: Contrast colors are used as text colors. If text is displayed on the background color `primary` the text color should be `contrast-primary`.
+> For further information on colors visit the [Vuetify Colors Documentation](https://vuetifyjs.com/en/styles/colors/). All custom colors of Mercedes-Benz Tech Innovation are mentioned in [Product Kit Core](https://github.com/mercedes-benz/product-kit_core). Note: Contrast colors are used as text colors. If text is displayed on the background color `primary` the text color should be `contrast-primary`.
 
 ### Spacing
 
@@ -121,27 +121,54 @@ The standard way of applying spacing in Vuetify is adding for example `class="pa
 
 ### Container
 
-When building applications with Vuetify and Product Kit Vue, you should use `v-main` as a wrapper container after `v-app`, as it includes responsive margins and max-widths that limits the content-width on large screens.
+When building applications with Vuetify and Product Kit Vue, you should use `v-container` as a wrapper container after `v-app`, as it includes max-widths that limits the content-width on large screens.
 
 ```html
 <v-app>
-  <v-main>
-    <router-view /> <!--for example-->
-  </v-main>
+  <v-container>
+    <v-main>
+      <router-view />
+      <!--for example-->
+    </v-main>
+  </v-container>
 </v-app>
 ```
 
-When you don't wish to use responsive margins, you can add `class="fluid"` to the `v-main` tag. Your main-content will now always stretch to the defined value in [Product Kit Core](https://github.com/mercedes-benz/product-kit_core). This could come in handy for layouts like dashboards where the content-width should not be limited on large screens.
+When you don't wish to use responsive margins, you can add `class="wide"` to the `v-container` tag. Your main-content will now always stretch to the defined value in [Product Kit Core](https://github.com/mercedes-benz/product-kit_core). This could come in handy for layouts like dashboards where the content-width should not be limited on large screens.
 
 ```html
 <v-app>
-  <v-main class="fluid"> ... </v-main>
+  <v-container class="wide"> ... </v-container>
 </v-app>
 ```
 
 ### Typography
 
-You can use typography as you are used to from Vuetify. Custom Daimler TSS responsive tokens are applied automatically. For accessibility reasons it is recommended to always use the referring `html` tag to display a typography-class:
+In order to use the proprietary Mercedes-Benz font, you have to download the web font and include it in your project.
+
+1. In your `src` directory, create a new folder. You could name it `fonts` for example.
+2. Copy the `woff2` version of both the **MB Corpo S Text Web** and **MB Corpo A Title Cond Web** font into the newly created `fonts` directory.
+3. Now you have to register both fonts as a css `font-face` in a root stylesheet, for example in the `<style>` tag of `App.vue` like this
+
+```css
+<style>
+@font-face {
+    font-family: "MB Corpo S Text Web";
+    src: local("MB Corpo S Text Web"),
+        url("./fonts/<NAME_OF_THE_FILE>.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "MB Corpo A Title Cond Web";
+    src: local("MB Corpo A Title Cond Web"),
+        url("./fonts/<NAME_OF_THE_FILE>.woff2") format("woff2");
+}
+</style>
+```
+
+Be sure to not change the values for `font-family` and `src: local()`. Replace `<NAME_OF_THE_FILE>` with the filename.
+
+You can now use typography as you are used to from Vuetify. Custom Mercedes-Benz Tech Innovation font and responsive tokens are applied automatically. For accessibility reasons it is recommended to always use the referring `html` tag to display a typography-class:
 
 ```html
 <h1 class="text-h1">I'm a h1</h1>
@@ -153,7 +180,7 @@ You can use typography as you are used to from Vuetify. Custom Daimler TSS respo
 <span class="text-overline">I'm an overline</span>
 ```
 
-> Information on the custom Daimler TSS typography can be found in [Product Kit Core](https://github.com/mercedes-benz/product-kit_core)
+> Information on the custom Mercedes-Benz Tech Innovation typography can be found in [Product Kit Core](https://github.com/mercedes-benz/product-kit_core)
 
 ### Darkmode
 
@@ -177,7 +204,7 @@ This will change the theme from light to dark and vice versa on every call. For 
 ></v-switch>
 ```
 
-The Daimler TSS application colors like `primary` are also automatically changed when switching to dark mode (see examples).
+The Mercedes-Benz Tech Innovation application colors like `primary` are also automatically changed when switching to dark mode (see examples).
 
 ### Elevation
 
@@ -190,7 +217,7 @@ If you want to contribute to this project, please read the [contributing guide](
 
 ## Code of Conduct
 
-Please read our [Code of Conduct](https://github.com/Daimler/daimler-foss/blob/master/CODE_OF_CONDUCT.md) as it is our base for interaction.
+Please read our [Code of Conduct](https://github.com/mercedes-benz/foss/blob/master/CODE_OF_CONDUCT.md) as it is our base for interaction.
 
 ## License
 
@@ -198,7 +225,7 @@ This project is licensed under the [MIT LICENSE](LICENSE).
 
 ## Provider Information
 
-Please visit <https://www.daimler-tss.com/en/imprint/> for information on the provider.
+Please visit <https://www.mercedes-benz-techinnovation.com/en/imprint/> for information on the provider.
 
 Notice: Before you use the program in productive use, please take all necessary precautions,
 e.g. testing and verifying the program with regard to your specific use.

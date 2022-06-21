@@ -2,11 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
+# 2.0.0
+
+## New
+
+- Updated Product Kit Core to v2.0.0
+- Updated typography with new font-faces
+
+## Breaking Changes
+
+- Updated installation and import statements
+- The responsive wrapper container is now `v-container` instead of `v-main`. If you want to use the wide layout, add `class="wide"` to `v-container`
+
 # 1.0.1
 
-### Improvements
+## Improvements
 
-* Changed color imports from sass to js
+- Changed color imports from sass to js
 
 # 1.0.0
 

@@ -2,7 +2,6 @@
 node_modules
 /dist
 
-
 # local env files
 .env.local
 .env.*.local
@@ -12,6 +11,12 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+
+# security
+/scan
+sechub_report*.json
+sechub_report*.html
+sechub-false-positives*.json
 
 # Editor directories and files
 .idea

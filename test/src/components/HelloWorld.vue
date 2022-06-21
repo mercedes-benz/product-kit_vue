@@ -2,77 +2,63 @@
 
 <template>
     <v-container>
-        <v-row class="text-center" style="height: 90vh" align="center">
-            <v-col>
-                <v-row>
-                    <v-col cols="12">
-                        <v-img
-                            :src="require('../assets/logo.svg')"
-                            class="my-3"
-                            contain
-                            height="200"
-                        />
-                    </v-col>
-
-                    <v-col class="mb-4">
-                        <h1 class="display-2 font-weight-bold mb-3">
-                            Welcome to the Vuetify Playground
-                        </h1>
-
-                        <p class="subheading font-weight-regular">
-                            This app contains content from the open-source Vuetify Playground project <br> from GitHub User "Joouis" under the MIT license
-                            <br />Collaborate via
-                            <a
-                                href="https://github.com/Joouis/vuetify-playground"
-                                target="_blank"
-                                >GitHub</a
-                            >
-                        </p>
-                    </v-col>
-
-                    <v-col class="mb-5" cols="12">
-                        <h2 class="headline font-weight-bold mb-3">
-                            MIT License
-                        </h2>
-
-                        <v-row justify="center" class="text-caption">
-                            Copyright (c) 2019 John Chou
-                            <br />
-                            Permission is hereby granted, free of charge, to any
-                            person obtaining a copy of this software and
-                            associated documentation files (the "Software"), to
-                            deal in the Software without restriction, including
-                            without limitation the rights to use, copy, modify,
-                            merge, publish, distribute, sublicense, and/or sell
-                            copies of the Software, and to permit persons to
-                            whom the Software is furnished to do so, subject to
-                            the following conditions: 
-                            <br />
-                            The above copyright notice
-                            and this permission notice shall be included in all
-                            copies or substantial portions of the Software.
-                            <br />
-                            THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY
-                            OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
-                            LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-                            FITNESS FOR A PARTICULAR PURPOSE AND
-                            NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-                            COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES
-                            OR OTHER LIABILITY, WHETHER IN AN ACTION OF
-                            CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
-                            IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
-                            DEALINGS IN THE SOFTWARE.
-                        </v-row>
-                    </v-col>
-                </v-row>
+        <v-row align="center" no-gutters justify="center">
+            <v-col cols="auto">
+                <v-img
+                    :src="require('../assets/logo.svg')"
+                    class="my-3"
+                    contain
+                    height="200"
+                />
+            </v-col>
+            <v-col cols="auto" class="ml-s"> </v-col>
+        </v-row>
+        <v-row align="center" no-gutters justify="center">
+            <v-col cols="auto">
+                <p class="subheading">
+                    This app contains content from the open-source Vuetify
+                    Playground project from GitHub User "Joouis" under the MIT
+                    license
+                    <br />Collaborate via
+                    <a
+                        href="https://github.com/Joouis/vuetify-playground"
+                        target="_blank"
+                        >GitHub</a
+                    >
+                </p>
             </v-col>
         </v-row>
+        <h2 class="text-h6 mt-s text-center">MIT License</h2>
+        <p class="text-caption text-center">
+            Copyright (c) 2019 John Chou <br />
+            Permission is hereby granted, free of charge, to any person
+            obtaining a copy of this software and associated documentation files
+            (the "Software"), to deal in the Software without restriction,
+            including without limitation the rights to use, copy, modify, merge,
+            publish, distribute, sublicense, and/or sell copies of the Software,
+            and to permit persons to whom the Software is furnished to do so,
+            subject to the following conditions:
+            <br />
+            The above copyright notice and this permission notice shall be
+            included in all copies or substantial portions of the Software.
+            <br />
+            THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+            EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+            MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+            NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+            BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+            ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+            CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+            SOFTWARE.
+        </p>
     </v-container>
 </template>
 
 <script>
 export default {
     name: "HelloWorld",
+
+    components: {},
 
     data: () => ({
         ecosystem: [
