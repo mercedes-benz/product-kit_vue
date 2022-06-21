@@ -4,7 +4,7 @@
 
 [![license](https://img.shields.io/badge/license-MIT-38de03e?style=flat)](LICENSE)
 ![vue](https://img.shields.io/badge/vue-2.6.11-49B684.svg)
-![vuetify](https://img.shields.io/badge/vuetify-2.6.6-80C6FC.svg)
+![vuetify](https://img.shields.io/badge/vuetify-2.6.6-80C6FC.svg) 
 
 Product Kit Vue provides a theme for Mercedes-Benz Tech Innovation web frontends based on the material design framework Vuetify.
 
