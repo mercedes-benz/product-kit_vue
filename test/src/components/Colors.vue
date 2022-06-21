@@ -2,9 +2,7 @@
 
 <template>
     <div>
-        <v-subheader>
-            Applications and Brand Colors
-        </v-subheader>
+        <v-subheader> Applications and Brand Colors </v-subheader>
         <v-row justify="center">
             <v-col cols="auto">
                 <v-btn class="my-4" color="primary" @click="getColor()">
@@ -15,16 +13,10 @@
         <v-row justify="center" v-if="contrastComputed">
             <v-col cols="auto">
                 Violations:
-                <v-chip
-                    class="mx-1"
-                    color="primary"
-                >
+                <v-chip class="mx-1" color="primary">
                     Normal Text: {{ violationsNormal }}
                 </v-chip>
-                <v-chip
-                    class="mx-1"
-                    color="primary"
-                >
+                <v-chip class="mx-1" color="primary">
                     Large Text: {{ violationsLarge }}
                 </v-chip>
             </v-col>
@@ -108,13 +100,14 @@ export default {
     data: () => ({
         colorNames: [
             "neutral",
-            "blue",
+            "goldentainoi",
             "deepblue",
-            "grayblue",
-            "pink",
-            "purple",
+            "deluge",
+            "xanadu",
+            "lividbrown",
             "red",
             "green",
+            "yellow",
         ],
         shades: [
             "lighten-5",
@@ -131,7 +124,7 @@ export default {
         temp: {},
         contrastComputed: false,
         violationsNormal: 0,
-        violationsLarge: 0
+        violationsLarge: 0,
     }),
 
     computed: {},
@@ -144,6 +137,10 @@ export default {
                 shades: [
                     {
                         name: "primary",
+                        contrast: "tba",
+                    },
+                    {
+                        name: "primary-variant",
                         contrast: "tba",
                     },
                     {
@@ -167,11 +164,15 @@ export default {
                         contrast: "tba",
                     },
                     {
+                        name: "outline",
+                        contrast: "tba",
+                    },
+                    {
                         name: "error",
                         contrast: "tba",
                     },
                     {
-                        name: "outline",
+                        name: "success",
                         contrast: "tba",
                     },
                 ],
@@ -207,12 +208,12 @@ export default {
                     );
                     //console.log(fg);
                     //console.log(bg);
-                    var cr = this.contrastRatio(fg, bg)
+                    var cr = this.contrastRatio(fg, bg);
                     console.log(cr);
                     console.log(this.colorsArray[1]);
-                    if(cr < 4.5) {
+                    if (cr < 4.5) {
                         this.violationsNormal++;
-                        if(cr < 3.0) {
+                        if (cr < 3.0) {
                             this.violationsLarge++;
                         }
                     }
