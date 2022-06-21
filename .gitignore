@@ -12,6 +12,12 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# security
+/scan
+sechub_report*.json
+sechub_report*.html
+sechub-false-positives*.json
+
 # Editor directories and files
 .idea
 .vscode
