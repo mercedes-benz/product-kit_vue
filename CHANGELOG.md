@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+# 2.0.1
+
+- Fixed a bug where a relative import statement was used instead of a package-based import statement
+
 # 2.0.0
 
 ## New
