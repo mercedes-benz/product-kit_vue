@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 
-import * as tokens from "../../../../core/dist/web/styles/mbti/js/variables";
-import * as tokensDark from "../../../../core/dist/web/styles/mbti/js/variables-dark";
+import * as tokens from "@daimler/productkit-core/dist/web/styles/mbti/js/variables";
+import * as tokensDark from "@daimler/productkit-core/dist/web/styles/mbti/js/variables-dark";
 
 require('./../overrides.scss')
 
@@ -35,8 +35,7 @@ baseColorNames.forEach(color => {
     colorPiece[color] = {}
     shades.forEach(shade => {
         var name = "colorBase" + color.charAt(0).toUpperCase() + color.slice(1) + shade.shade
-        var temp = tokens[name]
-        colorPiece[color][shade.vueShade] = temp
+        colorPiece[color][shade.vueShade] = tokens[name]
     });
     Object.assign(colorObject, colorPiece)
 });
@@ -49,8 +48,7 @@ baseColorNames.forEach(color => {
     colorPiece[color + "-contrast"] = {}
     shades.forEach(shade => {
         var name = "colorBase" + color.charAt(0).toUpperCase() + color.slice(1) + "Contrast" + shade.shade
-        var temp = tokens[name]
-        colorPiece[color + "-contrast"][shade.vueShade] = temp
+        colorPiece[color + "-contrast"][shade.vueShade] = tokens[name]
     });
     Object.assign(colorObject, colorPiece)
 });
@@ -63,8 +61,7 @@ colorNames.forEach(color => {
     colorPiece[color] = {}
     shades.forEach(shade => {
         var name = "colorBrand" + color.charAt(0).toUpperCase() + color.slice(1) + shade.shade
-        var temp = tokens[name]
-        colorPiece[color][shade.vueShade] = temp
+        colorPiece[color][shade.vueShade] = tokens[name]
     });
     Object.assign(colorObject, colorPiece)
 });
@@ -77,8 +74,7 @@ colorNames.forEach(color => {
     colorPiece[color + "-contrast"] = {}
     shades.forEach(shade => {
         var name = "colorBrand" + color.charAt(0).toUpperCase() + color.slice(1) + "Contrast" + shade.shade
-        var temp = tokens[name]
-        colorPiece[color + "-contrast"][shade.vueShade] = temp
+        colorPiece[color + "-contrast"][shade.vueShade] = tokens[name]
     });
     Object.assign(colorObject, colorPiece)
 });
