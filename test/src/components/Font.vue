@@ -7,7 +7,11 @@
             <!--<v-subheader>
                 {{ t.name }}
             </v-subheader>-->
-            <span class="text-h1">Source Sans Pro</span>
+            <span class="text-h1">MB Corpo A Title Cond Web</span>
+            <br />
+            <br />
+            <span class="text-h5">MB Corpo S Text Web</span>
+            <br />
             <br />
             <code style="font-size: 64px">
                 Source Code Pro
