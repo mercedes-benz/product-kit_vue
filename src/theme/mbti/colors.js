@@ -108,7 +108,6 @@ const colors = {
 }
 
 Object.assign(colors.theme.themes, application)
-console.log(colors)
 Object.assign(colors.theme.themes.light, colorObject)
 Object.assign(colors.theme.themes.dark, colorObject)
 
