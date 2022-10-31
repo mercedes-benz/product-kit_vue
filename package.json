@@ -20,7 +20,7 @@
     "vue": "^2.7.8",
     "vue-router": "^3.5.4",
     "vue-template-compiler": "^2.7.8",
-    "vuetify": "^2.6.7",
+    "vuetify": "^2.6.10",
     "vuetify-loader": "^1.9.2"
   },
   "engines": {
