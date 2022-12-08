@@ -1,10 +1,9 @@
 name: Pre Release Checks
 
 on:
-  workflow_dispatch:
   pull_request:
     branches:
-      - main
+      - develop
 
 jobs:
   run-checks:
