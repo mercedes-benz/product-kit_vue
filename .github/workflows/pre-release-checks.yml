@@ -7,7 +7,7 @@ on:
 
 jobs:
   run-checks:
-    uses: michaelgeyer/github-actions-test/.github/workflows/pre-release-checks.yml@main
+    uses: mercedes-benz/product-kit_actions/.github/workflows/pre-release-checks.yml@main
     with:
       npm-package-url: https://unpkg.com/@daimler/productkit-vue/package.json
       black-duck-project-name: product-kit-vue
