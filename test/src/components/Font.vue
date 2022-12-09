@@ -18,7 +18,7 @@
             </code> 
         </v-container>
         <v-subheader> Font-Size </v-subheader>
-        <v-container v-for="t in text" :key="t.name">
+        <v-container class="mb-12" v-for="t in text" :key="t.name">
             <!--<v-subheader>
                 {{ t.name }}
             </v-subheader>-->
