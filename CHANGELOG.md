@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.1.0]
+
+### Added
+
+- Added typography styles subtitle1Strong, subtitle2Strong, body1Strong, body2Strong, captionStrong from Product Kit Core 2.1.0
+
 # 2.0.2
 
 - Update dev dependencies and fix security problem
