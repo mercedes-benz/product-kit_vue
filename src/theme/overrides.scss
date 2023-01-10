@@ -8,11 +8,16 @@
     --headings-size-h5: #{tokens.$font-application-s-headline5-font-size};
     --headings-size-h6: #{tokens.$font-application-s-headline6-font-size};
     --subtitle1-size: #{tokens.$font-application-s-subtitle1-font-size};
+    --subtitle1-strong-size: #{tokens.$font-application-s-subtitle1-strong-font-size};
     --subtitle2-size: #{tokens.$font-application-s-subtitle2-font-size};
+    --subtitle2-strong-size: #{tokens.$font-application-s-subtitle2-strong-font-size};
     --body1-size: #{tokens.$font-application-s-body1-font-size};
+    --body1-strong-size: #{tokens.$font-application-s-body1-strong-font-size};
     --body2-size: #{tokens.$font-application-s-body2-font-size};
+    --body2-strong-size: #{tokens.$font-application-s-body2-strong-font-size};
     --button-size: #{tokens.$font-application-s-button-font-size};
     --caption-size: #{tokens.$font-application-s-caption-font-size};
+    --caption-strong-size: #{tokens.$font-application-s-caption-strong-font-size};
     --overline-size: #{tokens.$font-application-s-overline-font-size};
 
     @media only screen and (min-width: 1024px) {
@@ -23,11 +28,16 @@
         --headings-size-h5: #{tokens.$font-application-l-headline5-font-size};
         --headings-size-h6: #{tokens.$font-application-l-headline6-font-size};
         --subtitle1-size: #{tokens.$font-application-l-subtitle1-font-size};
+        --subtitle1-strong-size: #{tokens.$font-application-l-subtitle1-strong-font-size};
         --subtitle2-size: #{tokens.$font-application-l-subtitle2-font-size};
+        --subtitle2-strong-size: #{tokens.$font-application-l-subtitle2-strong-font-size};
         --body1-size: #{tokens.$font-application-l-body1-font-size};
+        --body1-strong-size: #{tokens.$font-application-l-body1-strong-font-size};
         --body2-size: #{tokens.$font-application-l-body2-font-size};
+        --body2-strong-size: #{tokens.$font-application-l-body2-strong-font-size};
         --button-size: #{tokens.$font-application-l-button-font-size};
         --caption-size: #{tokens.$font-application-l-caption-font-size};
+        --caption-strong-size: #{tokens.$font-application-l-caption-strong-font-size};
         --overline-size: #{tokens.$font-application-l-overline-font-size};
     }
 }

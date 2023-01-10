@@ -1,13 +1,13 @@
-Copyright 2022
+Copyright 2023
 
-[product-kit-vue : 2.0.2]
+[product-kit-vue : 2.1.0]
 
 Phase: RELEASED
 Distribution: OPENSOURCE
 
 Components: 
 
-@daimler/productkit-core 2.0.0 : MIT License
+@daimler/productkit-core 2.1.0 : MIT License
 @daimler/productkit-vue 2.0.1 : MIT License
 
 
@@ -18,7 +18,7 @@ Copyright Text:
 Licenses: 
 
 MIT License
-(@daimler/productkit-core 2.0.0, @daimler/productkit-vue 2.0.1)
+(@daimler/productkit-core 2.1.0, @daimler/productkit-vue 2.0.1)
 
 The MIT License
 ===============
