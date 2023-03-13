@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 
-import * as tokens from "@daimler/productkit-core/dist/web/styles/mbti/js/variables";
-import * as tokensDark from "@daimler/productkit-core/dist/web/styles/mbti/js/variables-dark";
+import * as tokens from "@mercedes-benz/productkit-core/dist/web/styles/mbti/js/variables";
+import * as tokensDark from "@mercedes-benz/productkit-core/dist/web/styles/mbti/js/variables-dark";
 
 require('./../overrides.scss')
 
