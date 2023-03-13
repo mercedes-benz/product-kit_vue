@@ -82,7 +82,7 @@ Your Vuetify components should now be styled accordingly to the styleguide of Me
 
 ### Colors
 
-Product Kit Vue comes with all custom Mercedes-Benz Tech Innovation colors like `primary` (corporate blue) or `secondary` (corporate pink) and their shades (`lighten-1` to `lighten 5` and `darken-1` to `darken-4`). It furthermore supports the standard Vuetify color palette, including colors like `green` or `blue-grey`.
+Product Kit Vue comes with all custom Mercedes-Benz Tech Innovation colors like `primary` or `secondary` and their shades (`lighten-1` to `lighten 5` and `darken-1` to `darken-4`). It furthermore supports the standard Vuetify color palette, including colors like `green` or `blue-grey`.
 
 You can use the custom Mercedes-Benz Tech Innovation colors in different ways:
 
