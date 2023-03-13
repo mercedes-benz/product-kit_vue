@@ -10,7 +10,7 @@
     "test-build": "(cd test && vue-cli-service build)"
   },
   "dependencies": {
-    "@daimler/productkit-core": "^2.1.0"
+    "@mercedes-benz/productkit-core": "^2.2.0"
   },
   "devDependencies": {
     "@mdi/js": "^7.1.96",
