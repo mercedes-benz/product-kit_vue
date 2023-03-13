@@ -1,5 +1,5 @@
 {
-  "name": "@daimler/productkit-vue",
+  "name": "@mercedes-benz/productkit-vue",
   "version": "2.1.0",
   "description": "Product Kit Vue provides Vuetify presets that bring design tokens from Product Kit Core to Vuetify",
   "license": "MIT",

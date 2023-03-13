@@ -34,13 +34,13 @@ vue add vuetify
 Install the npm package from the root directory through:
 
 ```console
-npm install @daimler/productkit-vue
+npm install @mercedes-benz/productkit-vue
 ```
 
 Include the following line in the `src/plugins/vuetify.js` file:
 
 ```javascript
-import colors from "@daimler/productkit-vue/src/theme/mbti/colors.js";
+import colors from "@mercedes-benz/productkit-vue/src/theme/mbti/colors.js";
 ```
 
 Add the imported preset in the existing `export` statement as
@@ -58,18 +58,18 @@ css: {
   loaderOptions: {
     scss: { // 9.0.0
       additionalData: `
-        @use "@daimler/productkit-core/dist/web/styles/mbti/scss/variables" as tokens;
-        @use "@daimler/productkit-core/dist/web/styles/mbti/scss/variables-dark" as tokensDark;
+        @use "@mercedes-benz/productkit-core/dist/web/styles/mbti/scss/variables" as tokens;
+        @use "@mercedes-benz/productkit-core/dist/web/styles/mbti/scss/variables-dark" as tokensDark;
         @use "sass:meta";
-        @import "@daimler/productkit-vue/src/theme/variables.scss";
+        @import "@mercedes-benz/productkit-vue/src/theme/variables.scss";
       `,
     },
     sass: { // 9.0.0
       additionalData: `
-        @use "@daimler/productkit-core/dist/web/styles/mbti/scss/variables" as tokens
-        @use "@daimler/productkit-core/dist/web/styles/mbti/scss/variables-dark" as tokensDark
+        @use "@mercedes-benz/productkit-core/dist/web/styles/mbti/scss/variables" as tokens
+        @use "@mercedes-benz/productkit-core/dist/web/styles/mbti/scss/variables-dark" as tokensDark
         @use "sass:meta"
-        @import "@daimler/productkit-vue/src/theme/variables.scss"
+        @import "@mercedes-benz/productkit-vue/src/theme/variables.scss"
       `,
     },
   },
