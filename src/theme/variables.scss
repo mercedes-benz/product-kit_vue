@@ -90,15 +90,15 @@ $grid-breakpoints: (
   'xl': 1280px,
   'xxl': 1440px
 );
-$container-padding-x: $grid-gutter / 2 !default;
+$container-padding-x: calc($grid-gutter / 2) !default;
 $grid-columns: 12 !default;
 $grid-gutters: (
-  "xs": $grid-gutter * 2/3,
-  "sm": $grid-gutter * 2/3,
+  "xs": calc($grid-gutter * 2 / 3),
+  "sm": calc($grid-gutter * 2 / 3),
   "md": $grid-gutter,
   "lg": $grid-gutter,
-  "xl": $grid-gutter * 4/3,
-  "xxl": $grid-gutter * 4/3,
+  "xl": calc($grid-gutter * 4 / 3),
+  "xxl": calc($grid-gutter * 4 / 3),
 );
 $display-breakpoints: (
   'print-only': 'only print',
