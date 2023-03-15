@@ -6,6 +6,9 @@
 ![vue](https://img.shields.io/badge/vue-2.6.11-49B684.svg)
 ![vuetify](https://img.shields.io/badge/vuetify-2.6.6-80C6FC.svg)
 
+> **Note** <br>
+> With the release of v2.2.0 and all future versions, product-kit_vue is available under the npm scope @mercedes-benz/productkit-vue.
+
 Product Kit Vue provides a theme for Mercedes-Benz Tech Innovation web frontends based on the material design framework Vuetify.
 
 Feel free to open an [issue](https://github.com/mercedes-benz/product-kit_vue/issues) or provide a pull request with the desired modifications.
