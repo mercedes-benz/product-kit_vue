@@ -3,8 +3,8 @@
 ![Product Kit Vue Logo](./docs/images/productkit_vue_github_logo.png)
 
 [![license](https://img.shields.io/badge/license-MIT-38de03e?style=flat)](LICENSE)
-![vue](https://img.shields.io/badge/vue-2.6.11-49B684.svg)
-![vuetify](https://img.shields.io/badge/vuetify-2.6.6-80C6FC.svg)
+![vue](https://img.shields.io/badge/vue-2.7.14-49B684.svg)
+![vuetify](https://img.shields.io/badge/vuetify-2.6.14-80C6FC.svg)
 
 > **Note** <br>
 > With the release of v2.2.0 and all future versions, product-kit_vue is available under the npm scope @mercedes-benz/productkit-vue.
