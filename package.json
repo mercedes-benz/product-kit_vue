@@ -16,7 +16,7 @@
     "@mercedes-benz/productkit-core": "^2.2.0"
   },
   "devDependencies": {
-    "@mdi/js": "^7.1.96",
+    "@mdi/js": "^7.2.96",
     "sass": "^1.59.2",
     "sass-loader": "^13.2.0",
     "@vue/cli-service": "^5.0.8",
