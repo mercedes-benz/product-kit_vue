@@ -201,7 +201,7 @@ samp {
 }
 
 .row {
-    margin: - tokens.$layout-application-compact-xs-gutter-size / 2;
+    margin: calc(-1 * tokens.$layout-application-compact-xs-gutter-size / 2);
 }
 
 .col-xl,
@@ -274,7 +274,7 @@ samp {
 .col-3,
 .col-2,
 .col-1 {
-    padding: tokens.$layout-application-compact-xs-gutter-size / 2;
+    padding: calc(tokens.$layout-application-compact-xs-gutter-size / 2);
 }
 
 .ma-3xs {
@@ -828,7 +828,7 @@ samp {
     }
 
     .row {
-        margin: - tokens.$layout-application-compact-s-gutter-size / 2;
+        margin: calc(-1 * tokens.$layout-application-compact-s-gutter-size / 2);
     }
 
     .col-xl,
@@ -901,7 +901,7 @@ samp {
     .col-3,
     .col-2,
     .col-1 {
-        padding: tokens.$layout-application-compact-s-gutter-size / 2;
+        padding: calc(tokens.$layout-application-compact-s-gutter-size / 2);
     }
 
     .ma-3xs {
@@ -1456,7 +1456,7 @@ samp {
     }
 
     .row {
-        margin: - tokens.$layout-application-compact-m-gutter-size / 2;
+        margin: calc(-1 * tokens.$layout-application-compact-m-gutter-size / 2);
     }
 
     .col-xl,
@@ -1529,7 +1529,7 @@ samp {
     .col-3,
     .col-2,
     .col-1 {
-        padding: tokens.$layout-application-compact-m-gutter-size / 2;
+        padding: calc(tokens.$layout-application-compact-m-gutter-size / 2);
     }
 
     .ma-3xs {
@@ -2084,7 +2084,7 @@ samp {
     }
 
     .row {
-        margin: - tokens.$layout-application-compact-l-gutter-size / 2;
+        margin: calc(-1 * tokens.$layout-application-compact-l-gutter-size / 2);
     }
 
     .col-xl,
@@ -2157,7 +2157,7 @@ samp {
     .col-3,
     .col-2,
     .col-1 {
-        padding: tokens.$layout-application-compact-l-gutter-size / 2;
+        padding: calc(tokens.$layout-application-compact-l-gutter-size / 2);
     }
 
     .ma-3xs {
@@ -2712,7 +2712,7 @@ samp {
     }
 
     .row {
-        margin: - tokens.$layout-application-compact-xl-gutter-size / 2;
+        margin: calc(-1 * tokens.$layout-application-compact-xl-gutter-size / 2);
     }
 
     .col-xl,
@@ -2785,7 +2785,7 @@ samp {
     .col-3,
     .col-2,
     .col-1 {
-        padding: tokens.$layout-application-compact-xl-gutter-size / 2;
+        padding: calc(tokens.$layout-application-compact-xl-gutter-size / 2);
     }
 
     .ma-3xs {
@@ -3343,7 +3343,7 @@ samp {
     }
 
     .row {
-        margin: - tokens.$layout-application-compact-xxl-gutter-size / 2;
+        margin: calc(-1 * tokens.$layout-application-compact-xxl-gutter-size / 2);
     }
 
     .col-xl,
@@ -3416,7 +3416,7 @@ samp {
     .col-3,
     .col-2,
     .col-1 {
-        padding: tokens.$layout-application-compact-xxl-gutter-size / 2;
+        padding: calc(tokens.$layout-application-compact-xxl-gutter-size / 2);
     }
 
     .ma-3xs {

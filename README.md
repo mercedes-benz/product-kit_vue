@@ -3,8 +3,11 @@
 ![Product Kit Vue Logo](./docs/images/productkit_vue_github_logo.png)
 
 [![license](https://img.shields.io/badge/license-MIT-38de03e?style=flat)](LICENSE)
-![vue](https://img.shields.io/badge/vue-2.6.11-49B684.svg)
-![vuetify](https://img.shields.io/badge/vuetify-2.6.6-80C6FC.svg)
+![vue](https://img.shields.io/badge/vue-2.7.14-49B684.svg)
+![vuetify](https://img.shields.io/badge/vuetify-2.6.14-80C6FC.svg)
+
+> **Note** <br>
+> With the release of v2.2.0 and all future versions, product-kit_vue is available under the npm scope @mercedes-benz/productkit-vue.
 
 Product Kit Vue provides a theme for Mercedes-Benz Tech Innovation web frontends based on the material design framework Vuetify.
 
@@ -34,13 +37,13 @@ vue add vuetify
 Install the npm package from the root directory through:
 
 ```console
-npm install @daimler/productkit-vue
+npm install @mercedes-benz/productkit-vue
 ```
 
 Include the following line in the `src/plugins/vuetify.js` file:
 
 ```javascript
-import colors from "@daimler/productkit-vue/src/theme/mbti/colors.js";
+import colors from "@mercedes-benz/productkit-vue/src/theme/mbti/colors.js";
 ```
 
 Add the imported preset in the existing `export` statement as
@@ -58,18 +61,18 @@ css: {
   loaderOptions: {
     scss: { // 9.0.0
       additionalData: `
-        @use "@daimler/productkit-core/dist/web/styles/mbti/scss/variables" as tokens;
-        @use "@daimler/productkit-core/dist/web/styles/mbti/scss/variables-dark" as tokensDark;
+        @use "@mercedes-benz/productkit-core/dist/web/styles/mbti/scss/variables" as tokens;
+        @use "@mercedes-benz/productkit-core/dist/web/styles/mbti/scss/variables-dark" as tokensDark;
         @use "sass:meta";
-        @import "@daimler/productkit-vue/src/theme/variables.scss";
+        @import "@mercedes-benz/productkit-vue/src/theme/variables.scss";
       `,
     },
     sass: { // 9.0.0
       additionalData: `
-        @use "@daimler/productkit-core/dist/web/styles/mbti/scss/variables" as tokens
-        @use "@daimler/productkit-core/dist/web/styles/mbti/scss/variables-dark" as tokensDark
+        @use "@mercedes-benz/productkit-core/dist/web/styles/mbti/scss/variables" as tokens
+        @use "@mercedes-benz/productkit-core/dist/web/styles/mbti/scss/variables-dark" as tokensDark
         @use "sass:meta"
-        @import "@daimler/productkit-vue/src/theme/variables.scss"
+        @import "@mercedes-benz/productkit-vue/src/theme/variables.scss"
       `,
     },
   },
@@ -82,7 +85,7 @@ Your Vuetify components should now be styled accordingly to the styleguide of Me
 
 ### Colors
 
-Product Kit Vue comes with all custom Mercedes-Benz Tech Innovation colors like `primary` (corporate blue) or `secondary` (corporate pink) and their shades (`lighten-1` to `lighten 5` and `darken-1` to `darken-4`). It furthermore supports the standard Vuetify color palette, including colors like `green` or `blue-grey`.
+Product Kit Vue comes with all custom Mercedes-Benz Tech Innovation colors like `primary` or `secondary` and their shades (`lighten-1` to `lighten 5` and `darken-1` to `darken-4`). It furthermore supports the standard Vuetify color palette, including colors like `green` or `blue-grey`.
 
 You can use the custom Mercedes-Benz Tech Innovation colors in different ways:
 
