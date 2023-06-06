@@ -1,0 +1,7 @@
+{
+    "semi": true,
+    "tabWidth": 2,
+    "singleAttributePerLine": true,
+    "printWidth": 120,
+    "singleQuote": true
+}
