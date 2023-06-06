@@ -11,9 +11,11 @@ const vuetify = createVuetify({
   components,
   directives,
   theme: {
-    themes: productKitTheme
-  }
+    themes: productKitTheme,
+  },
 });
+
+console.dir(productKitTheme);
 
 const app = createApp(App);
 
