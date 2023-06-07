@@ -1,3 +1,5 @@
+<script setup></script>
+
 <template>
   <h2 class="text-h2 mb-12">Buttons</h2>
   <div class="d-flex mb-4">
@@ -44,7 +46,6 @@
       color="primary"
       >Primary</v-btn
     >
-    <!-- <v-btn class="mx-2" variant="outlined" color="primary-variant">Primary</v-btn> -->
     <v-btn
       class="mx-2"
       variant="outlined"
@@ -89,7 +90,6 @@
       color="primary"
       >Primary</v-btn
     >
-    <!-- <v-btn class="mx-2" variant="tonal" color="primary-variant">Primary</v-btn> -->
     <v-btn
       class="mx-2"
       variant="tonal"
@@ -134,7 +134,6 @@
       color="primary"
       >Primary</v-btn
     >
-    <!-- <v-btn class="mx-2" variant="text" color="primary-variant">Primary</v-btn> -->
     <v-btn
       class="mx-2"
       variant="text"
@@ -177,12 +176,6 @@
       class="mx-2"
       variant="plain"
       color="primary"
-      >Primary</v-btn
-    >
-    <v-btn
-      class="mx-2"
-      variant="plain"
-      color="primary-variant"
       >Primary</v-btn
     >
     <v-btn

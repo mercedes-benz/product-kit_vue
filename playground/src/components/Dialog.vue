@@ -5,6 +5,7 @@ const dialog = ref(false);
 
 <template>
   <div class="mb-8">
+    <h2 class="text-h2 mb-12">Dialog</h2>
     <v-dialog
       v-model="dialog"
       width="auto"
