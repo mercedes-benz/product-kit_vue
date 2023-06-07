@@ -1,0 +1,151 @@
+/* 
+This file generate spacing classes based on the same schema Vuetify 3 uses.
+
+Product Kit adds the postfixes 3xs, xxs, xs, m, l, xl, xxl, 3xl as well as it
+handles the responsive values based on the predefined breakpoints.
+
+A class inside html could look like, "ma-xl" or pr-xxs".
+
+@see https://vuetifyjs.com/en/styles/spacing/
+*/
+
+@use '@mercedes-benz/productkit-core/dist/web/styles/mbti/scss/variables' as tokens;
+
+$properties: 'm', 'p';
+$directions: 't', 'b', 'l', 'r', 'x', 'y', 'a';
+$sizes-xs: (
+  '3xs': tokens.$size-application-spacing-xs-3xs,
+  'xxs': tokens.$size-application-spacing-xs-xxs,
+  'xs': tokens.$size-application-spacing-xs-xs,
+  's': tokens.$size-application-spacing-xs-s,
+  'm': tokens.$size-application-spacing-xs-m,
+  'l': tokens.$size-application-spacing-xs-l,
+  'xl': tokens.$size-application-spacing-xs-xl,
+  'xxl': tokens.$size-application-spacing-xs-xxl,
+  '3xl': tokens.$size-application-spacing-xs-3xl,
+);
+$sizes-s: (
+  '3xs': tokens.$size-application-spacing-s-3xs,
+  'xxs': tokens.$size-application-spacing-s-xxs,
+  'xs': tokens.$size-application-spacing-s-xs,
+  's': tokens.$size-application-spacing-s-s,
+  'm': tokens.$size-application-spacing-s-m,
+  'l': tokens.$size-application-spacing-s-l,
+  'xl': tokens.$size-application-spacing-s-xl,
+  'xxl': tokens.$size-application-spacing-s-xxl,
+  '3xl': tokens.$size-application-spacing-s-3xl,
+);
+$sizes-m: (
+  '3xs': tokens.$size-application-spacing-m-3xs,
+  'xxs': tokens.$size-application-spacing-m-xxs,
+  'xs': tokens.$size-application-spacing-m-xs,
+  's': tokens.$size-application-spacing-m-s,
+  'm': tokens.$size-application-spacing-m-m,
+  'l': tokens.$size-application-spacing-m-l,
+  'xl': tokens.$size-application-spacing-m-xl,
+  'xxl': tokens.$size-application-spacing-m-xxl,
+  '3xl': tokens.$size-application-spacing-m-3xl,
+);
+$sizes-l: (
+  '3xs': tokens.$size-application-spacing-l-3xs,
+  'xxs': tokens.$size-application-spacing-l-xxs,
+  'xs': tokens.$size-application-spacing-l-xs,
+  's': tokens.$size-application-spacing-l-s,
+  'm': tokens.$size-application-spacing-l-m,
+  'l': tokens.$size-application-spacing-l-l,
+  'xl': tokens.$size-application-spacing-l-xl,
+  'xxl': tokens.$size-application-spacing-l-xxl,
+  '3xl': tokens.$size-application-spacing-l-3xl,
+);
+$sizes-xl: (
+  '3xs': tokens.$size-application-spacing-xl-3xs,
+  'xxs': tokens.$size-application-spacing-xl-xxs,
+  'xs': tokens.$size-application-spacing-xl-xs,
+  's': tokens.$size-application-spacing-xl-s,
+  'm': tokens.$size-application-spacing-xl-m,
+  'l': tokens.$size-application-spacing-xl-l,
+  'xl': tokens.$size-application-spacing-xl-xl,
+  'xxl': tokens.$size-application-spacing-xl-xxl,
+  '3xl': tokens.$size-application-spacing-xl-3xl,
+);
+$sizes-xxl: (
+  '3xs': tokens.$size-application-spacing-xxl-3xs,
+  'xxs': tokens.$size-application-spacing-xxl-xxs,
+  'xs': tokens.$size-application-spacing-xxl-xs,
+  's': tokens.$size-application-spacing-xxl-s,
+  'm': tokens.$size-application-spacing-xxl-m,
+  'l': tokens.$size-application-spacing-xxl-l,
+  'xl': tokens.$size-application-spacing-xxl-xl,
+  'xxl': tokens.$size-application-spacing-xxl-xxl,
+  '3xl': tokens.$size-application-spacing-xxl-3xl,
+);
+
+@each $property in $properties {
+  @each $direction in $directions {
+    @each $size, $value in $sizes-xs {
+      .#{$property}#{$direction}-#{$size} {
+        margin: $value;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: tokens.$size-screen-platform-s) {
+  @each $property in $properties {
+    @each $direction in $directions {
+      @each $size, $value in $sizes-s {
+        .#{$property}#{$direction}-#{$size} {
+          margin: $value;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: tokens.$size-screen-platform-m) {
+  @each $property in $properties {
+    @each $direction in $directions {
+      @each $size, $value in $sizes-m {
+        .#{$property}#{$direction}-#{$size} {
+          margin: $value;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: tokens.$size-screen-platform-l) {
+  @each $property in $properties {
+    @each $direction in $directions {
+      @each $size, $value in $sizes-l {
+        .#{$property}#{$direction}-#{$size} {
+          margin: $value;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: tokens.$size-screen-platform-xl) {
+  @each $property in $properties {
+    @each $direction in $directions {
+      @each $size, $value in $sizes-xl {
+        .#{$property}#{$direction}-#{$size} {
+          margin: $value;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: tokens.$size-screen-platform-xxl) {
+  @each $property in $properties {
+    @each $direction in $directions {
+      @each $size, $value in $sizes-xxl {
+        .#{$property}#{$direction}-#{$size} {
+          margin: $value;
+        }
+      }
+    }
+  }
+}

@@ -4,13 +4,14 @@ import Typography from './components/Typography.vue';
 import Buttons from './components/Buttons.vue';
 import Dialog from './components/Dialog.vue';
 import Chips from './components/Chips.vue';
+import Spacing from './components/Spacing.vue';
 
 const theme = useTheme();
 const toggleTheme = () => {
   theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark';
 };
 
-const components = [Typography, Buttons, Dialog, Chips];
+const components = [Typography, Buttons, Dialog, Chips, Spacing];
 </script>
 
 <template>
@@ -35,6 +36,8 @@ const components = [Typography, Buttons, Dialog, Chips];
           <component :is="item"></component>
           <v-divider></v-divider>
         </section>
+        <div class="primary">hello</div>
+        <h1 class="text-h1">hello</h1>
       </v-container>
     </v-main>
   </v-app>
