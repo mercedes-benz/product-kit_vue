@@ -11,8 +11,19 @@ A class inside html could look like, "ma-xl" or pr-xxs".
 
 @use '@mercedes-benz/productkit-core/dist/web/styles/mbti/scss/variables' as tokens;
 
-$properties: 'm', 'p';
-$directions: 't', 'b', 'l', 'r', 'x', 'y', 'a';
+$properties: (
+  'm': 'margin',
+  'p': 'padding',
+);
+$directions: (
+  't': 'top',
+  'b': 'bottom',
+  'l': 'left',
+  'r': 'right',
+  'x': '',
+  'y': '',
+  'a': '',
+);
 $sizes-xs: (
   '3xs': tokens.$size-application-spacing-xs-3xs,
   'xxs': tokens.$size-application-spacing-xs-xxs,
@@ -80,72 +91,84 @@ $sizes-xxl: (
   '3xl': tokens.$size-application-spacing-xxl-3xl,
 );
 
-@each $property in $properties {
-  @each $direction in $directions {
-    @each $size, $value in $sizes-xs {
+@mixin create-classes($property, $property-value, $direction, $direction-value, $sizes) {
+  @if $direction == 'a' {
+    @each $size, $size-value in $sizes {
       .#{$property}#{$direction}-#{$size} {
-        margin: $value;
+        #{$property-value}: $size-value;
+      }
+    }
+  } @else if $direction == 'y' {
+    @each $size, $size-value in $sizes {
+      .#{$property}#{$direction}-#{$size} {
+        #{$property-value}-top: $size-value;
+        #{$property-value}-bottom: $size-value;
+      }
+    }
+  } @else if $direction == 'x' {
+    @each $size, $size-value in $sizes {
+      .#{$property}#{$direction}-#{$size} {
+        #{$property-value}-left: $size-value;
+        #{$property-value}-right: $size-value;
+      }
+    }
+  } @else {
+    @each $size, $size-value in $sizes {
+      .#{$property}#{$direction}-#{$size} {
+        #{$property-value}-#{$direction-value}: $size-value;
       }
     }
   }
 }
 
+/* SCREEN SIZE XS */
+@each $property, $property-value in $properties {
+  @each $direction, $direction-value in $directions {
+    @include create-classes($property, $property-value, $direction, $direction-value, $sizes-xs);
+  }
+}
+
+/* SCREEN SIZE S */
 @media screen and (min-width: tokens.$size-screen-platform-s) {
-  @each $property in $properties {
-    @each $direction in $directions {
-      @each $size, $value in $sizes-s {
-        .#{$property}#{$direction}-#{$size} {
-          margin: $value;
-        }
-      }
+  @each $property, $property-value in $properties {
+    @each $direction, $direction-value in $directions {
+      @include create-classes($property, $property-value, $direction, $direction-value, $sizes-s);
     }
   }
 }
 
+/* SCREEN SIZE M */
 @media screen and (min-width: tokens.$size-screen-platform-m) {
-  @each $property in $properties {
-    @each $direction in $directions {
-      @each $size, $value in $sizes-m {
-        .#{$property}#{$direction}-#{$size} {
-          margin: $value;
-        }
-      }
+  @each $property, $property-value in $properties {
+    @each $direction, $direction-value in $directions {
+      @include create-classes($property, $property-value, $direction, $direction-value, $sizes-m);
     }
   }
 }
 
+/* SCREEN SIZE L */
 @media screen and (min-width: tokens.$size-screen-platform-l) {
-  @each $property in $properties {
-    @each $direction in $directions {
-      @each $size, $value in $sizes-l {
-        .#{$property}#{$direction}-#{$size} {
-          margin: $value;
-        }
-      }
+  @each $property, $property-value in $properties {
+    @each $direction, $direction-value in $directions {
+      @include create-classes($property, $property-value, $direction, $direction-value, $sizes-l);
     }
   }
 }
 
+/* SCREEN SIZE XL */
 @media screen and (min-width: tokens.$size-screen-platform-xl) {
-  @each $property in $properties {
-    @each $direction in $directions {
-      @each $size, $value in $sizes-xl {
-        .#{$property}#{$direction}-#{$size} {
-          margin: $value;
-        }
-      }
+  @each $property, $property-value in $properties {
+    @each $direction, $direction-value in $directions {
+      @include create-classes($property, $property-value, $direction, $direction-value, $sizes-xl);
     }
   }
 }
 
+/* SCREEN SIZE XXL */
 @media screen and (min-width: tokens.$size-screen-platform-xxl) {
-  @each $property in $properties {
-    @each $direction in $directions {
-      @each $size, $value in $sizes-xxl {
-        .#{$property}#{$direction}-#{$size} {
-          margin: $value;
-        }
-      }
+  @each $property, $property-value in $properties {
+    @each $direction, $direction-value in $directions {
+      @include create-classes($property, $property-value, $direction, $direction-value, $sizes-xxl);
     }
   }
 }
