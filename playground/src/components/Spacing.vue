@@ -23,7 +23,7 @@ const computedMargin = computed(() => {
 </script>
 
 <template>
-  <div class="mb-12">
+  <div class="mb-8">
     <h2 class="text-h2 mb-12">Spacing</h2>
     <v-row>
       <v-col
