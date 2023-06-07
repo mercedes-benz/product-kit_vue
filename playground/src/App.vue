@@ -1,22 +1,22 @@
 <script setup>
-import { ref } from 'vue';
 import { useTheme } from 'vuetify';
 import Typography from './components/Typography.vue';
 import Buttons from './components/Buttons.vue';
 import Dialog from './components/Dialog.vue';
+import Chips from './components/Chips.vue';
 
 const theme = useTheme();
 const toggleTheme = () => {
   theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark';
 };
 
-const components = [Typography, Buttons, Dialog];
+const components = [Typography, Buttons, Dialog, Chips];
 </script>
 
 <template>
   <v-app>
     <v-app-bar>
-      <v-container class="d-flex">
+      <v-container class="d-flex align-center">
         <v-app-bar-title class="text-button">Product Kit Vue 3</v-app-bar-title>
         <v-btn
           variant="outlined"
