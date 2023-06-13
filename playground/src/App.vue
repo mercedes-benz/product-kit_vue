@@ -1,5 +1,5 @@
 <script setup>
-import { useTheme } from 'vuetify';
+import { useDisplay, useTheme } from 'vuetify';
 import Typography from './components/Typography.vue';
 import Buttons from './components/Buttons.vue';
 import Dialog from './components/Dialog.vue';
@@ -7,11 +7,15 @@ import Chips from './components/Chips.vue';
 import Spacing from './components/Spacing.vue';
 
 const theme = useTheme();
+console.log(theme);
 const toggleTheme = () => {
   theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark';
+  console.log(theme.global.name.value);
 };
 
 const components = [Typography, Buttons, Dialog, Chips, Spacing];
+
+console.log(useDisplay().thresholds.value);
 </script>
 
 <template>
@@ -36,7 +40,7 @@ const components = [Typography, Buttons, Dialog, Chips, Spacing];
           <component :is="item"></component>
           <v-divider></v-divider>
         </section>
-        <div class="primary">hello</div>
+        <div class="primary d-xxl-none">hello</div>
         <h1 class="text-h1">hello</h1>
       </v-container>
     </v-main>

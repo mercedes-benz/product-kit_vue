@@ -5,17 +5,21 @@ import 'vuetify/styles';
 import { createVuetify } from 'vuetify';
 import * as components from 'vuetify/components';
 import * as directives from 'vuetify/directives';
-import { productKitTheme } from '../../src/index';
+import { useProductKit } from '../../src/index';
+
+const productKit = useProductKit('mbti');
 
 const vuetify = createVuetify({
   components,
   directives,
   theme: {
-    themes: productKitTheme,
+    themes: productKit.themes,
   },
+  defaults: productKit.defaults,
+  // display: productKit.display,
 });
 
-console.dir(productKitTheme);
+console.dir(productKit);
 
 const app = createApp(App);
 

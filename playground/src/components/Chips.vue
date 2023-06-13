@@ -4,7 +4,7 @@ import { colorsForTesting } from '../utils/colors';
 const chips = [];
 colorsForTesting.forEach((color) => {
   chips.push({
-    content: color.toUpperCase(),
+    content: color.charAt(0).toUpperCase() + color.slice(1),
     color,
   });
 });
