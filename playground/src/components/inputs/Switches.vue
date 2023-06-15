@@ -1,0 +1,62 @@
+<template>
+  <h3>Switches</h3>
+  <v-row>
+    <v-col>
+      <v-switch
+        v-model="ex11"
+        label="primary"
+        color="primary"
+        value="primary"
+        hide-details
+      ></v-switch>
+      <v-switch
+        v-model="ex11"
+        label="secondary"
+        color="secondary"
+        value="secondary"
+        hide-details
+      ></v-switch>
+    </v-col>
+    <v-col>
+      <v-switch
+        v-model="ex11"
+        label="success"
+        color="success"
+        value="success"
+        hide-details
+      ></v-switch>
+      <v-switch
+        v-model="ex11"
+        label="info"
+        color="info"
+        value="info"
+        hide-details
+      ></v-switch>
+    </v-col>
+    <v-col>
+      <v-switch
+        v-model="ex11"
+        label="warning"
+        color="warning"
+        value="warning"
+        hide-details
+      ></v-switch>
+      <v-switch
+        v-model="ex11"
+        label="error"
+        color="error"
+        value="error"
+      ></v-switch>
+    </v-col>
+  </v-row>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      ex11: ['red', 'indigo', 'orange', 'primary', 'secondary', 'success', 'info', 'warning', 'error'],
+    };
+  },
+};
+</script>

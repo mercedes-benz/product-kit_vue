@@ -52,4 +52,11 @@ colorsForTesting.forEach((color) => {
       >{{ chip.content }}</v-chip
     >
   </div>
+  <div class="my-m">
+    <v-chip-group filter>
+      <v-chip selected-class="text-primary">Chip 1</v-chip>
+      <v-chip>Chip 2</v-chip>
+      <v-chip>Chip 3</v-chip>
+    </v-chip-group>
+  </div>
 </template>

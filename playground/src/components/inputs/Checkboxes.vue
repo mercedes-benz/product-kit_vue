@@ -1,0 +1,30 @@
+<template>
+  <h3>Checkbox</h3>
+  <v-row>
+    <v-col><v-checkbox label="Default"></v-checkbox></v-col>
+    <v-col
+      ><v-checkbox
+        label="Disabled"
+        disabled
+      ></v-checkbox
+    ></v-col>
+    <v-col>
+      <v-checkbox
+        label="Indeterminate"
+        indeterminate
+      ></v-checkbox
+    ></v-col>
+    <v-col>
+      <v-checkbox
+        color="primary"
+        label="Primary"
+      ></v-checkbox
+    ></v-col>
+    <v-col>
+      <v-checkbox
+        color="secondary"
+        label="Secondary"
+      ></v-checkbox
+    ></v-col>
+  </v-row>
+</template>

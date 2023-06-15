@@ -5,8 +5,8 @@ import 'vuetify/styles';
 import { createVuetify } from 'vuetify';
 import * as components from 'vuetify/components';
 import * as directives from 'vuetify/directives';
-import { useProductKit } from '../../src/index';
 
+import { useProductKit } from '../../src/index';
 const productKit = useProductKit('mbti');
 
 const vuetify = createVuetify({

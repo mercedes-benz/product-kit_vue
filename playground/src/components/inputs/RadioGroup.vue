@@ -1,0 +1,39 @@
+<template>
+  <h3>Radioboxes</h3>
+  <v-row>
+    <v-col>
+      <v-radio-group class="d-flex">
+        <v-radio
+          label="primary"
+          color="primary"
+          value="primary"
+        ></v-radio>
+        <v-radio
+          label="secondary"
+          color="secondary"
+          value="secondary"
+        ></v-radio>
+        <v-radio
+          label="success"
+          color="success"
+          value="success"
+        ></v-radio>
+        <v-radio
+          label="info"
+          color="info"
+          value="info"
+        ></v-radio>
+        <v-radio
+          label="warning"
+          color="warning"
+          value="warning"
+        ></v-radio>
+        <v-radio
+          label="error"
+          color="error"
+          value="error"
+        ></v-radio>
+      </v-radio-group>
+    </v-col>
+  </v-row>
+</template>
