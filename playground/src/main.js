@@ -7,7 +7,7 @@ import * as components from 'vuetify/components';
 import * as directives from 'vuetify/directives';
 
 import { useProductKit } from '../../src/index';
-const productKit = useProductKit('mbti');
+const productKit = useProductKit('mb');
 
 const vuetify = createVuetify({
   components,

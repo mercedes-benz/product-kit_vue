@@ -10,7 +10,6 @@ const variants = ['plain', 'outlined', 'underlined', 'solo', 'solo-filled', 'sol
         :label="variant"
         color="primary"
         :variant="variant"
-        :items="items"
       ></v-text-field>
     </v-col>
   </v-row>
