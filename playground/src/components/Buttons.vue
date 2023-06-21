@@ -1,11 +1,10 @@
-<script setup></script>
-
 <template>
   <h2 class="text-h2 mb-12">Buttons</h2>
   <div class="d-flex mb-4">
     <v-btn
       class="mx-2"
       color="primary"
+      elevation="0"
       >Primary</v-btn
     >
     <v-btn

@@ -1,5 +1,10 @@
 <script setup>
+import { defineComponent } from 'vue';
 import { colorsForTesting } from '../utils/colors';
+
+defineComponent({
+  name: 'Chips',
+});
 
 const chips = [];
 colorsForTesting.forEach((color) => {

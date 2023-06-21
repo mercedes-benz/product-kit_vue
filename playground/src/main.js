@@ -2,12 +2,13 @@ import { createApp } from 'vue';
 import App from './App.vue';
 
 import 'vuetify/styles';
+// import '../../src/styles/main.scss';
 import { createVuetify } from 'vuetify';
 import * as components from 'vuetify/components';
 import * as directives from 'vuetify/directives';
 
 import { useProductKit } from '../../src/index';
-const productKit = useProductKit('mb');
+const productKit = useProductKit('mbti');
 
 const vuetify = createVuetify({
   components,
@@ -16,7 +17,7 @@ const vuetify = createVuetify({
     themes: productKit.themes,
   },
   defaults: productKit.defaults,
-  // display: productKit.display,
+  display: productKit.display,
 });
 
 console.dir(productKit);
