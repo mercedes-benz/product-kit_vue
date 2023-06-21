@@ -1,0 +1,23 @@
+/*
+This file is setting custom styles for the MBTI brand.
+It is necessary to change the primary color of some components to the
+primary variant color when light theme is active.
+
+Product Kit Vue sets a custom brand class 'pk-brand--mbti' for the v-app 
+component.
+
+@see ./brands/mbti/defaults.js
+*/
+
+.v-application.pk-brand--mbti.v-theme--light,
+.v-overlay.v-theme--light {
+  .text-primary {
+    color: rgb(var(--v-theme-primary-variant)) !important;
+  }
+  .bg-primary {
+    &.v-slider-track__background,
+    &.v-slider-track__fill {
+      background-color: rgb(var(--v-theme-primary-variant)) !important;
+    }
+  }
+}
