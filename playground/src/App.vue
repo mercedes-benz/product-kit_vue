@@ -18,10 +18,8 @@ import Grid from './components/Grid.vue';
 import Pagination from './components/Pagination.vue';
 
 const theme = useTheme();
-console.log(theme);
 const toggleTheme = () => {
   theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark';
-  console.log(theme.global.name.value);
 };
 
 const components = [
@@ -92,8 +90,6 @@ components.sort((a, b) => {
   const textB = b.name.toUpperCase();
   return textA < textB ? -1 : textA > b ? 1 : 0;
 });
-
-console.log(useDisplay().thresholds.value);
 </script>
 
 <template>

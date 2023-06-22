@@ -20,8 +20,6 @@ const vuetify = createVuetify({
   display: productKit.display,
 });
 
-console.dir(productKit);
-
 const app = createApp(App);
 
 app.use(vuetify);

@@ -19,8 +19,6 @@ colorNames.forEach((color) => {
     postfix !== '' ? colors.push(`bg-${color}-${postfix}`) : colors.push(`bg-${color}`);
   });
 });
-
-console.dir(colors);
 </script>
 
 <template>
