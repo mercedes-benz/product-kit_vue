@@ -71,7 +71,6 @@ export const useColors = (brand) => {
   Object.assign(light, baseColors());
   Object.assign(dark, baseColors());
 
-  console.log('all', light);
   return {
     light,
     dark,
