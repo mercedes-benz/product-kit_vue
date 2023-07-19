@@ -95,8 +95,11 @@ components.sort((a, b) => {
 <template>
   <v-app>
     <v-app-bar>
-      <v-container class="d-flex align-center">
-        <v-app-bar-title class="text-button">Product Kit Vue 3</v-app-bar-title>
+      <v-container
+        fluid
+        class="d-flex align-center"
+      >
+        <v-app-bar-title class="text-button">Product Kit Vue 3 Playground</v-app-bar-title>
         <v-btn
           variant="outlined"
           color="primary ml-auto"
@@ -132,6 +135,7 @@ components.sort((a, b) => {
     <v-container class="bg-primary">hello</v-container>
     <v-container class="text-primary">hello</v-container>
     <v-container class="bg-black text-primary">hello</v-container>
+    <v-container class="bg-primary-darken-1 text-primary">hello</v-container>
   </v-app>
 </template>
 
