@@ -1,0 +1,52 @@
+@use '@mercedes-benz/productkit-core/dist/web/styles/mbti/scss/variables' as tokens;
+
+.v-application.v-theme--light,
+.v-application.v-theme--dark,
+.v-overlay-container {
+  @media only screen and (min-width: 1024px) {
+    /* font-size  */
+    --v-pk-heading1-font-size: #{tokens.$font-application-l-headline1-font-size};
+    --v-pk-heading2-font-size: #{tokens.$font-application-l-headline2-font-size};
+    --v-pk-heading3-font-size: #{tokens.$font-application-l-headline3-font-size};
+    --v-pk-heading4-font-size: #{tokens.$font-application-l-headline4-font-size};
+    --v-pk-heading5-font-size: #{tokens.$font-application-l-headline5-font-size};
+    --v-pk-heading6-font-size: #{tokens.$font-application-l-headline6-font-size};
+    --v-pk-subtitle1-font-size: #{tokens.$font-application-l-subtitle1-font-size};
+    --v-pk-subtitle1-strong-font-size: #{tokens.$font-application-l-subtitle1-strong-font-size};
+    --v-pk-subtitle2-font-size: #{tokens.$font-application-l-subtitle2-font-size};
+    --v-pk-subtitle2-strong-font-size: #{tokens.$font-application-l-subtitle2-strong-font-size};
+    --v-pk-body1-font-size: #{tokens.$font-application-l-body1-font-size};
+    --v-pk-body1-strong-font-size: #{tokens.$font-application-l-body1-strong-font-size};
+    --v-pk-body2-font-size: #{tokens.$font-application-l-body2-font-size};
+    --v-pk-body2-strong-font-size: #{tokens.$font-application-l-body2-strong-font-size};
+    --v-pk-button-font-size: #{tokens.$font-application-l-button-font-size};
+    --v-pk-caption-font-size: #{tokens.$font-application-l-caption-font-size};
+    --v-pk-overline-font-size: #{tokens.$font-application-l-overline-font-size};
+
+    /* line-height */
+    --v-pk-heading1-line-height: #{tokens.$font-application-l-headline1-line-height};
+    --v-pk-heading2-line-height: #{tokens.$font-application-l-headline2-line-height};
+    --v-pk-heading3-line-height: #{tokens.$font-application-l-headline3-line-height};
+    --v-pk-heading4-line-height: #{tokens.$font-application-l-headline4-line-height};
+    --v-pk-heading5-line-height: #{tokens.$font-application-l-headline5-line-height};
+    --v-pk-heading6-line-height: #{tokens.$font-application-l-headline6-line-height};
+    --v-pk-subtitle1-line-height: #{tokens.$font-application-l-subtitle1-line-height};
+    --v-pk-subtitle1-strong-line-height: #{tokens.$font-application-l-subtitle1-strong-line-height};
+    --v-pk-subtitle2-line-height: #{tokens.$font-application-l-subtitle2-line-height};
+    --v-pk-subtitle2-strong-line-height: #{tokens.$font-application-l-subtitle2-strong-line-height};
+    --v-pk-body1-line-height: #{tokens.$font-application-l-body1-line-height};
+    --v-pk-body1-strong-line-height: #{tokens.$font-application-l-body1-strong-line-height};
+    --v-pk-body2-line-height: #{tokens.$font-application-l-body2-line-height};
+    --v-pk-body2-strong-line-height: #{tokens.$font-application-l-body2-strong-line-height};
+    --v-pk-button-line-height: #{tokens.$font-application-l-button-line-height};
+    --v-pk-caption-line-height: #{tokens.$font-application-l-caption-line-height};
+    --v-pk-overline-line-height: #{tokens.$font-application-l-overline-line-height};
+  }
+}
+
+.v-application.v-theme--light,
+.v-overlay-container {
+  .text-overline {
+    color: #{tokens.$color-application-primary-variant};
+  }
+}
