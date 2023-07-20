@@ -68,7 +68,7 @@
     'subtitle-1-strong': (
       'size': var(--v-pk-subtitle1-font-size),
       'weight': tokens.$font-application-s-subtitle1-strong-font-weight,
-      'line-height': var(--v-pk-subtitle1-strong-line-height)-height,
+      'line-height': var(--v-pk-subtitle1-strong-line-height),
       'letter-spacing': tokens.$font-application-s-subtitle1-strong-letter-spacing,
       'font-family': tokens.$font-application-s-subtitle1-strong-font-family,
       'text-transform': tokens.$font-application-s-subtitle1-strong-text-transform,
@@ -84,7 +84,7 @@
     'subtitle-2-strong': (
       'size': var(--v-pk-subtitle2-font-size),
       'weight': tokens.$font-application-s-subtitle2-strong-font-weight,
-      'line-height': var(--v-pk-subtitle2-strong-line-height)-height,
+      'line-height': var(--v-pk-subtitle2-strong-line-height),
       'letter-spacing': tokens.$font-application-s-subtitle2-strong-letter-spacing,
       'font-family': tokens.$font-application-s-subtitle2-strong-font-family,
       'text-transform': tokens.$font-application-s-subtitle2-strong-text-transform,
@@ -100,7 +100,7 @@
     'body-1-strong': (
       'size': var(--v-pk-body1-font-size),
       'weight': tokens.$font-application-s-body1-strong-font-weight,
-      'line-height': var(--v-pk-body1-strong-line-height)-height,
+      'line-height': var(--v-pk-body1-strong-line-height),
       'letter-spacing': tokens.$font-application-s-body1-strong-letter-spacing,
       'font-family': tokens.$font-application-s-body1-strong-font-family,
       'text-transform': tokens.$font-application-s-body1-strong-text-transform,
@@ -116,7 +116,7 @@
     'body-2-strong': (
       'size': var(--v-pk-body2-font-size),
       'weight': tokens.$font-application-s-body2-strong-font-weight,
-      'line-height': var(--v-pk-body2-strong-line-height)-height,
+      'line-height': var(--v-pk-body2-strong-line-height),
       'letter-spacing': tokens.$font-application-s-body2-strong-letter-spacing,
       'font-family': tokens.$font-application-s-body2-strong-font-family,
       'text-transform': tokens.$font-application-s-body2-strong-text-transform,
