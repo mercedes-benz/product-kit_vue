@@ -5,6 +5,9 @@
   "license": "MIT",
   "repository": "https://github.com/mercedes-benz/product-kit_vue",
   "bugs": "https://github.com/mercedes-benz/product-kit_vue/issues",
+  "files": [
+    "src"
+  ],
   "scripts": {
     "dev": "vite"
   },
