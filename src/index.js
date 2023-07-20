@@ -16,9 +16,11 @@ export const useProductKit = (brand = defaultBrand) => {
 
   return {
     defaults: defaults(brand),
-    themes: {
-      light: { colors: colors.light, variables },
-      dark: { colors: colors.dark, variables },
+    theme: {
+      themes: {
+        light: { colors: colors.light, variables },
+        dark: { colors: colors.dark, variables },
+      },
     },
     display: {
       mobileBreakpoint: 'xl',

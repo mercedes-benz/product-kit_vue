@@ -2,23 +2,19 @@ import { createApp } from 'vue';
 import App from './App.vue';
 
 import 'vuetify/styles';
-// import '../../src/styles/main.scss';
 import { createVuetify } from 'vuetify';
-import * as components from 'vuetify/components';
-import * as directives from 'vuetify/directives';
 
 import { useProductKit } from '../../src/index';
 const productKit = useProductKit('mb');
+const vuetify = createVuetify(productKit);
 
-const vuetify = createVuetify({
-  components,
-  directives,
-  theme: {
-    themes: productKit.themes,
-  },
-  defaults: productKit.defaults,
-  display: productKit.display,
-});
+// const vuetify = createVuetify({
+//   theme: {
+//     themes: productKit.themes,
+//   },
+//   defaults: productKit.defaults,
+//   display: productKit.display,
+// });
 
 const app = createApp(App);
 
