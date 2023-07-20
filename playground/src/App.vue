@@ -11,6 +11,7 @@ import Cards from './components/Cards.vue';
 import ExpansionPanels from './components/ExpansionPanels.vue';
 import Alerts from './components/Alerts.vue';
 import BaseColors from './components/BaseColors.vue';
+import ApplicationColors from './components/ApplicationColors.vue';
 import Ratings from './components/Ratings.vue';
 import Snackbars from './components/Snackbars.vue';
 import Tables from './components/Tables.vue';
@@ -62,6 +63,10 @@ const components = [
   {
     component: BaseColors,
     name: 'Base Colors',
+  },
+  {
+    component: ApplicationColors,
+    name: 'Application Colors',
   },
   {
     component: Ratings,
@@ -132,10 +137,6 @@ components.sort((a, b) => {
         </section>
       </v-container>
     </v-main>
-    <v-container class="bg-primary">hello</v-container>
-    <v-container class="text-primary">hello</v-container>
-    <v-container class="bg-black text-primary">hello</v-container>
-    <v-container class="bg-primary-darken-1 text-primary">hello</v-container>
   </v-app>
 </template>
 
