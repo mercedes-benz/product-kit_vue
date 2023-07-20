@@ -2,11 +2,11 @@
 @use 'vuetify/settings' with (
   $grid-breakpoints: (
     'xs': 0,
-    'sm': 480px,
-    'md': 768px,
-    'lg': 1024px,
-    'xl': 1280px,
-    'xxl': 1440px,
+    'sm': tokens.$size-screen-platform-s,
+    'md': tokens.$size-screen-platform-m,
+    'lg': tokens.$size-screen-platform-l,
+    'xl': tokens.$size-screen-platform-xl,
+    'xxl': tokens.$size-screen-platform-xxl,
   ),
   $typography: (
     'h1': (
