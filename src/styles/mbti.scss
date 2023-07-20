@@ -8,6 +8,7 @@ component.
 
 @see ./brands/mbti/defaults.js
 */
+@use '@mercedes-benz/productkit-core/dist/web/styles/mbti/scss/variables' as tokens;
 
 .v-application.pk-brand--mbti.v-theme--light,
 .v-overlay.v-theme--light {
@@ -19,5 +20,8 @@ component.
     &.v-slider-track__fill {
       background-color: rgb(var(--v-theme-primary-variant)) !important;
     }
+  }
+  .text-overline {
+    color: #{tokens.$color-application-primary-variant};
   }
 }

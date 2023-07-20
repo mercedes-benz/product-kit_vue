@@ -43,10 +43,3 @@
     --v-pk-overline-line-height: #{tokens.$font-application-l-overline-line-height};
   }
 }
-
-.v-application.v-theme--light,
-.v-overlay-container {
-  .text-overline {
-    color: #{tokens.$color-application-primary-variant};
-  }
-}
