@@ -4,7 +4,6 @@
     <v-btn
       class="mx-2"
       color="primary"
-      elevation="0"
       >Primary</v-btn
     >
     <v-btn
