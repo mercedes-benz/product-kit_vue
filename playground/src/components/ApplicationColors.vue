@@ -8,7 +8,7 @@ colorsForTesting.forEach((color) => {
 </script>
 
 <template>
-  <h2 class="text-h2 mb-12">Base Colors</h2>
+  <h2 class="text-h2 mb-12">Application Colors</h2>
   <div class="mb-xl">
     <v-row
       v-for="color in colors"
