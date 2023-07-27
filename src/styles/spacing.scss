@@ -95,27 +95,27 @@ $sizes-xxl: (
   @if $direction == 'a' {
     @each $size, $size-value in $sizes {
       .#{$property}#{$direction}-#{$size} {
-        #{$property-value}: $size-value;
+        #{$property-value}: $size-value !important;
       }
     }
   } @else if $direction == 'y' {
     @each $size, $size-value in $sizes {
       .#{$property}#{$direction}-#{$size} {
         #{$property-value}-top: $size-value;
-        #{$property-value}-bottom: $size-value;
+        #{$property-value}-bottom: $size-value !important;
       }
     }
   } @else if $direction == 'x' {
     @each $size, $size-value in $sizes {
       .#{$property}#{$direction}-#{$size} {
         #{$property-value}-left: $size-value;
-        #{$property-value}-right: $size-value;
+        #{$property-value}-right: $size-value !important;
       }
     }
   } @else {
     @each $size, $size-value in $sizes {
       .#{$property}#{$direction}-#{$size} {
-        #{$property-value}-#{$direction-value}: $size-value;
+        #{$property-value}-#{$direction-value}: $size-value !important;
       }
     }
   }
