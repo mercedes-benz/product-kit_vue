@@ -1,6 +1,6 @@
 <template>
   <h2 class="text-h2 mb-12">Grid</h2>
-  <v-container class="bg-grey">
+  <v-container class="bg-grey mb-l">
     <v-row>
       <v-col
         cols="12"
