@@ -8,6 +8,15 @@
     'xl': tokens.$size-screen-platform-xl,
     'xxl': tokens.$size-screen-platform-xxl,
   ),
+  $grid-gutter: 16px,
+  $container-max-widths: (
+    'xs': none,
+    'sm': none,
+    'md': none,
+    'lg': none,
+    'xl': none,
+    'xxl': tokens.$layout-application-compact-xxl-content-max-width,
+  ),
   $typography: (
     'h1': (
       'size': var(--v-pk-heading1-font-size),
