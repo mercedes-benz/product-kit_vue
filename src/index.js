@@ -3,6 +3,7 @@ import { useColors } from './colors';
 import { variables } from './variables';
 import { defaults } from './defaults';
 import {
+  sizeScreenPlatformXs,
   sizeScreenPlatformS,
   sizeScreenPlatformM,
   sizeScreenPlatformL,
@@ -25,7 +26,7 @@ export const useProductKit = (brand = defaultBrand) => {
     display: {
       mobileBreakpoint: 'xl',
       thresholds: {
-        xs: 0,
+        xs: getNumberValue(sizeScreenPlatformXs),
         sm: getNumberValue(sizeScreenPlatformS),
         md: getNumberValue(sizeScreenPlatformM),
         lg: getNumberValue(sizeScreenPlatformL),
