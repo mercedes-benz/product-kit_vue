@@ -71,11 +71,11 @@ Your Vuetify components should now be styled accordingly to the styleguide of Me
 
 ### Container
 
-When building applications with Vuetify and Product Kit Vue, use a `v-container` as a wrapper container after `v-app`, as it includes max-widths that limits the content-width on large screens.
+When building applications with Vuetify and Product Kit Vue, use a `v-container` as a wrapper container after `v-app`, as it includes max-widths that limits the content-width on large screens. Set this main wrapper container to `fluid` for the capability to use full-width content.
 
 ```html
 <v-app>
-  <v-container>
+  <v-container fluid>
     <v-main>
       <router-view />
     </v-main>
@@ -83,8 +83,7 @@ When building applications with Vuetify and Product Kit Vue, use a `v-container`
 </v-app>
 ```
 
-If you need your content to be full-width this main wrapper `v-container` should set to be `fluid` to ensure the full-width capability for your content.
-Now inside your `v-main` you can use `v-container` also with `fluid` or any other `html` block element.
+Now inside your `v-main` you should always use `v-container` as a wrapper for a content section. For full-width content use `fluid`.
 
 ### Colors
 
